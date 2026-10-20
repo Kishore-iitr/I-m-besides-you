@@ -27,3 +27,11 @@ node_modules/
 dist/
 build/
 scratch/
+
+# Datasets (large media & screenshot files)
+dataset_a/
+dataset_b/
+dataset*/
+*.jpg
+*.jpeg
+*.png
