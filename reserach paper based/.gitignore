@@ -1,0 +1,12 @@
+node_modules/
+dist/
+dataset_a/
+dataset_b/
+data/
+.cache/
+.env
+artifacts/*
+!artifacts/summaries/
+!artifacts/summaries/**
+powershell.cmd
+scratch/

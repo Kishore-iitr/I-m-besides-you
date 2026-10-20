@@ -13,3 +13,17 @@ __pycache__/
 env/
 venv/
 .ipynb_checkpoints/
+
+# Node
+node_modules/
+.npm/
+.cache/
+
+# Environment & local secrets
+.env
+.env.local
+
+# Build outputs & scratch
+dist/
+build/
+scratch/

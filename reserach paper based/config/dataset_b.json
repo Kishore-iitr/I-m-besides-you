@@ -1,0 +1,18 @@
+{
+  "dataset": "B",
+  "recorder_process": "procmine-desktop-agent.exe",
+  "recorder_process_patterns": ["procmine", "agent", "desktop-agent"],
+  "idle_gap_threshold_ms": 4000,
+  "burst_idle_s": 3.0,
+  "keystroke_idle_threshold_ms": 1500,
+  "app_switch_collapse_ms": 1500,
+  "burst_max_events": 40,
+  "boundary_snap_tolerance_sec": 30,
+  "eval_tolerance_sec": [15, 30, 60],
+  "case_id_patterns": [
+    "\\b[A-Z]{2,4}-\\d{4,8}-\\d{2,4}\\b",
+    "\\b[A-Z]{2,4}-\\d{4,8}\\b",
+    "\\bBATCH-[A-Z0-9]+\\b"
+  ],
+  "domain_whitelist": []
+}
