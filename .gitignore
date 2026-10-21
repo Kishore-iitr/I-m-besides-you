@@ -32,6 +32,5 @@ scratch/
 dataset_a/
 dataset_b/
 dataset*/
-*.jpg
-*.jpeg
-*.png
+recorder_sessions/
+**/screenshots/
