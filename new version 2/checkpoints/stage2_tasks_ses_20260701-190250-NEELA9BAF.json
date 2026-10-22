@@ -1,0 +1,32 @@
+{
+  "INV": {
+    "process_prefix": "INV",
+    "canonical_task_name": "invoice_processing",
+    "department": "Finance",
+    "core_objective": "Validate and approve invoices while recording processing confirmations"
+  },
+  "ONBOARDING": {
+    "process_prefix": "ONBOARDING",
+    "canonical_task_name": "employee_onboarding",
+    "department": "Human Resources",
+    "core_objective": "Verify employee onboarding information and record reconciliation results"
+  },
+  "LEAVE": {
+    "process_prefix": "LEAVE",
+    "canonical_task_name": "leave_application_review",
+    "department": "Human Resources",
+    "core_objective": "Review leave applications and document approval or rejection decisions"
+  },
+  "PAYROLL": {
+    "process_prefix": "PAYROLL",
+    "canonical_task_name": "payroll_item_processing",
+    "department": "Finance",
+    "core_objective": "Review and confirm travel-expense and other payroll items"
+  },
+  "BATCH": {
+    "process_prefix": "BATCH",
+    "canonical_task_name": "inventory_item_batch_processing",
+    "department": "Supply Chain",
+    "core_objective": "Batch-review and process inventory-related items with supporting inventory records"
+  }
+}

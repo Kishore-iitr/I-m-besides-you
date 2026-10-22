@@ -1,0 +1,32 @@
+{
+  "0": {
+    "batch_idx": 1,
+    "objective": "Reconcile a payroll item for onboarding employee P3-07089737-011 and record any exceptions.",
+    "additional_context": "The user navigated through onboarding, leave applications, the dashboard, and payroll items in the HR portal, using Word and Notepad for supporting information. The reconciliation/special-notes field was completed for P3-07089737-011 with 2026-07-24 shown as a relevant date."
+  },
+  "1": {
+    "batch_idx": 2,
+    "objective": "Verify training-expense payroll entries for P3-07089737-012 and P4-07089737-012 and document processing comments.",
+    "additional_context": "The user worked in the payroll-items screen, with Teams and Notepad available for consultation or reference. The entry labeled 研修費 was reviewed, and processing/confirmation comments were recorded while both P3 and P4 employee identifiers were displayed."
+  },
+  "2": {
+    "batch_idx": 3,
+    "objective": "Reconcile onboarding payroll details for P3-07089737-012 and P4-07089737-012 and record special notes.",
+    "additional_context": "In the onboarding section of the HR portal, the user reviewed records for both P3 and P4 using Microsoft Word as a reference. The reconciliation/special-notes field was completed, with 2026-07-09 displayed as a relevant date."
+  },
+  "3": {
+    "batch_idx": 4,
+    "objective": "Review the payroll item associated with Motor Unit F for P11-07089737-012 and record processing confirmation.",
+    "additional_context": "The user remained in the payroll-items workflow and used Notepad as a supporting reference. Processing/confirmation comments were entered for P11-07089737-012 in connection with the モーターユニットF item."
+  },
+  "4": {
+    "batch_idx": 5,
+    "objective": "Review and document payroll adjustments for a dependent deduction change and salary increase.",
+    "additional_context": "The payroll-items screen showed 扶養控除変更 and 昇給 for P4-07089737-012, and processing/confirmation comments were entered. Word and Notepad files, including an inventory-adjustment memo, were opened or referenced during the review."
+  },
+  "5": {
+    "batch_idx": 6,
+    "objective": "Review a leave application and record the approval comment or rejection rationale.",
+    "additional_context": "The user opened leave-applications in the HR portal, with Teams and Word supporting communication or document review. The record for P12-07089737-012 included a maintenance-outsourcing contract renewal and a new confidentiality agreement, and the approval-comment/rejection-reason field was addressed."
+  }
+}

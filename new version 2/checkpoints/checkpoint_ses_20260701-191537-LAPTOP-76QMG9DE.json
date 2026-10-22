@@ -1,0 +1,280 @@
+{
+  "status": "completed",
+  "session_id": "ses_20260701-191537-LAPTOP-76QMG9DE",
+  "operator": "LAPTOP-76QMG9DE",
+  "session_dir": "G:\\.shortcut-targets-by-id\\1WSBZQxOODKFDzYBkIik5g90NWKS7Gwl0\\AI Engineer\\dataset_b\\ses_20260701-191537-LAPTOP-76QMG9DE",
+  "dominant_batch": "BATCH-W1",
+  "total_events_loaded": 1562,
+  "clean_events_loaded": 1553,
+  "predicted_segments_count": 7,
+  "timings": {
+    "Layer 1: Raw Log Ingestion & Filtering": 0.6529901000030804,
+    "Layer 2: Dynamic Trace & Episode Boundary Extraction": 0.3753488000074867,
+    "Stage 0: Dual Keyframe OCR Visual Grounding": 26.673423899977934,
+    "Stage 1: Activity Segmentation (Puter LLM)": 191.56807910001953,
+    "Stage 2: Latent Task Discovery (Puter LLM)": 7.3755839000223204,
+    "Stage 3: Root Thread Consolidation & Naming (Puter LLM)": 15.0,
+    "Stage 4: Hierarchical Task Modeling (Puter LLM)": 0.0014987000031396747,
+    "Stage 5: Deliverable Generation (segments.jsonl)": 0.008844399999361485,
+    "Total End-to-End Pipeline Runtime": 226.65579190000426
+  },
+  "segments": [
+    {
+      "session_id": "ses_20260701-191537-LAPTOP-76QMG9DE",
+      "operator": "LAPTOP-76QMG9DE",
+      "case_id": "PAYROLL-ITEMS-BATCH-W1-001",
+      "process_code": "PAYROLL",
+      "start": "2026-07-01T19:15:41Z",
+      "end": "2026-07-01T19:16:13Z",
+      "duration_seconds": 32.0,
+      "label": "payroll_item_reconciliation",
+      "objective": "Reconcile a payroll item for onboarding employee P3-07089737-011 and record any exceptions.",
+      "additional_context": "The user navigated through onboarding, leave applications, the dashboard, and payroll items in the HR portal, using Word and Notepad for supporting information. The reconciliation/special-notes field was completed for P3-07089737-011 with 2026-07-24 shown as a relevant date.",
+      "automation_telemetry": {
+        "total_events": 58,
+        "keystrokes_count": 4,
+        "clicks_count": 11,
+        "clipboard_operations": 1,
+        "scrolls_count": 2,
+        "app_switches_count": 13,
+        "active_applications": [
+          "Microsoft Edge",
+          "Microsoft Word",
+          "Notepad"
+        ],
+        "window_titles": [
+          "HR人事給与システム and 1 more page - Profile 1 - Microsoft​ Edge",
+          "Notepad",
+          "Resume Reading",
+          "Turn off extensions in developer mode",
+          "nyusha_checklist_shinsotsu_batch  -  Compatibility Mode - Word"
+        ],
+        "web_routes": [
+          "dashboard",
+          "leave-applications",
+          "onboarding",
+          "payroll-items"
+        ],
+        "cross_system_transfer": true,
+        "automation_suitability_score": 75.0
+      }
+    },
+    {
+      "session_id": "ses_20260701-191537-LAPTOP-76QMG9DE",
+      "operator": "LAPTOP-76QMG9DE",
+      "case_id": "BATCH-W1",
+      "process_code": "BATCH",
+      "start": "2026-07-01T19:16:13Z",
+      "end": "2026-07-01T19:18:03Z",
+      "duration_seconds": 110.0,
+      "label": "payroll_item_processing",
+      "objective": "Verify training-expense payroll entries for P3-07089737-012 and P4-07089737-012 and document processing comments.",
+      "additional_context": "The user worked in the payroll-items screen, with Teams and Notepad available for consultation or reference. The entry labeled 研修費 was reviewed, and processing/confirmation comments were recorded while both P3 and P4 employee identifiers were displayed.",
+      "automation_telemetry": {
+        "total_events": 194,
+        "keystrokes_count": 32,
+        "clicks_count": 49,
+        "clipboard_operations": 12,
+        "scrolls_count": 21,
+        "app_switches_count": 7,
+        "active_applications": [
+          "Microsoft Edge",
+          "Notepad",
+          "ms-teams"
+        ],
+        "window_titles": [
+          "*在庫調整メモ - Notepad",
+          "*精算確認メモ - Notepad",
+          "HR人事給与システム and 1 more page - Profile 1 - Microsoft​ Edge",
+          "Microsoft Teams"
+        ],
+        "web_routes": [
+          "payroll-items"
+        ],
+        "cross_system_transfer": true,
+        "automation_suitability_score": 100.0
+      }
+    },
+    {
+      "session_id": "ses_20260701-191537-LAPTOP-76QMG9DE",
+      "operator": "LAPTOP-76QMG9DE",
+      "case_id": "ONBOARDING-BATCH-W1-003",
+      "process_code": "ONBOARDING",
+      "start": "2026-07-01T19:18:03Z",
+      "end": "2026-07-01T19:19:12Z",
+      "duration_seconds": 69.0,
+      "label": "employee_onboarding",
+      "objective": "Reconcile onboarding payroll details for P3-07089737-012 and P4-07089737-012 and record special notes.",
+      "additional_context": "In the onboarding section of the HR portal, the user reviewed records for both P3 and P4 using Microsoft Word as a reference. The reconciliation/special-notes field was completed, with 2026-07-09 displayed as a relevant date.",
+      "automation_telemetry": {
+        "total_events": 136,
+        "keystrokes_count": 28,
+        "clicks_count": 26,
+        "clipboard_operations": 6,
+        "scrolls_count": 8,
+        "app_switches_count": 14,
+        "active_applications": [
+          "Microsoft Edge",
+          "Microsoft Word"
+        ],
+        "window_titles": [
+          "HR人事給与システム and 1 more page - Profile 1 - Microsoft​ Edge",
+          "Resume Reading",
+          "nyusha_checklist_shinsotsu_batch  -  Compatibility Mode - Word"
+        ],
+        "web_routes": [
+          "onboarding"
+        ],
+        "cross_system_transfer": true,
+        "automation_suitability_score": 100.0
+      }
+    },
+    {
+      "session_id": "ses_20260701-191537-LAPTOP-76QMG9DE",
+      "operator": "LAPTOP-76QMG9DE",
+      "case_id": "BATCH-W6",
+      "process_code": "BATCH",
+      "start": "2026-07-01T19:19:12Z",
+      "end": "2026-07-01T19:19:54Z",
+      "duration_seconds": 42.0,
+      "label": "payroll_item_processing",
+      "objective": "Review the payroll item associated with Motor Unit F for P11-07089737-012 and record processing confirmation.",
+      "additional_context": "The user remained in the payroll-items workflow and used Notepad as a supporting reference. Processing/confirmation comments were entered for P11-07089737-012 in connection with the モーターユニットF item.",
+      "automation_telemetry": {
+        "total_events": 107,
+        "keystrokes_count": 20,
+        "clicks_count": 24,
+        "clipboard_operations": 6,
+        "scrolls_count": 8,
+        "app_switches_count": 5,
+        "active_applications": [
+          "Microsoft Edge",
+          "Microsoft Word",
+          "Notepad"
+        ],
+        "window_titles": [
+          "*在庫調整メモ - Notepad",
+          "*精算確認メモ - Notepad",
+          "HR人事給与システム and 1 more page - Profile 1 - Microsoft​ Edge",
+          "nyusha_checklist_shinsotsu_batch  -  Compatibility Mode - Word",
+          "受発注在庫管理システム and 1 more page - Profile 1 - Microsoft​ Edge"
+        ],
+        "web_routes": [
+          "payroll-items"
+        ],
+        "cross_system_transfer": true,
+        "automation_suitability_score": 100.0
+      }
+    },
+    {
+      "session_id": "ses_20260701-191537-LAPTOP-76QMG9DE",
+      "operator": "LAPTOP-76QMG9DE",
+      "case_id": "BATCH-W3",
+      "process_code": "BATCH",
+      "start": "2026-07-01T19:19:54Z",
+      "end": "2026-07-01T19:23:17Z",
+      "duration_seconds": 203.0,
+      "label": "payroll_item_processing",
+      "objective": "Review and document payroll adjustments for a dependent deduction change and salary increase.",
+      "additional_context": "The payroll-items screen showed 扶養控除変更 and 昇給 for P4-07089737-012, and processing/confirmation comments were entered. Word and Notepad files, including an inventory-adjustment memo, were opened or referenced during the review.",
+      "automation_telemetry": {
+        "total_events": 480,
+        "keystrokes_count": 188,
+        "clicks_count": 82,
+        "clipboard_operations": 19,
+        "scrolls_count": 32,
+        "app_switches_count": 16,
+        "active_applications": [
+          "Microsoft Edge",
+          "Microsoft Word",
+          "Notepad",
+          "OpenWith"
+        ],
+        "window_titles": [
+          "*在庫調整メモ - Notepad",
+          "HR人事給与システム and 1 more page - Profile 1 - Microsoft​ Edge",
+          "kazoku_teate_kitei  -  Compatibility Mode - Word",
+          "受発注在庫管理システム and 1 more page - Profile 1 - Microsoft​ Edge",
+          "財務会計システム and 1 more page - Profile 1 - Microsoft​ Edge"
+        ],
+        "web_routes": [
+          "payroll-items"
+        ],
+        "cross_system_transfer": true,
+        "automation_suitability_score": 100.0
+      }
+    },
+    {
+      "session_id": "ses_20260701-191537-LAPTOP-76QMG9DE",
+      "operator": "LAPTOP-76QMG9DE",
+      "case_id": "LEAVE-APPLICATIONS-BATCH-W1-006",
+      "process_code": "LEAVE",
+      "start": "2026-07-01T19:23:17Z",
+      "end": "2026-07-01T19:24:50Z",
+      "duration_seconds": 93.0,
+      "label": "leave_application_review",
+      "objective": "Review a leave application and record the approval comment or rejection rationale.",
+      "additional_context": "The user opened leave-applications in the HR portal, with Teams and Word supporting communication or document review. The record for P12-07089737-012 included a maintenance-outsourcing contract renewal and a new confidentiality agreement, and the approval-comment/rejection-reason field was addressed.",
+      "automation_telemetry": {
+        "total_events": 147,
+        "keystrokes_count": 32,
+        "clicks_count": 25,
+        "clipboard_operations": 6,
+        "scrolls_count": 9,
+        "app_switches_count": 17,
+        "active_applications": [
+          "Microsoft Edge",
+          "Microsoft Word",
+          "ms-teams"
+        ],
+        "window_titles": [
+          "Microsoft Teams",
+          "kazoku_teate_kitei  -  Compatibility Mode - Word",
+          "keiyaku_kaijo_tetsuzuki  -  Compatibility Mode - Word",
+          "shinkuitorihikisaki_touroku_tetsuzuki  -  Compatibility Mode - Word",
+          "受発注在庫管理システム and 1 more page - Profile 1 - Microsoft​ Edge"
+        ],
+        "web_routes": [
+          "leave-applications"
+        ],
+        "cross_system_transfer": true,
+        "automation_suitability_score": 100.0
+      }
+    },
+    {
+      "session_id": "ses_20260701-191537-LAPTOP-76QMG9DE",
+      "operator": "LAPTOP-76QMG9DE",
+      "case_id": "BATCH-W5",
+      "process_code": "BATCH",
+      "start": "2026-07-01T19:24:50Z",
+      "end": "2026-07-01T19:25:24Z",
+      "duration_seconds": 34.0,
+      "label": "payroll_item_processing",
+      "objective": "Process payroll_item_processing",
+      "additional_context": "",
+      "automation_telemetry": {
+        "total_events": 82,
+        "keystrokes_count": 12,
+        "clicks_count": 22,
+        "clipboard_operations": 5,
+        "scrolls_count": 8,
+        "app_switches_count": 3,
+        "active_applications": [
+          "Microsoft Edge",
+          "Notepad",
+          "ms-teams"
+        ],
+        "window_titles": [
+          "*在庫調整メモ - Notepad",
+          "Microsoft Teams",
+          "受発注在庫管理システム and 1 more page - Profile 1 - Microsoft​ Edge"
+        ],
+        "web_routes": [
+          "payroll-items"
+        ],
+        "cross_system_transfer": true,
+        "automation_suitability_score": 90.0
+      }
+    }
+  ]
+}

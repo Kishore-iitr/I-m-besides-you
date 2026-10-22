@@ -1,0 +1,38 @@
+{
+  "0": {
+    "initial_state_ocr": "Vv @ HR人事給与システム | G | 12700155                                             8 A | | 中人事絡システム 2       3                                                                          Translate Pz Turn off extensions in developer | Translate to mode                                                       pectedly. | English        Running extensions in developer mode can | 5                                に        っ                                                                                           consider turning off extensions in developer",
+    "terminal_state_ocr": "Vv @ HR人事給与システム | (の        127.0.0.1:5 | AB HR人事給与システム | P2-0708845B-008                                                      特別休暇 (BB)                  2026-07-14 | i.     .    .                    P2-07088456-009                                                                  Z    18 RR                        2026-07-12 | ・ ダッシュボード"
+  },
+  "1": {
+    "initial_state_ocr": "マ 人 HR人事給与システム | (の        127.0.0.1:5 | AB HR人事給与システム | ダッシュボード | 経草精算・給与変更 24 | 勤怠・休暇申請",
+    "terminal_state_ocr": "マン @ 受償注在庫管理ツステム | |< CG (© 1270015 | Se 受発注在庫管理システム | ダッシュボード | 在庫管理 | 契約管理"
+  },
+  "2": {
+    "initial_state_ocr": "B IT申請メモ | File    Edit View | TT申請メモ | TcCカード再発行申請 | 申請者: 清水 FEY | Ln 3,Col10 27characters",
+    "terminal_state_ocr": "Mae 財務会計システム 2                                                                                                                                                                          Restore pages | Microsoft Edge closed unexpectedly. | ダッシュボード                  入社隊合一臣 | 経費承認 (管理職) | 支払処理 | f品工業株式会社"
+  },
+  "3": {
+    "initial_state_ocr": "マン @ 時衝会計システム | (の      127.0.0.1:5 | Me 財務会計システム | 予算差異分析 | 発注管理 | aD 29c",
+    "terminal_state_ocr": "aD 29c | Pariy cloudy | P7-07088456-001 | P7-07088456-002 | P7-07088456-003 | P7-07088456-004"
+  },
+  "4": {
+    "initial_state_ocr": "マン @ 時衝会計システム | (の      127.0.0.1:5 | Me 財務会計システム | 予算差異分析 | 発注管理 | aD 29c",
+    "terminal_state_ocr": "ダッシュボード | 経費承認 (管理職) | 支払処理 | 予算差異分析 | 発注管理 | aD 29c"
+  },
+  "5": {
+    "initial_state_ocr": "ダッシュボード | 経費承認 (管理職) | 支払処理 | に hake                                                           Q search | artly cloudy | 01-07-2026",
+    "terminal_state_ocr": "経費承認 (管理 | 支払処理 | 予算差異分析 | 発注管理 | aD 29c | Pariy cloudy"
+  },
+  "6": {
+    "initial_state_ocr": "マン @ 時衝会計システム | (の      127.0.0.1:5 | Me 財務会計システム | 予算差異分析 | 発注管理 | aD 29c",
+    "terminal_state_ocr": "Me 財務会計システム | ダッシュボード | 経費承認 (管理職)        6-07080456-001            関西物流サービス | 支払処理 | 関西物流サービス | 予算差異分析"
+  },
+  "11": {
+    "initial_state_ocr": "マ 人 HR人事給与システム | ぐと CG (© 12700.15 | AB HR人事給与システム | ダッシュボード | 経草精算・給与変更 24 | 勤怠・休暇申請",
+    "terminal_state_ocr": "ツン @ 受償注在庫管理システム | (の      127.0.0.1:5 | Se 受発注在庫管理システム | aD 29c | @ Partly cloudy | P12-07088456-001"
+  },
+  "12": {
+    "initial_state_ocr": "ツン @ 受償注在庫管理システム | 2 Gi        127.0.0.1:5 | Se 受発注在庫管理システム | ダッシュボード | 在庫管理 | 契約管理",
+    "terminal_state_ocr": "四 申請メモ | File Edit View | TT申請メモ | PC新規発行申請 | 申請者: 上野 大樹 | Ln 3,Col10 25characters"
+  }
+}

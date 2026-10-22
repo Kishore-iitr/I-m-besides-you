@@ -1,0 +1,444 @@
+{
+  "status": "completed",
+  "session_id": "ses_20260701-184201-LAPTOP-76QMG9DE",
+  "operator": "LAPTOP-76QMG9DE",
+  "session_dir": "G:\\.shortcut-targets-by-id\\1WSBZQxOODKFDzYBkIik5g90NWKS7Gwl0\\AI Engineer\\dataset_b\\ses_20260701-184201-LAPTOP-76QMG9DE",
+  "dominant_batch": "2026",
+  "total_events_loaded": 1895,
+  "clean_events_loaded": 1886,
+  "predicted_segments_count": 12,
+  "timings": {
+    "Layer 1: Raw Log Ingestion & Filtering": 1.1496410999970976,
+    "Layer 2: Dynamic Trace & Episode Boundary Extraction": 0.6785806999832857,
+    "Stage 0: Dual Keyframe OCR Visual Grounding": 55.95300999999745,
+    "Stage 1: Activity Segmentation (Puter LLM)": 144.5329677000118,
+    "Stage 2: Latent Task Discovery (Puter LLM)": 30.204667399986647,
+    "Stage 3: Root Thread Consolidation & Naming (Puter LLM)": 15.0,
+    "Stage 4: Hierarchical Task Modeling (Puter LLM)": 0.0014387000119313598,
+    "Stage 5: Deliverable Generation (segments.jsonl)": 0.013539900013711303,
+    "Total End-to-End Pipeline Runtime": 232.53386820000014
+  },
+  "segments": [
+    {
+      "session_id": "ses_20260701-184201-LAPTOP-76QMG9DE",
+      "operator": "LAPTOP-76QMG9DE",
+      "case_id": "ONBOARDING-2026-001",
+      "process_code": "ONBOARDING",
+      "start": "2026-07-01T18:42:16Z",
+      "end": "2026-07-01T18:46:33Z",
+      "duration_seconds": 257.0,
+      "label": "onboarding_transfer_reconciliation",
+      "objective": "Complete onboarding bank-transfer reconciliation and record any discrepancies.",
+      "additional_context": "In Edge, onboarding record P3-07084298-012 showed dates 2026-07-24 and 2026-07-09 and a request for reconciliation results and special notes. Microsoft Word was used to prepare the supporting entry.",
+      "automation_telemetry": {
+        "total_events": 498,
+        "keystrokes_count": 132,
+        "clicks_count": 73,
+        "clipboard_operations": 20,
+        "scrolls_count": 18,
+        "app_switches_count": 67,
+        "active_applications": [
+          "Microsoft Edge",
+          "Microsoft Word"
+        ],
+        "window_titles": [
+          "HR人事給与システム - Profile 1 - Microsoft​ Edge",
+          "Opening - Word",
+          "Restore pages",
+          "Resume Reading",
+          "Turn off extensions in developer mode"
+        ],
+        "web_routes": [
+          "onboarding"
+        ],
+        "cross_system_transfer": true,
+        "automation_suitability_score": 100.0
+      }
+    },
+    {
+      "session_id": "ses_20260701-184201-LAPTOP-76QMG9DE",
+      "operator": "LAPTOP-76QMG9DE",
+      "case_id": "SOCIAL-INSURANCE-2026-002",
+      "process_code": "SOCIAL",
+      "start": "2026-07-01T18:46:33Z",
+      "end": "2026-07-01T18:47:08Z",
+      "duration_seconds": 35.0,
+      "label": "social_insurance_benefit_processing",
+      "objective": "Review and process a social insurance welfare application.",
+      "additional_context": "The Edge page at the social-insurance workflow displayed 福利厚生申請 12. Windows Explorer was used alongside the portal, consistent with locating or attaching supporting documentation.",
+      "automation_telemetry": {
+        "total_events": 12,
+        "keystrokes_count": 0,
+        "clicks_count": 2,
+        "clipboard_operations": 0,
+        "scrolls_count": 1,
+        "app_switches_count": 2,
+        "active_applications": [
+          "Microsoft Edge",
+          "Windows Explorer"
+        ],
+        "window_titles": [
+          "File Explorer",
+          "HR人事給与システム - Profile 1 - Microsoft​ Edge",
+          "Home - File Explorer"
+        ],
+        "web_routes": [
+          "social-insurance"
+        ],
+        "cross_system_transfer": false,
+        "automation_suitability_score": 40.0
+      }
+    },
+    {
+      "session_id": "ses_20260701-184201-LAPTOP-76QMG9DE",
+      "operator": "LAPTOP-76QMG9DE",
+      "case_id": "ONBOARDING-2026-003",
+      "process_code": "ONBOARDING",
+      "start": "2026-07-01T18:47:08Z",
+      "end": "2026-07-01T18:48:22Z",
+      "duration_seconds": 74.0,
+      "label": "onboarding_transfer_reconciliation",
+      "objective": "Reconcile onboarding transfers and document matching results or exceptions.",
+      "additional_context": "The onboarding workflow showed transfers of ¥633,574 and ¥1,260,467 for P7-07084298-012 and prompted for reconciliation results and special remarks. Microsoft Word was used alongside the browser.",
+      "automation_telemetry": {
+        "total_events": 167,
+        "keystrokes_count": 46,
+        "clicks_count": 25,
+        "clipboard_operations": 7,
+        "scrolls_count": 8,
+        "app_switches_count": 18,
+        "active_applications": [
+          "Microsoft Edge",
+          "Microsoft Word",
+          "Windows Explorer"
+        ],
+        "window_titles": [
+          "HR人事給与システム - Profile 1 - Microsoft​ Edge",
+          "Home - File Explorer",
+          "Restore pages",
+          "Resume Reading",
+          "gyomu_itaku_kyuuyo_kitei  -  Compatibility Mode - Word"
+        ],
+        "web_routes": [
+          "onboarding"
+        ],
+        "cross_system_transfer": true,
+        "automation_suitability_score": 100.0
+      }
+    },
+    {
+      "session_id": "ses_20260701-184201-LAPTOP-76QMG9DE",
+      "operator": "LAPTOP-76QMG9DE",
+      "case_id": "LEAVE-APPLICATIONS-2026-004",
+      "process_code": "LEAVE",
+      "start": "2026-07-01T18:48:22Z",
+      "end": "2026-07-01T18:49:39Z",
+      "duration_seconds": 77.0,
+      "label": "approval_request_processing",
+      "objective": "Approve or reject employee expense requests with a documented rationale.",
+      "additional_context": "The browser displayed 研修費 and 消耗品費 together with a field for approval comments or rejection reasons, while also showing the manager expense-approval dashboard. Microsoft Word supported preparation of the review comments.",
+      "automation_telemetry": {
+        "total_events": 144,
+        "keystrokes_count": 32,
+        "clicks_count": 24,
+        "clipboard_operations": 6,
+        "scrolls_count": 9,
+        "app_switches_count": 16,
+        "active_applications": [
+          "Microsoft Edge",
+          "Microsoft Word"
+        ],
+        "window_titles": [
+          "Resume Reading",
+          "Word",
+          "gyomu_itaku_keihi_kitei  -  Compatibility Mode - Word",
+          "settai_keihi_kitei  -  Compatibility Mode - Word",
+          "財務会計システム - Profile 1 - Microsoft​ Edge"
+        ],
+        "web_routes": [
+          "leave-applications"
+        ],
+        "cross_system_transfer": true,
+        "automation_suitability_score": 100.0
+      }
+    },
+    {
+      "session_id": "ses_20260701-184201-LAPTOP-76QMG9DE",
+      "operator": "LAPTOP-76QMG9DE",
+      "case_id": "LEAVE-APPLICATIONS-2026-005",
+      "process_code": "LEAVE",
+      "start": "2026-07-01T18:49:39Z",
+      "end": "2026-07-01T18:50:47Z",
+      "duration_seconds": 68.0,
+      "label": "approval_request_processing",
+      "objective": "Approve or reject a maintenance service contract renewal with documented reasons.",
+      "additional_context": "The leave-applications view showed 保守委託契約 (更新) and a request for an approval comment or rejection reason for P12-07084298-012. Word was used alongside Edge, with the financial accounting dashboard also visible.",
+      "automation_telemetry": {
+        "total_events": 141,
+        "keystrokes_count": 32,
+        "clicks_count": 24,
+        "clipboard_operations": 6,
+        "scrolls_count": 7,
+        "app_switches_count": 18,
+        "active_applications": [
+          "Microsoft Edge",
+          "Microsoft Word"
+        ],
+        "window_titles": [
+          "gyomu_itaku_keihi_kitei  -  Compatibility Mode - Word",
+          "keiyaku_kaijo_tetsuzuki  -  Compatibility Mode - Word",
+          "shinkui_keiyaku_tetsuzuki  -  Compatibility Mode - Word",
+          "受発注在庫管理システム - Profile 1 - Microsoft​ Edge",
+          "財務会計システム - Profile 1 - Microsoft​ Edge"
+        ],
+        "web_routes": [
+          "leave-applications"
+        ],
+        "cross_system_transfer": true,
+        "automation_suitability_score": 100.0
+      }
+    },
+    {
+      "session_id": "ses_20260701-184201-LAPTOP-76QMG9DE",
+      "operator": "LAPTOP-76QMG9DE",
+      "case_id": "ONBOARDING-2026-006",
+      "process_code": "ONBOARDING",
+      "start": "2026-07-01T18:50:47Z",
+      "end": "2026-07-01T18:51:58Z",
+      "duration_seconds": 71.0,
+      "label": "onboarding_transfer_reconciliation",
+      "objective": "Reconcile onboarding transfers and record the matching outcome.",
+      "additional_context": "The onboarding workflow presented transfers of ¥774,339 and ¥602,923 and explicitly requested reconciliation results and special notes for P7-07084298-012. Microsoft Word was used to prepare the documentation.",
+      "automation_telemetry": {
+        "total_events": 165,
+        "keystrokes_count": 44,
+        "clicks_count": 24,
+        "clipboard_operations": 7,
+        "scrolls_count": 8,
+        "app_switches_count": 19,
+        "active_applications": [
+          "Microsoft Edge",
+          "Microsoft Word"
+        ],
+        "window_titles": [
+          "gyomu_itaku_kyuuyo_kitei  -  Compatibility Mode - Word",
+          "shinkui_keiyaku_tetsuzuki  -  Compatibility Mode - Word",
+          "受発注在庫管理システム - Profile 1 - Microsoft​ Edge",
+          "財務会計システム - Profile 1 - Microsoft​ Edge"
+        ],
+        "web_routes": [
+          "onboarding"
+        ],
+        "cross_system_transfer": true,
+        "automation_suitability_score": 100.0
+      }
+    },
+    {
+      "session_id": "ses_20260701-184201-LAPTOP-76QMG9DE",
+      "operator": "LAPTOP-76QMG9DE",
+      "case_id": "RESIDENT-TAX-2026-007",
+      "process_code": "RESIDENT",
+      "start": "2026-07-01T18:51:58Z",
+      "end": "2026-07-01T18:52:47Z",
+      "duration_seconds": 49.0,
+      "label": "resident_tax_case_processing",
+      "objective": "Process resident tax cases for the named companies and record the handling results.",
+      "additional_context": "In Edge, the resident-tax workflow displayed 株式会社山田製作所 and 福岡システム設計 for P10-07084298-012 and requested processing details. Microsoft Word was used to prepare the supporting notes.",
+      "automation_telemetry": {
+        "total_events": 87,
+        "keystrokes_count": 8,
+        "clicks_count": 24,
+        "clipboard_operations": 4,
+        "scrolls_count": 9,
+        "app_switches_count": 7,
+        "active_applications": [
+          "Microsoft Edge",
+          "Microsoft Word"
+        ],
+        "window_titles": [
+          "shinkui_keiyaku_tetsuzuki  -  Compatibility Mode - Word",
+          "shinkuitorihikisaki_touroku_tetsuzuki  -  Compatibility Mode - Word",
+          "財務会計システム - Profile 1 - Microsoft​ Edge"
+        ],
+        "web_routes": [
+          "resident-tax"
+        ],
+        "cross_system_transfer": true,
+        "automation_suitability_score": 90.0
+      }
+    },
+    {
+      "session_id": "ses_20260701-184201-LAPTOP-76QMG9DE",
+      "operator": "LAPTOP-76QMG9DE",
+      "case_id": "BATCH-W5",
+      "process_code": "BATCH",
+      "start": "2026-07-01T18:52:47Z",
+      "end": "2026-07-01T18:53:27Z",
+      "duration_seconds": 40.0,
+      "label": "batch_financial_record_processing",
+      "objective": "Review payroll items and document processing or confirmation comments.",
+      "additional_context": "The payroll-items page showed モーターユニットF and 制御基板ユニットA for P11-07084298-012 and prompted for processing and confirmation comments. Notepad was used alongside Edge for working notes, with the financial accounting dashboard visible.",
+      "automation_telemetry": {
+        "total_events": 96,
+        "keystrokes_count": 20,
+        "clicks_count": 22,
+        "clipboard_operations": 7,
+        "scrolls_count": 6,
+        "app_switches_count": 5,
+        "active_applications": [
+          "Microsoft Edge",
+          "Notepad"
+        ],
+        "window_titles": [
+          "*在庫調整メモ - Notepad",
+          "受発注在庫管理システム - Profile 1 - Microsoft​ Edge",
+          "財務会計システム - Profile 1 - Microsoft​ Edge"
+        ],
+        "web_routes": [
+          "payroll-items"
+        ],
+        "cross_system_transfer": true,
+        "automation_suitability_score": 100.0
+      }
+    },
+    {
+      "session_id": "ses_20260701-184201-LAPTOP-76QMG9DE",
+      "operator": "LAPTOP-76QMG9DE",
+      "case_id": "BATCH-W2",
+      "process_code": "BATCH",
+      "start": "2026-07-01T18:53:27Z",
+      "end": "2026-07-01T18:54:47Z",
+      "duration_seconds": 80.0,
+      "label": "batch_financial_record_processing",
+      "objective": "Reconcile an onboarding transfer and record matching results and special notes.",
+      "additional_context": "The onboarding workflow showed a ¥2,790,764 transfer for P11-07084298-012 and a field requesting reconciliation results and special remarks. Microsoft Word was used alongside the portal.",
+      "automation_telemetry": {
+        "total_events": 168,
+        "keystrokes_count": 42,
+        "clicks_count": 26,
+        "clipboard_operations": 7,
+        "scrolls_count": 8,
+        "app_switches_count": 17,
+        "active_applications": [
+          "Microsoft Edge",
+          "Microsoft Word"
+        ],
+        "window_titles": [
+          "gyomu_itaku_kyuuyo_kitei  -  Compatibility Mode - Word",
+          "shinkuitorihikisaki_touroku_tetsuzuki  -  Compatibility Mode - Word",
+          "受発注在庫管理システム - Profile 1 - Microsoft​ Edge",
+          "財務会計システム - Profile 1 - Microsoft​ Edge"
+        ],
+        "web_routes": [
+          "onboarding"
+        ],
+        "cross_system_transfer": true,
+        "automation_suitability_score": 100.0
+      }
+    },
+    {
+      "session_id": "ses_20260701-184201-LAPTOP-76QMG9DE",
+      "operator": "LAPTOP-76QMG9DE",
+      "case_id": "LEAVE-APPLICATIONS-2026-010",
+      "process_code": "LEAVE",
+      "start": "2026-07-01T18:54:47Z",
+      "end": "2026-07-01T18:56:15Z",
+      "duration_seconds": 88.0,
+      "label": "approval_request_processing",
+      "objective": "Approve or reject contract termination and amendment requests with documented reasons.",
+      "additional_context": "The browser displayed 業務委託契約 (解除) and 売買契約 (変更) for P12-07084298-012 and requested an approval comment or rejection reason. Microsoft Word was used to prepare the decision rationale.",
+      "automation_telemetry": {
+        "total_events": 177,
+        "keystrokes_count": 46,
+        "clicks_count": 24,
+        "clipboard_operations": 7,
+        "scrolls_count": 9,
+        "app_switches_count": 25,
+        "active_applications": [
+          "Microsoft Edge",
+          "Microsoft Word"
+        ],
+        "window_titles": [
+          "Resume Reading",
+          "keiyaku_kaijo_tetsuzuki  -  Compatibility Mode - Word",
+          "shinkui_keiyaku_tetsuzuki  -  Compatibility Mode - Word",
+          "shinkuitorihikisaki_touroku_tetsuzuki  -  Compatibility Mode - Word",
+          "受発注在庫管理システム - Profile 1 - Microsoft​ Edge"
+        ],
+        "web_routes": [
+          "leave-applications"
+        ],
+        "cross_system_transfer": true,
+        "automation_suitability_score": 100.0
+      }
+    },
+    {
+      "session_id": "ses_20260701-184201-LAPTOP-76QMG9DE",
+      "operator": "LAPTOP-76QMG9DE",
+      "case_id": "RESIDENT-TAX-2026-011",
+      "process_code": "RESIDENT",
+      "start": "2026-07-01T18:56:15Z",
+      "end": "2026-07-01T18:57:01Z",
+      "duration_seconds": 46.0,
+      "label": "resident_tax_case_processing",
+      "objective": "Process resident tax cases and record results for the specified companies.",
+      "additional_context": "The resident-tax workflow displayed 福岡システム設計 and 北陸部品工業株式会社 for P10-07084298-012 and requested processing details. Microsoft Word was used alongside Edge for documentation.",
+      "automation_telemetry": {
+        "total_events": 80,
+        "keystrokes_count": 8,
+        "clicks_count": 24,
+        "clipboard_operations": 4,
+        "scrolls_count": 7,
+        "app_switches_count": 6,
+        "active_applications": [
+          "Microsoft Edge",
+          "Microsoft Word"
+        ],
+        "window_titles": [
+          "shinkui_keiyaku_tetsuzuki  -  Compatibility Mode - Word",
+          "shinkuitorihikisaki_touroku_tetsuzuki  -  Compatibility Mode - Word",
+          "財務会計システム - Profile 1 - Microsoft​ Edge"
+        ],
+        "web_routes": [
+          "resident-tax"
+        ],
+        "cross_system_transfer": true,
+        "automation_suitability_score": 90.0
+      }
+    },
+    {
+      "session_id": "ses_20260701-184201-LAPTOP-76QMG9DE",
+      "operator": "LAPTOP-76QMG9DE",
+      "case_id": "LEAVE-APPLICATIONS-2026-012",
+      "process_code": "LEAVE",
+      "start": "2026-07-01T18:57:01Z",
+      "end": "2026-07-01T18:57:36Z",
+      "duration_seconds": 35.0,
+      "label": "approval_request_processing",
+      "objective": "Process approval_request_processing",
+      "additional_context": "",
+      "automation_telemetry": {
+        "total_events": 75,
+        "keystrokes_count": 16,
+        "clicks_count": 10,
+        "clipboard_operations": 3,
+        "scrolls_count": 4,
+        "app_switches_count": 11,
+        "active_applications": [
+          "Microsoft Edge",
+          "Microsoft Word"
+        ],
+        "window_titles": [
+          "settai_keihi_kitei  -  Compatibility Mode - Word",
+          "shinkuitorihikisaki_touroku_tetsuzuki  -  Compatibility Mode - Word",
+          "財務会計システム - Profile 1 - Microsoft​ Edge"
+        ],
+        "web_routes": [
+          "leave-applications"
+        ],
+        "cross_system_transfer": true,
+        "automation_suitability_score": 90.0
+      }
+    }
+  ]
+}

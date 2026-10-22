@@ -1,0 +1,335 @@
+{
+  "status": "completed",
+  "session_id": "ses_20260701-181913-SIDDHIGUPTAB00B",
+  "operator": "SIDDHIGUPTAB00B",
+  "session_dir": "G:\\.shortcut-targets-by-id\\1WSBZQxOODKFDzYBkIik5g90NWKS7Gwl0\\AI Engineer\\dataset_b\\ses_20260701-181913-SIDDHIGUPTAB00B",
+  "dominant_batch": "2026",
+  "total_events_loaded": 1165,
+  "clean_events_loaded": 1154,
+  "predicted_segments_count": 9,
+  "timings": {
+    "Layer 1: Raw Log Ingestion & Filtering": 0.7661217999993823,
+    "Layer 2: Dynamic Trace & Episode Boundary Extraction": 0.3585960000054911,
+    "Stage 0: Dual Keyframe OCR Visual Grounding": 61.99675420002313,
+    "Stage 1: Activity Segmentation (Puter LLM)": 34.19716169999447,
+    "Stage 2: Latent Task Discovery (Puter LLM)": 21.883545499993488,
+    "Stage 3: Root Thread Consolidation & Naming (Puter LLM)": 15.0,
+    "Stage 4: Hierarchical Task Modeling (Puter LLM)": 0.0023425999970640987,
+    "Stage 5: Deliverable Generation (segments.jsonl)": 0.014011299994308501,
+    "Total End-to-End Pipeline Runtime": 119.21855910000158
+  },
+  "segments": [
+    {
+      "session_id": "ses_20260701-181913-SIDDHIGUPTAB00B",
+      "operator": "SIDDHIGUPTAB00B",
+      "case_id": "ONBOARDING-2026-001",
+      "process_code": "ONBOARDING",
+      "start": "2026-07-01T18:19:32Z",
+      "end": "2026-07-01T18:20:22Z",
+      "duration_seconds": 50.0,
+      "label": "employee_onboarding_reconciliation",
+      "objective": "Complete employee onboarding reconciliation and record any special notes",
+      "additional_context": "The Edge onboarding page shows the date 2026-07-26 and a request to enter the reconciliation result and special notes, with identifiers including P3-07101496-012. Word and Excel were used to review supporting information.",
+      "automation_telemetry": {
+        "total_events": 106,
+        "keystrokes_count": 40,
+        "clicks_count": 8,
+        "clipboard_operations": 2,
+        "scrolls_count": 0,
+        "app_switches_count": 13,
+        "active_applications": [
+          "Microsoft Edge",
+          "Microsoft Excel",
+          "Microsoft Word"
+        ],
+        "window_titles": [
+          "HR人事給与システム - Profile 1 - Microsoft​ Edge",
+          "Opening - Excel",
+          "Resume Reading",
+          "Turn off extensions in developer mode",
+          "expense_calc - Excel"
+        ],
+        "web_routes": [
+          "onboarding"
+        ],
+        "cross_system_transfer": true,
+        "automation_suitability_score": 100.0
+      }
+    },
+    {
+      "session_id": "ses_20260701-181913-SIDDHIGUPTAB00B",
+      "operator": "SIDDHIGUPTAB00B",
+      "case_id": "INV-2026-7067",
+      "process_code": "INV",
+      "start": "2026-07-01T18:20:22Z",
+      "end": "2026-07-01T18:20:34Z",
+      "duration_seconds": 12.0,
+      "label": "invoice_approval",
+      "objective": "Approve invoice INV-2026-7067 and record processing comments",
+      "additional_context": "The Edge page is titled 請求書承認 INV-2026-7067 and displays a field for processing details or confirmation comments. A Word document was used to consult invoice-related information.",
+      "automation_telemetry": {
+        "total_events": 27,
+        "keystrokes_count": 6,
+        "clicks_count": 4,
+        "clipboard_operations": 1,
+        "scrolls_count": 0,
+        "app_switches_count": 5,
+        "active_applications": [
+          "Microsoft Edge",
+          "Microsoft Excel",
+          "Microsoft Word"
+        ],
+        "window_titles": [
+          "HR人事給与システム - Profile 1 - Microsoft​ Edge",
+          "expense_calc - Excel",
+          "getsujitsu_teigaku_torihikisaki_ichiran  -  Compatibility Mode - Word",
+          "gyomu_itaku_keihi_kitei  -  Compatibility Mode - Word",
+          "財務会計システム - Profile 1 - Microsoft​ Edge"
+        ],
+        "web_routes": [
+          "payroll-items"
+        ],
+        "cross_system_transfer": true,
+        "automation_suitability_score": 75.0
+      }
+    },
+    {
+      "session_id": "ses_20260701-181913-SIDDHIGUPTAB00B",
+      "operator": "SIDDHIGUPTAB00B",
+      "case_id": "INV-2026-7068",
+      "process_code": "INV",
+      "start": "2026-07-01T18:20:34Z",
+      "end": "2026-07-01T18:21:01Z",
+      "duration_seconds": 27.0,
+      "label": "invoice_approval",
+      "objective": "Approve invoice INV-2026-7068 and record processing comments",
+      "additional_context": "The invoice approval screen for INV-2026-7068 includes a processing-content and confirmation-comment field and the reference P6-07101496-012. Supporting information was reviewed in Word.",
+      "automation_telemetry": {
+        "total_events": 40,
+        "keystrokes_count": 4,
+        "clicks_count": 12,
+        "clipboard_operations": 2,
+        "scrolls_count": 3,
+        "app_switches_count": 4,
+        "active_applications": [
+          "Microsoft Edge",
+          "Microsoft Word"
+        ],
+        "window_titles": [
+          "getsujitsu_teigaku_torihikisaki_ichiran  -  Compatibility Mode - Word",
+          "財務会計システム - Profile 1 - Microsoft​ Edge"
+        ],
+        "web_routes": [],
+        "cross_system_transfer": true,
+        "automation_suitability_score": 90.0
+      }
+    },
+    {
+      "session_id": "ses_20260701-181913-SIDDHIGUPTAB00B",
+      "operator": "SIDDHIGUPTAB00B",
+      "case_id": "INV-2026-7070",
+      "process_code": "INV",
+      "start": "2026-07-01T18:21:01Z",
+      "end": "2026-07-01T18:21:52Z",
+      "duration_seconds": 51.0,
+      "label": "invoice_approval",
+      "objective": "Approve invoice INV-2026-7070 and record processing comments",
+      "additional_context": "The user navigated from the leave-applications area to the 請求書承認 INV-2026-7070 screen, where a processing-content and confirmation-comment field was displayed. The reference P6-07101496-012 and a Word document supported the review.",
+      "automation_telemetry": {
+        "total_events": 69,
+        "keystrokes_count": 14,
+        "clicks_count": 11,
+        "clipboard_operations": 4,
+        "scrolls_count": 4,
+        "app_switches_count": 8,
+        "active_applications": [
+          "Microsoft Edge",
+          "Microsoft Word"
+        ],
+        "window_titles": [
+          "keiyaku_kaijo_tetsuzuki  -  Compatibility Mode - Word",
+          "shinkui_keiyaku_tetsuzuki  -  Compatibility Mode - Word",
+          "受発注在庫管理システム - Profile 1 - Microsoft​ Edge",
+          "財務会計システム - Profile 1 - Microsoft​ Edge"
+        ],
+        "web_routes": [
+          "leave-applications"
+        ],
+        "cross_system_transfer": true,
+        "automation_suitability_score": 90.0
+      }
+    },
+    {
+      "session_id": "ses_20260701-181913-SIDDHIGUPTAB00B",
+      "operator": "SIDDHIGUPTAB00B",
+      "case_id": "LEAVE-APPLICATIONS-2026-005",
+      "process_code": "LEAVE",
+      "start": "2026-07-01T18:21:52Z",
+      "end": "2026-07-01T18:26:55Z",
+      "duration_seconds": 303.0,
+      "label": "leave_application_review",
+      "objective": "Decide the employee leave application and document the approval or return reason",
+      "additional_context": "The Edge leave-applications page shows 半日有給申請 and a field for an approval comment or rejection reason, with identifiers P2-07101496-012 and P6-07101496-012. Supporting material was accessed through Windows Explorer, Word, and Excel.",
+      "automation_telemetry": {
+        "total_events": 601,
+        "keystrokes_count": 138,
+        "clicks_count": 128,
+        "clipboard_operations": 25,
+        "scrolls_count": 46,
+        "app_switches_count": 53,
+        "active_applications": [
+          "Microsoft Edge",
+          "Microsoft Excel",
+          "Microsoft Word",
+          "Windows Explorer"
+        ],
+        "window_titles": [
+          "File Explorer",
+          "HR人事給与システム - Profile 1 - Microsoft​ Edge",
+          "Home - File Explorer",
+          "Opening - Excel",
+          "Resume Reading"
+        ],
+        "web_routes": [
+          "leave-applications"
+        ],
+        "cross_system_transfer": true,
+        "automation_suitability_score": 100.0
+      }
+    },
+    {
+      "session_id": "ses_20260701-181913-SIDDHIGUPTAB00B",
+      "operator": "SIDDHIGUPTAB00B",
+      "case_id": "INV-2026-7071",
+      "process_code": "INV",
+      "start": "2026-07-01T18:26:55Z",
+      "end": "2026-07-01T18:27:20Z",
+      "duration_seconds": 25.0,
+      "label": "invoice_approval",
+      "objective": "Process invoice_approval",
+      "additional_context": "",
+      "automation_telemetry": {
+        "total_events": 47,
+        "keystrokes_count": 8,
+        "clicks_count": 10,
+        "clipboard_operations": 2,
+        "scrolls_count": 3,
+        "app_switches_count": 7,
+        "active_applications": [
+          "Microsoft Edge",
+          "Microsoft Word"
+        ],
+        "window_titles": [
+          "getsujitsu_teigaku_torihikisaki_ichiran  -  Compatibility Mode - Word",
+          "shinkuitorihikisaki_touroku_tetsuzuki  -  Compatibility Mode - Word",
+          "受発注在庫管理システム - Profile 1 - Microsoft​ Edge",
+          "財務会計システム - Profile 1 - Microsoft​ Edge"
+        ],
+        "web_routes": [],
+        "cross_system_transfer": true,
+        "automation_suitability_score": 90.0
+      }
+    },
+    {
+      "session_id": "ses_20260701-181913-SIDDHIGUPTAB00B",
+      "operator": "SIDDHIGUPTAB00B",
+      "case_id": "INV-2026-7073",
+      "process_code": "INV",
+      "start": "2026-07-01T18:27:20Z",
+      "end": "2026-07-01T18:27:47Z",
+      "duration_seconds": 27.0,
+      "label": "invoice_approval",
+      "objective": "Process invoice_approval",
+      "additional_context": "",
+      "automation_telemetry": {
+        "total_events": 41,
+        "keystrokes_count": 4,
+        "clicks_count": 14,
+        "clipboard_operations": 2,
+        "scrolls_count": 4,
+        "app_switches_count": 1,
+        "active_applications": [
+          "Microsoft Edge",
+          "Windows Explorer"
+        ],
+        "window_titles": [
+          "File Explorer",
+          "Home - File Explorer",
+          "財務会計システム - Profile 1 - Microsoft​ Edge"
+        ],
+        "web_routes": [],
+        "cross_system_transfer": false,
+        "automation_suitability_score": 55.0
+      }
+    },
+    {
+      "session_id": "ses_20260701-181913-SIDDHIGUPTAB00B",
+      "operator": "SIDDHIGUPTAB00B",
+      "case_id": "BATCH-W5",
+      "process_code": "BATCH",
+      "start": "2026-07-01T18:27:47Z",
+      "end": "2026-07-01T18:28:22Z",
+      "duration_seconds": 35.0,
+      "label": "employee_record_review",
+      "objective": "Review the payroll item record for 光学レンズE",
+      "additional_context": "The Edge payroll-items view shows the name 光学レンズE in the 氏名 field, indicating a payroll-record lookup or review. The financial accounting system was also visible in the browser.",
+      "automation_telemetry": {
+        "total_events": 65,
+        "keystrokes_count": 14,
+        "clicks_count": 15,
+        "clipboard_operations": 5,
+        "scrolls_count": 4,
+        "app_switches_count": 3,
+        "active_applications": [
+          "Microsoft Edge",
+          "Windows Explorer"
+        ],
+        "window_titles": [
+          "Home - File Explorer",
+          "受発注在庫管理システム - Profile 1 - Microsoft​ Edge",
+          "財務会計システム - Profile 1 - Microsoft​ Edge"
+        ],
+        "web_routes": [
+          "payroll-items"
+        ],
+        "cross_system_transfer": false,
+        "automation_suitability_score": 65.0
+      }
+    },
+    {
+      "session_id": "ses_20260701-181913-SIDDHIGUPTAB00B",
+      "operator": "SIDDHIGUPTAB00B",
+      "case_id": "BATCH-W2",
+      "process_code": "BATCH",
+      "start": "2026-07-01T18:28:22Z",
+      "end": "2026-07-01T18:29:01Z",
+      "duration_seconds": 39.0,
+      "label": "employee_record_review",
+      "objective": "Complete onboarding reconciliation and record special notes for the specified records",
+      "additional_context": "The onboarding page shows the date 2026-07-11, identifiers P11-07101496-010 and P3-07101496-012, and a prompt to enter reconciliation results and special notes. Word was used to consult supporting details.",
+      "automation_telemetry": {
+        "total_events": 84,
+        "keystrokes_count": 16,
+        "clicks_count": 17,
+        "clipboard_operations": 3,
+        "scrolls_count": 6,
+        "app_switches_count": 8,
+        "active_applications": [
+          "Microsoft Edge",
+          "Microsoft Word"
+        ],
+        "window_titles": [
+          "HR人事給与システム - Profile 1 - Microsoft​ Edge",
+          "getsujitsu_teigaku_torihikisaki_ichiran  -  Compatibility Mode - Word",
+          "nyusha_checklist_shinsotsu_batch  -  Compatibility Mode - Word",
+          "受発注在庫管理システム - Profile 1 - Microsoft​ Edge"
+        ],
+        "web_routes": [
+          "onboarding"
+        ],
+        "cross_system_transfer": true,
+        "automation_suitability_score": 90.0
+      }
+    }
+  ]
+}

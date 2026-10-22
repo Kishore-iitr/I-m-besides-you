@@ -1,0 +1,101 @@
+{
+  "session_id": "ses_20260630-145433-JAYESH",
+  "session_dir": "G:\\.shortcut-targets-by-id\\1WSBZQxOODKFDzYBkIik5g90NWKS7Gwl0\\AI Engineer\\dataset_a\\ses_20260630-145433-JAYESH",
+  "dominant_batch": "202333",
+  "total_events_loaded": 3379,
+  "clean_events_loaded": 3336,
+  "predicted_segments_count": 37,
+  "ground_truth_executions_count": 37,
+  "timings": {
+    "Layer 1: Raw Log Ingestion & Filtering": 1.4142087000072934,
+    "Layer 2: Dynamic Trace & Episode Boundary Extraction": 0.12831099999311846,
+    "Stage 0: Dual Keyframe OCR Visual Grounding": 14.79601150000235,
+    "Stage 1: Activity Segmentation (Puter LLM)": 38.74548459998914,
+    "Stage 2: Latent Task Discovery (Puter LLM)": 99.77836469998874,
+    "Stage 3: Root Thread Consolidation & Naming (Puter LLM)": 253.50101859999995,
+    "Stage 4: Hierarchical Task Modeling (Puter LLM)": 23.46847429999616,
+    "Stage 5: Deliverable Generation (segments.jsonl)": 0.0019114000024273992,
+    "Stage 6: Post-Hoc Ground Truth Evaluation": 0.04489380000450183,
+    "Total End-to-End Pipeline Runtime": 431.8981733999972
+  },
+  "boundary_metrics": {
+    "tol_2s": {
+      "tolerance_s": 2,
+      "tp": 28,
+      "total_gt": 37,
+      "precision": 75.68,
+      "recall": 75.68,
+      "f1": 75.68
+    },
+    "tol_5s": {
+      "tolerance_s": 5,
+      "tp": 37,
+      "total_gt": 37,
+      "precision": 100.0,
+      "recall": 100.0,
+      "f1": 100.0
+    },
+    "tol_10s": {
+      "tolerance_s": 10,
+      "tp": 37,
+      "total_gt": 37,
+      "precision": 100.0,
+      "recall": 100.0,
+      "f1": 100.0
+    },
+    "tol_30s": {
+      "tolerance_s": 30,
+      "tp": 37,
+      "total_gt": 37,
+      "precision": 100.0,
+      "recall": 100.0,
+      "f1": 100.0
+    }
+  },
+  "process_alignment": {
+    "bank_reconciliation": {
+      "gt_family": "H (銀行勘定照合)",
+      "matches": 4
+    },
+    "budget_verification": {
+      "gt_family": "I (予算差異分析)",
+      "matches": 3
+    },
+    "expense_processing": {
+      "gt_family": "G (経費精算承認)",
+      "matches": 4
+    },
+    "invoice_processing": {
+      "gt_family": "F (請求書承認)",
+      "matches": 4
+    },
+    "leave_application_processing": {
+      "gt_family": "C (育児・産休申請確認)",
+      "matches": 3
+    },
+    "order_management": {
+      "gt_family": "K (受注処理)",
+      "matches": 3
+    },
+    "payment_management": {
+      "gt_family": "J (支払処理)",
+      "matches": 3
+    },
+    "resident_tax_processing": {
+      "gt_family": "A (住民税通知確認)",
+      "matches": 4
+    },
+    "returns_processing": {
+      "gt_family": "O (返品処理)",
+      "matches": 3
+    },
+    "shipment_processing": {
+      "gt_family": "N (出荷追跡)",
+      "matches": 3
+    },
+    "supplier_management": {
+      "gt_family": "M (仕入先連絡)",
+      "matches": 3
+    }
+  }
+}

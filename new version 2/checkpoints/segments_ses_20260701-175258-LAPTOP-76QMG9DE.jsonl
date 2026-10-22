@@ -1,0 +1,13 @@
+{"session_id": "ses_20260701-175258-LAPTOP-76QMG9DE", "start": "2026-07-01T17:53:04Z", "end": "2026-07-01T17:54:20Z", "label": "leave_application_processing"}
+{"session_id": "ses_20260701-175258-LAPTOP-76QMG9DE", "start": "2026-07-01T17:54:20Z", "end": "2026-07-01T17:56:04Z", "label": "payroll_item_processing"}
+{"session_id": "ses_20260701-175258-LAPTOP-76QMG9DE", "start": "2026-07-01T17:56:04Z", "end": "2026-07-01T17:57:24Z", "label": "employee_onboarding"}
+{"session_id": "ses_20260701-175258-LAPTOP-76QMG9DE", "start": "2026-07-01T17:57:24Z", "end": "2026-07-01T17:59:46Z", "label": "payroll_item_processing"}
+{"session_id": "ses_20260701-175258-LAPTOP-76QMG9DE", "start": "2026-07-01T17:59:46Z", "end": "2026-07-01T18:00:44Z", "label": "leave_application_processing"}
+{"session_id": "ses_20260701-175258-LAPTOP-76QMG9DE", "start": "2026-07-01T18:00:44Z", "end": "2026-07-01T18:01:50Z", "label": "employee_onboarding"}
+{"session_id": "ses_20260701-175258-LAPTOP-76QMG9DE", "start": "2026-07-01T18:01:50Z", "end": "2026-07-01T18:02:05Z", "label": "invoice_processing"}
+{"session_id": "ses_20260701-175258-LAPTOP-76QMG9DE", "start": "2026-07-01T18:02:05Z", "end": "2026-07-01T18:02:26Z", "label": "invoice_processing"}
+{"session_id": "ses_20260701-175258-LAPTOP-76QMG9DE", "start": "2026-07-01T18:02:26Z", "end": "2026-07-01T18:02:49Z", "label": "invoice_processing"}
+{"session_id": "ses_20260701-175258-LAPTOP-76QMG9DE", "start": "2026-07-01T18:02:49Z", "end": "2026-07-01T18:03:10Z", "label": "invoice_processing"}
+{"session_id": "ses_20260701-175258-LAPTOP-76QMG9DE", "start": "2026-07-01T18:03:10Z", "end": "2026-07-01T18:03:29Z", "label": "invoice_processing"}
+{"session_id": "ses_20260701-175258-LAPTOP-76QMG9DE", "start": "2026-07-01T18:03:29Z", "end": "2026-07-01T18:04:05Z", "label": "invoice_processing"}
+{"session_id": "ses_20260701-175258-LAPTOP-76QMG9DE", "start": "2026-07-01T18:04:05Z", "end": "2026-07-01T18:04:42Z", "label": "payroll_item_processing"}

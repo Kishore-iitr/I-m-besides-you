@@ -1,0 +1,6 @@
+{
+  "INV": "invoice_processing",
+  "LEAVE": "leave_application_approval",
+  "SOCIAL": "social_insurance_processing",
+  "ONBOARDING": "employee_onboarding"
+}

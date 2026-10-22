@@ -1,0 +1,32 @@
+{
+  "PAYROLL": {
+    "process_prefix": "PAYROLL",
+    "canonical_task_name": "travel_expense_reimbursement_processing",
+    "department": "Finance",
+    "core_objective": "Process and document employee travel expense reimbursement payroll items."
+  },
+  "SOCIAL": {
+    "process_prefix": "SOCIAL",
+    "canonical_task_name": "social_insurance_case_processing",
+    "department": "Human Resources",
+    "core_objective": "Review social insurance cases and document handling statuses, including maternity leave and housing allowance changes."
+  },
+  "LEAVE": {
+    "process_prefix": "LEAVE",
+    "canonical_task_name": "agreement_approval_processing",
+    "department": "Legal",
+    "core_objective": "Review new confidentiality and transaction agreements and record approval or return decisions."
+  },
+  "PO": {
+    "process_prefix": "PO",
+    "canonical_task_name": "employee_lifecycle_record_processing",
+    "department": "Human Resources",
+    "core_objective": "Review employee resident tax and onboarding records and document processing results, matches, and exceptions."
+  },
+  "ONBOARDING": {
+    "process_prefix": "ONBOARDING",
+    "canonical_task_name": "employee_onboarding_verification",
+    "department": "Human Resources",
+    "core_objective": "Verify onboarding materials and document matching results and special notes."
+  }
+}

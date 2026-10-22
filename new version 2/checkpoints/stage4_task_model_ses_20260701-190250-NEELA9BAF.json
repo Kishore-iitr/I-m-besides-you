@@ -1,0 +1,7 @@
+{
+  "INV": "invoice_processing",
+  "ONBOARDING": "employee_onboarding",
+  "LEAVE": "leave_application_review",
+  "PAYROLL": "payroll_item_processing",
+  "BATCH": "inventory_item_batch_processing"
+}

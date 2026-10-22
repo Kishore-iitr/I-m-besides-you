@@ -1,0 +1,17 @@
+{
+  "0": {
+    "batch_idx": 1,
+    "objective": "Review and approve invoice voucher INV-2026-7968",
+    "additional_context": "The user opened the invoice approval screen in Edge and used Excel to examine voucher P6-07040532-012. A processing or confirmation comment was entered in the finance system."
+  },
+  "1": {
+    "batch_idx": 2,
+    "objective": "Review and approve invoice vouchers INV-2026-7969 and INV-2026-7970",
+    "additional_context": "The user worked across Edge, Excel, and Word to review invoice details and supporting documentation for INV-2026-7969, with the approval screen subsequently showing INV-2026-7970. Processing or confirmation comments were recorded against voucher P6-07040532-012."
+  },
+  "2": {
+    "batch_idx": 3,
+    "objective": "Review and approve entertainment-expense invoice voucher INV-2026-7971",
+    "additional_context": "The user reviewed the entertainment-expense documentation in Word and entered a processing or confirmation comment through the Edge-based finance system. The approval screen referenced voucher P6-07040532-012."
+  }
+}

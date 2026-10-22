@@ -1,0 +1,8 @@
+{
+  "PO": "payroll_operations_processing",
+  "BATCH": "workforce_data_reconciliation",
+  "SOCIAL": "social_insurance_case_processing",
+  "RESIDENT": "resident_tax_case_processing",
+  "PAYROLL": "payroll_item_change_processing",
+  "ONBOARDING": "onboarding_record_reconciliation"
+}

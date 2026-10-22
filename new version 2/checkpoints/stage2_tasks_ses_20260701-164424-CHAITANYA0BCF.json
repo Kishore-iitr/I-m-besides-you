@@ -1,0 +1,32 @@
+{
+  "INV": {
+    "process_prefix": "INV",
+    "canonical_task_name": "invoice_processing",
+    "department": "Finance",
+    "core_objective": "Validate supplier invoices, approve or confirm them, and record the processing rationale."
+  },
+  "RESIDENT": {
+    "process_prefix": "RESIDENT",
+    "canonical_task_name": "resident_tax_processing",
+    "department": "Finance",
+    "core_objective": "Review and complete resident-tax cases while documenting the handling details."
+  },
+  "PO": {
+    "process_prefix": "PO",
+    "canonical_task_name": "purchase_order_processing",
+    "department": "Supply Chain",
+    "core_objective": "Review and approve purchase-order or contract-renewal requests and record the decision rationale."
+  },
+  "SOCIAL": {
+    "process_prefix": "SOCIAL",
+    "canonical_task_name": "social_insurance_processing",
+    "department": "Human Resources",
+    "core_objective": "Update social-insurance workflows and document the processing or support status."
+  },
+  "LEAVE": {
+    "process_prefix": "LEAVE",
+    "canonical_task_name": "leave_application_processing",
+    "department": "Human Resources",
+    "core_objective": "Approve or return employee leave applications with a documented decision rationale."
+  }
+}

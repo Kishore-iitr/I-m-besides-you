@@ -1,0 +1,418 @@
+{
+  "status": "completed",
+  "session_id": "ses_20260701-173246-SIDDHIGUPTAB00B",
+  "operator": "SIDDHIGUPTAB00B",
+  "session_dir": "G:\\.shortcut-targets-by-id\\1WSBZQxOODKFDzYBkIik5g90NWKS7Gwl0\\AI Engineer\\dataset_b\\ses_20260701-173246-SIDDHIGUPTAB00B",
+  "dominant_batch": "2026",
+  "total_events_loaded": 1439,
+  "clean_events_loaded": 1429,
+  "predicted_segments_count": 11,
+  "timings": {
+    "Layer 1: Raw Log Ingestion & Filtering": 1.7530420999974012,
+    "Layer 2: Dynamic Trace & Episode Boundary Extraction": 0.8157705999910831,
+    "Stage 0: Dual Keyframe OCR Visual Grounding": 69.82347230002051,
+    "Stage 1: Activity Segmentation (Puter LLM)": 71.58483619999606,
+    "Stage 2: Latent Task Discovery (Puter LLM)": 34.74486780000734,
+    "Stage 3: Root Thread Consolidation & Naming (Puter LLM)": 15.0,
+    "Stage 4: Hierarchical Task Modeling (Puter LLM)": 0.0023010000004433095,
+    "Stage 5: Deliverable Generation (segments.jsonl)": 0.014998700004070997,
+    "Total End-to-End Pipeline Runtime": 178.7393172000011
+  },
+  "segments": [
+    {
+      "session_id": "ses_20260701-173246-SIDDHIGUPTAB00B",
+      "operator": "SIDDHIGUPTAB00B",
+      "case_id": "PAYROLL-ITEMS-2026-001",
+      "process_code": "PAYROLL",
+      "start": "2026-07-01T17:33:03Z",
+      "end": "2026-07-01T17:33:50Z",
+      "duration_seconds": 47.0,
+      "label": "travel_expense_reimbursement_processing",
+      "objective": "Process and document a travel expense reimbursement payroll item",
+      "additional_context": "In the payroll-items workflow, the user opened a 交通費精算 record and entered processing or confirmation comments using reference P4-07109774-012. Notepad and Word were used alongside the HR portal.",
+      "automation_telemetry": {
+        "total_events": 100,
+        "keystrokes_count": 20,
+        "clicks_count": 18,
+        "clipboard_operations": 6,
+        "scrolls_count": 6,
+        "app_switches_count": 8,
+        "active_applications": [
+          "Microsoft Edge",
+          "Microsoft Word",
+          "Notepad"
+        ],
+        "window_titles": [
+          "*精算確認メモ - Notepad",
+          "HR人事給与システム - Profile 1 - Microsoft​ Edge",
+          "Opening - Word",
+          "Turn off extensions in developer mode",
+          "Untitled - Notepad"
+        ],
+        "web_routes": [
+          "payroll-items"
+        ],
+        "cross_system_transfer": true,
+        "automation_suitability_score": 100.0
+      }
+    },
+    {
+      "session_id": "ses_20260701-173246-SIDDHIGUPTAB00B",
+      "operator": "SIDDHIGUPTAB00B",
+      "case_id": "SOCIAL-INSURANCE-2026-002",
+      "process_code": "SOCIAL",
+      "start": "2026-07-01T17:33:50Z",
+      "end": "2026-07-01T17:34:35Z",
+      "duration_seconds": 45.0,
+      "label": "social_insurance_case_processing",
+      "objective": "Review and update the handling status of a July 2026 social insurance case",
+      "additional_context": "The user worked in the social-insurance workflow, referenced P4-07109774-012 and P13-07109774-012, and entered processing content or response status for the 2026-07 period. Microsoft Word was used to support the review.",
+      "automation_telemetry": {
+        "total_events": 85,
+        "keystrokes_count": 8,
+        "clicks_count": 26,
+        "clipboard_operations": 4,
+        "scrolls_count": 7,
+        "app_switches_count": 6,
+        "active_applications": [
+          "Microsoft Edge",
+          "Microsoft Word"
+        ],
+        "window_titles": [
+          "HR人事給与システム - Profile 1 - Microsoft​ Edge",
+          "gyomu_itaku_keihi_kitei  -  Compatibility Mode - Word",
+          "kanrisya_kengen_shinsei_tetsuzuki  -  Compatibility Mode - Word",
+          "受発注在庫管理システム - Profile 1 - Microsoft​ Edge"
+        ],
+        "web_routes": [
+          "social-insurance"
+        ],
+        "cross_system_transfer": true,
+        "automation_suitability_score": 90.0
+      }
+    },
+    {
+      "session_id": "ses_20260701-173246-SIDDHIGUPTAB00B",
+      "operator": "SIDDHIGUPTAB00B",
+      "case_id": "LEAVE-APPLICATIONS-2026-003",
+      "process_code": "LEAVE",
+      "start": "2026-07-01T17:34:35Z",
+      "end": "2026-07-01T17:35:12Z",
+      "duration_seconds": 37.0,
+      "label": "agreement_approval_processing",
+      "objective": "Record an approval or return decision for a new confidentiality agreement",
+      "additional_context": "In the leave-applications workflow, the user selected 秘密保持契約（新規締結） and entered an approval comment or rejection reason. Notepad and Word were also used to consult or prepare the case information.",
+      "automation_telemetry": {
+        "total_events": 76,
+        "keystrokes_count": 16,
+        "clicks_count": 12,
+        "clipboard_operations": 4,
+        "scrolls_count": 2,
+        "app_switches_count": 11,
+        "active_applications": [
+          "Microsoft Edge",
+          "Microsoft Word",
+          "Notepad"
+        ],
+        "window_titles": [
+          "*IT申請メモ - Notepad",
+          "*精算確認メモ - Notepad",
+          "kanrisya_kengen_shinsei_tetsuzuki  -  Compatibility Mode - Word",
+          "keiyaku_kaijo_tetsuzuki  -  Compatibility Mode - Word",
+          "shinkuitorihikisaki_touroku_tetsuzuki  -  Compatibility Mode - Word"
+        ],
+        "web_routes": [
+          "leave-applications"
+        ],
+        "cross_system_transfer": true,
+        "automation_suitability_score": 90.0
+      }
+    },
+    {
+      "session_id": "ses_20260701-173246-SIDDHIGUPTAB00B",
+      "operator": "SIDDHIGUPTAB00B",
+      "case_id": "SOCIAL-INSURANCE-2026-004",
+      "process_code": "SOCIAL",
+      "start": "2026-07-01T17:35:12Z",
+      "end": "2026-07-01T17:36:02Z",
+      "duration_seconds": 50.0,
+      "label": "social_insurance_case_processing",
+      "objective": "Process social insurance cases involving maternity leave and a housing allowance change",
+      "additional_context": "The user reviewed the 産前産後休暇申請 and 住宅手当変更申請 records in the social-insurance workflow and entered processing content or response status. Reference P5-07109774-012 was visible.",
+      "automation_telemetry": {
+        "total_events": 89,
+        "keystrokes_count": 12,
+        "clicks_count": 24,
+        "clipboard_operations": 4,
+        "scrolls_count": 7,
+        "app_switches_count": 7,
+        "active_applications": [
+          "Microsoft Edge",
+          "Microsoft Word"
+        ],
+        "window_titles": [
+          "HR人事給与システム - Profile 1 - Microsoft​ Edge",
+          "ikuji_kyuugyou_kitei  -  Compatibility Mode - Word",
+          "keiyaku_kaijo_tetsuzuki  -  Compatibility Mode - Word",
+          "shinkuitorihikisaki_touroku_tetsuzuki  -  Compatibility Mode - Word"
+        ],
+        "web_routes": [
+          "social-insurance"
+        ],
+        "cross_system_transfer": true,
+        "automation_suitability_score": 90.0
+      }
+    },
+    {
+      "session_id": "ses_20260701-173246-SIDDHIGUPTAB00B",
+      "operator": "SIDDHIGUPTAB00B",
+      "case_id": "PO-2026-5931",
+      "process_code": "PO",
+      "start": "2026-07-01T17:36:02Z",
+      "end": "2026-07-01T17:36:36Z",
+      "duration_seconds": 34.0,
+      "label": "employee_lifecycle_record_processing",
+      "objective": "Review and document the handling of employee resident tax records",
+      "additional_context": "In the resident-tax workflow, the user viewed records associated with 北陸部品工業株式会社 and 東京電子工業株式会社 and entered processing details. The activity was performed directly in Microsoft Edge.",
+      "automation_telemetry": {
+        "total_events": 59,
+        "keystrokes_count": 8,
+        "clicks_count": 17,
+        "clipboard_operations": 4,
+        "scrolls_count": 6,
+        "app_switches_count": 1,
+        "active_applications": [
+          "Microsoft Edge"
+        ],
+        "window_titles": [
+          "HR人事給与システム - Profile 1 - Microsoft​ Edge",
+          "財務会計システム - Profile 1 - Microsoft​ Edge"
+        ],
+        "web_routes": [
+          "resident-tax"
+        ],
+        "cross_system_transfer": false,
+        "automation_suitability_score": 55.0
+      }
+    },
+    {
+      "session_id": "ses_20260701-173246-SIDDHIGUPTAB00B",
+      "operator": "SIDDHIGUPTAB00B",
+      "case_id": "PO-2026-5932",
+      "process_code": "PO",
+      "start": "2026-07-01T17:36:36Z",
+      "end": "2026-07-01T17:39:33Z",
+      "duration_seconds": 177.0,
+      "label": "employee_lifecycle_record_processing",
+      "objective": "Verify onboarding documents and record matching results and exceptions",
+      "additional_context": "The user reviewed an onboarding record dated 2026-07-11 and entered a matching result or special note. Windows Explorer and Microsoft Word supported the document comparison and documentation.",
+      "automation_telemetry": {
+        "total_events": 309,
+        "keystrokes_count": 50,
+        "clicks_count": 72,
+        "clipboard_operations": 14,
+        "scrolls_count": 19,
+        "app_switches_count": 34,
+        "active_applications": [
+          "Microsoft Edge",
+          "Microsoft Word",
+          "Windows Explorer"
+        ],
+        "window_titles": [
+          "File Explorer",
+          "HR人事給与システム - Profile 1 - Microsoft​ Edge",
+          "Home - File Explorer",
+          "ikuji_kyuugyou_kitei  -  Compatibility Mode - Word",
+          "keiyaku_kaijo_tetsuzuki  -  Compatibility Mode - Word"
+        ],
+        "web_routes": [
+          "onboarding"
+        ],
+        "cross_system_transfer": true,
+        "automation_suitability_score": 100.0
+      }
+    },
+    {
+      "session_id": "ses_20260701-173246-SIDDHIGUPTAB00B",
+      "operator": "SIDDHIGUPTAB00B",
+      "case_id": "PO-2026-5933",
+      "process_code": "PO",
+      "start": "2026-07-01T17:39:33Z",
+      "end": "2026-07-01T17:40:18Z",
+      "duration_seconds": 45.0,
+      "label": "employee_lifecycle_record_processing",
+      "objective": "Review and update the handling status of a July 2026 social insurance case",
+      "additional_context": "In the social-insurance workflow, the user consulted references P10-07109774-012 and P13-07109774-012 and entered processing content or response status for 2026-07. Notepad was used to review supporting information.",
+      "automation_telemetry": {
+        "total_events": 96,
+        "keystrokes_count": 16,
+        "clicks_count": 26,
+        "clipboard_operations": 6,
+        "scrolls_count": 8,
+        "app_switches_count": 3,
+        "active_applications": [
+          "Microsoft Edge",
+          "Notepad"
+        ],
+        "window_titles": [
+          "*IT申請メモ - Notepad",
+          "受発注在庫管理システム - Profile 1 - Microsoft​ Edge",
+          "財務会計システム - Profile 1 - Microsoft​ Edge"
+        ],
+        "web_routes": [
+          "social-insurance"
+        ],
+        "cross_system_transfer": true,
+        "automation_suitability_score": 90.0
+      }
+    },
+    {
+      "session_id": "ses_20260701-173246-SIDDHIGUPTAB00B",
+      "operator": "SIDDHIGUPTAB00B",
+      "case_id": "LEAVE-APPLICATIONS-2026-008",
+      "process_code": "LEAVE",
+      "start": "2026-07-01T17:40:18Z",
+      "end": "2026-07-01T17:42:22Z",
+      "duration_seconds": 124.0,
+      "label": "agreement_approval_processing",
+      "objective": "Record an approval or return decision for a new basic transaction agreement",
+      "additional_context": "The user opened 取引基本契約（新規締結） in the leave-applications workflow and entered an approval comment or rejection reason. Notepad and Word were used to examine and prepare the response.",
+      "automation_telemetry": {
+        "total_events": 215,
+        "keystrokes_count": 40,
+        "clicks_count": 46,
+        "clipboard_operations": 10,
+        "scrolls_count": 13,
+        "app_switches_count": 26,
+        "active_applications": [
+          "Microsoft Edge",
+          "Microsoft Word",
+          "Notepad"
+        ],
+        "window_titles": [
+          "*IT申請メモ - Notepad",
+          "Resume Reading",
+          "keiyaku_kaijo_tetsuzuki  -  Compatibility Mode - Word",
+          "shinkui_keiyaku_tetsuzuki  -  Compatibility Mode - Word",
+          "shinkuitorihikisaki_touroku_tetsuzuki  -  Compatibility Mode - Word"
+        ],
+        "web_routes": [
+          "leave-applications"
+        ],
+        "cross_system_transfer": true,
+        "automation_suitability_score": 100.0
+      }
+    },
+    {
+      "session_id": "ses_20260701-173246-SIDDHIGUPTAB00B",
+      "operator": "SIDDHIGUPTAB00B",
+      "case_id": "PO-2026-5934",
+      "process_code": "PO",
+      "start": "2026-07-01T17:42:22Z",
+      "end": "2026-07-01T17:43:19Z",
+      "duration_seconds": 57.0,
+      "label": "employee_lifecycle_record_processing",
+      "objective": "Process employee_lifecycle_record_processing",
+      "additional_context": "",
+      "automation_telemetry": {
+        "total_events": 116,
+        "keystrokes_count": 20,
+        "clicks_count": 26,
+        "clipboard_operations": 7,
+        "scrolls_count": 12,
+        "app_switches_count": 6,
+        "active_applications": [
+          "Microsoft Edge",
+          "Notepad",
+          "Windows Explorer"
+        ],
+        "window_titles": [
+          "*IT申請メモ - Notepad",
+          "*精算確認メモ - Notepad",
+          "File Explorer",
+          "HR人事給与システム - Profile 1 - Microsoft​ Edge",
+          "Home - File Explorer"
+        ],
+        "web_routes": [
+          "payroll-items"
+        ],
+        "cross_system_transfer": true,
+        "automation_suitability_score": 100.0
+      }
+    },
+    {
+      "session_id": "ses_20260701-173246-SIDDHIGUPTAB00B",
+      "operator": "SIDDHIGUPTAB00B",
+      "case_id": "ONBOARDING-2026-010",
+      "process_code": "ONBOARDING",
+      "start": "2026-07-01T17:43:19Z",
+      "end": "2026-07-01T17:44:29Z",
+      "duration_seconds": 70.0,
+      "label": "employee_onboarding_verification",
+      "objective": "Verify onboarding materials and document matching results and special notes",
+      "additional_context": "The user reviewed onboarding information dated 2026-07-11 and 2026-07-26 in Microsoft Edge and entered a matching result or special note. Microsoft Word was used to support the documentation.",
+      "automation_telemetry": {
+        "total_events": 134,
+        "keystrokes_count": 34,
+        "clicks_count": 22,
+        "clipboard_operations": 6,
+        "scrolls_count": 6,
+        "app_switches_count": 15,
+        "active_applications": [
+          "Microsoft Edge",
+          "Microsoft Word",
+          "Windows Explorer"
+        ],
+        "window_titles": [
+          "HR人事給与システム - Profile 1 - Microsoft​ Edge",
+          "Home - File Explorer",
+          "gyomu_itaku_ukeire_tetsuzuki  -  Compatibility Mode - Word",
+          "nyusha_checklist_shinsotsu_batch  -  Compatibility Mode - Word",
+          "shinkuitorihikisaki_touroku_tetsuzuki  -  Compatibility Mode - Word"
+        ],
+        "web_routes": [
+          "onboarding"
+        ],
+        "cross_system_transfer": true,
+        "automation_suitability_score": 100.0
+      }
+    },
+    {
+      "session_id": "ses_20260701-173246-SIDDHIGUPTAB00B",
+      "operator": "SIDDHIGUPTAB00B",
+      "case_id": "SOCIAL-INSURANCE-2026-011",
+      "process_code": "SOCIAL",
+      "start": "2026-07-01T17:44:29Z",
+      "end": "2026-07-01T17:45:08Z",
+      "duration_seconds": 39.0,
+      "label": "social_insurance_case_processing",
+      "objective": "Review and document the handling status of a July 2026 social insurance case",
+      "additional_context": "In the social-insurance workflow, the user reviewed references P3-07109774-012 and P13-07109774-012 and entered processing content or response status for 2026-07. Notepad and Word were used alongside the portal.",
+      "automation_telemetry": {
+        "total_events": 71,
+        "keystrokes_count": 8,
+        "clicks_count": 20,
+        "clipboard_operations": 3,
+        "scrolls_count": 7,
+        "app_switches_count": 5,
+        "active_applications": [
+          "Microsoft Edge",
+          "Microsoft Word",
+          "Notepad"
+        ],
+        "window_titles": [
+          "*精算確認メモ - Notepad",
+          "HR人事給与システム - Profile 1 - Microsoft​ Edge",
+          "kanrisya_kengen_shinsei_tetsuzuki  -  Compatibility Mode - Word",
+          "shinkuitorihikisaki_touroku_tetsuzuki  -  Compatibility Mode - Word",
+          "受発注在庫管理システム - Profile 1 - Microsoft​ Edge"
+        ],
+        "web_routes": [
+          "social-insurance"
+        ],
+        "cross_system_transfer": true,
+        "automation_suitability_score": 90.0
+      }
+    }
+  ]
+}

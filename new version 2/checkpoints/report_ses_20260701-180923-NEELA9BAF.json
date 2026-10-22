@@ -1,0 +1,307 @@
+{
+  "status": "completed",
+  "session_id": "ses_20260701-180923-NEELA9BAF",
+  "operator": "NEELA9BAF",
+  "session_dir": "G:\\.shortcut-targets-by-id\\1WSBZQxOODKFDzYBkIik5g90NWKS7Gwl0\\AI Engineer\\dataset_b\\ses_20260701-180923-NEELA9BAF",
+  "dominant_batch": "2026",
+  "total_events_loaded": 1349,
+  "clean_events_loaded": 1340,
+  "predicted_segments_count": 8,
+  "timings": {
+    "Layer 1: Raw Log Ingestion & Filtering": 0.7131499999959487,
+    "Layer 2: Dynamic Trace & Episode Boundary Extraction": 0.4465251000074204,
+    "Stage 0: Dual Keyframe OCR Visual Grounding": 84.15748910000548,
+    "Stage 1: Activity Segmentation (Puter LLM)": 212.18052999998326,
+    "Stage 2: Latent Task Discovery (Puter LLM)": 10.003398000000743,
+    "Stage 3: Root Thread Consolidation & Naming (Puter LLM)": 15.0,
+    "Stage 4: Hierarchical Task Modeling (Puter LLM)": 0.0014970999909564853,
+    "Stage 5: Deliverable Generation (segments.jsonl)": 0.008132799994200468,
+    "Total End-to-End Pipeline Runtime": 307.5107413000078
+  },
+  "segments": [
+    {
+      "session_id": "ses_20260701-180923-NEELA9BAF",
+      "operator": "NEELA9BAF",
+      "case_id": "SOCIAL-INSURANCE-2026-001",
+      "process_code": "SOCIAL",
+      "start": "2026-07-01T18:09:34Z",
+      "end": "2026-07-01T18:10:40Z",
+      "duration_seconds": 66.0,
+      "label": "social_insurance_reconciliation",
+      "objective": "Reconcile social insurance payroll records and document exceptions",
+      "additional_context": "The user navigated among onboarding, payroll-items, social-insurance, and leave-applications while using PowerShell and a transfer amount of ¥1,865,557. A reconciliation-results and special-notes field was used to record findings.",
+      "automation_telemetry": {
+        "total_events": 131,
+        "keystrokes_count": 32,
+        "clicks_count": 19,
+        "clipboard_operations": 5,
+        "scrolls_count": 6,
+        "app_switches_count": 11,
+        "active_applications": [
+          "Microsoft Edge",
+          "Microsoft Word",
+          "WindowsTerminal"
+        ],
+        "window_titles": [
+          "Opening - Word",
+          "Windows PowerShell",
+          "gyomu_itaku_kyuuyo_kitei  -  Compatibility Mode - Word",
+          "財務会計システム and 2 more pages - Profile 1 - Microsoft​ Edge"
+        ],
+        "web_routes": [
+          "leave-applications",
+          "onboarding",
+          "payroll-items",
+          "social-insurance"
+        ],
+        "cross_system_transfer": true,
+        "automation_suitability_score": 100.0
+      }
+    },
+    {
+      "session_id": "ses_20260701-180923-NEELA9BAF",
+      "operator": "NEELA9BAF",
+      "case_id": "ONBOARDING-2026-002",
+      "process_code": "ONBOARDING",
+      "start": "2026-07-01T18:10:40Z",
+      "end": "2026-07-01T18:11:47Z",
+      "duration_seconds": 67.0,
+      "label": "employee_onboarding",
+      "objective": "Validate employee onboarding registration and document matching exceptions",
+      "additional_context": "The onboarding workflow showed dates 2026-07-20 and 2026-07-05 and identifier P3-07048822-012. The user also referenced the Finance & Accounting system and entered reconciliation or special notes.",
+      "automation_telemetry": {
+        "total_events": 107,
+        "keystrokes_count": 20,
+        "clicks_count": 22,
+        "clipboard_operations": 5,
+        "scrolls_count": 3,
+        "app_switches_count": 13,
+        "active_applications": [
+          "Microsoft Edge",
+          "Microsoft Word"
+        ],
+        "window_titles": [
+          "HR人事給与システム and 2 more pages - Profile 1 - Microsoft​ Edge",
+          "nyusha_checklist_shinsotsu_batch  -  Compatibility Mode - Word",
+          "財務会計システム and 2 more pages - Profile 1 - Microsoft​ Edge"
+        ],
+        "web_routes": [
+          "onboarding"
+        ],
+        "cross_system_transfer": true,
+        "automation_suitability_score": 100.0
+      }
+    },
+    {
+      "session_id": "ses_20260701-180923-NEELA9BAF",
+      "operator": "NEELA9BAF",
+      "case_id": "LEAVE-APPLICATIONS-2026-003",
+      "process_code": "LEAVE",
+      "start": "2026-07-01T18:11:47Z",
+      "end": "2026-07-01T18:13:20Z",
+      "duration_seconds": 93.0,
+      "label": "leave_application_approval",
+      "objective": "Approve or return a consumables expense leave request",
+      "additional_context": "The leave-applications workflow displayed 消耗品費 with identifiers P3-07048822-012 and P9-07048822-012. The user was presented with fields for an approval comment or return reason.",
+      "automation_telemetry": {
+        "total_events": 199,
+        "keystrokes_count": 52,
+        "clicks_count": 26,
+        "clipboard_operations": 8,
+        "scrolls_count": 7,
+        "app_switches_count": 28,
+        "active_applications": [
+          "Microsoft Edge",
+          "Microsoft Word"
+        ],
+        "window_titles": [
+          "HR人事給与システム and 2 more pages - Profile 1 - Microsoft​ Edge",
+          "gyomu_itaku_keihi_kitei  -  Compatibility Mode - Word",
+          "nyusha_checklist_shinsotsu_batch  -  Compatibility Mode - Word",
+          "settai_keihi_kitei  -  Compatibility Mode - Word",
+          "財務会計システム and 2 more pages - Profile 1 - Microsoft​ Edge"
+        ],
+        "web_routes": [
+          "leave-applications"
+        ],
+        "cross_system_transfer": true,
+        "automation_suitability_score": 100.0
+      }
+    },
+    {
+      "session_id": "ses_20260701-180923-NEELA9BAF",
+      "operator": "NEELA9BAF",
+      "case_id": "PO-2026-5760",
+      "process_code": "PO",
+      "start": "2026-07-01T18:13:20Z",
+      "end": "2026-07-01T18:15:59Z",
+      "duration_seconds": 159.0,
+      "label": "purchase_order_processing",
+      "objective": "Review resident tax details for purchase order counterparties and record processing results",
+      "additional_context": "The resident-tax screen referenced 関西物流サービス and 株式会社山田製作所 under identifier P10-07048822-012, with a field for entering processing details. A Word document with Mailings functions was also used.",
+      "automation_telemetry": {
+        "total_events": 287,
+        "keystrokes_count": 56,
+        "clicks_count": 72,
+        "clipboard_operations": 14,
+        "scrolls_count": 19,
+        "app_switches_count": 20,
+        "active_applications": [
+          "Microsoft Edge",
+          "Microsoft Word",
+          "WindowsTerminal",
+          "prl_cc"
+        ],
+        "window_titles": [
+          "HR人事給与システム and 2 more pages - Profile 1 - Microsoft​ Edge",
+          "Windows PowerShell",
+          "gyomu_itaku_keihi_kitei  -  Compatibility Mode - Word",
+          "gyomu_itaku_ukeire_tetsuzuki  -  Compatibility Mode - Word",
+          "nyusha_checklist_shinsotsu_batch  -  Compatibility Mode - Word"
+        ],
+        "web_routes": [
+          "resident-tax"
+        ],
+        "cross_system_transfer": true,
+        "automation_suitability_score": 100.0
+      }
+    },
+    {
+      "session_id": "ses_20260701-180923-NEELA9BAF",
+      "operator": "NEELA9BAF",
+      "case_id": "LEAVE-APPLICATIONS-2026-005",
+      "process_code": "LEAVE",
+      "start": "2026-07-01T18:15:59Z",
+      "end": "2026-07-01T18:17:02Z",
+      "duration_seconds": 63.0,
+      "label": "leave_application_approval",
+      "objective": "Approve or return a multi-person business travel expense request",
+      "additional_context": "The leave workflow showed 出張旅費（複数人） and identifier P9-07048822-012, alongside an approval-comment or return-reason field. A Finance & Accounting tab and a 研修費 record were visible for cross-checking.",
+      "automation_telemetry": {
+        "total_events": 130,
+        "keystrokes_count": 30,
+        "clicks_count": 24,
+        "clipboard_operations": 6,
+        "scrolls_count": 7,
+        "app_switches_count": 12,
+        "active_applications": [
+          "Microsoft Edge",
+          "Microsoft Word"
+        ],
+        "window_titles": [
+          "gyomu_itaku_keihi_kitei  -  Compatibility Mode - Word",
+          "settai_keihi_kitei  -  Compatibility Mode - Word",
+          "財務会計システム and 2 more pages - Profile 1 - Microsoft​ Edge"
+        ],
+        "web_routes": [
+          "leave-applications"
+        ],
+        "cross_system_transfer": true,
+        "automation_suitability_score": 100.0
+      }
+    },
+    {
+      "session_id": "ses_20260701-180923-NEELA9BAF",
+      "operator": "NEELA9BAF",
+      "case_id": "BATCH-W2",
+      "process_code": "BATCH",
+      "start": "2026-07-01T18:17:02Z",
+      "end": "2026-07-01T18:19:41Z",
+      "duration_seconds": 159.0,
+      "label": "expense_reimbursement_validation",
+      "objective": "Confirm travel expense reimbursement payroll items against applicable expense rules",
+      "additional_context": "The payroll-items workflow displayed 交通費精算, 消耗品費, and identifier P4-07048822-012, with a processing and confirmation comment field. Notepad contained a working document named gyomu_itaku_keihi_kitei for reference.",
+      "automation_telemetry": {
+        "total_events": 241,
+        "keystrokes_count": 42,
+        "clicks_count": 61,
+        "clipboard_operations": 13,
+        "scrolls_count": 19,
+        "app_switches_count": 15,
+        "active_applications": [
+          "Microsoft Edge",
+          "Microsoft Word",
+          "Notepad"
+        ],
+        "window_titles": [
+          "*在庫調整メモ - Notepad",
+          "*精算確認メモ - Notepad",
+          "HR人事給与システム and 2 more pages - Profile 1 - Microsoft​ Edge",
+          "gyomu_itaku_keihi_kitei  -  Compatibility Mode - Word",
+          "settai_keihi_kitei  -  Compatibility Mode - Word"
+        ],
+        "web_routes": [
+          "payroll-items"
+        ],
+        "cross_system_transfer": true,
+        "automation_suitability_score": 100.0
+      }
+    },
+    {
+      "session_id": "ses_20260701-180923-NEELA9BAF",
+      "operator": "NEELA9BAF",
+      "case_id": "LEAVE-APPLICATIONS-2026-007",
+      "process_code": "LEAVE",
+      "start": "2026-07-01T18:19:41Z",
+      "end": "2026-07-01T18:20:52Z",
+      "duration_seconds": 71.0,
+      "label": "leave_application_approval",
+      "objective": "Approve or return an annual paid leave request",
+      "additional_context": "The leave-applications workflow displayed 年次有給休暇 under identifier P2-07048822-012 and included a related 代休申請 tab. The user could enter an approval comment or return reason and used Notepad as a working reference.",
+      "automation_telemetry": {
+        "total_events": 137,
+        "keystrokes_count": 16,
+        "clicks_count": 46,
+        "clipboard_operations": 8,
+        "scrolls_count": 15,
+        "app_switches_count": 1,
+        "active_applications": [
+          "Microsoft Edge",
+          "Notepad"
+        ],
+        "window_titles": [
+          "*精算確認メモ - Notepad",
+          "HR人事給与システム and 2 more pages - Profile 1 - Microsoft​ Edge"
+        ],
+        "web_routes": [
+          "leave-applications"
+        ],
+        "cross_system_transfer": true,
+        "automation_suitability_score": 80.0
+      }
+    },
+    {
+      "session_id": "ses_20260701-180923-NEELA9BAF",
+      "operator": "NEELA9BAF",
+      "case_id": "PAYROLL-ITEMS-2026-008",
+      "process_code": "PAYROLL",
+      "start": "2026-07-01T18:20:52Z",
+      "end": "2026-07-01T18:21:30Z",
+      "duration_seconds": 38.0,
+      "label": "payroll_item_confirmation",
+      "objective": "Confirm a training expense payroll item and record processing comments",
+      "additional_context": "The payroll-items main screen showed 研修費 and identifier P4-07048822-012. The user entered information through the processing and confirmation comment field while the HR Management portal remained open.",
+      "automation_telemetry": {
+        "total_events": 58,
+        "keystrokes_count": 6,
+        "clicks_count": 19,
+        "clipboard_operations": 3,
+        "scrolls_count": 8,
+        "app_switches_count": 2,
+        "active_applications": [
+          "Microsoft Edge",
+          "Microsoft Word"
+        ],
+        "window_titles": [
+          "HR人事給与システム and 2 more pages - Profile 1 - Microsoft​ Edge",
+          "gyomu_itaku_keihi_kitei  -  Compatibility Mode - Word"
+        ],
+        "web_routes": [
+          "payroll-items"
+        ],
+        "cross_system_transfer": true,
+        "automation_suitability_score": 80.0
+      }
+    }
+  ]
+}

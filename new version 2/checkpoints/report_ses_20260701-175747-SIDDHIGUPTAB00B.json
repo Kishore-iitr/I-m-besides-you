@@ -1,0 +1,403 @@
+{
+  "status": "completed",
+  "session_id": "ses_20260701-175747-SIDDHIGUPTAB00B",
+  "operator": "SIDDHIGUPTAB00B",
+  "session_dir": "G:\\.shortcut-targets-by-id\\1WSBZQxOODKFDzYBkIik5g90NWKS7Gwl0\\AI Engineer\\dataset_b\\ses_20260701-175747-SIDDHIGUPTAB00B",
+  "dominant_batch": "2026",
+  "total_events_loaded": 1309,
+  "clean_events_loaded": 1297,
+  "predicted_segments_count": 11,
+  "timings": {
+    "Layer 1: Raw Log Ingestion & Filtering": 0.4564304999948945,
+    "Layer 2: Dynamic Trace & Episode Boundary Extraction": 0.34878690002369694,
+    "Stage 0: Dual Keyframe OCR Visual Grounding": 71.40420200000517,
+    "Stage 1: Activity Segmentation (Puter LLM)": 88.56893860001583,
+    "Stage 2: Latent Task Discovery (Puter LLM)": 47.841591900010826,
+    "Stage 3: Root Thread Consolidation & Naming (Puter LLM)": 15.0,
+    "Stage 4: Hierarchical Task Modeling (Puter LLM)": 0.001971699995920062,
+    "Stage 5: Deliverable Generation (segments.jsonl)": 0.013031599984969944,
+    "Total End-to-End Pipeline Runtime": 208.63497889999417
+  },
+  "segments": [
+    {
+      "session_id": "ses_20260701-175747-SIDDHIGUPTAB00B",
+      "operator": "SIDDHIGUPTAB00B",
+      "case_id": "BATCH-W6",
+      "process_code": "BATCH",
+      "start": "2026-07-01T17:58:24Z",
+      "end": "2026-07-01T17:59:06Z",
+      "duration_seconds": 42.0,
+      "label": "employee_administration_processing",
+      "objective": "Review and confirm payroll item BATCH-W6 for employee P11-07106250-012, including related social-insurance and resident-tax details.",
+      "additional_context": "In Microsoft Edge, the user moved among the social-insurance, resident-tax, and payroll-items pages and displayed 電源モジュールB, モーターユニットF, and a processing-comment field. The record shown was P11-07106250-012.",
+      "automation_telemetry": {
+        "total_events": 92,
+        "keystrokes_count": 12,
+        "clicks_count": 22,
+        "clipboard_operations": 4,
+        "scrolls_count": 8,
+        "app_switches_count": 5,
+        "active_applications": [
+          "Microsoft Edge"
+        ],
+        "window_titles": [
+          "Turn off extensions in developer mode",
+          "受発注在庫管理システム and 1 more page - Profile 1 - Microsoft​ Edge"
+        ],
+        "web_routes": [
+          "payroll-items",
+          "resident-tax",
+          "social-insurance"
+        ],
+        "cross_system_transfer": false,
+        "automation_suitability_score": 65.0
+      }
+    },
+    {
+      "session_id": "ses_20260701-175747-SIDDHIGUPTAB00B",
+      "operator": "SIDDHIGUPTAB00B",
+      "case_id": "BATCH-W2",
+      "process_code": "BATCH",
+      "start": "2026-07-01T17:59:06Z",
+      "end": "2026-07-01T17:59:56Z",
+      "duration_seconds": 50.0,
+      "label": "employee_administration_processing",
+      "objective": "Approve and document the entertainment-expense payroll item BATCH-W2 for employee P11-07106250-012.",
+      "additional_context": "The Edge payroll-items view showed P11-07106250-012, 接待交際費, and a processing/confirmation-comment prompt. Microsoft Word was used, while a 財務会計システム window and a P4-07106250-012 reference were also visible.",
+      "automation_telemetry": {
+        "total_events": 83,
+        "keystrokes_count": 8,
+        "clicks_count": 26,
+        "clipboard_operations": 4,
+        "scrolls_count": 6,
+        "app_switches_count": 6,
+        "active_applications": [
+          "Microsoft Edge",
+          "Microsoft Word"
+        ],
+        "window_titles": [
+          "HR人事給与システム and 1 more page - Profile 1 - Microsoft​ Edge",
+          "gyomu_itaku_keihi_kitei  -  Compatibility Mode - Word",
+          "kanrisya_kengen_shinsei_tetsuzuki  -  Compatibility Mode - Word",
+          "受発注在庫管理システム and 1 more page - Profile 1 - Microsoft​ Edge"
+        ],
+        "web_routes": [
+          "payroll-items"
+        ],
+        "cross_system_transfer": true,
+        "automation_suitability_score": 90.0
+      }
+    },
+    {
+      "session_id": "ses_20260701-175747-SIDDHIGUPTAB00B",
+      "operator": "SIDDHIGUPTAB00B",
+      "case_id": "RESIDENT-TAX-2026-003",
+      "process_code": "RESIDENT",
+      "start": "2026-07-01T17:59:56Z",
+      "end": "2026-07-01T18:00:38Z",
+      "duration_seconds": 42.0,
+      "label": "resident_tax_processing",
+      "objective": "Review and update resident-tax case RESIDENT-TAX-2026-003 for employee P10-07106250-012.",
+      "additional_context": "The Edge resident-tax page displayed 東京電子工業株式会社, 福岡システム設計, P10-07106250-012, and a processing-details field. Notepad and Microsoft Word were used to prepare or record the case information.",
+      "automation_telemetry": {
+        "total_events": 81,
+        "keystrokes_count": 12,
+        "clicks_count": 22,
+        "clipboard_operations": 5,
+        "scrolls_count": 7,
+        "app_switches_count": 5,
+        "active_applications": [
+          "Microsoft Edge",
+          "Microsoft Word",
+          "Notepad"
+        ],
+        "window_titles": [
+          "*精算確認メモ - Notepad",
+          "Untitled - Notepad",
+          "gyomu_itaku_keihi_kitei  -  Compatibility Mode - Word",
+          "shinkuitorihikisaki_touroku_tetsuzuki  -  Compatibility Mode - Word",
+          "財務会計システム and 1 more page - Profile 1 - Microsoft​ Edge"
+        ],
+        "web_routes": [
+          "resident-tax"
+        ],
+        "cross_system_transfer": true,
+        "automation_suitability_score": 90.0
+      }
+    },
+    {
+      "session_id": "ses_20260701-175747-SIDDHIGUPTAB00B",
+      "operator": "SIDDHIGUPTAB00B",
+      "case_id": "BATCH-W3",
+      "process_code": "BATCH",
+      "start": "2026-07-01T18:00:38Z",
+      "end": "2026-07-01T18:02:32Z",
+      "duration_seconds": 114.0,
+      "label": "employee_administration_processing",
+      "objective": "Approve the half-day paid-leave application BATCH-W3 for employee P10-07106250-012.",
+      "additional_context": "The Edge leave-applications page showed P10-07106250-012 and 半日有給申請 at an approval-comment or return-reason prompt. Notepad and Microsoft Excel were also used, and a 財務会計システム window with a P2-07106250-012 reference was visible.",
+      "automation_telemetry": {
+        "total_events": 229,
+        "keystrokes_count": 58,
+        "clicks_count": 50,
+        "clipboard_operations": 12,
+        "scrolls_count": 16,
+        "app_switches_count": 9,
+        "active_applications": [
+          "Microsoft Edge",
+          "Microsoft Excel",
+          "Notepad"
+        ],
+        "window_titles": [
+          "*在庫調整メモ - Notepad",
+          "*精算確認メモ - Notepad",
+          "HR人事給与システム and 1 more page - Profile 1 - Microsoft​ Edge",
+          "Opening - Excel",
+          "expense_calc - Excel"
+        ],
+        "web_routes": [
+          "leave-applications"
+        ],
+        "cross_system_transfer": true,
+        "automation_suitability_score": 100.0
+      }
+    },
+    {
+      "session_id": "ses_20260701-175747-SIDDHIGUPTAB00B",
+      "operator": "SIDDHIGUPTAB00B",
+      "case_id": "INV-2026-7299",
+      "process_code": "INV",
+      "start": "2026-07-01T18:02:32Z",
+      "end": "2026-07-01T18:02:54Z",
+      "duration_seconds": 22.0,
+      "label": "invoice_processing",
+      "objective": "Approve invoice INV-2026-7299 and record the processing or confirmation details.",
+      "additional_context": "The Edge approval view explicitly displayed 請求書承認 INV-2026-7299, P6-07106250-012, and a processing/confirmation-comment field. Notepad, Microsoft Word, and Microsoft Excel were used, with an inventory-adjustment memo visible as supporting material.",
+      "automation_telemetry": {
+        "total_events": 63,
+        "keystrokes_count": 26,
+        "clicks_count": 6,
+        "clipboard_operations": 1,
+        "scrolls_count": 0,
+        "app_switches_count": 9,
+        "active_applications": [
+          "Microsoft Edge",
+          "Microsoft Excel",
+          "Microsoft Word",
+          "Notepad"
+        ],
+        "window_titles": [
+          "*在庫調整メモ - Notepad",
+          "Opening - Excel",
+          "expense_calc - Excel",
+          "getsujitsu_teigaku_torihikisaki_ichiran  -  Compatibility Mode - Word",
+          "shinkuitorihikisaki_touroku_tetsuzuki  -  Compatibility Mode - Word"
+        ],
+        "web_routes": [
+          "payroll-items"
+        ],
+        "cross_system_transfer": true,
+        "automation_suitability_score": 85.0
+      }
+    },
+    {
+      "session_id": "ses_20260701-175747-SIDDHIGUPTAB00B",
+      "operator": "SIDDHIGUPTAB00B",
+      "case_id": "INV-2026-7300",
+      "process_code": "INV",
+      "start": "2026-07-01T18:02:54Z",
+      "end": "2026-07-01T18:03:24Z",
+      "duration_seconds": 30.0,
+      "label": "invoice_processing",
+      "objective": "Approve invoice INV-2026-7300 and document the processing decision.",
+      "additional_context": "Microsoft Edge displayed 請求書承認 INV-2026-7300 with P6-07106250-012 and a processing/confirmation-comment field. Microsoft Word was used, and the adjacent approval view for INV-2026-7301 also became visible.",
+      "automation_telemetry": {
+        "total_events": 46,
+        "keystrokes_count": 8,
+        "clicks_count": 12,
+        "clipboard_operations": 2,
+        "scrolls_count": 3,
+        "app_switches_count": 3,
+        "active_applications": [
+          "Microsoft Edge",
+          "Microsoft Word"
+        ],
+        "window_titles": [
+          "getsujitsu_teigaku_torihikisaki_ichiran  -  Compatibility Mode - Word",
+          "財務会計システム and 1 more page - Profile 1 - Microsoft​ Edge"
+        ],
+        "web_routes": [],
+        "cross_system_transfer": true,
+        "automation_suitability_score": 90.0
+      }
+    },
+    {
+      "session_id": "ses_20260701-175747-SIDDHIGUPTAB00B",
+      "operator": "SIDDHIGUPTAB00B",
+      "case_id": "INV-2026-7302",
+      "process_code": "INV",
+      "start": "2026-07-01T18:03:24Z",
+      "end": "2026-07-01T18:03:45Z",
+      "duration_seconds": 21.0,
+      "label": "invoice_processing",
+      "objective": "Approve invoice INV-2026-7302 and document the processing decision.",
+      "additional_context": "The Edge invoice-approval screen showed 請求書承認 INV-2026-7302, P6-07106250-012, and the processing/confirmation-comment prompt. Microsoft Word was used to prepare or record the approval information.",
+      "automation_telemetry": {
+        "total_events": 22,
+        "keystrokes_count": 2,
+        "clicks_count": 6,
+        "clipboard_operations": 1,
+        "scrolls_count": 2,
+        "app_switches_count": 3,
+        "active_applications": [
+          "Microsoft Edge",
+          "Microsoft Word"
+        ],
+        "window_titles": [
+          "getsujitsu_teigaku_torihikisaki_ichiran  -  Compatibility Mode - Word",
+          "財務会計システム and 1 more page - Profile 1 - Microsoft​ Edge"
+        ],
+        "web_routes": [],
+        "cross_system_transfer": true,
+        "automation_suitability_score": 75.0
+      }
+    },
+    {
+      "session_id": "ses_20260701-175747-SIDDHIGUPTAB00B",
+      "operator": "SIDDHIGUPTAB00B",
+      "case_id": "SOCIAL-INSURANCE-2026-008",
+      "process_code": "SOCIAL",
+      "start": "2026-07-01T18:03:45Z",
+      "end": "2026-07-01T18:05:54Z",
+      "duration_seconds": 129.0,
+      "label": "social_insurance_processing",
+      "objective": "Update July 2026 social-insurance case SOCIAL-INSURANCE-2026-008 for employee P13-07106250-012.",
+      "additional_context": "The Edge social-insurance view displayed 2026-07, P13-07106250-012, and a processing/status entry field. Notepad and Microsoft Word were used, while an inventory-adjustment memo for BATCH-M3 was also visible.",
+      "automation_telemetry": {
+        "total_events": 249,
+        "keystrokes_count": 36,
+        "clicks_count": 70,
+        "clipboard_operations": 15,
+        "scrolls_count": 25,
+        "app_switches_count": 10,
+        "active_applications": [
+          "Microsoft Edge",
+          "Microsoft Word",
+          "Notepad"
+        ],
+        "window_titles": [
+          "*IT申請メモ - Notepad",
+          "*在庫調整メモ - Notepad",
+          "HR人事給与システム and 1 more page - Profile 1 - Microsoft​ Edge",
+          "getsujitsu_teigaku_torihikisaki_ichiran  -  Compatibility Mode - Word",
+          "kanrisya_kengen_shinsei_tetsuzuki  -  Compatibility Mode - Word"
+        ],
+        "web_routes": [
+          "social-insurance"
+        ],
+        "cross_system_transfer": true,
+        "automation_suitability_score": 100.0
+      }
+    },
+    {
+      "session_id": "ses_20260701-175747-SIDDHIGUPTAB00B",
+      "operator": "SIDDHIGUPTAB00B",
+      "case_id": "PAYROLL-ITEMS-2026-009",
+      "process_code": "PAYROLL",
+      "start": "2026-07-01T18:05:54Z",
+      "end": "2026-07-01T18:06:44Z",
+      "duration_seconds": 50.0,
+      "label": "expense_reimbursement_processing",
+      "objective": "Approve and document the travel-expense reimbursement PAYROLL-ITEMS-2026-009 for employee P2-07106250-012.",
+      "additional_context": "The Edge payroll-items page showed P2-07106250-012, 交通費精算, and a processing/confirmation-comment prompt. A P4-07106250-012 reference and multiple HR portal windows were visible.",
+      "automation_telemetry": {
+        "total_events": 94,
+        "keystrokes_count": 12,
+        "clicks_count": 26,
+        "clipboard_operations": 5,
+        "scrolls_count": 13,
+        "app_switches_count": 1,
+        "active_applications": [
+          "Microsoft Edge"
+        ],
+        "window_titles": [
+          "HR人事給与システム and 1 more page - Profile 1 - Microsoft​ Edge"
+        ],
+        "web_routes": [
+          "payroll-items"
+        ],
+        "cross_system_transfer": false,
+        "automation_suitability_score": 55.0
+      }
+    },
+    {
+      "session_id": "ses_20260701-175747-SIDDHIGUPTAB00B",
+      "operator": "SIDDHIGUPTAB00B",
+      "case_id": "BATCH-W5",
+      "process_code": "BATCH",
+      "start": "2026-07-01T18:06:44Z",
+      "end": "2026-07-01T18:08:14Z",
+      "duration_seconds": 90.0,
+      "label": "employee_administration_processing",
+      "objective": "Process employee_administration_processing",
+      "additional_context": "",
+      "automation_telemetry": {
+        "total_events": 181,
+        "keystrokes_count": 28,
+        "clicks_count": 46,
+        "clipboard_operations": 11,
+        "scrolls_count": 20,
+        "app_switches_count": 8,
+        "active_applications": [
+          "Microsoft Edge",
+          "Microsoft Word",
+          "Notepad"
+        ],
+        "window_titles": [
+          "*IT申請メモ - Notepad",
+          "*在庫調整メモ - Notepad",
+          "HR人事給与システム and 1 more page - Profile 1 - Microsoft​ Edge",
+          "gyomu_itaku_keihi_kitei  -  Compatibility Mode - Word",
+          "kanrisya_kengen_shinsei_tetsuzuki  -  Compatibility Mode - Word"
+        ],
+        "web_routes": [
+          "payroll-items"
+        ],
+        "cross_system_transfer": true,
+        "automation_suitability_score": 100.0
+      }
+    },
+    {
+      "session_id": "ses_20260701-175747-SIDDHIGUPTAB00B",
+      "operator": "SIDDHIGUPTAB00B",
+      "case_id": "RESIDENT-TAX-2026-011",
+      "process_code": "RESIDENT",
+      "start": "2026-07-01T18:08:14Z",
+      "end": "2026-07-01T18:08:52Z",
+      "duration_seconds": 38.0,
+      "label": "resident_tax_processing",
+      "objective": "Process resident-tax case RESIDENT-TAX-2026-011 for employee P4-07106250-012 at 株式会社山田製作所.",
+      "additional_context": "The Edge resident-tax page showed P4-07106250-012, 株式会社山田製作所, a processing-content field, and a P10-07106250-012 reference. Multiple HR management portal windows were visible during the review.",
+      "automation_telemetry": {
+        "total_events": 77,
+        "keystrokes_count": 8,
+        "clicks_count": 24,
+        "clipboard_operations": 4,
+        "scrolls_count": 11,
+        "app_switches_count": 1,
+        "active_applications": [
+          "Microsoft Edge"
+        ],
+        "window_titles": [
+          "HR人事給与システム and 1 more page - Profile 1 - Microsoft​ Edge",
+          "財務会計システム and 1 more page - Profile 1 - Microsoft​ Edge"
+        ],
+        "web_routes": [
+          "resident-tax"
+        ],
+        "cross_system_transfer": false,
+        "automation_suitability_score": 55.0
+      }
+    }
+  ]
+}

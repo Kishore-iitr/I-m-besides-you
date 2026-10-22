@@ -1,0 +1,561 @@
+{
+  "status": "completed",
+  "session_id": "ses_20260701-181413-LAPTOP-76QMG9DE",
+  "operator": "LAPTOP-76QMG9DE",
+  "session_dir": "G:\\.shortcut-targets-by-id\\1WSBZQxOODKFDzYBkIik5g90NWKS7Gwl0\\AI Engineer\\dataset_b\\ses_20260701-181413-LAPTOP-76QMG9DE",
+  "dominant_batch": "2026",
+  "total_events_loaded": 1518,
+  "clean_events_loaded": 1509,
+  "predicted_segments_count": 16,
+  "timings": {
+    "Layer 1: Raw Log Ingestion & Filtering": 0.5391188999929,
+    "Layer 2: Dynamic Trace & Episode Boundary Extraction": 0.38551400002324954,
+    "Stage 0: Dual Keyframe OCR Visual Grounding": 45.81390989999636,
+    "Stage 1: Activity Segmentation (Puter LLM)": 380.99857789999805,
+    "Stage 2: Latent Task Discovery (Puter LLM)": 141.85953779998817,
+    "Stage 3: Root Thread Consolidation & Naming (Puter LLM)": 15.0,
+    "Stage 4: Hierarchical Task Modeling (Puter LLM)": 0.0009926999919116497,
+    "Stage 5: Deliverable Generation (segments.jsonl)": 0.011584200023207814,
+    "Total End-to-End Pipeline Runtime": 569.6092582999845
+  },
+  "segments": [
+    {
+      "session_id": "ses_20260701-181413-LAPTOP-76QMG9DE",
+      "operator": "LAPTOP-76QMG9DE",
+      "case_id": "LEAVE-APPLICATIONS-2026-001",
+      "process_code": "LEAVE",
+      "start": "2026-07-01T18:14:26Z",
+      "end": "2026-07-01T18:15:50Z",
+      "duration_seconds": 84.0,
+      "label": "leave_application_approval",
+      "objective": "Approve an employee leave request with an approval comment.",
+      "additional_context": "The HR leave-applications page showed a special leave (bereavement) item and a half-day paid-leave request associated with P2-07088456-012. The user entered a decision in the approval-comment or rejection-reason field.",
+      "automation_telemetry": {
+        "total_events": 149,
+        "keystrokes_count": 16,
+        "clicks_count": 47,
+        "clipboard_operations": 7,
+        "scrolls_count": 17,
+        "app_switches_count": 7,
+        "active_applications": [
+          "Microsoft Edge"
+        ],
+        "window_titles": [
+          "HR人事給与システム - Profile 1 - Microsoft​ Edge",
+          "Restore pages",
+          "Turn off extensions in developer mode"
+        ],
+        "web_routes": [
+          "leave-applications"
+        ],
+        "cross_system_transfer": false,
+        "automation_suitability_score": 65.0
+      }
+    },
+    {
+      "session_id": "ses_20260701-181413-LAPTOP-76QMG9DE",
+      "operator": "LAPTOP-76QMG9DE",
+      "case_id": "SOCIAL-INSURANCE-2026-002",
+      "process_code": "SOCIAL",
+      "start": "2026-07-01T18:15:50Z",
+      "end": "2026-07-01T18:16:39Z",
+      "duration_seconds": 49.0,
+      "label": "social_insurance_processing",
+      "objective": "Complete the July 2026 social insurance case by recording its handling status.",
+      "additional_context": "The social-insurance screen showed the 2026-07 period and identifier P13-07088456-012, with a field for processing details and status. Notepad and Word were used as working references while the Edge form was updated.",
+      "automation_telemetry": {
+        "total_events": 109,
+        "keystrokes_count": 16,
+        "clicks_count": 27,
+        "clipboard_operations": 6,
+        "scrolls_count": 7,
+        "app_switches_count": 9,
+        "active_applications": [
+          "Microsoft Edge",
+          "Microsoft Word",
+          "Notepad"
+        ],
+        "window_titles": [
+          "*IT申請メモ - Notepad",
+          "*精算確認メモ - Notepad",
+          "HR人事給与システム - Profile 1 - Microsoft​ Edge",
+          "Opening - Word",
+          "kanrisya_kengen_shinsei_tetsuzuki  -  Compatibility Mode - Word"
+        ],
+        "web_routes": [
+          "social-insurance"
+        ],
+        "cross_system_transfer": true,
+        "automation_suitability_score": 90.0
+      }
+    },
+    {
+      "session_id": "ses_20260701-181413-LAPTOP-76QMG9DE",
+      "operator": "LAPTOP-76QMG9DE",
+      "case_id": "ONBOARDING-2026-003",
+      "process_code": "ONBOARDING",
+      "start": "2026-07-01T18:16:39Z",
+      "end": "2026-07-01T18:17:22Z",
+      "duration_seconds": 43.0,
+      "label": "employee_onboarding",
+      "objective": "Reconcile the onboarding payment and record any exceptions.",
+      "additional_context": "The onboarding view displayed a ¥418,692 transfer for P7-07088456-012 and prompted for reconciliation results or special notes. Word displayed application-memo and card-reissue-request material used alongside the portal entry.",
+      "automation_telemetry": {
+        "total_events": 83,
+        "keystrokes_count": 20,
+        "clicks_count": 13,
+        "clipboard_operations": 4,
+        "scrolls_count": 4,
+        "app_switches_count": 10,
+        "active_applications": [
+          "Microsoft Edge",
+          "Microsoft Word",
+          "Notepad"
+        ],
+        "window_titles": [
+          "*IT申請メモ - Notepad",
+          "gyomu_itaku_kyuuyo_kitei  -  Compatibility Mode - Word",
+          "kanrisya_kengen_shinsei_tetsuzuki  -  Compatibility Mode - Word",
+          "財務会計システム - Profile 1 - Microsoft​ Edge"
+        ],
+        "web_routes": [
+          "onboarding"
+        ],
+        "cross_system_transfer": true,
+        "automation_suitability_score": 100.0
+      }
+    },
+    {
+      "session_id": "ses_20260701-181413-LAPTOP-76QMG9DE",
+      "operator": "LAPTOP-76QMG9DE",
+      "case_id": "LEAVE-APPLICATIONS-2026-004",
+      "process_code": "LEAVE",
+      "start": "2026-07-01T18:17:22Z",
+      "end": "2026-07-01T18:19:52Z",
+      "duration_seconds": 150.0,
+      "label": "leave_application_approval",
+      "objective": "Approve the outsourcing-contract termination and new confidentiality agreement.",
+      "additional_context": "The HR approval view listed 業務委託契約（解除） and 秘密保持契約（新規締結） under P12-07088456-012 and requested an approval comment or rejection reason. Word and OpenWith supported review of the associated documents before the decision entry.",
+      "automation_telemetry": {
+        "total_events": 324,
+        "keystrokes_count": 88,
+        "clicks_count": 49,
+        "clipboard_operations": 12,
+        "scrolls_count": 15,
+        "app_switches_count": 44,
+        "active_applications": [
+          "Microsoft Edge",
+          "Microsoft Word",
+          "OpenWith"
+        ],
+        "window_titles": [
+          "Restore pages",
+          "gyomu_itaku_kyuuyo_kitei  -  Compatibility Mode - Word",
+          "kanrisya_kengen_shinsei_tetsuzuki  -  Compatibility Mode - Word",
+          "keiyaku_kaijo_tetsuzuki  -  Compatibility Mode - Word",
+          "shinkui_keiyaku_tetsuzuki  -  Compatibility Mode - Word"
+        ],
+        "web_routes": [
+          "leave-applications"
+        ],
+        "cross_system_transfer": true,
+        "automation_suitability_score": 100.0
+      }
+    },
+    {
+      "session_id": "ses_20260701-181413-LAPTOP-76QMG9DE",
+      "operator": "LAPTOP-76QMG9DE",
+      "case_id": "INV-2026-7246",
+      "process_code": "INV",
+      "start": "2026-07-01T18:19:52Z",
+      "end": "2026-07-01T18:20:05Z",
+      "duration_seconds": 13.0,
+      "label": "invoice_processing",
+      "objective": "Approve invoice INV-2026-7246 and document the confirmation.",
+      "additional_context": "The invoice-approval item was opened from payroll-items, showing INV-2026-7246 and a processing or confirmation-comment field. Word was used during the session while the invoice decision was reviewed in Edge.",
+      "automation_telemetry": {
+        "total_events": 30,
+        "keystrokes_count": 6,
+        "clicks_count": 4,
+        "clipboard_operations": 1,
+        "scrolls_count": 1,
+        "app_switches_count": 6,
+        "active_applications": [
+          "Microsoft Edge",
+          "Microsoft Word",
+          "OpenWith"
+        ],
+        "window_titles": [
+          "getsujitsu_teigaku_torihikisaki_ichiran  -  Compatibility Mode - Word",
+          "keiyaku_kaijo_tetsuzuki  -  Compatibility Mode - Word",
+          "財務会計システム - Profile 1 - Microsoft​ Edge"
+        ],
+        "web_routes": [
+          "payroll-items"
+        ],
+        "cross_system_transfer": true,
+        "automation_suitability_score": 75.0
+      }
+    },
+    {
+      "session_id": "ses_20260701-181413-LAPTOP-76QMG9DE",
+      "operator": "LAPTOP-76QMG9DE",
+      "case_id": "INV-2026-7247",
+      "process_code": "INV",
+      "start": "2026-07-01T18:20:05Z",
+      "end": "2026-07-01T18:20:30Z",
+      "duration_seconds": 25.0,
+      "label": "invoice_processing",
+      "objective": "Approve invoice INV-2026-7247 and record the payment-processing comment.",
+      "additional_context": "The item INV-2026-7247 appeared in the managerial expense-approval and payment-processing dashboard under P6-07088456-012. OpenWith and Word supported the review, and a processing or confirmation comment was entered in Edge.",
+      "automation_telemetry": {
+        "total_events": 57,
+        "keystrokes_count": 26,
+        "clicks_count": 8,
+        "clipboard_operations": 1,
+        "scrolls_count": 1,
+        "app_switches_count": 3,
+        "active_applications": [
+          "Microsoft Edge",
+          "Microsoft Word",
+          "OpenWith"
+        ],
+        "window_titles": [
+          "getsujitsu_teigaku_torihikisaki_ichiran  -  Compatibility Mode - Word",
+          "財務会計システム - Profile 1 - Microsoft​ Edge"
+        ],
+        "web_routes": [],
+        "cross_system_transfer": true,
+        "automation_suitability_score": 85.0
+      }
+    },
+    {
+      "session_id": "ses_20260701-181413-LAPTOP-76QMG9DE",
+      "operator": "LAPTOP-76QMG9DE",
+      "case_id": "INV-2026-7248",
+      "process_code": "INV",
+      "start": "2026-07-01T18:20:30Z",
+      "end": "2026-07-01T18:20:55Z",
+      "duration_seconds": 25.0,
+      "label": "invoice_processing",
+      "objective": "Approve invoice INV-2026-7248 and record a confirmation comment.",
+      "additional_context": "The invoice-approval screen for INV-2026-7248 presented the standard processing or confirmation-comment field. Before the window ended, Edge advanced to INV-2026-7249, indicating sequential review of the next queued invoice.",
+      "automation_telemetry": {
+        "total_events": 43,
+        "keystrokes_count": 8,
+        "clicks_count": 12,
+        "clipboard_operations": 2,
+        "scrolls_count": 5,
+        "app_switches_count": 1,
+        "active_applications": [
+          "Microsoft Edge",
+          "OpenWith"
+        ],
+        "window_titles": [
+          "財務会計システム - Profile 1 - Microsoft​ Edge"
+        ],
+        "web_routes": [],
+        "cross_system_transfer": false,
+        "automation_suitability_score": 55.0
+      }
+    },
+    {
+      "session_id": "ses_20260701-181413-LAPTOP-76QMG9DE",
+      "operator": "LAPTOP-76QMG9DE",
+      "case_id": "INV-2026-7249",
+      "process_code": "INV",
+      "start": "2026-07-01T18:20:55Z",
+      "end": "2026-07-01T18:21:47Z",
+      "duration_seconds": 52.0,
+      "label": "invoice_processing",
+      "objective": "Process invoice_processing",
+      "additional_context": "",
+      "automation_telemetry": {
+        "total_events": 117,
+        "keystrokes_count": 34,
+        "clicks_count": 24,
+        "clipboard_operations": 5,
+        "scrolls_count": 7,
+        "app_switches_count": 5,
+        "active_applications": [
+          "Microsoft Edge",
+          "Microsoft Word",
+          "OpenWith"
+        ],
+        "window_titles": [
+          "getsujitsu_teigaku_torihikisaki_ichiran  -  Compatibility Mode - Word",
+          "kanrisya_kengen_shinsei_tetsuzuki  -  Compatibility Mode - Word",
+          "受発注在庫管理システム - Profile 1 - Microsoft​ Edge",
+          "財務会計システム - Profile 1 - Microsoft​ Edge"
+        ],
+        "web_routes": [
+          "social-insurance"
+        ],
+        "cross_system_transfer": true,
+        "automation_suitability_score": 100.0
+      }
+    },
+    {
+      "session_id": "ses_20260701-181413-LAPTOP-76QMG9DE",
+      "operator": "LAPTOP-76QMG9DE",
+      "case_id": "INV-2026-7250",
+      "process_code": "INV",
+      "start": "2026-07-01T18:21:47Z",
+      "end": "2026-07-01T18:22:11Z",
+      "duration_seconds": 24.0,
+      "label": "invoice_processing",
+      "objective": "Process invoice_processing",
+      "additional_context": "",
+      "automation_telemetry": {
+        "total_events": 65,
+        "keystrokes_count": 30,
+        "clicks_count": 6,
+        "clipboard_operations": 1,
+        "scrolls_count": 1,
+        "app_switches_count": 6,
+        "active_applications": [
+          "Microsoft Edge",
+          "Microsoft Word",
+          "OpenWith"
+        ],
+        "window_titles": [
+          "getsujitsu_teigaku_torihikisaki_ichiran  -  Compatibility Mode - Word",
+          "kanrisya_kengen_shinsei_tetsuzuki  -  Compatibility Mode - Word",
+          "受発注在庫管理システム - Profile 1 - Microsoft​ Edge",
+          "財務会計システム - Profile 1 - Microsoft​ Edge"
+        ],
+        "web_routes": [],
+        "cross_system_transfer": true,
+        "automation_suitability_score": 85.0
+      }
+    },
+    {
+      "session_id": "ses_20260701-181413-LAPTOP-76QMG9DE",
+      "operator": "LAPTOP-76QMG9DE",
+      "case_id": "INV-2026-7251",
+      "process_code": "INV",
+      "start": "2026-07-01T18:22:11Z",
+      "end": "2026-07-01T18:22:44Z",
+      "duration_seconds": 33.0,
+      "label": "invoice_processing",
+      "objective": "Process invoice_processing",
+      "additional_context": "",
+      "automation_telemetry": {
+        "total_events": 43,
+        "keystrokes_count": 6,
+        "clicks_count": 12,
+        "clipboard_operations": 2,
+        "scrolls_count": 2,
+        "app_switches_count": 5,
+        "active_applications": [
+          "Microsoft Edge",
+          "Microsoft Word"
+        ],
+        "window_titles": [
+          "getsujitsu_teigaku_torihikisaki_ichiran  -  Compatibility Mode - Word",
+          "財務会計システム - Profile 1 - Microsoft​ Edge"
+        ],
+        "web_routes": [],
+        "cross_system_transfer": true,
+        "automation_suitability_score": 90.0
+      }
+    },
+    {
+      "session_id": "ses_20260701-181413-LAPTOP-76QMG9DE",
+      "operator": "LAPTOP-76QMG9DE",
+      "case_id": "INV-2026-7253",
+      "process_code": "INV",
+      "start": "2026-07-01T18:22:44Z",
+      "end": "2026-07-01T18:23:29Z",
+      "duration_seconds": 45.0,
+      "label": "invoice_processing",
+      "objective": "Process invoice_processing",
+      "additional_context": "",
+      "automation_telemetry": {
+        "total_events": 85,
+        "keystrokes_count": 10,
+        "clicks_count": 28,
+        "clipboard_operations": 5,
+        "scrolls_count": 11,
+        "app_switches_count": 1,
+        "active_applications": [
+          "Microsoft Edge"
+        ],
+        "window_titles": [
+          "HR人事給与システム - Profile 1 - Microsoft​ Edge",
+          "財務会計システム - Profile 1 - Microsoft​ Edge"
+        ],
+        "web_routes": [],
+        "cross_system_transfer": false,
+        "automation_suitability_score": 55.0
+      }
+    },
+    {
+      "session_id": "ses_20260701-181413-LAPTOP-76QMG9DE",
+      "operator": "LAPTOP-76QMG9DE",
+      "case_id": "LEAVE-APPLICATIONS-2026-012",
+      "process_code": "LEAVE",
+      "start": "2026-07-01T18:23:29Z",
+      "end": "2026-07-01T18:25:12Z",
+      "duration_seconds": 103.0,
+      "label": "leave_application_approval",
+      "objective": "Approve the sales contract amendment with a decision comment.",
+      "additional_context": "The approval screen displayed 売買契約（変更） with identifiers P2-07088456-012 and P12-07088456-012 and prompted for an approval comment or rejection reason. The activity was performed in Edge from the portal's leave-applications route.",
+      "automation_telemetry": {
+        "total_events": 127,
+        "keystrokes_count": 20,
+        "clicks_count": 28,
+        "clipboard_operations": 5,
+        "scrolls_count": 6,
+        "app_switches_count": 19,
+        "active_applications": [
+          "Microsoft Edge",
+          "Microsoft Word"
+        ],
+        "window_titles": [
+          "HR人事給与システム - Profile 1 - Microsoft​ Edge",
+          "getsujitsu_teigaku_torihikisaki_ichiran  -  Compatibility Mode - Word",
+          "keiyaku_kaijo_tetsuzuki  -  Compatibility Mode - Word",
+          "shinkui_keiyaku_tetsuzuki  -  Compatibility Mode - Word",
+          "shinkuitorihikisaki_touroku_tetsuzuki  -  Compatibility Mode - Word"
+        ],
+        "web_routes": [
+          "leave-applications"
+        ],
+        "cross_system_transfer": true,
+        "automation_suitability_score": 100.0
+      }
+    },
+    {
+      "session_id": "ses_20260701-181413-LAPTOP-76QMG9DE",
+      "operator": "LAPTOP-76QMG9DE",
+      "case_id": "SOCIAL-INSURANCE-2026-013",
+      "process_code": "SOCIAL",
+      "start": "2026-07-01T18:25:12Z",
+      "end": "2026-07-01T18:25:56Z",
+      "duration_seconds": 44.0,
+      "label": "social_insurance_processing",
+      "objective": "Record the July 2026 social insurance handling status.",
+      "additional_context": "On the social-insurance page for P13-07088456-012 and period 2026-07, the user worked in the processing-details and status field. The window used only Edge and directly updated the portal case.",
+      "automation_telemetry": {
+        "total_events": 84,
+        "keystrokes_count": 12,
+        "clicks_count": 24,
+        "clipboard_operations": 5,
+        "scrolls_count": 9,
+        "app_switches_count": 1,
+        "active_applications": [
+          "Microsoft Edge"
+        ],
+        "window_titles": [
+          "受発注在庫管理システム - Profile 1 - Microsoft​ Edge"
+        ],
+        "web_routes": [
+          "social-insurance"
+        ],
+        "cross_system_transfer": false,
+        "automation_suitability_score": 55.0
+      }
+    },
+    {
+      "session_id": "ses_20260701-181413-LAPTOP-76QMG9DE",
+      "operator": "LAPTOP-76QMG9DE",
+      "case_id": "INV-2026-7254",
+      "process_code": "INV",
+      "start": "2026-07-01T18:25:56Z",
+      "end": "2026-07-01T18:26:19Z",
+      "duration_seconds": 23.0,
+      "label": "invoice_processing",
+      "objective": "Process invoice_processing",
+      "additional_context": "",
+      "automation_telemetry": {
+        "total_events": 56,
+        "keystrokes_count": 26,
+        "clicks_count": 6,
+        "clipboard_operations": 1,
+        "scrolls_count": 1,
+        "app_switches_count": 5,
+        "active_applications": [
+          "Microsoft Edge",
+          "Microsoft Word",
+          "OpenWith"
+        ],
+        "window_titles": [
+          "getsujitsu_teigaku_torihikisaki_ichiran  -  Compatibility Mode - Word",
+          "keiyaku_kaijo_tetsuzuki  -  Compatibility Mode - Word",
+          "受発注在庫管理システム - Profile 1 - Microsoft​ Edge",
+          "財務会計システム - Profile 1 - Microsoft​ Edge"
+        ],
+        "web_routes": [],
+        "cross_system_transfer": true,
+        "automation_suitability_score": 85.0
+      }
+    },
+    {
+      "session_id": "ses_20260701-181413-LAPTOP-76QMG9DE",
+      "operator": "LAPTOP-76QMG9DE",
+      "case_id": "INV-2026-7255",
+      "process_code": "INV",
+      "start": "2026-07-01T18:26:19Z",
+      "end": "2026-07-01T18:26:52Z",
+      "duration_seconds": 33.0,
+      "label": "invoice_processing",
+      "objective": "Process invoice_processing",
+      "additional_context": "",
+      "automation_telemetry": {
+        "total_events": 77,
+        "keystrokes_count": 30,
+        "clicks_count": 12,
+        "clipboard_operations": 2,
+        "scrolls_count": 3,
+        "app_switches_count": 4,
+        "active_applications": [
+          "Microsoft Edge",
+          "Microsoft Word",
+          "OpenWith"
+        ],
+        "window_titles": [
+          "getsujitsu_teigaku_torihikisaki_ichiran  -  Compatibility Mode - Word",
+          "財務会計システム - Profile 1 - Microsoft​ Edge"
+        ],
+        "web_routes": [],
+        "cross_system_transfer": true,
+        "automation_suitability_score": 100.0
+      }
+    },
+    {
+      "session_id": "ses_20260701-181413-LAPTOP-76QMG9DE",
+      "operator": "LAPTOP-76QMG9DE",
+      "case_id": "INV-2026-7257",
+      "process_code": "INV",
+      "start": "2026-07-01T18:26:52Z",
+      "end": "2026-07-01T18:27:07Z",
+      "duration_seconds": 15.0,
+      "label": "invoice_processing",
+      "objective": "Process invoice_processing",
+      "additional_context": "",
+      "automation_telemetry": {
+        "total_events": 32,
+        "keystrokes_count": 6,
+        "clicks_count": 6,
+        "clipboard_operations": 1,
+        "scrolls_count": 2,
+        "app_switches_count": 2,
+        "active_applications": [
+          "Microsoft Edge",
+          "Microsoft Word",
+          "OpenWith"
+        ],
+        "window_titles": [
+          "getsujitsu_teigaku_torihikisaki_ichiran  -  Compatibility Mode - Word",
+          "財務会計システム - Profile 1 - Microsoft​ Edge"
+        ],
+        "web_routes": [
+          "dashboard"
+        ],
+        "cross_system_transfer": true,
+        "automation_suitability_score": 65.0
+      }
+    }
+  ]
+}

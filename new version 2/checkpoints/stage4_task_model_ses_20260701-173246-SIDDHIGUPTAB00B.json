@@ -1,0 +1,7 @@
+{
+  "PAYROLL": "travel_expense_reimbursement_processing",
+  "SOCIAL": "social_insurance_case_processing",
+  "LEAVE": "agreement_approval_processing",
+  "PO": "employee_lifecycle_record_processing",
+  "ONBOARDING": "employee_onboarding_verification"
+}

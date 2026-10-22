@@ -1,0 +1,197 @@
+{
+  "status": "completed",
+  "session_id": "ses_20260701-183232-LAPTOP-76QMG9DE",
+  "operator": "LAPTOP-76QMG9DE",
+  "session_dir": "G:\\.shortcut-targets-by-id\\1WSBZQxOODKFDzYBkIik5g90NWKS7Gwl0\\AI Engineer\\dataset_b\\ses_20260701-183232-LAPTOP-76QMG9DE",
+  "dominant_batch": "BATCH-W1",
+  "total_events_loaded": 781,
+  "clean_events_loaded": 772,
+  "predicted_segments_count": 5,
+  "timings": {
+    "Layer 1: Raw Log Ingestion & Filtering": 0.3821702999994159,
+    "Layer 2: Dynamic Trace & Episode Boundary Extraction": 0.24313749998691492,
+    "Stage 0: Dual Keyframe OCR Visual Grounding": 23.702130599995144,
+    "Stage 1: Activity Segmentation (Puter LLM)": 36.97305120000965,
+    "Stage 2: Latent Task Discovery (Puter LLM)": 10.392739799979609,
+    "Stage 3: Root Thread Consolidation & Naming (Puter LLM)": 15.0,
+    "Stage 4: Hierarchical Task Modeling (Puter LLM)": 0.00512640000670217,
+    "Stage 5: Deliverable Generation (segments.jsonl)": 0.006588200019905344,
+    "Total End-to-End Pipeline Runtime": 71.70497150000301
+  },
+  "segments": [
+    {
+      "session_id": "ses_20260701-183232-LAPTOP-76QMG9DE",
+      "operator": "LAPTOP-76QMG9DE",
+      "case_id": "PAYROLL-ITEMS-BATCH-W1-001",
+      "process_code": "PAYROLL",
+      "start": "2026-07-01T18:32:47Z",
+      "end": "2026-07-01T18:33:11Z",
+      "duration_seconds": 24.0,
+      "label": "payroll_item_processing",
+      "objective": "Review and complete an employee travel-expense payroll item.",
+      "additional_context": "In the Edge payroll-items page, the user viewed a 出張旅費 record associated with 田中 麻里 and P4-07080388-012, alongside a field for processing details or confirmation comments.",
+      "automation_telemetry": {
+        "total_events": 63,
+        "keystrokes_count": 8,
+        "clicks_count": 13,
+        "clipboard_operations": 2,
+        "scrolls_count": 3,
+        "app_switches_count": 16,
+        "active_applications": [
+          "Microsoft Edge"
+        ],
+        "window_titles": [
+          "HR人事給与システム - Profile 1 - Microsoft​ Edge",
+          "Restore pages",
+          "受発注在庫管理システム - Profile 1 - Microsoft​ Edge"
+        ],
+        "web_routes": [
+          "payroll-items"
+        ],
+        "cross_system_transfer": false,
+        "automation_suitability_score": 65.0
+      }
+    },
+    {
+      "session_id": "ses_20260701-183232-LAPTOP-76QMG9DE",
+      "operator": "LAPTOP-76QMG9DE",
+      "case_id": "BATCH-W4",
+      "process_code": "BATCH",
+      "start": "2026-07-01T18:33:11Z",
+      "end": "2026-07-01T18:36:01Z",
+      "duration_seconds": 170.0,
+      "label": "payroll_item_batch_processing",
+      "objective": "Process and document multiple payroll-item requests.",
+      "additional_context": "The Edge payroll-items screen showed 制御基板ユニットA and モーターユニットF, with P4/P11 identifiers and a processing-comment field. Notepad, Windows Explorer, and Windows Terminal were also used, including an apparent IT application memo as a reference.",
+      "automation_telemetry": {
+        "total_events": 315,
+        "keystrokes_count": 44,
+        "clicks_count": 85,
+        "clipboard_operations": 18,
+        "scrolls_count": 39,
+        "app_switches_count": 10,
+        "active_applications": [
+          "Microsoft Edge",
+          "Notepad",
+          "Windows Explorer",
+          "WindowsTerminal"
+        ],
+        "window_titles": [
+          "*IT申請メモ - Notepad",
+          "*在庫調整メモ - Notepad",
+          "*精算確認メモ - Notepad",
+          "HR人事給与システム - Profile 1 - Microsoft​ Edge",
+          "Windows PowerShell"
+        ],
+        "web_routes": [
+          "payroll-items"
+        ],
+        "cross_system_transfer": true,
+        "automation_suitability_score": 100.0
+      }
+    },
+    {
+      "session_id": "ses_20260701-183232-LAPTOP-76QMG9DE",
+      "operator": "LAPTOP-76QMG9DE",
+      "case_id": "LEAVE-APPLICATIONS-BATCH-W1-003",
+      "process_code": "LEAVE",
+      "start": "2026-07-01T18:36:01Z",
+      "end": "2026-07-01T18:36:41Z",
+      "duration_seconds": 40.0,
+      "label": "leave_application_approval",
+      "objective": "Approve or return a leave application with documented reasons.",
+      "additional_context": "On the leave-applications page in Edge, the user reached a decision screen requesting an approval comment or rejection reason for records including P4-07080388-012 and P12-07080388-012. Microsoft Word was open for supporting review or drafting.",
+      "automation_telemetry": {
+        "total_events": 69,
+        "keystrokes_count": 16,
+        "clicks_count": 14,
+        "clipboard_operations": 3,
+        "scrolls_count": 4,
+        "app_switches_count": 5,
+        "active_applications": [
+          "Microsoft Edge",
+          "Microsoft Word"
+        ],
+        "window_titles": [
+          "HR人事給与システム - Profile 1 - Microsoft​ Edge",
+          "Resume Reading",
+          "keiyaku_kaijo_tetsuzuki  -  Compatibility Mode - Word",
+          "受発注在庫管理システム - Profile 1 - Microsoft​ Edge"
+        ],
+        "web_routes": [
+          "leave-applications"
+        ],
+        "cross_system_transfer": true,
+        "automation_suitability_score": 90.0
+      }
+    },
+    {
+      "session_id": "ses_20260701-183232-LAPTOP-76QMG9DE",
+      "operator": "LAPTOP-76QMG9DE",
+      "case_id": "PO-2026-5617",
+      "process_code": "PO",
+      "start": "2026-07-01T18:36:41Z",
+      "end": "2026-07-01T18:37:16Z",
+      "duration_seconds": 35.0,
+      "label": "resident_tax_item_processing",
+      "objective": "Record processing of resident-tax items for the listed organizations.",
+      "additional_context": "The Edge resident-tax page displayed 大和商事株式会社 and 福岡システム設計, identifier P10-07080388-012, and a field for entering processing details. Microsoft Word was also used to support documentation.",
+      "automation_telemetry": {
+        "total_events": 65,
+        "keystrokes_count": 8,
+        "clicks_count": 17,
+        "clipboard_operations": 4,
+        "scrolls_count": 5,
+        "app_switches_count": 5,
+        "active_applications": [
+          "Microsoft Edge",
+          "Microsoft Word"
+        ],
+        "window_titles": [
+          "shinkuitorihikisaki_touroku_tetsuzuki  -  Compatibility Mode - Word",
+          "受発注在庫管理システム - Profile 1 - Microsoft​ Edge",
+          "財務会計システム - Profile 1 - Microsoft​ Edge"
+        ],
+        "web_routes": [
+          "resident-tax"
+        ],
+        "cross_system_transfer": true,
+        "automation_suitability_score": 90.0
+      }
+    },
+    {
+      "session_id": "ses_20260701-183232-LAPTOP-76QMG9DE",
+      "operator": "LAPTOP-76QMG9DE",
+      "case_id": "BATCH-W6",
+      "process_code": "BATCH",
+      "start": "2026-07-01T18:37:16Z",
+      "end": "2026-07-01T18:37:53Z",
+      "duration_seconds": 37.0,
+      "label": "payroll_item_batch_processing",
+      "objective": "Verify and complete payroll-item processing using reference notes.",
+      "additional_context": "The Edge payroll-items page showed P10-07080388-012 and P11-07080388-012, including モーターユニットF and a processing/confirmation-comment field. Notepad was open as an auxiliary source for the entry.",
+      "automation_telemetry": {
+        "total_events": 81,
+        "keystrokes_count": 12,
+        "clicks_count": 24,
+        "clipboard_operations": 5,
+        "scrolls_count": 8,
+        "app_switches_count": 3,
+        "active_applications": [
+          "Microsoft Edge",
+          "Notepad"
+        ],
+        "window_titles": [
+          "*在庫調整メモ - Notepad",
+          "受発注在庫管理システム - Profile 1 - Microsoft​ Edge",
+          "財務会計システム - Profile 1 - Microsoft​ Edge"
+        ],
+        "web_routes": [
+          "payroll-items"
+        ],
+        "cross_system_transfer": true,
+        "automation_suitability_score": 90.0
+      }
+    }
+  ]
+}

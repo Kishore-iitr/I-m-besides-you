@@ -1,0 +1,520 @@
+{
+  "sessions": {
+    "ses_20260630-163424-SIDDHIGUPTAB00B": {
+      "session_id": "ses_20260630-163424-SIDDHIGUPTAB00B",
+      "clean_events": 2475,
+      "ground_truth_count": 31,
+      "predicted_count": 31,
+      "metrics": {
+        "tol_1s": {
+          "tolerance_s": 1,
+          "tp": 3,
+          "prec": 9.68,
+          "rec": 9.68,
+          "f1": 9.68
+        },
+        "tol_2s": {
+          "tolerance_s": 2,
+          "tp": 6,
+          "prec": 19.35,
+          "rec": 19.35,
+          "f1": 19.35
+        },
+        "tol_5s": {
+          "tolerance_s": 5,
+          "tp": 29,
+          "prec": 93.55,
+          "rec": 93.55,
+          "f1": 93.55
+        },
+        "tol_10s": {
+          "tolerance_s": 10,
+          "tp": 29,
+          "prec": 93.55,
+          "rec": 93.55,
+          "f1": 93.55
+        },
+        "tol_30s": {
+          "tolerance_s": 30,
+          "tp": 30,
+          "prec": 96.77,
+          "rec": 96.77,
+          "f1": 96.77
+        }
+      }
+    },
+    "ses_20260701-035622-SIDDHIGUPTAB00B": {
+      "session_id": "ses_20260701-035622-SIDDHIGUPTAB00B",
+      "clean_events": 2954,
+      "ground_truth_count": 37,
+      "predicted_count": 36,
+      "metrics": {
+        "tol_1s": {
+          "tolerance_s": 1,
+          "tp": 5,
+          "prec": 13.89,
+          "rec": 13.51,
+          "f1": 13.7
+        },
+        "tol_2s": {
+          "tolerance_s": 2,
+          "tp": 6,
+          "prec": 16.67,
+          "rec": 16.22,
+          "f1": 16.44
+        },
+        "tol_5s": {
+          "tolerance_s": 5,
+          "tp": 27,
+          "prec": 75.0,
+          "rec": 72.97,
+          "f1": 73.97
+        },
+        "tol_10s": {
+          "tolerance_s": 10,
+          "tp": 28,
+          "prec": 77.78,
+          "rec": 75.68,
+          "f1": 76.71
+        },
+        "tol_30s": {
+          "tolerance_s": 30,
+          "tp": 33,
+          "prec": 91.67,
+          "rec": 89.19,
+          "f1": 90.41
+        }
+      }
+    },
+    "ses_20260701-043922-SIDDHIGUPTAB00B": {
+      "session_id": "ses_20260701-043922-SIDDHIGUPTAB00B",
+      "clean_events": 3108,
+      "ground_truth_count": 41,
+      "predicted_count": 40,
+      "metrics": {
+        "tol_1s": {
+          "tolerance_s": 1,
+          "tp": 1,
+          "prec": 2.5,
+          "rec": 2.44,
+          "f1": 2.47
+        },
+        "tol_2s": {
+          "tolerance_s": 2,
+          "tp": 25,
+          "prec": 62.5,
+          "rec": 60.98,
+          "f1": 61.73
+        },
+        "tol_5s": {
+          "tolerance_s": 5,
+          "tp": 36,
+          "prec": 90.0,
+          "rec": 87.8,
+          "f1": 88.89
+        },
+        "tol_10s": {
+          "tolerance_s": 10,
+          "tp": 36,
+          "prec": 90.0,
+          "rec": 87.8,
+          "f1": 88.89
+        },
+        "tol_30s": {
+          "tolerance_s": 30,
+          "tp": 38,
+          "prec": 95.0,
+          "rec": 92.68,
+          "f1": 93.83
+        }
+      }
+    },
+    "ses_20260701-053720-SIDDHIGUPTAB00B": {
+      "session_id": "ses_20260701-053720-SIDDHIGUPTAB00B",
+      "clean_events": 3003,
+      "ground_truth_count": 35,
+      "predicted_count": 35,
+      "metrics": {
+        "tol_1s": {
+          "tolerance_s": 1,
+          "tp": 8,
+          "prec": 22.86,
+          "rec": 22.86,
+          "f1": 22.86
+        },
+        "tol_2s": {
+          "tolerance_s": 2,
+          "tp": 12,
+          "prec": 34.29,
+          "rec": 34.29,
+          "f1": 34.29
+        },
+        "tol_5s": {
+          "tolerance_s": 5,
+          "tp": 26,
+          "prec": 74.29,
+          "rec": 74.29,
+          "f1": 74.29
+        },
+        "tol_10s": {
+          "tolerance_s": 10,
+          "tp": 28,
+          "prec": 80.0,
+          "rec": 80.0,
+          "f1": 80.0
+        },
+        "tol_30s": {
+          "tolerance_s": 30,
+          "tp": 34,
+          "prec": 97.14,
+          "rec": 97.14,
+          "f1": 97.14
+        }
+      }
+    },
+    "ses_20260701-074424-SIDDHIGUPTAB00B": {
+      "session_id": "ses_20260701-074424-SIDDHIGUPTAB00B",
+      "clean_events": 2555,
+      "ground_truth_count": 31,
+      "predicted_count": 32,
+      "metrics": {
+        "tol_1s": {
+          "tolerance_s": 1,
+          "tp": 6,
+          "prec": 18.75,
+          "rec": 19.35,
+          "f1": 19.05
+        },
+        "tol_2s": {
+          "tolerance_s": 2,
+          "tp": 6,
+          "prec": 18.75,
+          "rec": 19.35,
+          "f1": 19.05
+        },
+        "tol_5s": {
+          "tolerance_s": 5,
+          "tp": 26,
+          "prec": 81.25,
+          "rec": 83.87,
+          "f1": 82.54
+        },
+        "tol_10s": {
+          "tolerance_s": 10,
+          "tp": 26,
+          "prec": 81.25,
+          "rec": 83.87,
+          "f1": 82.54
+        },
+        "tol_30s": {
+          "tolerance_s": 30,
+          "tp": 30,
+          "prec": 93.75,
+          "rec": 96.77,
+          "f1": 95.24
+        }
+      }
+    },
+    "ses_20260701-081120-SIDDHIGUPTAB00B": {
+      "session_id": "ses_20260701-081120-SIDDHIGUPTAB00B",
+      "clean_events": 2327,
+      "ground_truth_count": 31,
+      "predicted_count": 32,
+      "metrics": {
+        "tol_1s": {
+          "tolerance_s": 1,
+          "tp": 2,
+          "prec": 6.25,
+          "rec": 6.45,
+          "f1": 6.35
+        },
+        "tol_2s": {
+          "tolerance_s": 2,
+          "tp": 2,
+          "prec": 6.25,
+          "rec": 6.45,
+          "f1": 6.35
+        },
+        "tol_5s": {
+          "tolerance_s": 5,
+          "tp": 27,
+          "prec": 84.38,
+          "rec": 87.1,
+          "f1": 85.71
+        },
+        "tol_10s": {
+          "tolerance_s": 10,
+          "tp": 29,
+          "prec": 90.62,
+          "rec": 93.55,
+          "f1": 92.06
+        },
+        "tol_30s": {
+          "tolerance_s": 30,
+          "tp": 31,
+          "prec": 96.88,
+          "rec": 100.0,
+          "f1": 98.41
+        }
+      }
+    },
+    "ses_20260701-092027-SIDDHIGUPTAB00B": {
+      "session_id": "ses_20260701-092027-SIDDHIGUPTAB00B",
+      "clean_events": 2620,
+      "ground_truth_count": 34,
+      "predicted_count": 34,
+      "metrics": {
+        "tol_1s": {
+          "tolerance_s": 1,
+          "tp": 3,
+          "prec": 8.82,
+          "rec": 8.82,
+          "f1": 8.82
+        },
+        "tol_2s": {
+          "tolerance_s": 2,
+          "tp": 4,
+          "prec": 11.76,
+          "rec": 11.76,
+          "f1": 11.76
+        },
+        "tol_5s": {
+          "tolerance_s": 5,
+          "tp": 32,
+          "prec": 94.12,
+          "rec": 94.12,
+          "f1": 94.12
+        },
+        "tol_10s": {
+          "tolerance_s": 10,
+          "tp": 32,
+          "prec": 94.12,
+          "rec": 94.12,
+          "f1": 94.12
+        },
+        "tol_30s": {
+          "tolerance_s": 30,
+          "tp": 32,
+          "prec": 94.12,
+          "rec": 94.12,
+          "f1": 94.12
+        }
+      }
+    },
+    "ses_20260701-115141-SIDDHIGUPTAB00B": {
+      "session_id": "ses_20260701-115141-SIDDHIGUPTAB00B",
+      "clean_events": 3544,
+      "ground_truth_count": 44,
+      "predicted_count": 45,
+      "metrics": {
+        "tol_1s": {
+          "tolerance_s": 1,
+          "tp": 8,
+          "prec": 17.78,
+          "rec": 18.18,
+          "f1": 17.98
+        },
+        "tol_2s": {
+          "tolerance_s": 2,
+          "tp": 10,
+          "prec": 22.22,
+          "rec": 22.73,
+          "f1": 22.47
+        },
+        "tol_5s": {
+          "tolerance_s": 5,
+          "tp": 42,
+          "prec": 93.33,
+          "rec": 95.45,
+          "f1": 94.38
+        },
+        "tol_10s": {
+          "tolerance_s": 10,
+          "tp": 42,
+          "prec": 93.33,
+          "rec": 95.45,
+          "f1": 94.38
+        },
+        "tol_30s": {
+          "tolerance_s": 30,
+          "tp": 42,
+          "prec": 93.33,
+          "rec": 95.45,
+          "f1": 94.38
+        }
+      }
+    },
+    "ses_20260701-124033-SIDDHIGUPTAB00B": {
+      "session_id": "ses_20260701-124033-SIDDHIGUPTAB00B",
+      "clean_events": 2697,
+      "ground_truth_count": 31,
+      "predicted_count": 32,
+      "metrics": {
+        "tol_1s": {
+          "tolerance_s": 1,
+          "tp": 9,
+          "prec": 28.12,
+          "rec": 29.03,
+          "f1": 28.57
+        },
+        "tol_2s": {
+          "tolerance_s": 2,
+          "tp": 9,
+          "prec": 28.12,
+          "rec": 29.03,
+          "f1": 28.57
+        },
+        "tol_5s": {
+          "tolerance_s": 5,
+          "tp": 27,
+          "prec": 84.38,
+          "rec": 87.1,
+          "f1": 85.71
+        },
+        "tol_10s": {
+          "tolerance_s": 10,
+          "tp": 27,
+          "prec": 84.38,
+          "rec": 87.1,
+          "f1": 85.71
+        },
+        "tol_30s": {
+          "tolerance_s": 30,
+          "tp": 30,
+          "prec": 93.75,
+          "rec": 96.77,
+          "f1": 95.24
+        }
+      }
+    },
+    "ses_20260701-131015-SIDDHIGUPTAB00B": {
+      "session_id": "ses_20260701-131015-SIDDHIGUPTAB00B",
+      "clean_events": 2789,
+      "ground_truth_count": 33,
+      "predicted_count": 33,
+      "metrics": {
+        "tol_1s": {
+          "tolerance_s": 1,
+          "tp": 3,
+          "prec": 9.09,
+          "rec": 9.09,
+          "f1": 9.09
+        },
+        "tol_2s": {
+          "tolerance_s": 2,
+          "tp": 5,
+          "prec": 15.15,
+          "rec": 15.15,
+          "f1": 15.15
+        },
+        "tol_5s": {
+          "tolerance_s": 5,
+          "tp": 28,
+          "prec": 84.85,
+          "rec": 84.85,
+          "f1": 84.85
+        },
+        "tol_10s": {
+          "tolerance_s": 10,
+          "tp": 30,
+          "prec": 90.91,
+          "rec": 90.91,
+          "f1": 90.91
+        },
+        "tol_30s": {
+          "tolerance_s": 30,
+          "tp": 30,
+          "prec": 90.91,
+          "rec": 90.91,
+          "f1": 90.91
+        }
+      }
+    },
+    "ses_20260701-134215-SIDDHIGUPTAB00B": {
+      "session_id": "ses_20260701-134215-SIDDHIGUPTAB00B",
+      "clean_events": 2885,
+      "ground_truth_count": 35,
+      "predicted_count": 37,
+      "metrics": {
+        "tol_1s": {
+          "tolerance_s": 1,
+          "tp": 2,
+          "prec": 5.41,
+          "rec": 5.71,
+          "f1": 5.56
+        },
+        "tol_2s": {
+          "tolerance_s": 2,
+          "tp": 3,
+          "prec": 8.11,
+          "rec": 8.57,
+          "f1": 8.33
+        },
+        "tol_5s": {
+          "tolerance_s": 5,
+          "tp": 31,
+          "prec": 83.78,
+          "rec": 88.57,
+          "f1": 86.11
+        },
+        "tol_10s": {
+          "tolerance_s": 10,
+          "tp": 31,
+          "prec": 83.78,
+          "rec": 88.57,
+          "f1": 86.11
+        },
+        "tol_30s": {
+          "tolerance_s": 30,
+          "tp": 35,
+          "prec": 94.59,
+          "rec": 100.0,
+          "f1": 97.22
+        }
+      }
+    },
+    "ses_20260701-141430-SIDDHIGUPTAB00B": {
+      "session_id": "ses_20260701-141430-SIDDHIGUPTAB00B",
+      "clean_events": 3191,
+      "ground_truth_count": 35,
+      "predicted_count": 37,
+      "metrics": {
+        "tol_1s": {
+          "tolerance_s": 1,
+          "tp": 6,
+          "prec": 16.22,
+          "rec": 17.14,
+          "f1": 16.67
+        },
+        "tol_2s": {
+          "tolerance_s": 2,
+          "tp": 7,
+          "prec": 18.92,
+          "rec": 20.0,
+          "f1": 19.44
+        },
+        "tol_5s": {
+          "tolerance_s": 5,
+          "tp": 31,
+          "prec": 83.78,
+          "rec": 88.57,
+          "f1": 86.11
+        },
+        "tol_10s": {
+          "tolerance_s": 10,
+          "tp": 31,
+          "prec": 83.78,
+          "rec": 88.57,
+          "f1": 86.11
+        },
+        "tol_30s": {
+          "tolerance_s": 30,
+          "tp": 34,
+          "prec": 91.89,
+          "rec": 97.14,
+          "f1": 94.44
+        }
+      }
+    }
+  }
+}

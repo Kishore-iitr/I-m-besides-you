@@ -1,0 +1,26 @@
+{
+  "INV": {
+    "process_prefix": "INV",
+    "canonical_task_name": "invoice_processing",
+    "department": "Finance",
+    "core_objective": "Review, approve, and document the processing decisions for supplier invoices."
+  },
+  "LEAVE": {
+    "process_prefix": "LEAVE",
+    "canonical_task_name": "leave_application_processing",
+    "department": "Human Resources",
+    "core_objective": "Review and reconcile leave applications, approve or return requests, and record the rationale and supporting notes."
+  },
+  "ONBOARDING": {
+    "process_prefix": "ONBOARDING",
+    "canonical_task_name": "employee_onboarding",
+    "department": "Human Resources",
+    "core_objective": "Reconcile employee onboarding records and document effective-date results and special notes."
+  },
+  "PAYROLL": {
+    "process_prefix": "PAYROLL",
+    "canonical_task_name": "payroll_item_processing",
+    "department": "Finance",
+    "core_objective": "Classify, review, and confirm payroll items and related employee compensation or expense treatments."
+  }
+}

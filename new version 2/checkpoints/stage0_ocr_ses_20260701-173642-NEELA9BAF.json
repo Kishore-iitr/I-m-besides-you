@@ -1,0 +1,30 @@
+{
+  "0": {
+    "initial_state_ocr": "マン GO 受発注在庫管理システム          x       New tab                      x       受発                          | =e                                                                                                                            =      a      x | & CG (© 12700.15134                                                                                                                                                                                a Fl wv | 0                                                      Q Search                                                                                  … NO     = | 受発注在庫業務 | ら                                                        Notifications and activity | e 在庫管理            0      回        —_—      .          に           General",
+    "terminal_state_ocr": ") 財務会計システム                     x | +                                                                                                                                                                 - @ x | ) 財務会計システム                     x         New tab                             x | <& CG (@ 127.0.0.1:5133/#/resident-tax                                                   a | 財務会計システム 2026年度・経理部門 | 請求書承認・経費精 | e 経費承認 (管理職)   12"
+  },
+  "1": {
+    "initial_state_ocr": ") 財務会計システム                     x         New tab                             x | ) 財務会計システム                     | =e                                                                                                                                                                 ー       回       x | <& CG (@ 127.0.0.1:5133/#/resident-tax | Me 財務会計システム 2026年度・経理部門 | ダッシュボード / SEBS | ri      発注管理",
+    "terminal_state_ocr": "ツン © 受発注在庫管理システム     x   New tab           X | @ 受発注在庫管理システム     x) +                                                             =   a   x | を G (© 127.0.0.1:5134/#/payroll-items | 2% 受発注在庫管理システム 2026年度・物流管理部 | SC 36 | e ダッシュボード | e 在庫管理         9"
+  },
+  "2": {
+    "initial_state_ocr": "品番: BATCH-M6 | 調整数: +198 | 区分: 定期補売 | 100%       Windows (CRLF)              UTF-8 | Ln 4, Col 8      35 characters                           Plain text",
+    "terminal_state_ocr": "VY @ HR人事給与システム       x   New tab           x | @ HR人事給与システム       | =e | ぐを CG (@ 127.0.0.1:5132/#/social-insurance | 田中 麻里・人事マネージャー | XS HR人事給与システム 2026年度・人事部門 | e ダッシュボード | e 経費精算・給与変更 24"
+  },
+  "3": {
+    "initial_state_ocr": "ン  ) HR人事給与システム       x   New tab           X |  HR人事給与システム       x | +                                                            ー   回   x | ぐを CG (@ 127.0.0.1:5132/#/social-insurance | wv) Ble QB - Bona v | 19)】 | ii               福利厚生申請 | e 経費精算・給与変更 24        12 件・5 件処理待ち",
+    "terminal_state_ocr": "ン © 受発注在庫管理システム     x   New tab           x | @ 受発注在庫管理システム     x | +                                                             =   a   x | を G (© 127.0.0.1:5134/#/payroll-items                                                        ぁ AY) a2le s … @9 chat ン | es 契約管理         12 | e 返品処理         0 | e IT申請         12 | e 受注・その他         0                                           BATCH-I"
+  },
+  "4": {
+    "initial_state_ocr": "Vo @ 財務会計システム        x   New tab           X | QD 財務会計システム        x) +                                                             =   o   x | を 〇 (ぐ⑦ 127.0.0.1:5133/#/payroll-items                                                        ぁ AY) a2le s … @9 chat ン | ・ダッシュボード      請求書承認・経費精算 | . BREE              ALES — 5 | ERR)       12 | EB             12",
+    "terminal_state_ocr": "Vo @ 財務会計システム           x     New tab                x | を 〇 (ぐ⑦ 127.0.0.1:5133/#/payroll-items                                                        ぁ AY) a2le s … @9 chat ン | iki                請求書承認・経費精算 | 請求書承認・経費精                12 件・8 fea | @                           8 | FH 42 ーー Be"
+  },
+  "5": {
+    "initial_state_ocr": "ン  ⑩) 財務会計システム       xX |回 New tsb          x | を 〇 (ぐ⑦ 127.0.0.1:5133/#/payroll-items                                                        ぁ AY) a2le s … @9 chat ン | デゲッシュボード           = RY v    =       We | i laciaiaimisadlli            請求書承認・経費精算 | 請求書承認・経費精        12 件・8 件未処理 | 処理待ち一覧",
+    "terminal_state_ocr": "GH Autosave @ on) の ・ Ge < expense_calc・Saved to this PC ン                の Search                                                          ©  ー   回   x | File   Home Insert Draw PageLayout Formulas Data Review View Help                                                                                          | Comments | | i  & Cut       lcaibn                    = e we   ab, Wrap Text        General        |   toa    HY,  in   a EX =   > AutoSum て  OY  の | Clipboard     LS         Font         LS          Alignment          LS     Number     LS        Styles             Cells             Editing         Add-ins               マ | 7     Vii    な                                                                                                       マン | A        B        (@       D       E       F       G      H           J     K     L     M     N     fo)     P     Q     R     Ss     T     U     V ^"
+  },
+  "8": {
+    "initial_state_ocr": ") HR人事給与システム          x     New tab                 x | を G (© 127.0.0.1:5132/#/payroll-items | 田中 麻里・人事マネージャー | XS HR人事給与システム 2026年度・人事部門 | e ダッシュボード | * 経賀精算・給与変更 21",
+    "terminal_state_ocr": ") HR人事給与システム          x     New tab                 x     HRA | ぐを 〇 (© 127.0.0.1:5132/#/leave-applications | 田中 麻里・人事マネージャー | XS HR人事給与システム 2026年度・人事部門 | e ダッシュボード | e 経費精算・給与変更 20"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "ONBOARDING": "employee_onboarding_reconciliation",
+  "INV": "invoice_approval",
+  "LEAVE": "leave_application_review",
+  "BATCH": "employee_record_review"
+}

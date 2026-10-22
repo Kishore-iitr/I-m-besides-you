@@ -1,0 +1,37 @@
+{
+  "0": {
+    "batch_idx": 1,
+    "objective": "Complete employee onboarding reconciliation and record any special notes",
+    "additional_context": "The Edge onboarding page shows the date 2026-07-26 and a request to enter the reconciliation result and special notes, with identifiers including P3-07101496-012. Word and Excel were used to review supporting information."
+  },
+  "1": {
+    "batch_idx": 2,
+    "objective": "Approve invoice INV-2026-7067 and record processing comments",
+    "additional_context": "The Edge page is titled 請求書承認 INV-2026-7067 and displays a field for processing details or confirmation comments. A Word document was used to consult invoice-related information."
+  },
+  "2": {
+    "batch_idx": 3,
+    "objective": "Approve invoice INV-2026-7068 and record processing comments",
+    "additional_context": "The invoice approval screen for INV-2026-7068 includes a processing-content and confirmation-comment field and the reference P6-07101496-012. Supporting information was reviewed in Word."
+  },
+  "3": {
+    "batch_idx": 4,
+    "objective": "Approve invoice INV-2026-7070 and record processing comments",
+    "additional_context": "The user navigated from the leave-applications area to the 請求書承認 INV-2026-7070 screen, where a processing-content and confirmation-comment field was displayed. The reference P6-07101496-012 and a Word document supported the review."
+  },
+  "4": {
+    "batch_idx": 5,
+    "objective": "Decide the employee leave application and document the approval or return reason",
+    "additional_context": "The Edge leave-applications page shows 半日有給申請 and a field for an approval comment or rejection reason, with identifiers P2-07101496-012 and P6-07101496-012. Supporting material was accessed through Windows Explorer, Word, and Excel."
+  },
+  "7": {
+    "batch_idx": 8,
+    "objective": "Review the payroll item record for 光学レンズE",
+    "additional_context": "The Edge payroll-items view shows the name 光学レンズE in the 氏名 field, indicating a payroll-record lookup or review. The financial accounting system was also visible in the browser."
+  },
+  "8": {
+    "batch_idx": 9,
+    "objective": "Complete onboarding reconciliation and record special notes for the specified records",
+    "additional_context": "The onboarding page shows the date 2026-07-11, identifiers P11-07101496-010 and P3-07101496-012, and a prompt to enter reconciliation results and special notes. Word was used to consult supporting details."
+  }
+}

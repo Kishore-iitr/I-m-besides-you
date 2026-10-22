@@ -1,0 +1,47 @@
+{
+  "0": {
+    "batch_idx": 1,
+    "objective": "Approve an employee leave request with an approval comment.",
+    "additional_context": "The HR leave-applications page showed a special leave (bereavement) item and a half-day paid-leave request associated with P2-07088456-012. The user entered a decision in the approval-comment or rejection-reason field."
+  },
+  "1": {
+    "batch_idx": 2,
+    "objective": "Complete the July 2026 social insurance case by recording its handling status.",
+    "additional_context": "The social-insurance screen showed the 2026-07 period and identifier P13-07088456-012, with a field for processing details and status. Notepad and Word were used as working references while the Edge form was updated."
+  },
+  "2": {
+    "batch_idx": 3,
+    "objective": "Reconcile the onboarding payment and record any exceptions.",
+    "additional_context": "The onboarding view displayed a ¥418,692 transfer for P7-07088456-012 and prompted for reconciliation results or special notes. Word displayed application-memo and card-reissue-request material used alongside the portal entry."
+  },
+  "3": {
+    "batch_idx": 4,
+    "objective": "Approve the outsourcing-contract termination and new confidentiality agreement.",
+    "additional_context": "The HR approval view listed 業務委託契約（解除） and 秘密保持契約（新規締結） under P12-07088456-012 and requested an approval comment or rejection reason. Word and OpenWith supported review of the associated documents before the decision entry."
+  },
+  "4": {
+    "batch_idx": 5,
+    "objective": "Approve invoice INV-2026-7246 and document the confirmation.",
+    "additional_context": "The invoice-approval item was opened from payroll-items, showing INV-2026-7246 and a processing or confirmation-comment field. Word was used during the session while the invoice decision was reviewed in Edge."
+  },
+  "5": {
+    "batch_idx": 6,
+    "objective": "Approve invoice INV-2026-7247 and record the payment-processing comment.",
+    "additional_context": "The item INV-2026-7247 appeared in the managerial expense-approval and payment-processing dashboard under P6-07088456-012. OpenWith and Word supported the review, and a processing or confirmation comment was entered in Edge."
+  },
+  "6": {
+    "batch_idx": 7,
+    "objective": "Approve invoice INV-2026-7248 and record a confirmation comment.",
+    "additional_context": "The invoice-approval screen for INV-2026-7248 presented the standard processing or confirmation-comment field. Before the window ended, Edge advanced to INV-2026-7249, indicating sequential review of the next queued invoice."
+  },
+  "11": {
+    "batch_idx": 12,
+    "objective": "Approve the sales contract amendment with a decision comment.",
+    "additional_context": "The approval screen displayed 売買契約（変更） with identifiers P2-07088456-012 and P12-07088456-012 and prompted for an approval comment or rejection reason. The activity was performed in Edge from the portal's leave-applications route."
+  },
+  "12": {
+    "batch_idx": 13,
+    "objective": "Record the July 2026 social insurance handling status.",
+    "additional_context": "On the social-insurance page for P13-07088456-012 and period 2026-07, the user worked in the processing-details and status field. The window used only Edge and directly updated the portal case."
+  }
+}

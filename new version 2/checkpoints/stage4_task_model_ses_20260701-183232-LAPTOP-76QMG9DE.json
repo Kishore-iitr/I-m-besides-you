@@ -1,0 +1,6 @@
+{
+  "PAYROLL": "payroll_item_processing",
+  "BATCH": "payroll_item_batch_processing",
+  "LEAVE": "leave_application_approval",
+  "PO": "resident_tax_item_processing"
+}

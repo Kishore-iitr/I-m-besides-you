@@ -1,0 +1,470 @@
+{
+  "status": "completed",
+  "session_id": "ses_20260701-173642-NEELA9BAF",
+  "operator": "NEELA9BAF",
+  "session_dir": "G:\\.shortcut-targets-by-id\\1WSBZQxOODKFDzYBkIik5g90NWKS7Gwl0\\AI Engineer\\dataset_b\\ses_20260701-173642-NEELA9BAF",
+  "dominant_batch": "2026",
+  "total_events_loaded": 1136,
+  "clean_events_loaded": 1124,
+  "predicted_segments_count": 13,
+  "timings": {
+    "Layer 1: Raw Log Ingestion & Filtering": 1.3151107000012416,
+    "Layer 2: Dynamic Trace & Episode Boundary Extraction": 0.2530393000051845,
+    "Stage 0: Dual Keyframe OCR Visual Grounding": 46.885611799982144,
+    "Stage 1: Activity Segmentation (Puter LLM)": 50.68153820000589,
+    "Stage 2: Latent Task Discovery (Puter LLM)": 20.0741163000057,
+    "Stage 3: Root Thread Consolidation & Naming (Puter LLM)": 15.0,
+    "Stage 4: Hierarchical Task Modeling (Puter LLM)": 0.0031829999934416264,
+    "Stage 5: Deliverable Generation (segments.jsonl)": 0.006731100002070889,
+    "Total End-to-End Pipeline Runtime": 119.21934949999559
+  },
+  "segments": [
+    {
+      "session_id": "ses_20260701-173642-NEELA9BAF",
+      "operator": "NEELA9BAF",
+      "case_id": "PAYROLL-ITEMS-2026-001",
+      "process_code": "PAYROLL",
+      "start": "2026-07-01T17:36:50Z",
+      "end": "2026-07-01T17:37:36Z",
+      "duration_seconds": 46.0,
+      "label": "payroll_item_processing",
+      "objective": "Finalize the payroll item for the record associated with 沖縄物流センター",
+      "additional_context": "In HR Management, the user moved among leave-applications, payroll-items, and social-insurance, then worked in the 処理内容 field for P10-07047510-012; 大和商事株式会社 and 沖縄物流センター were visible. WindowsTerminal, Teams, and prl_cc were used alongside Edge for cross-system payroll validation.",
+      "automation_telemetry": {
+        "total_events": 95,
+        "keystrokes_count": 12,
+        "clicks_count": 25,
+        "clipboard_operations": 3,
+        "scrolls_count": 7,
+        "app_switches_count": 9,
+        "active_applications": [
+          "Microsoft Edge",
+          "WindowsTerminal",
+          "ms-teams",
+          "prl_cc"
+        ],
+        "window_titles": [
+          "Settings | Microsoft Teams",
+          "Windows PowerShell",
+          "財務会計システム and 2 more pages - Profile 1 - Microsoft​ Edge"
+        ],
+        "web_routes": [
+          "leave-applications",
+          "payroll-items",
+          "social-insurance"
+        ],
+        "cross_system_transfer": false,
+        "automation_suitability_score": 65.0
+      }
+    },
+    {
+      "session_id": "ses_20260701-173642-NEELA9BAF",
+      "operator": "NEELA9BAF",
+      "case_id": "BATCH-W3",
+      "process_code": "BATCH",
+      "start": "2026-07-01T17:37:36Z",
+      "end": "2026-07-01T17:38:17Z",
+      "duration_seconds": 41.0,
+      "label": "employee_compensation_processing",
+      "objective": "Process payroll item entries involving 制御基板ユニットA and 筐体パネルD",
+      "additional_context": "The user opened payroll-items in Edge and worked at the 処理内容・確認コメント prompt for P11-07047510-012, with both item names visible. Notepad was open for reference, and a 財務会計システム tab was also available for comparison.",
+      "automation_telemetry": {
+        "total_events": 92,
+        "keystrokes_count": 16,
+        "clicks_count": 24,
+        "clipboard_operations": 6,
+        "scrolls_count": 5,
+        "app_switches_count": 4,
+        "active_applications": [
+          "Microsoft Edge",
+          "Notepad"
+        ],
+        "window_titles": [
+          "*在庫調整メモ - Notepad",
+          "受発注在庫管理システム and 2 more pages - Profile 1 - Microsoft​ Edge",
+          "財務会計システム and 2 more pages - Profile 1 - Microsoft​ Edge"
+        ],
+        "web_routes": [
+          "payroll-items"
+        ],
+        "cross_system_transfer": true,
+        "automation_suitability_score": 90.0
+      }
+    },
+    {
+      "session_id": "ses_20260701-173642-NEELA9BAF",
+      "operator": "NEELA9BAF",
+      "case_id": "BATCH-W6",
+      "process_code": "BATCH",
+      "start": "2026-07-01T17:38:17Z",
+      "end": "2026-07-01T17:40:48Z",
+      "duration_seconds": 151.0,
+      "label": "employee_compensation_processing",
+      "objective": "Review and process employee housing allowance and family allowance applications",
+      "additional_context": "The social-insurance workflow displayed 住宅手当変更申請 and 家族手当申請, with a processing/status field for P5-07047510-012. Notepad and Word were used alongside Edge, and a visible note listed 調整数: +198 and 区分: 定期補売.",
+      "automation_telemetry": {
+        "total_events": 258,
+        "keystrokes_count": 40,
+        "clicks_count": 67,
+        "clipboard_operations": 16,
+        "scrolls_count": 16,
+        "app_switches_count": 18,
+        "active_applications": [
+          "Microsoft Edge",
+          "Microsoft Word",
+          "Notepad"
+        ],
+        "window_titles": [
+          "*在庫調整メモ - Notepad",
+          "HR人事給与システム and 2 more pages - Profile 1 - Microsoft​ Edge",
+          "Opening - Word",
+          "ikuji_kyuugyou_kitei  -  Compatibility Mode - Word",
+          "kaigo_kyuugyou_kitei  -  Compatibility Mode - Word"
+        ],
+        "web_routes": [
+          "social-insurance"
+        ],
+        "cross_system_transfer": true,
+        "automation_suitability_score": 100.0
+      }
+    },
+    {
+      "session_id": "ses_20260701-173642-NEELA9BAF",
+      "operator": "NEELA9BAF",
+      "case_id": "INV-2026-7532",
+      "process_code": "INV",
+      "start": "2026-07-01T17:40:48Z",
+      "end": "2026-07-01T17:41:55Z",
+      "duration_seconds": 67.0,
+      "label": "invoice_approval",
+      "objective": "Approve invoice INV-2026-7532 and record the confirmation comment",
+      "additional_context": "The user opened 請求書承認 INV-2026-7532 and reached the 処理内容・確認コメント field associated with P6-07047510-012, then brought INV-2026-7533 into view. Edge and Microsoft Word were used during the approval review.",
+      "automation_telemetry": {
+        "total_events": 114,
+        "keystrokes_count": 12,
+        "clicks_count": 36,
+        "clipboard_operations": 6,
+        "scrolls_count": 8,
+        "app_switches_count": 9,
+        "active_applications": [
+          "Microsoft Edge",
+          "Microsoft Word"
+        ],
+        "window_titles": [
+          "HR人事給与システム and 2 more pages - Profile 1 - Microsoft​ Edge",
+          "getsujitsu_teigaku_torihikisaki_ichiran  -  Compatibility Mode - Word",
+          "kaigo_kyuugyou_kitei  -  Compatibility Mode - Word",
+          "受発注在庫管理システム and 2 more pages - Profile 1 - Microsoft​ Edge",
+          "財務会計システム and 2 more pages - Profile 1 - Microsoft​ Edge"
+        ],
+        "web_routes": [
+          "payroll-items"
+        ],
+        "cross_system_transfer": true,
+        "automation_suitability_score": 90.0
+      }
+    },
+    {
+      "session_id": "ses_20260701-173642-NEELA9BAF",
+      "operator": "NEELA9BAF",
+      "case_id": "INV-2026-7534",
+      "process_code": "INV",
+      "start": "2026-07-01T17:41:55Z",
+      "end": "2026-07-01T17:42:31Z",
+      "duration_seconds": 36.0,
+      "label": "invoice_approval",
+      "objective": "Approve invoice INV-2026-7534 and record the confirmation comment",
+      "additional_context": "The user worked on 請求書承認 INV-2026-7534, including the 処理内容・確認コメント field for P6-07047510-012, before moving to INV-2026-7535. A 財務会計システム tab was visible, with Excel, Word, prl_cc, and Edge used to support the review.",
+      "automation_telemetry": {
+        "total_events": 78,
+        "keystrokes_count": 30,
+        "clicks_count": 12,
+        "clipboard_operations": 2,
+        "scrolls_count": 3,
+        "app_switches_count": 6,
+        "active_applications": [
+          "Microsoft Edge",
+          "Microsoft Excel",
+          "Microsoft Word",
+          "prl_cc"
+        ],
+        "window_titles": [
+          "Opening - Excel",
+          "expense_calc - Excel",
+          "getsujitsu_teigaku_torihikisaki_ichiran  -  Compatibility Mode - Word",
+          "受発注在庫管理システム and 2 more pages - Profile 1 - Microsoft​ Edge",
+          "財務会計システム and 2 more pages - Profile 1 - Microsoft​ Edge"
+        ],
+        "web_routes": [],
+        "cross_system_transfer": true,
+        "automation_suitability_score": 100.0
+      }
+    },
+    {
+      "session_id": "ses_20260701-173642-NEELA9BAF",
+      "operator": "NEELA9BAF",
+      "case_id": "INV-2026-7536",
+      "process_code": "INV",
+      "start": "2026-07-01T17:42:31Z",
+      "end": "2026-07-01T17:42:54Z",
+      "duration_seconds": 23.0,
+      "label": "invoice_approval",
+      "objective": "Approve invoice INV-2026-7536 and record the confirmation comment",
+      "additional_context": "The 請求書承認 form for INV-2026-7536 displayed the 処理内容・確認コメント field for P6-07047510-012. The user had a 財務会計システム tab available for reference and used WindowsTerminal, Word, Excel, and Edge.",
+      "automation_telemetry": {
+        "total_events": 65,
+        "keystrokes_count": 32,
+        "clicks_count": 6,
+        "clipboard_operations": 1,
+        "scrolls_count": 1,
+        "app_switches_count": 6,
+        "active_applications": [
+          "Microsoft Edge",
+          "Microsoft Excel",
+          "Microsoft Word",
+          "WindowsTerminal"
+        ],
+        "window_titles": [
+          "Windows PowerShell",
+          "expense_calc - Excel",
+          "getsujitsu_teigaku_torihikisaki_ichiran  -  Compatibility Mode - Word",
+          "財務会計システム and 2 more pages - Profile 1 - Microsoft​ Edge"
+        ],
+        "web_routes": [],
+        "cross_system_transfer": true,
+        "automation_suitability_score": 85.0
+      }
+    },
+    {
+      "session_id": "ses_20260701-173642-NEELA9BAF",
+      "operator": "NEELA9BAF",
+      "case_id": "INV-2026-7537",
+      "process_code": "INV",
+      "start": "2026-07-01T17:42:54Z",
+      "end": "2026-07-01T17:43:36Z",
+      "duration_seconds": 42.0,
+      "label": "invoice_approval",
+      "objective": "Process invoice_approval",
+      "additional_context": "",
+      "automation_telemetry": {
+        "total_events": 31,
+        "keystrokes_count": 4,
+        "clicks_count": 8,
+        "clipboard_operations": 1,
+        "scrolls_count": 2,
+        "app_switches_count": 4,
+        "active_applications": [
+          "Microsoft Edge",
+          "Microsoft Word"
+        ],
+        "window_titles": [
+          "getsujitsu_teigaku_torihikisaki_ichiran  -  Compatibility Mode - Word",
+          "財務会計システム and 2 more pages - Profile 1 - Microsoft​ Edge"
+        ],
+        "web_routes": [],
+        "cross_system_transfer": true,
+        "automation_suitability_score": 75.0
+      }
+    },
+    {
+      "session_id": "ses_20260701-173642-NEELA9BAF",
+      "operator": "NEELA9BAF",
+      "case_id": "INV-2026-7533",
+      "process_code": "INV",
+      "start": "2026-07-01T17:43:36Z",
+      "end": "2026-07-01T17:44:10Z",
+      "duration_seconds": 34.0,
+      "label": "invoice_approval",
+      "objective": "Process invoice_approval",
+      "additional_context": "",
+      "automation_telemetry": {
+        "total_events": 74,
+        "keystrokes_count": 8,
+        "clicks_count": 22,
+        "clipboard_operations": 4,
+        "scrolls_count": 11,
+        "app_switches_count": 1,
+        "active_applications": [
+          "Microsoft Edge"
+        ],
+        "window_titles": [
+          "HR人事給与システム and 2 more pages - Profile 1 - Microsoft​ Edge",
+          "財務会計システム and 2 more pages - Profile 1 - Microsoft​ Edge"
+        ],
+        "web_routes": [
+          "payroll-items"
+        ],
+        "cross_system_transfer": false,
+        "automation_suitability_score": 55.0
+      }
+    },
+    {
+      "session_id": "ses_20260701-173642-NEELA9BAF",
+      "operator": "NEELA9BAF",
+      "case_id": "LEAVE-APPLICATIONS-2026-009",
+      "process_code": "LEAVE",
+      "start": "2026-07-01T17:44:10Z",
+      "end": "2026-07-01T17:44:59Z",
+      "duration_seconds": 49.0,
+      "label": "leave_application_approval",
+      "objective": "Approve or reject leave application LEAVE-APPLICATIONS-2026-009 with a decision comment",
+      "additional_context": "In the leave-applications workflow, the user opened a 半日有給申請 and reached the 承認コメントまたは差戻し理由 prompt associated with P4-07047510-012; P2-07047510-012 was also visible. The review was conducted in Microsoft Edge.",
+      "automation_telemetry": {
+        "total_events": 77,
+        "keystrokes_count": 8,
+        "clicks_count": 26,
+        "clipboard_operations": 4,
+        "scrolls_count": 9,
+        "app_switches_count": 0,
+        "active_applications": [
+          "Microsoft Edge"
+        ],
+        "window_titles": [
+          "HR人事給与システム and 2 more pages - Profile 1 - Microsoft​ Edge"
+        ],
+        "web_routes": [
+          "leave-applications"
+        ],
+        "cross_system_transfer": false,
+        "automation_suitability_score": 55.0
+      }
+    },
+    {
+      "session_id": "ses_20260701-173642-NEELA9BAF",
+      "operator": "NEELA9BAF",
+      "case_id": "INV-2026-7538",
+      "process_code": "INV",
+      "start": "2026-07-01T17:44:59Z",
+      "end": "2026-07-01T17:45:27Z",
+      "duration_seconds": 28.0,
+      "label": "invoice_approval",
+      "objective": "Process invoice_approval",
+      "additional_context": "",
+      "automation_telemetry": {
+        "total_events": 41,
+        "keystrokes_count": 4,
+        "clicks_count": 12,
+        "clipboard_operations": 2,
+        "scrolls_count": 2,
+        "app_switches_count": 5,
+        "active_applications": [
+          "Microsoft Edge",
+          "Microsoft Word"
+        ],
+        "window_titles": [
+          "HR人事給与システム and 2 more pages - Profile 1 - Microsoft​ Edge",
+          "getsujitsu_teigaku_torihikisaki_ichiran  -  Compatibility Mode - Word",
+          "財務会計システム and 2 more pages - Profile 1 - Microsoft​ Edge"
+        ],
+        "web_routes": [],
+        "cross_system_transfer": true,
+        "automation_suitability_score": 90.0
+      }
+    },
+    {
+      "session_id": "ses_20260701-173642-NEELA9BAF",
+      "operator": "NEELA9BAF",
+      "case_id": "INV-2026-7540",
+      "process_code": "INV",
+      "start": "2026-07-01T17:45:27Z",
+      "end": "2026-07-01T17:45:43Z",
+      "duration_seconds": 16.0,
+      "label": "invoice_approval",
+      "objective": "Process invoice_approval",
+      "additional_context": "",
+      "automation_telemetry": {
+        "total_events": 56,
+        "keystrokes_count": 27,
+        "clicks_count": 6,
+        "clipboard_operations": 1,
+        "scrolls_count": 2,
+        "app_switches_count": 2,
+        "active_applications": [
+          "Microsoft Edge",
+          "Microsoft Excel"
+        ],
+        "window_titles": [
+          "Opening - Excel",
+          "expense_calc - Excel",
+          "財務会計システム and 2 more pages - Profile 1 - Microsoft​ Edge"
+        ],
+        "web_routes": [],
+        "cross_system_transfer": true,
+        "automation_suitability_score": 75.0
+      }
+    },
+    {
+      "session_id": "ses_20260701-173642-NEELA9BAF",
+      "operator": "NEELA9BAF",
+      "case_id": "INV-2026-7541",
+      "process_code": "INV",
+      "start": "2026-07-01T17:45:43Z",
+      "end": "2026-07-01T17:46:07Z",
+      "duration_seconds": 24.0,
+      "label": "invoice_approval",
+      "objective": "Process invoice_approval",
+      "additional_context": "",
+      "automation_telemetry": {
+        "total_events": 31,
+        "keystrokes_count": 6,
+        "clicks_count": 6,
+        "clipboard_operations": 1,
+        "scrolls_count": 2,
+        "app_switches_count": 4,
+        "active_applications": [
+          "Microsoft Edge",
+          "Microsoft Excel",
+          "Microsoft Word",
+          "Windows Explorer"
+        ],
+        "window_titles": [
+          "File Explorer",
+          "Home - File Explorer",
+          "expense_calc - Excel",
+          "getsujitsu_teigaku_torihikisaki_ichiran  -  Compatibility Mode - Word",
+          "財務会計システム and 2 more pages - Profile 1 - Microsoft​ Edge"
+        ],
+        "web_routes": [],
+        "cross_system_transfer": true,
+        "automation_suitability_score": 75.0
+      }
+    },
+    {
+      "session_id": "ses_20260701-173642-NEELA9BAF",
+      "operator": "NEELA9BAF",
+      "case_id": "INV-2026-7535",
+      "process_code": "INV",
+      "start": "2026-07-01T17:46:07Z",
+      "end": "2026-07-01T17:46:40Z",
+      "duration_seconds": 33.0,
+      "label": "invoice_approval",
+      "objective": "Process invoice_approval",
+      "additional_context": "",
+      "automation_telemetry": {
+        "total_events": 67,
+        "keystrokes_count": 8,
+        "clicks_count": 20,
+        "clipboard_operations": 3,
+        "scrolls_count": 6,
+        "app_switches_count": 5,
+        "active_applications": [
+          "Microsoft Edge",
+          "Microsoft Word",
+          "Windows Explorer"
+        ],
+        "window_titles": [
+          "HR人事給与システム and 2 more pages - Profile 1 - Microsoft​ Edge",
+          "Home - File Explorer",
+          "getsujitsu_teigaku_torihikisaki_ichiran  -  Compatibility Mode - Word",
+          "kaigo_kyuugyou_kitei  -  Compatibility Mode - Word",
+          "財務会計システム and 2 more pages - Profile 1 - Microsoft​ Edge"
+        ],
+        "web_routes": [
+          "social-insurance"
+        ],
+        "cross_system_transfer": true,
+        "automation_suitability_score": 90.0
+      }
+    }
+  ]
+}
