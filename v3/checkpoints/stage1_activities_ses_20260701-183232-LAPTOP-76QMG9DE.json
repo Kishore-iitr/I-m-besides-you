@@ -1,0 +1,27 @@
+{
+  "0": {
+    "batch_idx": 1,
+    "objective": "Review and complete an employee travel-expense payroll item.",
+    "additional_context": "In the Edge payroll-items page, the user viewed a 出張旅費 record associated with 田中 麻里 and P4-07080388-012, alongside a field for processing details or confirmation comments."
+  },
+  "1": {
+    "batch_idx": 2,
+    "objective": "Process and document multiple payroll-item requests.",
+    "additional_context": "The Edge payroll-items screen showed 制御基板ユニットA and モーターユニットF, with P4/P11 identifiers and a processing-comment field. Notepad, Windows Explorer, and Windows Terminal were also used, including an apparent IT application memo as a reference."
+  },
+  "2": {
+    "batch_idx": 3,
+    "objective": "Approve or return a leave application with documented reasons.",
+    "additional_context": "On the leave-applications page in Edge, the user reached a decision screen requesting an approval comment or rejection reason for records including P4-07080388-012 and P12-07080388-012. Microsoft Word was open for supporting review or drafting."
+  },
+  "3": {
+    "batch_idx": 4,
+    "objective": "Record processing of resident-tax items for the listed organizations.",
+    "additional_context": "The Edge resident-tax page displayed 大和商事株式会社 and 福岡システム設計, identifier P10-07080388-012, and a field for entering processing details. Microsoft Word was also used to support documentation."
+  },
+  "4": {
+    "batch_idx": 5,
+    "objective": "Verify and complete payroll-item processing using reference notes.",
+    "additional_context": "The Edge payroll-items page showed P10-07080388-012 and P11-07080388-012, including モーターユニットF and a processing/confirmation-comment field. Notepad was open as an auxiliary source for the entry."
+  }
+}

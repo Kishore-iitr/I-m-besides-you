@@ -1,0 +1,46 @@
+{
+  "0": {
+    "initial_state_ocr": "ツン @ 受償注在庫管理システム | G © 1270015                                                                                           BQ バ | | 受発注在庫管理システム        oe                                                     Translate Ps Turn off extensions in developer | Translate to mode                                                       pectedly. | English        Running extensions in developer mode can | consider turning off extensions in developer",
+    "terminal_state_ocr": "ン @  HR人事給与システム | — ne         127.0.0.1 | AB HR人事給与システム | ダッシュボード | 経費精算・給与変更 2 | a + ORR ES"
+  },
+  "1": {
+    "initial_state_ocr": "ー  a  x | Vv @ HR人事給与システム    me | | ぐを G © 127.0.0.1:5132/#/onboarding                                             a A wy) Ble @ oe yon | 3 田中麻里・人事マネージャー (Bb | ae HR人事給与システム 2026年度 - ABER | Everyone",
+    "terminal_state_ocr": "Ai Home | B catiery | BBR Desktop | Downloads | EB Documents | BB Pictures"
+  },
+  "2": {
+    "initial_state_ocr": "Vv @ HR人事給与システム | (の      127.0.0.1:5 | AB HR人事給与システム | ダッシュボード | 経草精算・給与変更 | 申請種別                       対象年月",
+    "terminal_state_ocr": "マン @ 時衝会計システム | (の      127.0.0.1:5 | Me 財務会計システム | 予算差異分析 | 発注管理 | 29°C"
+  },
+  "3": {
+    "initial_state_ocr": "ダッシュボード | 経費承認 (管理職) | 支払処理 | 予算差異分析 | 29°C | Mostly cloudy",
+    "terminal_state_ocr": "マン @ 時衝会計システム | (の      127.0.0.1:5 | Me 財務会計システム | 経費承認 (管理職) | 支払処理 | 予算差異分析"
+  },
+  "4": {
+    "initial_state_ocr": "マン @ 時衝会計システム | (の      127.0.0.1:5 | Me 財務会計システム | ダッシュボード | 請求書承認・経草精 | 経費承認 (管理職)",
+    "terminal_state_ocr": "ツン @ 受償注在庫管理システム | (の      127.0.0.1:5 | Se 受発注在庫管理システム | 29°C | Mostly cloudy | P12-07084298-001"
+  },
+  "5": {
+    "initial_state_ocr": "ツン @ 受償注在庫管理システム | (の      127.0.0.1:5 | Se 受発注在庫管理システム | 29°C | Mostly cloudy | P12-07084298-001",
+    "terminal_state_ocr": "29°C | Mostly cloudy | 00:21 | 02-07-2026 | Q Search"
+  },
+  "6": {
+    "initial_state_ocr": "29°C | Mostly cloudy | 00:21 | 02-07-2026 | Q Search",
+    "terminal_state_ocr": "Me 財務会計システム | ダッシュボード | 認 (管理職) | 支払処理 | 予算差異分析 | 発注管理"
+  },
+  "7": {
+    "initial_state_ocr": "ン 時会計システム | (の    127.0.0.1:5 | Me 財務会計システム | ダッシュボード | 8  (管理職) | 支払処理",
+    "terminal_state_ocr": "ツン @ 受償注在庫管理システム | と 〇  127.0.0.1:5   ol-ite                                      am A 7) & | | ef 受発注在庫管理システム 2   7                                         Restore pages | Microsoft Edge closed unexpectedly. | P11-07084298-009                      BATCH-W2                電源モジュールB | P11-07084298-010                   BATCH-W2              電源モジュールB"
+  },
+  "8": {
+    "initial_state_ocr": "ツン @ 受償注在庫管理システム | (の      127.0.0.1:5 | Se 受発注在庫管理システム | 29°C | Mostly cloudy | 処理待ち一覧",
+    "terminal_state_ocr": "較 Auoswe | File Home Insert Design Layout References | 3  [Ms Mincho (Body Ar~|11 JA AIAa・ | Ap | te)             ーー | ae   B 7 Uv «#x */Av Zv | Clipboard 1s            Font"
+  },
+  "9": {
+    "initial_state_ocr": "WE autosave          ‘)» © = shinkuitorihikisaki_touroku_tetsuzuki - Compatibility Mode ご                                                                                 RK    =    a    x | File Home Insert Design Layout References Mailings Review View Help  Q_ Tell me what you want to do                        Comments | = IMs Gothic (Heading 4 JA AIAa・ | Ap                                            _  a ~  02  ay, 7a! } | .                                                       マ| | & Replace | |    i   :       1 | Paste    Bir Uy   :  2 ID INS                                                     Dictate) | |Add-ins; | Editor \\Copilot, | sey Btu  x X/Ay Zr A                      Ip Selety |て  ,  ’",
+    "terminal_state_ocr": "較 Auoswe | File Home Insert Design Layout References | “Ls  MS Gothic (Heading 14 >| A” AIAa・ Ap                                                      のFmd ・ | Te)                         _                                                                                                                    ¥     ®. Replace | Paste          マ      i   » 2 | Clipboard KR             Font              回         Paragraph         回                     styles                          Editing"
+  },
+  "10": {
+    "initial_state_ocr": "Auosave          ヴの・〇① = shinkui_keiyaku_tetsuzuki - Compatibility Mode ご                                                                                        RK    =    a    x | File Home Insert Design Layout References Mailings Review View Help                                   2 Comments | 4 | (us Gothic tieading [4 +) AX A“| Aa | A      ¥                                            P Find ・  VO  ay, アコ @ | Te)            _                                                          マ  Replace |!       1 | Paste    Bl) i Us     ご  + Ze Ae                                                   IDictate」 | |Add-ins; | Editor \\Copilot, | meg |B) i ure x x|Ay 2° A                      Ip Selety |て  ,  ’",
+    "terminal_state_ocr": "Me 財務会計システム | ダッシュボード | 認 (管理職) | 支払処理 | 予算差異分析 | 発注管理"
+  }
+}

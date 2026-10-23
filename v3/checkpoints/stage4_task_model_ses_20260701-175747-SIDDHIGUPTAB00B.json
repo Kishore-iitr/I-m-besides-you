@@ -1,0 +1,7 @@
+{
+  "BATCH": "employee_administration_processing",
+  "RESIDENT": "resident_tax_processing",
+  "INV": "invoice_processing",
+  "SOCIAL": "social_insurance_processing",
+  "PAYROLL": "expense_reimbursement_processing"
+}

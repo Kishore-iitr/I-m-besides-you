@@ -1,0 +1,55 @@
+{
+  "process_name": "Payroll Item Processing (給与備考・控除・経費整備)",
+  "candidate_rank": 2,
+  "automation_priority_score": 19.12,
+  "automation_suitability_index": 85.0,
+  "analyzed_cases_count": 11,
+  "total_dataset_b_cases": 21,
+  "total_work_minutes": 23.02,
+  "operators_involved": [
+    "CHAITANYA0BCF",
+    "NEELA9BAF",
+    "LAPTOP-76QMG9DE"
+  ],
+  "systems_involved": [
+    "Microsoft Edge (HR人事給与システム `#/payroll-items`)",
+    "Notepad (*精算確認メモ / *在庫調整メモ)",
+    "Microsoft Word (gyomu_itaku_keihi_kitei / gyomu_itaku_kyuuyo_kitei)",
+    "Microsoft Excel (Supplementary payroll registers)"
+  ],
+  "sampled_case_ids": [
+    "PAYROLL-ITEMS-2026-012",
+    "PAYROLL-ITEMS-2026-008",
+    "PO-2026-5097",
+    "PO-2026-5094",
+    "PAYROLL-ITEMS-2026-003",
+    "PAYROLL-ITEMS-2026-001",
+    "PAYROLL-ITEMS-2026-013",
+    "PAYROLL-ITEMS-BATCH-W1-001",
+    "BATCH-W6",
+    "BATCH-W3",
+    "PAYROLL-ITEMS-BATCH-W1-001"
+  ],
+  "key_payroll_items": [
+    "消耗品費 (Consumables Expense)",
+    "研修費 (Training Expense)",
+    "出張旅費 (Business Travel Expense)",
+    "交通費精算 (Transportation Expense Settlement)",
+    "接待交際費 (Entertainment Expense)",
+    "残業手当調整 (Overtime Allowance Adjustment)",
+    "昇給 (Base Salary Raise)",
+    "扶養控除変更 (Dependent Deduction Modification)",
+    "役職手当新設 (Executive Allowance Addition)",
+    "役職手当廃止 (Executive Allowance Abolition)"
+  ],
+  "workflow_steps_overview": [
+    "1. Intake & Reference Discovery: Open Notepad `*精算確認メモ` and Word expense regulations",
+    "2. Access HR & Payroll Portal: Open Microsoft Edge `HR人事給与システム` on route `#/payroll-items`",
+    "3. Select Target Employee / Batch Voucher: Locate employee record (e.g., 青木 拓也, 菊池 理恵)",
+    "4. Select Expense / Deduction Item Category: Click target category button (e.g. 研修費, 消耗品費, 残業手当調整)",
+    "5. Copy Confirmation Note: Extract verified comment from Notepad memo (`経費精算確認済み。 [Category] 金額: [Amount]円。 規程内であることを確認した。`)",
+    "6. Input / Paste Confirmation Details: Paste into input field `処理内容・確認コメントを入力してください…`",
+    "7. Link Voucher Code: Click / assign corresponding voucher ID (e.g. `P4-07089771-012`)",
+    "8. Verify & Finalize: Review line item calculations and commit batch approval to update payroll register"
+  ]
+}

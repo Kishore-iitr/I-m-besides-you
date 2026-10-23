@@ -1,0 +1,14 @@
+{"session_id": "ses_20260701-190250-NEELA9BAF", "start": "2026-07-01T19:02:58Z", "end": "2026-07-01T19:03:25Z", "label": "invoice_processing"}
+{"session_id": "ses_20260701-190250-NEELA9BAF", "start": "2026-07-01T19:03:25Z", "end": "2026-07-01T19:03:44Z", "label": "invoice_processing"}
+{"session_id": "ses_20260701-190250-NEELA9BAF", "start": "2026-07-01T19:03:44Z", "end": "2026-07-01T19:04:08Z", "label": "invoice_processing"}
+{"session_id": "ses_20260701-190250-NEELA9BAF", "start": "2026-07-01T19:04:08Z", "end": "2026-07-01T19:04:34Z", "label": "invoice_processing"}
+{"session_id": "ses_20260701-190250-NEELA9BAF", "start": "2026-07-01T19:04:34Z", "end": "2026-07-01T19:04:49Z", "label": "invoice_processing"}
+{"session_id": "ses_20260701-190250-NEELA9BAF", "start": "2026-07-01T19:04:49Z", "end": "2026-07-01T19:05:45Z", "label": "invoice_processing"}
+{"session_id": "ses_20260701-190250-NEELA9BAF", "start": "2026-07-01T19:05:45Z", "end": "2026-07-01T19:06:06Z", "label": "invoice_processing"}
+{"session_id": "ses_20260701-190250-NEELA9BAF", "start": "2026-07-01T19:06:06Z", "end": "2026-07-01T19:06:25Z", "label": "invoice_processing"}
+{"session_id": "ses_20260701-190250-NEELA9BAF", "start": "2026-07-01T19:06:25Z", "end": "2026-07-01T19:06:51Z", "label": "invoice_processing"}
+{"session_id": "ses_20260701-190250-NEELA9BAF", "start": "2026-07-01T19:06:51Z", "end": "2026-07-01T19:08:25Z", "label": "invoice_processing"}
+{"session_id": "ses_20260701-190250-NEELA9BAF", "start": "2026-07-01T19:08:25Z", "end": "2026-07-01T19:09:07Z", "label": "employee_onboarding"}
+{"session_id": "ses_20260701-190250-NEELA9BAF", "start": "2026-07-01T19:09:07Z", "end": "2026-07-01T19:09:59Z", "label": "leave_application_review"}
+{"session_id": "ses_20260701-190250-NEELA9BAF", "start": "2026-07-01T19:09:59Z", "end": "2026-07-01T19:10:51Z", "label": "payroll_item_processing"}
+{"session_id": "ses_20260701-190250-NEELA9BAF", "start": "2026-07-01T19:10:51Z", "end": "2026-07-01T19:11:26Z", "label": "inventory_item_batch_processing"}

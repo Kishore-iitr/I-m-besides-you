@@ -1,0 +1,52 @@
+{
+  "0": {
+    "batch_idx": 1,
+    "objective": "Review and complete a leave application by cross-checking related HR records and recording reconciliation results or special notes.",
+    "additional_context": "In Edge, the user visited leave-applications, social-insurance, and onboarding pages; amounts of ¥3,318,839 and ¥304,020 were also visible before the P7-07089771-012 reconciliation field was used. Word and Notepad were consulted as working references."
+  },
+  "1": {
+    "batch_idx": 2,
+    "objective": "Classify and confirm payroll treatment for consumables and training expenses.",
+    "additional_context": "The user opened payroll-items in Edge, reviewed the 消耗品費 and 研修費 entries, and recorded a processing or confirmation comment for P4-07089771-012. Word, Notepad, and budget-variance information from the financial accounting system supported the review."
+  },
+  "2": {
+    "batch_idx": 3,
+    "objective": "Complete employee onboarding reconciliation for a July 24, 2026 effective date.",
+    "additional_context": "Edge displayed the onboarding record for P3-07089771-012 with the date 2026-07-24 and a field for reconciliation results and special notes. A Word document was also opened as a reference during the review."
+  },
+  "3": {
+    "batch_idx": 4,
+    "objective": "Review and confirm a business-travel expense payroll item.",
+    "additional_context": "The user opened payroll-items in Edge, examined the 出張旅費 entry for P4-07089771-012, and completed a processing or confirmation comment. Notepad and a Word workflow document were used as supporting references."
+  },
+  "4": {
+    "batch_idx": 5,
+    "objective": "Approve or return a leave application with a documented rationale.",
+    "additional_context": "The leave-applications page presented an approval-comment or return-reason field for P9-07089771-012, while travel-expense and training-expense labels were also visible. Edge and Word were used to perform the review."
+  },
+  "5": {
+    "batch_idx": 6,
+    "objective": "Complete onboarding reconciliation and document special notes for the July 24, 2026 employee record.",
+    "additional_context": "Using Edge, the user reviewed onboarding entry P3-07089771-012 dated 2026-07-24 and supplied reconciliation results or special notes. Word remained open as a supporting document during the activity."
+  },
+  "6": {
+    "batch_idx": 7,
+    "objective": "Approve invoice INV-2026-7008 and document the processing decision.",
+    "additional_context": "Edge displayed the invoice approval screen for INV-2026-7008 with a processing or confirmation comment field, which was completed during the activity. A Word work-instruction or reference document was also open."
+  },
+  "7": {
+    "batch_idx": 8,
+    "objective": "Approve invoice INV-2026-7009 for processing and record the confirmation comment.",
+    "additional_context": "The user handled the INV-2026-7009 invoice approval screen in Edge and completed the processing or confirmation field for P6-07089771-012. OpenWith was invoked during file handling, while the financial system showed manager expense approval and payment-processing views."
+  },
+  "8": {
+    "batch_idx": 9,
+    "objective": "Approve invoice INV-2026-7010 and record the processing confirmation.",
+    "additional_context": "Edge showed the INV-2026-7010 invoice approval workflow and a processing or confirmation comment field associated with P6-07089771-012. Word and OpenWith supported the review, while budget-variance analysis was visible in the financial accounting system."
+  },
+  "12": {
+    "batch_idx": 13,
+    "objective": "Process an employee pay raise as a payroll item.",
+    "additional_context": "The payroll-items page in Edge repeatedly displayed 昇給 for P4-07089771-012, indicating a salary-increase transaction. Manager expense approval, payment processing, and budget-variance screens from the financial system were also consulted."
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "0": {
+    "initial_state_ocr": "ツン @ 受償注在庫管理システム | (の        127.0.0.1:5 | Se 受発注在庫管理システム | 受注・その他 | 30°C | Mostly cloudy",
+    "terminal_state_ocr": "マン @ 時衝会計システム | (の      127.0.0.1:5 | Me 財務会計システム | 予算差異分析 | 発注管理 | 30°C"
+  },
+  "1": {
+    "initial_state_ocr": "マン @ 時衝会計システム | (の      127.0.0.1:5 | Me 財務会計システム | 予算差異分析 | 発注管理 | 30°C",
+    "terminal_state_ocr": "EB 。 精算確認Xモ   e +                        = fa X | B 7 S @ By &           タン 避 8 | File     Edit View                                                                                    lak | 精算確認メモ | P1-07089771-008 | 経費精算確認済み。 BARRE 金額: 77,224円。 規程内であることを確認した。"
+  },
+  "2": {
+    "initial_state_ocr": "EB 。 精算確認Xモ           e   +                                                                                      =   fa   X | File Edit View                     Layoutandviewoptions. HY =v BIS e By &                              yy Jd@8 | 精算確認メモ | P1-07089771-008 | 経費精算確認済み。 BARRE 金額: 77,224円。 規程内であることを確認した。 | Ln 3 Col 44 66 characters       Plain text                                        100%  Windows (CRLF)    UTF-8",
+    "terminal_state_ocr": "較 Auoswe | File Home Insert Design Layout References Mailings Review View Help © Q Tellmewhatyouwanttodo | 3  [Ms Mincho (Body Ar~|11 JA AIAa・ | Ap                                                           Pind» | fa                —                                                                                       マ| | Replace | Paste   B 7 Uss x yl欠こめく  9                                     3 | > 補                                                                                                                        I} seled・"
+  },
+  "3": {
+    "initial_state_ocr": "WE autosave            )» © = ayomu itaku_ukeire tetsuzuki - Compatibility Mode ン | File Home Insert Design Layout References Mailings Review View Help    Q Tell me what you want to do | 4 | (ms Gothic Heading la | A’ | Aa | Ap                                                             J | Te)                   _                                                                                       マ   あ Replace | Paste   Bl7 Uv we x, «|My Z- Ax                                          : | Clipboard 1                Font                5           Paragraph           回|                         Styles                         |    Editing",
+    "terminal_state_ocr": "Vv @ HR人事給与システム      x @ HR人事給与ツステム | ぐ CG © 12700155 | AB HR人事給与システム | ダッシュボード | 勤怠・休暇申請 | 入社手続き"
+  },
+  "4": {
+    "initial_state_ocr": "Vv @ HR人事給与システム | (の      127.0.0.1:5 | AB HR人事給与システム | ダッシュボード | 経草精算・給与変更 | 7S + ORR ES",
+    "terminal_state_ocr": "File Home Insert Design Layout References Mailings Review View Help 。ぐ① Tellmewhatyouwanttodo | 3  MS Mincho (Bodyv|11 JA AIAav | Ap    vias         alld                                          Pind » | it Replace | paste B 7 Uy & x, *|Ay Z2y Av       MOA AA                       Ge | Clipboard &         Font         5      Paragraph      5                                Editing | ply are   #85: 2026-07-01"
+  },
+  "5": {
+    "initial_state_ocr": "較 Auoswe | File Home Insert Design Layout References | 4 | (us Gothic tieading [4 +) AX A“| Aa | A | Paste  Bl7 Uvax x Ary Zr Ar | OG)                2- 4 | cipboard            Font",
+    "terminal_state_ocr": "較 Auoswe | ウ・〇 = __ gyomu itaku keihi kitei - | File Home Insert Design Layout References Mailings | Clipboard 1s                                   Font | Navigation                                           yx | Search document                                     Py"
+  },
+  "6": {
+    "initial_state_ocr": "較 Auoswe | ウ・〇 = __ gyomu itaku keihi kitei - | File Home Insert Design Layout References Mailings | Clipboard 1s                                   Font | Navigation                                           yx | Search document                                     Py",
+    "terminal_state_ocr": "ダッシュボード | 経費承認 (管理職) | 支払処理 | 予算差異分析 | 発注管理 | 30°C"
+  },
+  "7": {
+    "initial_state_ocr": "Me 財務会計システム | ダッシュボード | 経費承認 (管理職) | 支払処理 | 30°C                                                                                                                                                                                                                                             |                                                                                                内 | Mostly cloudy                                                          Q Search                              é                                                                                                                                                                                                               2                   01-07-2026",
+    "terminal_state_ocr": "経費承認 (管理 | 支払処理 | 予算差異分析 | 発注管理 | stly cloudy | PB-07089771-001"
+  },
+  "8": {
+    "initial_state_ocr": "マン @ 時衝会計システム | (の      127.0.0.1:5 | Me 財務会計システム | 予算差異分析 | 発注管理 | 30°C",
+    "terminal_state_ocr": "経費承認 (管理 | 支払処理 | 予算差異分析 | 発注管理 | stly cloudy | PB-07089771-001"
+  },
+  "12": {
+    "initial_state_ocr": "ダッシュボード | 経費承認 (管理職) | 支払処理 | 予算差異分析 | 30°C                                                           '                                                                                                                                                                                 |                                                                                                内 | Mostly cloudy                                                          Q Search                              é                                                                                                                                                                                                               2                   01-07-2026",
+    "terminal_state_ocr": "Vv @ HR人事給与システム      x @ HR人事給与ツステム | (の        127.0.0.1:5 | AB HR人事給与システム | ダッシュボード | 勤怠・休暇申請 | 入社手続き"
+  }
+}

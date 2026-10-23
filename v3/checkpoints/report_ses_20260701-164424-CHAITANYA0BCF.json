@@ -1,0 +1,496 @@
+{
+  "status": "completed",
+  "session_id": "ses_20260701-164424-CHAITANYA0BCF",
+  "operator": "CHAITANYA0BCF",
+  "session_dir": "G:\\.shortcut-targets-by-id\\1WSBZQxOODKFDzYBkIik5g90NWKS7Gwl0\\AI Engineer\\dataset_b\\ses_20260701-164424-CHAITANYA0BCF",
+  "dominant_batch": "2026",
+  "total_events_loaded": 1613,
+  "clean_events_loaded": 1423,
+  "predicted_segments_count": 14,
+  "timings": {
+    "Layer 1: Raw Log Ingestion & Filtering": 0.6349977999925613,
+    "Layer 2: Dynamic Trace & Episode Boundary Extraction": 0.23517569998512045,
+    "Stage 0: Dual Keyframe OCR Visual Grounding": 28.681843300000764,
+    "Stage 1: Activity Segmentation (Puter LLM)": 42.186421199992765,
+    "Stage 2: Latent Task Discovery (Puter LLM)": 9.168070300016552,
+    "Stage 3: Root Thread Consolidation & Naming (Puter LLM)": 15.0,
+    "Stage 4: Hierarchical Task Modeling (Puter LLM)": 0.001291199994739145,
+    "Stage 5: Deliverable Generation (segments.jsonl)": 0.011958500021137297,
+    "Total End-to-End Pipeline Runtime": 80.91978070000187
+  },
+  "segments": [
+    {
+      "session_id": "ses_20260701-164424-CHAITANYA0BCF",
+      "operator": "CHAITANYA0BCF",
+      "case_id": "INV-2026-7344",
+      "process_code": "INV",
+      "start": "2026-07-01T16:44:38Z",
+      "end": "2026-07-01T16:44:54Z",
+      "duration_seconds": 16.0,
+      "label": "invoice_processing",
+      "objective": "Approve invoice INV-2026-7344 and record a processing or confirmation comment.",
+      "additional_context": "Microsoft Edge displayed the invoice-approval screen for INV-2026-7344 with a field requesting 処理内容・確認コメント. Microsoft Word was also active, indicating supporting material or response text was available during the review.",
+      "automation_telemetry": {
+        "total_events": 24,
+        "keystrokes_count": 6,
+        "clicks_count": 4,
+        "clipboard_operations": 0,
+        "scrolls_count": 0,
+        "app_switches_count": 5,
+        "active_applications": [
+          "Microsoft Edge",
+          "Microsoft Word"
+        ],
+        "window_titles": [
+          "Opening - Word",
+          "Turn off extensions in developer mode",
+          "getsujitsu_teigaku_torihikisaki_ichiran [Compatibility Mode] - Word",
+          "財務会計システム and 1 more page - Profile 1 - Microsoft​ Edge"
+        ],
+        "web_routes": [
+          "payroll-items"
+        ],
+        "cross_system_transfer": true,
+        "automation_suitability_score": 75.0
+      }
+    },
+    {
+      "session_id": "ses_20260701-164424-CHAITANYA0BCF",
+      "operator": "CHAITANYA0BCF",
+      "case_id": "INV-2026-7345",
+      "process_code": "INV",
+      "start": "2026-07-01T16:44:54Z",
+      "end": "2026-07-01T16:45:14Z",
+      "duration_seconds": 20.0,
+      "label": "invoice_processing",
+      "objective": "Review and approve invoice INV-2026-7345 with a documented decision comment.",
+      "additional_context": "Edge showed 請求書承認 INV-2026-7345 and the processing/confirmation comment field, along with references P6-07010448-012 and P6-07010448-010. Microsoft Word was used alongside the finance-system review.",
+      "automation_telemetry": {
+        "total_events": 25,
+        "keystrokes_count": 2,
+        "clicks_count": 8,
+        "clipboard_operations": 1,
+        "scrolls_count": 2,
+        "app_switches_count": 2,
+        "active_applications": [
+          "Microsoft Edge",
+          "Microsoft Word"
+        ],
+        "window_titles": [
+          "getsujitsu_teigaku_torihikisaki_ichiran [Compatibility Mode] - Word",
+          "財務会計システム and 1 more page - Profile 1 - Microsoft​ Edge"
+        ],
+        "web_routes": [],
+        "cross_system_transfer": true,
+        "automation_suitability_score": 65.0
+      }
+    },
+    {
+      "session_id": "ses_20260701-164424-CHAITANYA0BCF",
+      "operator": "CHAITANYA0BCF",
+      "case_id": "INV-2026-7346",
+      "process_code": "INV",
+      "start": "2026-07-01T16:45:14Z",
+      "end": "2026-07-01T16:45:35Z",
+      "duration_seconds": 21.0,
+      "label": "invoice_processing",
+      "objective": "Validate and approve invoice INV-2026-7346 against supporting financial records.",
+      "additional_context": "Edge showed the invoice-approval screen and a finance dashboard indicating 12 items with 10 unprocessed. Excel, Word, and a running Windows PowerShell session were used to inspect or cross-check supporting information before recording the disposition.",
+      "automation_telemetry": {
+        "total_events": 291,
+        "keystrokes_count": 26,
+        "clicks_count": 6,
+        "clipboard_operations": 1,
+        "scrolls_count": 231,
+        "app_switches_count": 6,
+        "active_applications": [
+          "Microsoft Edge",
+          "Microsoft Excel",
+          "Microsoft Word",
+          "WindowsTerminal"
+        ],
+        "window_titles": [
+          "Opening - Excel",
+          "Windows PowerShell",
+          "expense_calc - Excel",
+          "getsujitsu_teigaku_torihikisaki_ichiran [Compatibility Mode] - Word",
+          "財務会計システム and 1 more page - Profile 1 - Microsoft​ Edge"
+        ],
+        "web_routes": [],
+        "cross_system_transfer": true,
+        "automation_suitability_score": 85.0
+      }
+    },
+    {
+      "session_id": "ses_20260701-164424-CHAITANYA0BCF",
+      "operator": "CHAITANYA0BCF",
+      "case_id": "INV-2026-7347",
+      "process_code": "INV",
+      "start": "2026-07-01T16:45:35Z",
+      "end": "2026-07-01T16:46:38Z",
+      "duration_seconds": 63.0,
+      "label": "invoice_processing",
+      "objective": "Process invoice_processing",
+      "additional_context": "",
+      "automation_telemetry": {
+        "total_events": 113,
+        "keystrokes_count": 18,
+        "clicks_count": 30,
+        "clipboard_operations": 5,
+        "scrolls_count": 13,
+        "app_switches_count": 5,
+        "active_applications": [
+          "Microsoft Edge",
+          "Microsoft Excel",
+          "Microsoft Word"
+        ],
+        "window_titles": [
+          "HR人事給与システム and 1 more page - Profile 1 - Microsoft​ Edge",
+          "expense_calc - Excel",
+          "getsujitsu_teigaku_torihikisaki_ichiran [Compatibility Mode] - Word",
+          "kazoku_teate_kitei [Compatibility Mode] - Word",
+          "財務会計システム and 1 more page - Profile 1 - Microsoft​ Edge"
+        ],
+        "web_routes": [
+          "payroll-items"
+        ],
+        "cross_system_transfer": true,
+        "automation_suitability_score": 90.0
+      }
+    },
+    {
+      "session_id": "ses_20260701-164424-CHAITANYA0BCF",
+      "operator": "CHAITANYA0BCF",
+      "case_id": "INV-2026-7348",
+      "process_code": "INV",
+      "start": "2026-07-01T16:46:38Z",
+      "end": "2026-07-01T16:47:07Z",
+      "duration_seconds": 29.0,
+      "label": "invoice_processing",
+      "objective": "Process invoice_processing",
+      "additional_context": "",
+      "automation_telemetry": {
+        "total_events": 78,
+        "keystrokes_count": 28,
+        "clicks_count": 12,
+        "clipboard_operations": 2,
+        "scrolls_count": 4,
+        "app_switches_count": 6,
+        "active_applications": [
+          "Microsoft Edge",
+          "Microsoft Excel",
+          "Microsoft Word"
+        ],
+        "window_titles": [
+          "HR人事給与システム and 1 more page - Profile 1 - Microsoft​ Edge",
+          "Opening - Excel",
+          "expense_calc - Excel",
+          "getsujitsu_teigaku_torihikisaki_ichiran [Compatibility Mode] - Word",
+          "kazoku_teate_kitei [Compatibility Mode] - Word"
+        ],
+        "web_routes": [],
+        "cross_system_transfer": true,
+        "automation_suitability_score": 100.0
+      }
+    },
+    {
+      "session_id": "ses_20260701-164424-CHAITANYA0BCF",
+      "operator": "CHAITANYA0BCF",
+      "case_id": "INV-2026-7350",
+      "process_code": "INV",
+      "start": "2026-07-01T16:47:07Z",
+      "end": "2026-07-01T16:47:27Z",
+      "duration_seconds": 20.0,
+      "label": "invoice_processing",
+      "objective": "Process invoice_processing",
+      "additional_context": "",
+      "automation_telemetry": {
+        "total_events": 60,
+        "keystrokes_count": 30,
+        "clicks_count": 6,
+        "clipboard_operations": 1,
+        "scrolls_count": 2,
+        "app_switches_count": 3,
+        "active_applications": [
+          "Microsoft Edge",
+          "Microsoft Excel"
+        ],
+        "window_titles": [
+          "Opening - Excel",
+          "expense_calc - Excel",
+          "財務会計システム and 1 more page - Profile 1 - Microsoft​ Edge"
+        ],
+        "web_routes": [],
+        "cross_system_transfer": true,
+        "automation_suitability_score": 85.0
+      }
+    },
+    {
+      "session_id": "ses_20260701-164424-CHAITANYA0BCF",
+      "operator": "CHAITANYA0BCF",
+      "case_id": "INV-2026-7351",
+      "process_code": "INV",
+      "start": "2026-07-01T16:47:27Z",
+      "end": "2026-07-01T16:47:54Z",
+      "duration_seconds": 27.0,
+      "label": "invoice_processing",
+      "objective": "Process invoice_processing",
+      "additional_context": "",
+      "automation_telemetry": {
+        "total_events": 29,
+        "keystrokes_count": 6,
+        "clicks_count": 6,
+        "clipboard_operations": 1,
+        "scrolls_count": 1,
+        "app_switches_count": 4,
+        "active_applications": [
+          "Microsoft Edge",
+          "Microsoft Excel",
+          "Microsoft Word"
+        ],
+        "window_titles": [
+          "expense_calc - Excel",
+          "getsujitsu_teigaku_torihikisaki_ichiran [Compatibility Mode] - Word",
+          "財務会計システム and 1 more page - Profile 1 - Microsoft​ Edge"
+        ],
+        "web_routes": [],
+        "cross_system_transfer": true,
+        "automation_suitability_score": 75.0
+      }
+    },
+    {
+      "session_id": "ses_20260701-164424-CHAITANYA0BCF",
+      "operator": "CHAITANYA0BCF",
+      "case_id": "RESIDENT-TAX-2026-008",
+      "process_code": "RESIDENT",
+      "start": "2026-07-01T16:47:54Z",
+      "end": "2026-07-01T16:48:28Z",
+      "duration_seconds": 34.0,
+      "label": "resident_tax_processing",
+      "objective": "Complete resident-tax processing for RESIDENT-TAX-2026-008 and record the handling details.",
+      "additional_context": "Edge was on the resident-tax route with a 処理内容を入力 field and reference P10-07010448-012. The screen also showed 福岡システム設計 and 関西物流サービス, providing the parties associated with the case.",
+      "automation_telemetry": {
+        "total_events": 74,
+        "keystrokes_count": 8,
+        "clicks_count": 22,
+        "clipboard_operations": 4,
+        "scrolls_count": 11,
+        "app_switches_count": 0,
+        "active_applications": [
+          "Microsoft Edge"
+        ],
+        "window_titles": [
+          "財務会計システム and 1 more page - Profile 1 - Microsoft​ Edge"
+        ],
+        "web_routes": [
+          "resident-tax"
+        ],
+        "cross_system_transfer": false,
+        "automation_suitability_score": 55.0
+      }
+    },
+    {
+      "session_id": "ses_20260701-164424-CHAITANYA0BCF",
+      "operator": "CHAITANYA0BCF",
+      "case_id": "PO-2026-5234",
+      "process_code": "PO",
+      "start": "2026-07-01T16:48:28Z",
+      "end": "2026-07-01T16:49:34Z",
+      "duration_seconds": 66.0,
+      "label": "purchase_order_processing",
+      "objective": "Complete the procurement approval review for PO-2026-5234 and record the decision rationale.",
+      "additional_context": "The visible Edge task was 保守委託契約（更新） with a field for an approval comment or return reason, while Microsoft Word and the finance dashboard were also present. The visible contract-renewal screen provided the approval evidence associated with the purchase-order review.",
+      "automation_telemetry": {
+        "total_events": 119,
+        "keystrokes_count": 20,
+        "clicks_count": 26,
+        "clipboard_operations": 5,
+        "scrolls_count": 6,
+        "app_switches_count": 13,
+        "active_applications": [
+          "Microsoft Edge",
+          "Microsoft Word"
+        ],
+        "window_titles": [
+          "getsujitsu_teigaku_torihikisaki_ichiran [Compatibility Mode] - Word",
+          "keiyaku_kaijo_tetsuzuki [Compatibility Mode] - Word",
+          "shinkui_keiyaku_tetsuzuki [Compatibility Mode] - Word",
+          "受発注在庫管理システム and 1 more page - Profile 1 - Microsoft​ Edge",
+          "財務会計システム and 1 more page - Profile 1 - Microsoft​ Edge"
+        ],
+        "web_routes": [
+          "leave-applications"
+        ],
+        "cross_system_transfer": true,
+        "automation_suitability_score": 100.0
+      }
+    },
+    {
+      "session_id": "ses_20260701-164424-CHAITANYA0BCF",
+      "operator": "CHAITANYA0BCF",
+      "case_id": "SOCIAL-INSURANCE-2026-010",
+      "process_code": "SOCIAL",
+      "start": "2026-07-01T16:49:34Z",
+      "end": "2026-07-01T16:50:38Z",
+      "duration_seconds": 64.0,
+      "label": "social_insurance_processing",
+      "objective": "Update the July 2026 social-insurance processing status for SOCIAL-INSURANCE-2026-010.",
+      "additional_context": "Edge displayed the social-insurance workflow for 2026-07, including a 処理内容・対応状況 input field and reference P13-07010448-012. Notepad was used to prepare notes, and the inventory-management system was visible for related information.",
+      "automation_telemetry": {
+        "total_events": 93,
+        "keystrokes_count": 16,
+        "clicks_count": 25,
+        "clipboard_operations": 5,
+        "scrolls_count": 11,
+        "app_switches_count": 1,
+        "active_applications": [
+          "Microsoft Edge",
+          "Notepad"
+        ],
+        "window_titles": [
+          "*IT申請メモ - Notepad",
+          "Untitled - Notepad",
+          "受発注在庫管理システム and 1 more page - Profile 1 - Microsoft​ Edge"
+        ],
+        "web_routes": [
+          "social-insurance"
+        ],
+        "cross_system_transfer": true,
+        "automation_suitability_score": 80.0
+      }
+    },
+    {
+      "session_id": "ses_20260701-164424-CHAITANYA0BCF",
+      "operator": "CHAITANYA0BCF",
+      "case_id": "LEAVE-APPLICATIONS-2026-011",
+      "process_code": "LEAVE",
+      "start": "2026-07-01T16:50:38Z",
+      "end": "2026-07-01T16:52:18Z",
+      "duration_seconds": 100.0,
+      "label": "leave_application_processing",
+      "objective": "Approve or return leave application LEAVE-APPLICATIONS-2026-011 with a documented rationale.",
+      "additional_context": "Edge showed the leave-applications route, associated contract documents, and a field for an approval comment or return reason. Word and Notepad were used in relation to the visible 申請メモ, supporting preparation of the application response.",
+      "automation_telemetry": {
+        "total_events": 183,
+        "keystrokes_count": 56,
+        "clicks_count": 24,
+        "clipboard_operations": 7,
+        "scrolls_count": 5,
+        "app_switches_count": 21,
+        "active_applications": [
+          "Microsoft Edge",
+          "Microsoft Word",
+          "Notepad"
+        ],
+        "window_titles": [
+          "*IT申請メモ - Notepad",
+          "keiyaku_kaijo_tetsuzuki [Compatibility Mode] - Word",
+          "shinkui_keiyaku_tetsuzuki [Compatibility Mode] - Word",
+          "受発注在庫管理システム and 1 more page - Profile 1 - Microsoft​ Edge"
+        ],
+        "web_routes": [
+          "leave-applications"
+        ],
+        "cross_system_transfer": true,
+        "automation_suitability_score": 100.0
+      }
+    },
+    {
+      "session_id": "ses_20260701-164424-CHAITANYA0BCF",
+      "operator": "CHAITANYA0BCF",
+      "case_id": "INV-2026-7352",
+      "process_code": "INV",
+      "start": "2026-07-01T16:52:18Z",
+      "end": "2026-07-01T16:52:45Z",
+      "duration_seconds": 27.0,
+      "label": "invoice_processing",
+      "objective": "Process invoice_processing",
+      "additional_context": "",
+      "automation_telemetry": {
+        "total_events": 44,
+        "keystrokes_count": 8,
+        "clicks_count": 12,
+        "clipboard_operations": 2,
+        "scrolls_count": 3,
+        "app_switches_count": 4,
+        "active_applications": [
+          "Microsoft Edge",
+          "Microsoft Word"
+        ],
+        "window_titles": [
+          "getsujitsu_teigaku_torihikisaki_ichiran [Compatibility Mode] - Word",
+          "shinkui_keiyaku_tetsuzuki [Compatibility Mode] - Word",
+          "財務会計システム and 1 more page - Profile 1 - Microsoft​ Edge"
+        ],
+        "web_routes": [
+          "payroll-items"
+        ],
+        "cross_system_transfer": true,
+        "automation_suitability_score": 90.0
+      }
+    },
+    {
+      "session_id": "ses_20260701-164424-CHAITANYA0BCF",
+      "operator": "CHAITANYA0BCF",
+      "case_id": "INV-2026-7354",
+      "process_code": "INV",
+      "start": "2026-07-01T16:52:45Z",
+      "end": "2026-07-01T16:53:09Z",
+      "duration_seconds": 24.0,
+      "label": "invoice_processing",
+      "objective": "Process invoice_processing",
+      "additional_context": "",
+      "automation_telemetry": {
+        "total_events": 34,
+        "keystrokes_count": 4,
+        "clicks_count": 12,
+        "clipboard_operations": 2,
+        "scrolls_count": 4,
+        "app_switches_count": 0,
+        "active_applications": [
+          "Microsoft Edge"
+        ],
+        "window_titles": [
+          "財務会計システム and 1 more page - Profile 1 - Microsoft​ Edge"
+        ],
+        "web_routes": [],
+        "cross_system_transfer": false,
+        "automation_suitability_score": 55.0
+      }
+    },
+    {
+      "session_id": "ses_20260701-164424-CHAITANYA0BCF",
+      "operator": "CHAITANYA0BCF",
+      "case_id": "RESIDENT-TAX-2026-014",
+      "process_code": "RESIDENT",
+      "start": "2026-07-01T16:53:09Z",
+      "end": "2026-07-01T16:53:42Z",
+      "duration_seconds": 33.0,
+      "label": "resident_tax_processing",
+      "objective": "Complete resident-tax processing for RESIDENT-TAX-2026-014 and record the handling details.",
+      "additional_context": "Edge displayed the resident-tax workflow for 北陸部品工業株式会社 with a 処理内容を入力 field and reference P10-07010448-012. Microsoft Word and the finance-system dashboard were open while the case was reviewed.",
+      "automation_telemetry": {
+        "total_events": 57,
+        "keystrokes_count": 6,
+        "clicks_count": 16,
+        "clipboard_operations": 3,
+        "scrolls_count": 7,
+        "app_switches_count": 3,
+        "active_applications": [
+          "Microsoft Edge",
+          "Microsoft Word"
+        ],
+        "window_titles": [
+          "getsujitsu_teigaku_torihikisaki_ichiran [Compatibility Mode] - Word",
+          "shinkuitorihikisaki_touroku_tetsuzuki [Compatibility Mode] - Word",
+          "財務会計システム and 1 more page - Profile 1 - Microsoft​ Edge"
+        ],
+        "web_routes": [
+          "resident-tax"
+        ],
+        "cross_system_transfer": true,
+        "automation_suitability_score": 90.0
+      }
+    }
+  ]
+}

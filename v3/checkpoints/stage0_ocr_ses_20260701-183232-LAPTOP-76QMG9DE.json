@@ -1,0 +1,22 @@
+{
+  "0": {
+    "initial_state_ocr": "マン @ 受償注在庫管理ツステム | CG © 127001513 | Se 受発注在庫管理レステム              ni                                                                                           Translate page from Japanese? | Translate to | English | Translate     More v",
+    "terminal_state_ocr": "Vv @ HR人事給与システム | (の        127.0.0.1:5 | AB HR人事給与システム | ダッシュボード | 経草精算・給与変更 23 | 勤怠・休暇申請"
+  },
+  "1": {
+    "initial_state_ocr": "四 IT申請メモ                                .        +                                                                                                                                                                                                                                     =        o        x | File Edit View                  My =y BIrse By &                 タン Jd@8 | TT申請メモ | pc新規発行申請 | 申請者: LE All | Ln 3.Col10     25 characters                              Plain text                                                                                                                                                                             100%         ‘Windows (CRLF)                  UTF-8",
+    "terminal_state_ocr": "Vv @ HR人事給与システム | (の        127.0.0.1:5 | AB HR人事給与システム | ダッシュボード | 7S + ORR ES | 入社手続き"
+  },
+  "2": {
+    "initial_state_ocr": "Vv @ HR人事給与システム | (の    127.0.0.1:5 | AB HR人事給与システム | ダッシュボード | 経草精算・給与変更 | 7S + ORR ES",
+    "terminal_state_ocr": "ツン @ 受償注在庫管理システム | (の      127.0.0.1:5 | Se 受発注在庫管理システム | © Very humid | P12-07080388-001 | P12-07080388-002"
+  },
+  "3": {
+    "initial_state_ocr": "マン @ 時衝会計システム | (の    127.0.0.1:5 | Me 財務会計システム | ダッシュボード | 8  (管理職) | 支払処理",
+    "terminal_state_ocr": "マン @ 時衝会計システム | と 〇   127.0.0.1:5    esid  a                                                                9ぁ     eis | Mae 財務会計システム 2                                                                                                                                                                          Restore pages | -                 =                Microsoft Edge closed unexpectedly. | P10-07080388-007                                                    ッ                                         管理 PO-2026-5623 | P10-07080388-008                                                                                              管理 PO-2026-5624"
+  },
+  "4": {
+    "initial_state_ocr": "Mae 財務会計システム 2                                                                                                                                                                          Restore pages | Microsoft Edge closed unexpectedly. | ダッシュボード | RR «CEE | 経費承認 (管理職) | 支払処理",
+    "terminal_state_ocr": "マン © 受発注在庫管理ツステム | (の        127.0. | Se 受発注在庫管理システム | 受注・その他 | © Very humid | 00:07"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "INV": {
+    "process_prefix": "INV",
+    "canonical_task_name": "invoice_processing",
+    "department": "Finance",
+    "core_objective": "Validate and approve supplier invoices while documenting payment-processing confirmations"
+  },
+  "LEAVE": {
+    "process_prefix": "LEAVE",
+    "canonical_task_name": "leave_application_approval",
+    "department": "Human Resources",
+    "core_objective": "Review and approve employee leave requests and related HR contract actions with decision comments"
+  },
+  "SOCIAL": {
+    "process_prefix": "SOCIAL",
+    "canonical_task_name": "social_insurance_processing",
+    "department": "Human Resources",
+    "core_objective": "Process monthly social insurance cases and record handling statuses"
+  },
+  "ONBOARDING": {
+    "process_prefix": "ONBOARDING",
+    "canonical_task_name": "employee_onboarding",
+    "department": "Human Resources",
+    "core_objective": "Reconcile employee onboarding payments and record processing exceptions"
+  }
+}

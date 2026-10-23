@@ -1,0 +1,7 @@
+{
+  "ONBOARDING": "onboarding_transfer_reconciliation",
+  "SOCIAL": "social_insurance_benefit_processing",
+  "LEAVE": "approval_request_processing",
+  "RESIDENT": "resident_tax_case_processing",
+  "BATCH": "batch_financial_record_processing"
+}

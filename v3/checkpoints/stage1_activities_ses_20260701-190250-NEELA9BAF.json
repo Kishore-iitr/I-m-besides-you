@@ -1,0 +1,37 @@
+{
+  "0": {
+    "batch_idx": 1,
+    "objective": "Approve invoice INV-2026-7998 and record the processing confirmation.",
+    "additional_context": "The invoice was opened in Edge from the payroll-items page, with Excel and Word available for reviewing supporting details. The user entered information in the processing and confirmation comment field for P6-07046967-012."
+  },
+  "1": {
+    "batch_idx": 2,
+    "objective": "Approve invoice INV-2026-7999 and document the review decision.",
+    "additional_context": "In Edge, the user reviewed the invoice approval screen alongside a Word document and entered a processing or confirmation comment associated with P6-07046967-012."
+  },
+  "2": {
+    "batch_idx": 3,
+    "objective": "Approve invoice INV-2026-8000 and record the processing confirmation.",
+    "additional_context": "The user completed the invoice approval view in Edge and entered a processing comment for P6-07046967-012 while using Word for review. The subsequent opening of invoice INV-2026-8001 indicates progression to the next invoice."
+  },
+  "10": {
+    "batch_idx": 11,
+    "objective": "Verify employee onboarding information and record reconciliation results.",
+    "additional_context": "The onboarding page was reviewed in Edge, including dates 2026-07-20 and 2026-07-05. The user entered the matching results and special notes field for P3-07046967-012, with Word open as a supporting application."
+  },
+  "11": {
+    "batch_idx": 12,
+    "objective": "Decide leave applications and document the approval or return rationale.",
+    "additional_context": "In Edge on the leave-applications page, the user reviewed entries labeled 研修費 and 消耗品費 and used the approval-comment or rejection-reason field for P9-07046967-012. Word was used alongside the review."
+  },
+  "12": {
+    "batch_idx": 13,
+    "objective": "Review and process the travel-expense payroll item.",
+    "additional_context": "The user opened the payroll-items workflow in Edge, reviewed the 出張旅費 entry, and entered a processing or confirmation comment associated with P9-07046967-012 and P4-07046967-012. Notepad and Word were used to support the review."
+  },
+  "13": {
+    "batch_idx": 14,
+    "objective": "Review and process payroll items for chassis panel D and control board unit A.",
+    "additional_context": "The payroll-items page was examined in Edge, showing 筐体パネルD and 制御基板ユニットA with references P9-07046967-012 and P11-07046967-012. The user entered a processing or confirmation comment and used Notepad, while an inventory-management system tab was visible."
+  }
+}

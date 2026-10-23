@@ -1,0 +1,101 @@
+{
+  "session_id": "ses_20260701-053005-MSI",
+  "session_dir": "G:\\.shortcut-targets-by-id\\1WSBZQxOODKFDzYBkIik5g90NWKS7Gwl0\\AI Engineer\\dataset_a\\ses_20260701-053005-MSI",
+  "dominant_batch": "110019",
+  "total_events_loaded": 2682,
+  "clean_events_loaded": 2669,
+  "predicted_segments_count": 35,
+  "ground_truth_executions_count": 33,
+  "timings": {
+    "Layer 1: Raw Log Ingestion & Filtering": 3.0894045000022743,
+    "Layer 2: Dynamic Trace & Episode Boundary Extraction": 0.18945909998728894,
+    "Stage 0: Dual Keyframe OCR Visual Grounding": 22.73398599997745,
+    "Stage 1: Activity Segmentation (Puter LLM)": 61.757224900007714,
+    "Stage 2: Latent Task Discovery (Puter LLM)": 22.900688299996546,
+    "Stage 3: Root Thread Consolidation & Naming (Puter LLM)": 32.92025110000395,
+    "Stage 4: Hierarchical Task Modeling (Puter LLM)": 31.37289289999171,
+    "Stage 5: Deliverable Generation (segments.jsonl)": 0.0033008000173140317,
+    "Stage 6: Post-Hoc Ground Truth Evaluation": 0.04321939998771995,
+    "Total End-to-End Pipeline Runtime": 175.02732420002576
+  },
+  "boundary_metrics": {
+    "tol_1s": {
+      "tolerance_s": 1,
+      "tp": 0,
+      "total_gt": 33,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "tol_2s": {
+      "tolerance_s": 2,
+      "tp": 1,
+      "total_gt": 33,
+      "precision": 2.86,
+      "recall": 3.03,
+      "f1": 2.94
+    },
+    "tol_5s": {
+      "tolerance_s": 5,
+      "tp": 31,
+      "total_gt": 33,
+      "precision": 88.57,
+      "recall": 93.94,
+      "f1": 91.18
+    },
+    "tol_10s": {
+      "tolerance_s": 10,
+      "tp": 31,
+      "total_gt": 33,
+      "precision": 88.57,
+      "recall": 93.94,
+      "f1": 91.18
+    },
+    "tol_30s": {
+      "tolerance_s": 30,
+      "tp": 33,
+      "total_gt": 33,
+      "precision": 94.29,
+      "recall": 100.0,
+      "f1": 97.06
+    }
+  },
+  "process_alignment": {
+    "employee_onboarding": {
+      "gt_family": "E (入社照合・手当確認)",
+      "matches": 3
+    },
+    "invoice_processing": {
+      "gt_family": "F (請求書承認)",
+      "matches": 5
+    },
+    "leave_application": {
+      "gt_family": "C (育児・産休申請確認)",
+      "matches": 4
+    },
+    "payroll_deductions_maintenance": {
+      "gt_family": "B (給与備考・控除整備)",
+      "matches": 4
+    },
+    "resident_tax": {
+      "gt_family": "A (住民税通知確認)",
+      "matches": 4
+    },
+    "rma_processing": {
+      "gt_family": "O (返品処理)",
+      "matches": 3
+    },
+    "shipment_tracking": {
+      "gt_family": "N (出荷追跡)",
+      "matches": 3
+    },
+    "social_insurance_maintenance": {
+      "gt_family": "D (社保・年金補正対応)",
+      "matches": 3
+    },
+    "supplier_management": {
+      "gt_family": "M (仕入先連絡)",
+      "matches": 5
+    }
+  }
+}

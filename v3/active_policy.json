@@ -1,0 +1,23 @@
+{
+  "id": "getsujitsu_teigaku_torihikisaki_ichiran",
+  "title": "Monthly Fixed-Price Vendor Policy",
+  "type": "fixed_vendor",
+  "description": "5-Vendor Master Reconciliation Policy (Yamada, Yamato, Tokyo Electronics, Global Tech, Hokuriku Parts)",
+  "summary": "Monthly fixed-price contracts. Invoices are approved ONLY if vendor name and billing amount match the agreed contract amount exactly. Mismatches or unlisted vendors are placed On Hold.",
+  "vendors": {
+    "Yamada Manufacturing Co., Ltd.": 385000,
+    "株式会社山田製作所": 385000,
+    "Yamato Shoji Co., Ltd.": 1240000,
+    "大和商事株式会社": 1240000,
+    "Tokyo Electronics Industry Co., Ltd.": 562800,
+    "東京電子工業株式会社": 562800,
+    "Global Tech LLC": 745000,
+    "グローバルテック合同会社": 745000,
+    "Hokuriku Parts Industry Co., Ltd.": 420000,
+    "北陸電子部品": 420000,
+    "北陸部品工業株式会社": 420000
+  },
+  "approve_comment": "Monthly fixed-price vendor list reconciled. Invoice amount and consumption tax verified.",
+  "hold_mismatch_comment": "Contract amount mismatch (Contract: ¥{expected} / Invoiced: ¥{actual}). On hold for verification.",
+  "hold_unregistered_comment": "Unregistered vendor (Not in fixed contract list). On hold for verification."
+}

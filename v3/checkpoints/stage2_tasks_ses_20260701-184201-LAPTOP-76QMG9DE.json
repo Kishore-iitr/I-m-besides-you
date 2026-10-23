@@ -1,0 +1,32 @@
+{
+  "ONBOARDING": {
+    "process_prefix": "ONBOARDING",
+    "canonical_task_name": "onboarding_transfer_reconciliation",
+    "department": "Finance",
+    "core_objective": "Reconcile onboarding bank transfers and record matching outcomes, discrepancies, and special notes."
+  },
+  "SOCIAL": {
+    "process_prefix": "SOCIAL",
+    "canonical_task_name": "social_insurance_benefit_processing",
+    "department": "Human Resources",
+    "core_objective": "Review and process employee social insurance welfare applications and record the handling outcome."
+  },
+  "LEAVE": {
+    "process_prefix": "LEAVE",
+    "canonical_task_name": "approval_request_processing",
+    "department": "Operations",
+    "core_objective": "Review and approve or reject employee expense and contract-related requests, documenting the decision rationale."
+  },
+  "RESIDENT": {
+    "process_prefix": "RESIDENT",
+    "canonical_task_name": "resident_tax_case_processing",
+    "department": "Finance",
+    "core_objective": "Process resident tax cases for specified companies and record the handling results."
+  },
+  "BATCH": {
+    "process_prefix": "BATCH",
+    "canonical_task_name": "batch_financial_record_processing",
+    "department": "Finance",
+    "core_objective": "Review and process batch payroll and transaction records, documenting confirmations, reconciliation results, and exceptions."
+  }
+}

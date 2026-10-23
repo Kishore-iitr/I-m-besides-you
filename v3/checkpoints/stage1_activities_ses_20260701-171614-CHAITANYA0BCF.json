@@ -1,0 +1,57 @@
+{
+  "0": {
+    "batch_idx": 1,
+    "objective": "Complete resident tax case processing for Tokyo Electron Industry Co., Ltd.",
+    "additional_context": "In Microsoft Edge, the user opened the HR portal's resident-tax page, reviewed the company information, and entered processing content. Microsoft Word was also used to support documentation."
+  },
+  "1": {
+    "batch_idx": 2,
+    "objective": "Process payroll item changes for abolishing a role allowance and establishing a new role allowance.",
+    "additional_context": "The Edge payroll-items workflow displayed both 役職手当廃止 and 役職手当新設 for record P4-07054374-012, together with fields for processing content and confirmation comments."
+  },
+  "2": {
+    "batch_idx": 3,
+    "objective": "Review payroll item master records and document the processing decision.",
+    "additional_context": "The Edge payroll-items page showed entries 電源モジュールB and モーターユニットF for P11-07054374-012 and a processing-comment field. Windows Explorer was also used while reviewing the associated records."
+  },
+  "3": {
+    "batch_idx": 4,
+    "objective": "Reconcile onboarding records associated with 2026-07-06 and 2026-07-21 and document exceptions.",
+    "additional_context": "The Edge onboarding workflow displayed both July 2026 dates and fields for reconciliation results and special notes for P3-07054374-012. Excel and Word supported the source review and documentation."
+  },
+  "4": {
+    "batch_idx": 5,
+    "objective": "Record processing and response status for June 2026 social insurance cases.",
+    "additional_context": "On the Edge social-insurance page for 2026-06, the user worked with record P8-07054374-012 and entered processing and response information. Excel was used as a supporting source."
+  },
+  "5": {
+    "batch_idx": 6,
+    "objective": "Review resident tax records and complete the company-related processing details.",
+    "additional_context": "Using Microsoft Edge, the user navigated the resident-tax page, reviewed records P8-07054374-012 and P10-07054374-012, and entered processing content for Tokyo Electron Industry Co., Ltd."
+  },
+  "6": {
+    "batch_idx": 7,
+    "objective": "Review and document handling of an employee maternity-leave social insurance request.",
+    "additional_context": "The Edge social-insurance workflow displayed 産前産後休暇申請 for P10-07054374-012 and P5-07054374-012 alongside processing-content and response-status fields. Microsoft Word was used for supporting documentation."
+  },
+  "7": {
+    "batch_idx": 8,
+    "objective": "Process and document a payroll change to the dependent deduction.",
+    "additional_context": "The Edge payroll-items page showed 扶養控除変更 for P5-07054374-012 and P4-07054374-012 with a processing and confirmation comment field. Notepad was used to prepare the entered text."
+  },
+  "8": {
+    "batch_idx": 9,
+    "objective": "Assess social insurance requests for family allowance and childcare leave.",
+    "additional_context": "The Edge social-insurance page displayed 家族手当申請 and 育児休業申請 under P5-07054374-012, together with a processing and response-status field. Word and Notepad were used to prepare supporting text."
+  },
+  "10": {
+    "batch_idx": 11,
+    "objective": "Reconcile onboarding transfer amounts and document any discrepancies.",
+    "additional_context": "In the Edge onboarding workflow for P7-07054374-012, the user reviewed transfers of ¥361,010 and ¥295,278 and entered reconciliation results or special notes. Microsoft Word supported the documentation."
+  },
+  "11": {
+    "batch_idx": 12,
+    "objective": "Process payroll updates for a salary increase and abolition of the role allowance.",
+    "additional_context": "The Edge payroll-items workflow displayed 昇給 and 役職手当廃止 for P4-07054374-012 with a processing and confirmation comment field. Microsoft Word and clipboard content supported entry of the review note."
+  }
+}

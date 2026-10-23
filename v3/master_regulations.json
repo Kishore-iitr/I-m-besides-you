@@ -1,0 +1,23 @@
+[
+  {
+    "code": "V1001",
+    "name": "East Japan Logistics",
+    "limit": "¥640",
+    "req": "000",
+    "class": "固定契約"
+  },
+  {
+    "code": "V1002",
+    "name": "NexTech Solutions",
+    "limit": "¥820",
+    "req": "000",
+    "class": "契約範囲内"
+  },
+  {
+    "code": "V1003",
+    "name": "東海精密ツール",
+    "limit": "¥430",
+    "req": "000",
+    "class": "固定保守"
+  }
+]

@@ -1,0 +1,26 @@
+{
+  "PAYROLL": {
+    "process_prefix": "PAYROLL",
+    "canonical_task_name": "payroll_item_processing",
+    "department": "Finance",
+    "core_objective": "Review, verify, and complete employee payroll items while documenting processing or confirmation details"
+  },
+  "BATCH": {
+    "process_prefix": "BATCH",
+    "canonical_task_name": "payroll_item_batch_processing",
+    "department": "Finance",
+    "core_objective": "Verify, process, and document multiple payroll-item requests using supporting reference materials"
+  },
+  "LEAVE": {
+    "process_prefix": "LEAVE",
+    "canonical_task_name": "leave_application_approval",
+    "department": "Human Resources",
+    "core_objective": "Review leave applications and approve or return them with documented reasons"
+  },
+  "PO": {
+    "process_prefix": "PO",
+    "canonical_task_name": "resident_tax_item_processing",
+    "department": "Finance",
+    "core_objective": "Review and record the processing of resident-tax items for specified organizations"
+  }
+}

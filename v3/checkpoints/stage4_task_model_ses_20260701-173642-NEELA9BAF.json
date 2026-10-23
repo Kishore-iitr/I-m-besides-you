@@ -1,0 +1,6 @@
+{
+  "PAYROLL": "payroll_item_processing",
+  "BATCH": "employee_compensation_processing",
+  "INV": "invoice_approval",
+  "LEAVE": "leave_application_approval"
+}

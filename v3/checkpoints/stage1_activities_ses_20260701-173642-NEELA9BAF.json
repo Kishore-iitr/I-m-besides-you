@@ -1,0 +1,37 @@
+{
+  "0": {
+    "batch_idx": 1,
+    "objective": "Finalize the payroll item for the record associated with 沖縄物流センター",
+    "additional_context": "In HR Management, the user moved among leave-applications, payroll-items, and social-insurance, then worked in the 処理内容 field for P10-07047510-012; 大和商事株式会社 and 沖縄物流センター were visible. WindowsTerminal, Teams, and prl_cc were used alongside Edge for cross-system payroll validation."
+  },
+  "1": {
+    "batch_idx": 2,
+    "objective": "Process payroll item entries involving 制御基板ユニットA and 筐体パネルD",
+    "additional_context": "The user opened payroll-items in Edge and worked at the 処理内容・確認コメント prompt for P11-07047510-012, with both item names visible. Notepad was open for reference, and a 財務会計システム tab was also available for comparison."
+  },
+  "2": {
+    "batch_idx": 3,
+    "objective": "Review and process employee housing allowance and family allowance applications",
+    "additional_context": "The social-insurance workflow displayed 住宅手当変更申請 and 家族手当申請, with a processing/status field for P5-07047510-012. Notepad and Word were used alongside Edge, and a visible note listed 調整数: +198 and 区分: 定期補売."
+  },
+  "3": {
+    "batch_idx": 4,
+    "objective": "Approve invoice INV-2026-7532 and record the confirmation comment",
+    "additional_context": "The user opened 請求書承認 INV-2026-7532 and reached the 処理内容・確認コメント field associated with P6-07047510-012, then brought INV-2026-7533 into view. Edge and Microsoft Word were used during the approval review."
+  },
+  "4": {
+    "batch_idx": 5,
+    "objective": "Approve invoice INV-2026-7534 and record the confirmation comment",
+    "additional_context": "The user worked on 請求書承認 INV-2026-7534, including the 処理内容・確認コメント field for P6-07047510-012, before moving to INV-2026-7535. A 財務会計システム tab was visible, with Excel, Word, prl_cc, and Edge used to support the review."
+  },
+  "5": {
+    "batch_idx": 6,
+    "objective": "Approve invoice INV-2026-7536 and record the confirmation comment",
+    "additional_context": "The 請求書承認 form for INV-2026-7536 displayed the 処理内容・確認コメント field for P6-07047510-012. The user had a 財務会計システム tab available for reference and used WindowsTerminal, Word, Excel, and Edge."
+  },
+  "8": {
+    "batch_idx": 9,
+    "objective": "Approve or reject leave application LEAVE-APPLICATIONS-2026-009 with a decision comment",
+    "additional_context": "In the leave-applications workflow, the user opened a 半日有給申請 and reached the 承認コメントまたは差戻し理由 prompt associated with P4-07047510-012; P2-07047510-012 was also visible. The review was conducted in Microsoft Edge."
+  }
+}

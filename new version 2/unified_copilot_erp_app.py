@@ -1067,7 +1067,19 @@ HTML_TEMPLATE = """
           <div style="font-size: 11px; color: #64748b; margin-top: 4px;">またはここをクリックしてファイルを選択</div>
           <input type="file" id="file-upload" accept=".docx,.xlsx,.xls,.csv,.txt" style="display: none;" onchange="handleFileUpload(event)">
         </div>
-        <div id="upload-status" style="font-size: 11px; color: #166534; font-weight: 600;"></div>
+        <div id="upload-status" style="font-size: 11px; color: #166534; font-weight: 600; margin-top: 6px;"></div>
+
+        <div style="margin-top: 12px; display: flex; flex-direction: column; gap: 6px;">
+          <span style="font-size: 11px; color: #475569; font-weight: 600;">📁 実務データセット原本Word文書を即座に適用:</span>
+          <button class="btn-secondary" style="font-size: 11px; text-align: left; padding: 6px 10px; display: flex; align-items: center; justify-content: space-between;" onclick="loadSampleDoc('invoice')">
+            <span>📄 月次定額取引先一覧.docx (実務で使用された契約マスタ原本)</span>
+            <span style="font-size: 10px; color: var(--accent); font-weight: 700;">読込 ➔</span>
+          </button>
+          <button class="btn-secondary" style="font-size: 11px; text-align: left; padding: 6px 10px; display: flex; align-items: center; justify-content: space-between;" onclick="loadSampleDoc('payroll')">
+            <span>📄 業務委託・審査手続.docx (実務で使用された手続規程原本)</span>
+            <span style="font-size: 10px; color: var(--accent); font-weight: 700;">読込 ➔</span>
+          </button>
+        </div>
       </div>
 
       <!-- Extracted Active Rules Container -->
@@ -2318,6 +2330,31 @@ HTML_TEMPLATE = """
       }
     }
 
+    /* --- Load Authentic Sample Document (.docx) --- */
+    async function loadSampleDoc(type) {
+      const statusDiv = document.getElementById('upload-status');
+      statusDiv.innerText = '実務原本文書を読込中…';
+      try {
+        const res = await fetch('/api/load-sample-doc', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ type: type })
+        });
+        const data = await res.json();
+        if (data.success) {
+          document.getElementById('doc-text').value = data.text;
+          statusDiv.innerText = '✓ 実務原本読込完了: ' + data.filename + ' (' + data.text.length + ' 文字)';
+          switchWsTab('notepad');
+          resetGraphUi();
+          alert('実務原本Word文書 (' + data.filename + ') を読み込みました。');
+        } else {
+          statusDiv.innerText = 'エラー: ' + (data.error || '不明なエラー');
+        }
+      } catch (e) {
+        statusDiv.innerText = '通信エラー: ' + e;
+      }
+    }
+
     /* --- File Upload Handler (.docx / .txt) --- */
     async function handleFileUpload(event) {
       const file = event.target.files[0];
@@ -2592,6 +2629,38 @@ def save_regulations_route():
     ok = save_master_regulations(regs)
     return jsonify({"success": ok, "count": len(regs)})
 
+@app.route("/api/load-sample-doc", methods=["POST"])
+def load_sample_doc():
+    data = request.json or {}
+    doc_type = data.get("type", "invoice")
+    
+    # Try multiple potential paths for sample_word_docs
+    possible_dirs = [
+        Path(__file__).resolve().parent / "sample_word_docs",
+        Path.cwd() / "sample_word_docs",
+        Path("sample_word_docs"),
+        Path(r"C:\Users\KISHORE S\Desktop\pulled_tmi\sample_word_docs"),
+        Path(r"c:\Users\KISHORE S\Desktop\im beside you\new version 2\sample_word_docs")
+    ]
+    
+    filename = "getsujitsu_teigaku_torihikisaki_ichiran.docx" if doc_type == "invoice" else "it_gyomu_butsuryu_shinsa.docx"
+    fallback_text = INVOICE_PRESET_POLICY if doc_type == "invoice" else PAYROLL_PRESET_MEMO
+    fallback_filename = f"{filename} (内蔵プリセット)"
+    
+    for s_dir in possible_dirs:
+        candidate = s_dir / filename
+        if candidate.exists():
+            try:
+                with open(candidate, "rb") as f:
+                    bytes_data = f.read()
+                text = extract_text_from_file_bytes(candidate.name, bytes_data)
+                if text and len(text.strip()) > 20:
+                    return jsonify({"success": True, "filename": candidate.name, "text": text})
+            except Exception:
+                pass
+                
+    return jsonify({"success": True, "filename": fallback_filename, "text": fallback_text})
+
 @app.route("/api/upload-doc", methods=["POST"])
 def upload_doc():
     if "file" not in request.files:
@@ -2764,4 +2833,4 @@ def export_excel(suite):
 if __name__ == "__main__":
     port = int(os.environ.get("ERP_PORT", 5135))
     print(f"Starting Unified Enterprise ERP Portal on port {port}...")
-    app.run(host="0.0.0.0", port=port, debug=False)
+    app.run(host="127.0.0.1", port=port, debug=False, use_reloader=False, threaded=True)

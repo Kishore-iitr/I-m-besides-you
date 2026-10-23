@@ -1,0 +1,12 @@
+{"session_id": "ses_20260701-171614-CHAITANYA0BCF", "start": "2026-07-01T17:16:27Z", "end": "2026-07-01T17:17:30Z", "label": "payroll_operations_processing"}
+{"session_id": "ses_20260701-171614-CHAITANYA0BCF", "start": "2026-07-01T17:17:30Z", "end": "2026-07-01T17:18:16Z", "label": "payroll_operations_processing"}
+{"session_id": "ses_20260701-171614-CHAITANYA0BCF", "start": "2026-07-01T17:18:16Z", "end": "2026-07-01T17:19:07Z", "label": "workforce_data_reconciliation"}
+{"session_id": "ses_20260701-171614-CHAITANYA0BCF", "start": "2026-07-01T17:19:07Z", "end": "2026-07-01T17:20:37Z", "label": "workforce_data_reconciliation"}
+{"session_id": "ses_20260701-171614-CHAITANYA0BCF", "start": "2026-07-01T17:20:37Z", "end": "2026-07-01T17:23:07Z", "label": "social_insurance_case_processing"}
+{"session_id": "ses_20260701-171614-CHAITANYA0BCF", "start": "2026-07-01T17:23:07Z", "end": "2026-07-01T17:23:50Z", "label": "resident_tax_case_processing"}
+{"session_id": "ses_20260701-171614-CHAITANYA0BCF", "start": "2026-07-01T17:23:50Z", "end": "2026-07-01T17:24:36Z", "label": "payroll_operations_processing"}
+{"session_id": "ses_20260701-171614-CHAITANYA0BCF", "start": "2026-07-01T17:24:36Z", "end": "2026-07-01T17:25:26Z", "label": "payroll_item_change_processing"}
+{"session_id": "ses_20260701-171614-CHAITANYA0BCF", "start": "2026-07-01T17:25:26Z", "end": "2026-07-01T17:27:00Z", "label": "social_insurance_case_processing"}
+{"session_id": "ses_20260701-171614-CHAITANYA0BCF", "start": "2026-07-01T17:27:00Z", "end": "2026-07-01T17:27:55Z", "label": "payroll_operations_processing"}
+{"session_id": "ses_20260701-171614-CHAITANYA0BCF", "start": "2026-07-01T17:27:55Z", "end": "2026-07-01T17:29:26Z", "label": "onboarding_record_reconciliation"}
+{"session_id": "ses_20260701-171614-CHAITANYA0BCF", "start": "2026-07-01T17:29:26Z", "end": "2026-07-01T17:29:58Z", "label": "payroll_item_change_processing"}

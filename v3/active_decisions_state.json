@@ -1,0 +1,254 @@
+{
+  "policy_id": "llm_policy",
+  "policy_title": "New Vendor Contract Procedure Policy",
+  "summary": "This policy outlines the approval process for contracts with new vendors and the handling of initial invoices based on their amounts.",
+  "generated_sql_rules": [
+    {
+      "rule_id": "rule_1",
+      "rule_name": "Approval for invoices under 1 million JPY",
+      "target_action": "approve",
+      "comment": "Invoices with amounts less than 1 million JPY can be approved by department heads.",
+      "sql_query": "SELECT id FROM erp_invoices WHERE raw_amount < 1000000 AND status = 'Unprocessed';"
+    },
+    {
+      "rule_id": "rule_2",
+      "rule_name": "Hold for invoices 1 million JPY and above",
+      "target_action": "hold",
+      "comment": "Invoices with amounts of 1 million JPY or more require executive approval and should be held for escalation.",
+      "sql_query": "SELECT id FROM erp_invoices WHERE raw_amount >= 1000000 AND status = 'Unprocessed';"
+    }
+  ],
+  "total_invoices": 12,
+  "approved_count": 7,
+  "held_count": 5,
+  "discrepancy_count": 0,
+  "discrepancies": [],
+  "evaluated_invoices": {
+    "P6-07010448-001": {
+      "id": "P6-07010448-001",
+      "invoice_no": "INV-2026-7344",
+      "name": "Global Tech LLC",
+      "amount": "¥716,232",
+      "raw_amount": 716232,
+      "type": "Routine",
+      "status": "Unprocessed",
+      "decision": "Approved",
+      "action": "approve",
+      "comment": "Invoices with amounts less than 1 million JPY can be approved by department heads.",
+      "matched_rules": [
+        "Approval for invoices under 1 million JPY"
+      ],
+      "is_discrepancy": false,
+      "discrepancy_detail": null,
+      "human_override": false
+    },
+    "P6-07010448-002": {
+      "id": "P6-07010448-002",
+      "invoice_no": "INV-2026-7345",
+      "name": "Hokuriku Parts Industry Co., Ltd.",
+      "amount": "¥455,128",
+      "raw_amount": 455128,
+      "type": "Routine",
+      "status": "Unprocessed",
+      "decision": "Approved",
+      "action": "approve",
+      "comment": "Invoices with amounts less than 1 million JPY can be approved by department heads.",
+      "matched_rules": [
+        "Approval for invoices under 1 million JPY"
+      ],
+      "is_discrepancy": false,
+      "discrepancy_detail": null,
+      "human_override": false
+    },
+    "P6-07010448-003": {
+      "id": "P6-07010448-003",
+      "invoice_no": "INV-2026-7346",
+      "name": "Yamato Shoji Co., Ltd.",
+      "amount": "¥1,237,439",
+      "raw_amount": 1237439,
+      "type": "Routine",
+      "status": "Unprocessed",
+      "decision": "On Hold",
+      "action": "hold",
+      "comment": "Invoices with amounts of 1 million JPY or more require executive approval and should be held for escalation.",
+      "matched_rules": [
+        "Hold for invoices 1 million JPY and above"
+      ],
+      "is_discrepancy": false,
+      "discrepancy_detail": null,
+      "human_override": false
+    },
+    "P6-07010448-004": {
+      "id": "P6-07010448-004",
+      "invoice_no": "INV-2026-7347",
+      "name": "Fukuoka System Design",
+      "amount": "¥1,832,962",
+      "raw_amount": 1832962,
+      "type": "Routine",
+      "status": "Unprocessed",
+      "decision": "On Hold",
+      "action": "hold",
+      "comment": "Invoices with amounts of 1 million JPY or more require executive approval and should be held for escalation.",
+      "matched_rules": [
+        "Hold for invoices 1 million JPY and above"
+      ],
+      "is_discrepancy": false,
+      "discrepancy_detail": null,
+      "human_override": false
+    },
+    "P6-07010448-005": {
+      "id": "P6-07010448-005",
+      "invoice_no": "INV-2026-7348",
+      "name": "Okinawa Logistics Center",
+      "amount": "¥317,664",
+      "raw_amount": 317664,
+      "type": "Adjustment",
+      "status": "Unprocessed",
+      "decision": "Approved",
+      "action": "approve",
+      "comment": "Invoices with amounts less than 1 million JPY can be approved by department heads.",
+      "matched_rules": [
+        "Approval for invoices under 1 million JPY"
+      ],
+      "is_discrepancy": false,
+      "discrepancy_detail": null,
+      "human_override": false
+    },
+    "P6-07010448-006": {
+      "id": "P6-07010448-006",
+      "invoice_no": "INV-2026-7349",
+      "name": "Hokuriku Parts Industry Co., Ltd.",
+      "amount": "¥452,219",
+      "raw_amount": 452219,
+      "type": "Routine",
+      "status": "Unprocessed",
+      "decision": "Approved",
+      "action": "approve",
+      "comment": "Invoices with amounts less than 1 million JPY can be approved by department heads.",
+      "matched_rules": [
+        "Approval for invoices under 1 million JPY"
+      ],
+      "is_discrepancy": false,
+      "discrepancy_detail": null,
+      "human_override": false
+    },
+    "P6-07010448-007": {
+      "id": "P6-07010448-007",
+      "invoice_no": "INV-2026-7350",
+      "name": "Fukuoka System Design",
+      "amount": "¥1,993,825",
+      "raw_amount": 1993825,
+      "type": "Routine",
+      "status": "Unprocessed",
+      "decision": "On Hold",
+      "action": "hold",
+      "comment": "Invoices with amounts of 1 million JPY or more require executive approval and should be held for escalation.",
+      "matched_rules": [
+        "Hold for invoices 1 million JPY and above"
+      ],
+      "is_discrepancy": false,
+      "discrepancy_detail": null,
+      "human_override": false
+    },
+    "P6-07010448-008": {
+      "id": "P6-07010448-008",
+      "invoice_no": "INV-2026-7351",
+      "name": "Yamato Shoji Co., Ltd.",
+      "amount": "¥1,218,687",
+      "raw_amount": 1218687,
+      "type": "Routine",
+      "status": "Unprocessed",
+      "decision": "On Hold",
+      "action": "hold",
+      "comment": "Invoices with amounts of 1 million JPY or more require executive approval and should be held for escalation.",
+      "matched_rules": [
+        "Hold for invoices 1 million JPY and above"
+      ],
+      "is_discrepancy": false,
+      "discrepancy_detail": null,
+      "human_override": false
+    },
+    "P6-07010448-009": {
+      "id": "P6-07010448-009",
+      "invoice_no": "INV-2026-7352",
+      "name": "Yamada Manufacturing Co., Ltd.",
+      "amount": "¥385,000",
+      "raw_amount": 385000,
+      "type": "Routine",
+      "status": "Unprocessed",
+      "decision": "Approved",
+      "action": "approve",
+      "comment": "Invoices with amounts less than 1 million JPY can be approved by department heads.",
+      "matched_rules": [
+        "Approval for invoices under 1 million JPY"
+      ],
+      "is_discrepancy": false,
+      "discrepancy_detail": null,
+      "human_override": false
+    },
+    "P6-07010448-010": {
+      "id": "P6-07010448-010",
+      "invoice_no": "INV-2026-7353",
+      "name": "Hokuriku Parts Industry Co., Ltd.",
+      "amount": "¥437,452",
+      "raw_amount": 437452,
+      "type": "Adjustment",
+      "status": "Unprocessed",
+      "decision": "Approved",
+      "action": "approve",
+      "comment": "Invoices with amounts less than 1 million JPY can be approved by department heads.",
+      "matched_rules": [
+        "Approval for invoices under 1 million JPY"
+      ],
+      "is_discrepancy": false,
+      "discrepancy_detail": null,
+      "human_override": false
+    },
+    "P6-07010448-011": {
+      "id": "P6-07010448-011",
+      "invoice_no": "INV-2026-7354",
+      "name": "Yamada Manufacturing Co., Ltd.",
+      "amount": "¥374,313",
+      "raw_amount": 374313,
+      "type": "Routine",
+      "status": "Unprocessed",
+      "decision": "Approved",
+      "action": "approve",
+      "comment": "Invoices with amounts less than 1 million JPY can be approved by department heads.",
+      "matched_rules": [
+        "Approval for invoices under 1 million JPY"
+      ],
+      "is_discrepancy": false,
+      "discrepancy_detail": null,
+      "human_override": false
+    },
+    "P6-07010448-012": {
+      "id": "P6-07010448-012",
+      "invoice_no": "INV-2026-7355",
+      "name": "Fukuoka System Design",
+      "amount": "¥1,685,384",
+      "raw_amount": 1685384,
+      "type": "Routine",
+      "status": "Unprocessed",
+      "decision": "On Hold",
+      "action": "hold",
+      "comment": "Invoices with amounts of 1 million JPY or more require executive approval and should be held for escalation.",
+      "matched_rules": [
+        "Hold for invoices 1 million JPY and above"
+      ],
+      "is_discrepancy": false,
+      "discrepancy_detail": null,
+      "human_override": false
+    }
+  },
+  "db_status": {
+    "engine": "postgresql",
+    "connected": true,
+    "target": "Supabase PostgreSQL (aws-0-ap-northeast-1.pooler.supabase.com)",
+    "configured_url_present": true,
+    "host": "aws-0-ap-northeast-1.pooler.supabase.com",
+    "user_configured": true,
+    "password_configured": true,
+    "error": null
+  }
+}

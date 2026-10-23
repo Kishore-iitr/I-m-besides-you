@@ -1,0 +1,42 @@
+{
+  "0": {
+    "batch_idx": 1,
+    "objective": "Approve invoice INV-2026-7344 and record a processing or confirmation comment.",
+    "additional_context": "Microsoft Edge displayed the invoice-approval screen for INV-2026-7344 with a field requesting 処理内容・確認コメント. Microsoft Word was also active, indicating supporting material or response text was available during the review."
+  },
+  "1": {
+    "batch_idx": 2,
+    "objective": "Review and approve invoice INV-2026-7345 with a documented decision comment.",
+    "additional_context": "Edge showed 請求書承認 INV-2026-7345 and the processing/confirmation comment field, along with references P6-07010448-012 and P6-07010448-010. Microsoft Word was used alongside the finance-system review."
+  },
+  "2": {
+    "batch_idx": 3,
+    "objective": "Validate and approve invoice INV-2026-7346 against supporting financial records.",
+    "additional_context": "Edge showed the invoice-approval screen and a finance dashboard indicating 12 items with 10 unprocessed. Excel, Word, and a running Windows PowerShell session were used to inspect or cross-check supporting information before recording the disposition."
+  },
+  "7": {
+    "batch_idx": 8,
+    "objective": "Complete resident-tax processing for RESIDENT-TAX-2026-008 and record the handling details.",
+    "additional_context": "Edge was on the resident-tax route with a 処理内容を入力 field and reference P10-07010448-012. The screen also showed 福岡システム設計 and 関西物流サービス, providing the parties associated with the case."
+  },
+  "8": {
+    "batch_idx": 9,
+    "objective": "Complete the procurement approval review for PO-2026-5234 and record the decision rationale.",
+    "additional_context": "The visible Edge task was 保守委託契約（更新） with a field for an approval comment or return reason, while Microsoft Word and the finance dashboard were also present. The visible contract-renewal screen provided the approval evidence associated with the purchase-order review."
+  },
+  "9": {
+    "batch_idx": 10,
+    "objective": "Update the July 2026 social-insurance processing status for SOCIAL-INSURANCE-2026-010.",
+    "additional_context": "Edge displayed the social-insurance workflow for 2026-07, including a 処理内容・対応状況 input field and reference P13-07010448-012. Notepad was used to prepare notes, and the inventory-management system was visible for related information."
+  },
+  "10": {
+    "batch_idx": 11,
+    "objective": "Approve or return leave application LEAVE-APPLICATIONS-2026-011 with a documented rationale.",
+    "additional_context": "Edge showed the leave-applications route, associated contract documents, and a field for an approval comment or return reason. Word and Notepad were used in relation to the visible 申請メモ, supporting preparation of the application response."
+  },
+  "13": {
+    "batch_idx": 14,
+    "objective": "Complete resident-tax processing for RESIDENT-TAX-2026-014 and record the handling details.",
+    "additional_context": "Edge displayed the resident-tax workflow for 北陸部品工業株式会社 with a 処理内容を入力 field and reference P10-07010448-012. Microsoft Word and the finance-system dashboard were open while the case was reviewed."
+  }
+}

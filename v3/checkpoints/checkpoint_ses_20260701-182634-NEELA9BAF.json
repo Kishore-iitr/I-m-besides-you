@@ -1,0 +1,370 @@
+{
+  "status": "completed",
+  "session_id": "ses_20260701-182634-NEELA9BAF",
+  "operator": "NEELA9BAF",
+  "session_dir": "G:\\.shortcut-targets-by-id\\1WSBZQxOODKFDzYBkIik5g90NWKS7Gwl0\\AI Engineer\\dataset_b\\ses_20260701-182634-NEELA9BAF",
+  "dominant_batch": "2026",
+  "total_events_loaded": 1001,
+  "clean_events_loaded": 991,
+  "predicted_segments_count": 10,
+  "timings": {
+    "Layer 1: Raw Log Ingestion & Filtering": 0.45862699998542666,
+    "Layer 2: Dynamic Trace & Episode Boundary Extraction": 0.2712714999797754,
+    "Stage 0: Dual Keyframe OCR Visual Grounding": 84.88273859999026,
+    "Stage 1: Activity Segmentation (Puter LLM)": 55.87519849999808,
+    "Stage 2: Latent Task Discovery (Puter LLM)": 9.128068999998504,
+    "Stage 3: Root Thread Consolidation & Naming (Puter LLM)": 15.0,
+    "Stage 4: Hierarchical Task Modeling (Puter LLM)": 0.005667299992637709,
+    "Stage 5: Deliverable Generation (segments.jsonl)": 0.012796000024536625,
+    "Total End-to-End Pipeline Runtime": 150.63438979999046
+  },
+  "segments": [
+    {
+      "session_id": "ses_20260701-182634-NEELA9BAF",
+      "operator": "NEELA9BAF",
+      "case_id": "SOCIAL-INSURANCE-2026-001",
+      "process_code": "SOCIAL",
+      "start": "2026-07-01T18:26:43Z",
+      "end": "2026-07-01T18:28:17Z",
+      "duration_seconds": 94.0,
+      "label": "social_insurance_processing",
+      "objective": "Process an employee housing allowance change application and record the handling status.",
+      "additional_context": "The user opened the social-insurance page for 住宅手当変更申請 and entered or drafted information in the processing-content/status field. Microsoft Word and Notepad were used alongside Edge, with reference P5-07046495-012 visible.",
+      "automation_telemetry": {
+        "total_events": 162,
+        "keystrokes_count": 16,
+        "clicks_count": 43,
+        "clipboard_operations": 7,
+        "scrolls_count": 10,
+        "app_switches_count": 19,
+        "active_applications": [
+          "Microsoft Edge",
+          "Microsoft Word",
+          "Notepad"
+        ],
+        "window_titles": [
+          "*精算確認メモ - Notepad",
+          "HR人事給与システム - Profile 1 - Microsoft​ Edge",
+          "ikuji_kyuugyou_kitei  -  Compatibility Mode - Word",
+          "kazoku_teate_kitei  -  Compatibility Mode - Word"
+        ],
+        "web_routes": [
+          "social-insurance"
+        ],
+        "cross_system_transfer": true,
+        "automation_suitability_score": 90.0
+      }
+    },
+    {
+      "session_id": "ses_20260701-182634-NEELA9BAF",
+      "operator": "NEELA9BAF",
+      "case_id": "LEAVE-APPLICATIONS-2026-002",
+      "process_code": "LEAVE",
+      "start": "2026-07-01T18:28:17Z",
+      "end": "2026-07-01T18:29:27Z",
+      "duration_seconds": 70.0,
+      "label": "leave_application_processing",
+      "objective": "Disposition pending leave and HR requests by approving them or returning them with a reason.",
+      "additional_context": "The leave-applications page displayed requests including a housing allowance change, sales contract amendment, and new confidentiality agreement. The active workflow requested an approval comment or rejection reason, and Excel, Word, Edge, and prl_cc were used.",
+      "automation_telemetry": {
+        "total_events": 140,
+        "keystrokes_count": 48,
+        "clicks_count": 15,
+        "clipboard_operations": 5,
+        "scrolls_count": 6,
+        "app_switches_count": 16,
+        "active_applications": [
+          "Microsoft Edge",
+          "Microsoft Excel",
+          "Microsoft Word",
+          "prl_cc"
+        ],
+        "window_titles": [
+          "HR人事給与システム - Profile 1 - Microsoft​ Edge",
+          "Opening - Excel",
+          "expense_calc - Excel",
+          "kazoku_teate_kitei  -  Compatibility Mode - Word",
+          "keiyaku_kaijo_tetsuzuki  -  Compatibility Mode - Word"
+        ],
+        "web_routes": [
+          "leave-applications"
+        ],
+        "cross_system_transfer": true,
+        "automation_suitability_score": 100.0
+      }
+    },
+    {
+      "session_id": "ses_20260701-182634-NEELA9BAF",
+      "operator": "NEELA9BAF",
+      "case_id": "PAYROLL-ITEMS-2026-003",
+      "process_code": "PAYROLL",
+      "start": "2026-07-01T18:29:27Z",
+      "end": "2026-07-01T18:29:45Z",
+      "duration_seconds": 18.0,
+      "label": "payroll_agreement_processing",
+      "objective": "Review and process a new basic transaction agreement.",
+      "additional_context": "The user navigated through the payroll-items page, where 取引基本契約 (新規締結) was displayed, and used Microsoft Word while reviewing the item in Edge.",
+      "automation_telemetry": {
+        "total_events": 26,
+        "keystrokes_count": 6,
+        "clicks_count": 2,
+        "clipboard_operations": 1,
+        "scrolls_count": 1,
+        "app_switches_count": 6,
+        "active_applications": [
+          "Microsoft Edge",
+          "Microsoft Excel",
+          "Microsoft Word"
+        ],
+        "window_titles": [
+          "expense_calc - Excel",
+          "getsujitsu_teigaku_torihikisaki_ichiran  -  Compatibility Mode - Word",
+          "shinkui_keiyaku_tetsuzuki  -  Compatibility Mode - Word",
+          "受発注在庫管理システム - Profile 1 - Microsoft​ Edge"
+        ],
+        "web_routes": [
+          "payroll-items"
+        ],
+        "cross_system_transfer": true,
+        "automation_suitability_score": 75.0
+      }
+    },
+    {
+      "session_id": "ses_20260701-182634-NEELA9BAF",
+      "operator": "NEELA9BAF",
+      "case_id": "INV-2026-7507",
+      "process_code": "INV",
+      "start": "2026-07-01T18:29:45Z",
+      "end": "2026-07-01T18:30:58Z",
+      "duration_seconds": 73.0,
+      "label": "invoice_processing",
+      "objective": "Approve invoice INV-2026-7507 and record the processing or confirmation comment.",
+      "additional_context": "The invoice-approval screen for INV-2026-7507 requested processing-content and confirmation-comment input. The user worked in Microsoft Word and the HR portal in Edge.",
+      "automation_telemetry": {
+        "total_events": 24,
+        "keystrokes_count": 2,
+        "clicks_count": 12,
+        "clipboard_operations": 1,
+        "scrolls_count": 1,
+        "app_switches_count": 1,
+        "active_applications": [
+          "Microsoft Edge",
+          "Microsoft Word"
+        ],
+        "window_titles": [
+          "getsujitsu_teigaku_torihikisaki_ichiran  -  Compatibility Mode - Word",
+          "財務会計システム - Profile 1 - Microsoft​ Edge"
+        ],
+        "web_routes": [],
+        "cross_system_transfer": true,
+        "automation_suitability_score": 65.0
+      }
+    },
+    {
+      "session_id": "ses_20260701-182634-NEELA9BAF",
+      "operator": "NEELA9BAF",
+      "case_id": "INV-2026-7508",
+      "process_code": "INV",
+      "start": "2026-07-01T18:30:58Z",
+      "end": "2026-07-01T18:31:24Z",
+      "duration_seconds": 26.0,
+      "label": "invoice_processing",
+      "objective": "Approve invoice INV-2026-7508 and record the processing or confirmation comment.",
+      "additional_context": "The user opened 請求書承認 INV-2026-7508 and worked in its processing-content/confirmation-comment field, with P6-07046495-012 visible. Word and Excel were used alongside Edge.",
+      "automation_telemetry": {
+        "total_events": 55,
+        "keystrokes_count": 24,
+        "clicks_count": 4,
+        "clipboard_operations": 1,
+        "scrolls_count": 2,
+        "app_switches_count": 4,
+        "active_applications": [
+          "Microsoft Edge",
+          "Microsoft Excel",
+          "Microsoft Word"
+        ],
+        "window_titles": [
+          "Opening - Excel",
+          "expense_calc - Excel",
+          "getsujitsu_teigaku_torihikisaki_ichiran  -  Compatibility Mode - Word",
+          "財務会計システム - Profile 1 - Microsoft​ Edge"
+        ],
+        "web_routes": [],
+        "cross_system_transfer": true,
+        "automation_suitability_score": 85.0
+      }
+    },
+    {
+      "session_id": "ses_20260701-182634-NEELA9BAF",
+      "operator": "NEELA9BAF",
+      "case_id": "INV-2026-7509",
+      "process_code": "INV",
+      "start": "2026-07-01T18:31:24Z",
+      "end": "2026-07-01T18:32:03Z",
+      "duration_seconds": 39.0,
+      "label": "invoice_processing",
+      "objective": "Approve invoice INV-2026-7509 and record the processing or confirmation comment.",
+      "additional_context": "The invoice-approval screen for INV-2026-7509 displayed a field for processing content or confirmation comments and identifier P6-07046495-012. The activity was conducted through Edge with Microsoft Word.",
+      "automation_telemetry": {
+        "total_events": 28,
+        "keystrokes_count": 6,
+        "clicks_count": 4,
+        "clipboard_operations": 1,
+        "scrolls_count": 2,
+        "app_switches_count": 4,
+        "active_applications": [
+          "Microsoft Edge",
+          "Microsoft Excel",
+          "Microsoft Word"
+        ],
+        "window_titles": [
+          "expense_calc - Excel",
+          "getsujitsu_teigaku_torihikisaki_ichiran  -  Compatibility Mode - Word",
+          "財務会計システム - Profile 1 - Microsoft​ Edge"
+        ],
+        "web_routes": [],
+        "cross_system_transfer": true,
+        "automation_suitability_score": 75.0
+      }
+    },
+    {
+      "session_id": "ses_20260701-182634-NEELA9BAF",
+      "operator": "NEELA9BAF",
+      "case_id": "INV-2026-7506",
+      "process_code": "INV",
+      "start": "2026-07-01T18:32:03Z",
+      "end": "2026-07-01T18:34:26Z",
+      "duration_seconds": 143.0,
+      "label": "invoice_processing",
+      "objective": "Process invoice_processing",
+      "additional_context": "",
+      "automation_telemetry": {
+        "total_events": 263,
+        "keystrokes_count": 42,
+        "clicks_count": 72,
+        "clipboard_operations": 13,
+        "scrolls_count": 19,
+        "app_switches_count": 21,
+        "active_applications": [
+          "Microsoft Edge",
+          "Microsoft Word",
+          "Windows Explorer",
+          "prl_cc"
+        ],
+        "window_titles": [
+          "File Explorer",
+          "HR人事給与システム - Profile 1 - Microsoft​ Edge",
+          "Home - File Explorer",
+          "Word",
+          "getsujitsu_teigaku_torihikisaki_ichiran  -  Compatibility Mode - Word"
+        ],
+        "web_routes": [
+          "leave-applications"
+        ],
+        "cross_system_transfer": true,
+        "automation_suitability_score": 100.0
+      }
+    },
+    {
+      "session_id": "ses_20260701-182634-NEELA9BAF",
+      "operator": "NEELA9BAF",
+      "case_id": "SOCIAL-INSURANCE-2026-008",
+      "process_code": "SOCIAL",
+      "start": "2026-07-01T18:34:26Z",
+      "end": "2026-07-01T18:35:23Z",
+      "duration_seconds": 57.0,
+      "label": "social_insurance_processing",
+      "objective": "Process an employee family allowance application and record the handling status.",
+      "additional_context": "The social-insurance page showed 家族手当申請 and requested processing-content/status information, with identifiers P2-07046495-012 and P5-07046495-012 visible. The user also used Microsoft Word for review or drafting.",
+      "automation_telemetry": {
+        "total_events": 83,
+        "keystrokes_count": 8,
+        "clicks_count": 26,
+        "clipboard_operations": 4,
+        "scrolls_count": 5,
+        "app_switches_count": 8,
+        "active_applications": [
+          "Microsoft Edge",
+          "Microsoft Word"
+        ],
+        "window_titles": [
+          "HR人事給与システム - Profile 1 - Microsoft​ Edge",
+          "ikuji_kyuugyou_kitei  -  Compatibility Mode - Word",
+          "kazoku_teate_kitei  -  Compatibility Mode - Word",
+          "shinkui_keiyaku_tetsuzuki  -  Compatibility Mode - Word"
+        ],
+        "web_routes": [
+          "social-insurance"
+        ],
+        "cross_system_transfer": true,
+        "automation_suitability_score": 90.0
+      }
+    },
+    {
+      "session_id": "ses_20260701-182634-NEELA9BAF",
+      "operator": "NEELA9BAF",
+      "case_id": "LEAVE-APPLICATIONS-2026-009",
+      "process_code": "LEAVE",
+      "start": "2026-07-01T18:35:23Z",
+      "end": "2026-07-01T18:36:03Z",
+      "duration_seconds": 40.0,
+      "label": "leave_application_processing",
+      "objective": "Decide a compensatory leave application and enter an approval or return reason.",
+      "additional_context": "The leave-applications screen displayed 代休申請 and 特別休暇（慶弔）, with a field requesting an approval comment or rejection reason. Identifier P2-07046495-012 was visible during the Edge-based review.",
+      "automation_telemetry": {
+        "total_events": 70,
+        "keystrokes_count": 8,
+        "clicks_count": 24,
+        "clipboard_operations": 4,
+        "scrolls_count": 8,
+        "app_switches_count": 0,
+        "active_applications": [
+          "Microsoft Edge"
+        ],
+        "window_titles": [
+          "HR人事給与システム - Profile 1 - Microsoft​ Edge"
+        ],
+        "web_routes": [
+          "leave-applications"
+        ],
+        "cross_system_transfer": false,
+        "automation_suitability_score": 55.0
+      }
+    },
+    {
+      "session_id": "ses_20260701-182634-NEELA9BAF",
+      "operator": "NEELA9BAF",
+      "case_id": "SOCIAL-INSURANCE-2026-010",
+      "process_code": "SOCIAL",
+      "start": "2026-07-01T18:36:03Z",
+      "end": "2026-07-01T18:36:37Z",
+      "duration_seconds": 34.0,
+      "label": "social_insurance_processing",
+      "objective": "Complete July 2026 social insurance processing and record the handling status.",
+      "additional_context": "The user opened the social-insurance workflow for period 2026-07 and worked in the processing-content/status field, with identifier P13-07046495-012 visible. Word and Notepad were used to prepare or review the entry.",
+      "automation_telemetry": {
+        "total_events": 80,
+        "keystrokes_count": 14,
+        "clicks_count": 20,
+        "clipboard_operations": 5,
+        "scrolls_count": 5,
+        "app_switches_count": 4,
+        "active_applications": [
+          "Microsoft Edge",
+          "Notepad"
+        ],
+        "window_titles": [
+          "*IT申請メモ - Notepad",
+          "*精算確認メモ - Notepad",
+          "HR人事給与システム - Profile 1 - Microsoft​ Edge",
+          "受発注在庫管理システム - Profile 1 - Microsoft​ Edge"
+        ],
+        "web_routes": [
+          "social-insurance"
+        ],
+        "cross_system_transfer": true,
+        "automation_suitability_score": 90.0
+      }
+    }
+  ]
+}
