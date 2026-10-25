@@ -1,8 +1,0 @@
-{
-  "SOCIAL": "social_insurance_reconciliation",
-  "ONBOARDING": "employee_onboarding",
-  "LEAVE": "leave_application_approval",
-  "PO": "purchase_order_processing",
-  "BATCH": "expense_reimbursement_validation",
-  "PAYROLL": "payroll_item_confirmation"
-}

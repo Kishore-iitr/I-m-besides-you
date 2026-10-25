@@ -1,0 +1,86 @@
+{
+  "segment_index": 32,
+  "session_id": "ses_20260701-173642-NEELA9BAF",
+  "operator": "NEELA9BAF",
+  "case_id": "PAYROLL-ITEMS-2026-001",
+  "label": "payroll_item_processing",
+  "start": "2026-07-01T17:36:50Z",
+  "end": "2026-07-01T17:37:36Z",
+  "duration_seconds": 46.0,
+  "objective": "Finalize the payroll item for the record associated with 沖縄物流センター",
+  "metrics": {
+    "total_events": 95,
+    "keystrokes_count": 12,
+    "clicks_count": 25,
+    "clipboard_operations": 3,
+    "scrolls_count": 7,
+    "app_switches_count": 9,
+    "active_applications": [
+      "Microsoft Edge",
+      "WindowsTerminal",
+      "ms-teams",
+      "prl_cc"
+    ],
+    "web_routes": [
+      "leave-applications",
+      "payroll-items",
+      "social-insurance"
+    ],
+    "window_titles": [
+      "Settings | Microsoft Teams",
+      "Windows PowerShell",
+      "財務会計システム and 2 more pages - Profile 1 - Microsoft​ Edge"
+    ],
+    "automation_suitability_score": 65.0
+  },
+  "workflow_steps": [
+    {
+      "step_number": 1,
+      "phase": "Portal Route & Target Identification",
+      "action": "Navigate to ERP route 'leave-applications' and locate case 'PAYROLL-ITEMS-2026-001'.",
+      "system": "Microsoft Edge",
+      "telemetry_signal": "DOM URL navigation to ['leave-applications', 'payroll-items']"
+    },
+    {
+      "step_number": 2,
+      "phase": "Reference Artifact Consultation",
+      "action": "Open reference document or desktop window: Windows PowerShell.",
+      "system": "WindowsTerminal",
+      "telemetry_signal": "Application switch to WindowsTerminal"
+    },
+    {
+      "step_number": 3,
+      "phase": "Data Extraction & Clipboard Bridging",
+      "action": "Highlight and copy required parameters (3 clipboard operations detected).",
+      "system": "OS Clipboard Bridge",
+      "telemetry_signal": "3 copy/paste clipboard events recorded"
+    },
+    {
+      "step_number": 4,
+      "phase": "ERP Field Entry & Arithmetic Verification",
+      "action": "Input case attributes into web form (12 keystrokes, 25 clicks).",
+      "system": "Microsoft Edge Web Portal",
+      "telemetry_signal": "Typing bursts into target form inputs"
+    },
+    {
+      "step_number": 5,
+      "phase": "Confirmation & Ledger Commit",
+      "action": "Trigger submission button, verify modal prompt, and commit transaction to database.",
+      "system": "ERP Web Portal",
+      "telemetry_signal": "Form submission / save button click event"
+    }
+  ],
+  "matched_screenshots": [
+    "PAYROLL-ITEMS-2026-001_scr_smart_1782927411344_monitor_1_post.jpg",
+    "PAYROLL-ITEMS-2026-001_scr_smart_1782927419593_monitor_1_post.jpg",
+    "PAYROLL-ITEMS-2026-001_scr_smart_1782927431503_monitor_1_post.jpg",
+    "PAYROLL-ITEMS-2026-001_scr_smart_1782927442573_monitor_1_post.jpg",
+    "PAYROLL-ITEMS-2026-001_scr_smart_1782927451296_monitor_1_post.jpg",
+    "payroll_items_BATCH-W3_scr_smart_1782933594973_monitor_1_post.jpg",
+    "payroll_items_BATCH-W3_scr_smart_1782933696409_monitor_1_post.jpg",
+    "payroll_items_BATCH-W3_scr_smart_1782933790217_monitor_1_post.jpg",
+    "payroll_items_BATCH-W4_scr_smart_1782930791364_monitor_1_post.jpg",
+    "payroll_items_BATCH-W4_scr_smart_1782930888853_monitor_1_post.jpg",
+    "payroll_items_BATCH-W4_scr_smart_1782930959581_monitor_1_post.jpg"
+  ]
+}

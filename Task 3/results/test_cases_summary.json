@@ -1,0 +1,71 @@
+{
+  "total_test_suites": 5,
+  "all_tests_passed": true,
+  "suites": [
+    {
+      "suite_name": "System Integration & Web API Verification",
+      "script": "test_all_features.py",
+      "total_checks": 7,
+      "passed": 7,
+      "coverage": [
+        "HTML UI Structure & Modal Verification",
+        "PostgreSQL Supabase & SQLite Live Handshake",
+        "Database Connection Ping & Dynamic Introspection",
+        "Real Puter.js Token Quota & Credit Telemetry",
+        "Windows Explorer Native Document Bridging",
+        "Excel/CSV Schema Validation Flagging (Invalid rejection + Valid count)",
+        "Leave Applications Document Intelligence Pipeline"
+      ]
+    },
+    {
+      "suite_name": "UI Polish & Responsive Dynamic Scroll Verification",
+      "script": "verify_ui_spec.py",
+      "total_checks": 7,
+      "passed": 7,
+      "coverage": [
+        "table.rules-table th sticky top: 0 (No row overlap)",
+        "No obsolete top: 34px in rules table css",
+        "Database toolbar bulk import has no Excel icon",
+        "Workspace Tab 1 is 規程 (Regulations) with no notepad icon",
+        "Workspace Tab 2 is 規程マスタ (Regulation Master) with no Excel icon",
+        "Parent container #llm-rules-content vertically scrollable",
+        "Table container unconstrained by fixed max-height 280px"
+      ]
+    },
+    {
+      "suite_name": "Policy-to-SQL Dynamic Rule Compilation",
+      "script": "test_complete_dynamic_logic.py",
+      "total_checks": 30,
+      "passed": 30,
+      "coverage": [
+        "Accounts Payable Invoices (10 sets on 105 rows)",
+        "Payroll Item Settlements (10 sets on 105 rows)",
+        "Leave Application Approvals (10 sets on 105 rows)"
+      ]
+    },
+    {
+      "suite_name": "Leave Document AI Multi-Modal Verification",
+      "script": "test_cases_leave_doc.py",
+      "total_checks": 10,
+      "passed": 10,
+      "coverage": [
+        "Medical Certificate OCR parsing",
+        "Hospital stamp verification",
+        "Applicant name cross-check",
+        "Quota remaining balance validation"
+      ]
+    },
+    {
+      "suite_name": "Zero-Hardcoding Compliance Audit",
+      "script": "verify_zero_hardcoding.py",
+      "total_checks": 4,
+      "passed": 4,
+      "coverage": [
+        "Zero static vendor name constants",
+        "Zero static currency amount thresholds in AST logic",
+        "Zero hardcoded department lists",
+        "Pure dynamic schema mapping from database catalog"
+      ]
+    }
+  ]
+}

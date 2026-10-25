@@ -1,0 +1,171 @@
+{
+  "erp_invoices": {
+    "description": "Accounts Payable Invoices Table (Financial Accounting Suite)",
+    "columns": {
+      "id": {
+        "type": "VARCHAR(64)",
+        "primary_key": true,
+        "nullable": false,
+        "description": "Voucher / Slip ID (e.g. P6-07010448-001)"
+      },
+      "employee_id": {
+        "type": "VARCHAR(32)",
+        "description": "Vendor Code (e.g. V3001, V3005)"
+      },
+      "name": {
+        "type": "VARCHAR(128)",
+        "description": "Vendor Legal Name (e.g. Yamada Manufacturing Co., Ltd.)"
+      },
+      "amount": {
+        "type": "VARCHAR(32)",
+        "description": "Formatted Currency String (e.g. ¥385,000)"
+      },
+      "raw_amount": {
+        "type": "INTEGER",
+        "description": "Exact Numeric Amount in JPY (e.g. 385000)"
+      },
+      "type": {
+        "type": "VARCHAR(32)",
+        "description": "Processing Type: Routine (定常) or Adjustment (精査)"
+      },
+      "invoice_no": {
+        "type": "VARCHAR(64)",
+        "description": "Vendor Invoice Reference Number (e.g. INV-2026-7352)"
+      },
+      "status": {
+        "type": "VARCHAR(32)",
+        "description": "Workflow State: Unprocessed, Approved, On Hold"
+      },
+      "audit_comment": {
+        "type": "TEXT",
+        "description": "Automated or Human Audit Reconciliation Note"
+      },
+      "created_at": {
+        "type": "TIMESTAMP",
+        "default": "CURRENT_TIMESTAMP"
+      }
+    }
+  },
+  "erp_payroll_items": {
+    "description": "Payroll Adjustments & Expense Claims Table (HR Payroll Suite)",
+    "columns": {
+      "id": {
+        "type": "VARCHAR(64)",
+        "primary_key": true,
+        "nullable": false,
+        "description": "Payroll Slip ID (e.g. PO-0701-001)"
+      },
+      "employee_id": {
+        "type": "VARCHAR(32)",
+        "description": "Employee ID (e.g. EMP-1001)"
+      },
+      "employee_name": {
+        "type": "VARCHAR(128)",
+        "description": "Employee Full Name (e.g. 佐々木 健太)"
+      },
+      "department": {
+        "type": "VARCHAR(64)",
+        "description": "Department / Unit (e.g. Engineering, Sales)"
+      },
+      "amount": {
+        "type": "VARCHAR(32)",
+        "description": "Formatted Currency String (e.g. ¥42,500)"
+      },
+      "raw_amount": {
+        "type": "INTEGER",
+        "description": "Exact Numeric Expense/Deduction Amount in JPY"
+      },
+      "category": {
+        "type": "VARCHAR(64)",
+        "description": "Claim Category: Travel, Commuting, Overtime, Housing"
+      },
+      "tax_status": {
+        "type": "VARCHAR(32)",
+        "description": "Tax Classification: Taxable, Non-Taxable"
+      },
+      "status": {
+        "type": "VARCHAR(32)",
+        "description": "Workflow State: Unprocessed, Approved, On Hold"
+      },
+      "audit_comment": {
+        "type": "TEXT",
+        "description": "HR Audit Justification Note"
+      }
+    }
+  },
+  "erp_leave_applications": {
+    "description": "Leave Applications & Medical Certificate Table (Leave Management Suite)",
+    "columns": {
+      "id": {
+        "type": "VARCHAR(64)",
+        "primary_key": true,
+        "nullable": false,
+        "description": "Leave Request ID (e.g. LV-2026-001)"
+      },
+      "employee_id": {
+        "type": "VARCHAR(32)",
+        "description": "Employee ID (e.g. EMP-1001)"
+      },
+      "employee_name": {
+        "type": "VARCHAR(128)",
+        "description": "Employee Full Name (e.g. 佐々木 健太)"
+      },
+      "leave_type": {
+        "type": "VARCHAR(64)",
+        "description": "Leave Type: Paid Leave, Sick Leave, Childcare, Bereavement"
+      },
+      "start_date": {
+        "type": "DATE",
+        "description": "Leave Start Date (YYYY-MM-DD)"
+      },
+      "end_date": {
+        "type": "DATE",
+        "description": "Leave End Date (YYYY-MM-DD)"
+      },
+      "days_requested": {
+        "type": "FLOAT",
+        "description": "Total Leave Days Claimed"
+      },
+      "has_attachment": {
+        "type": "BOOLEAN",
+        "description": "Whether an attachment file is present"
+      },
+      "attachment_name": {
+        "type": "VARCHAR(256)",
+        "description": "Attachment Filename in attachments/ folder"
+      },
+      "attachment_path": {
+        "type": "TEXT",
+        "description": "Absolute / Relative Path on Windows Filesystem"
+      },
+      "ocr_extracted_patient": {
+        "type": "VARCHAR(128)",
+        "description": "OCR Extracted Patient Name from Certificate"
+      },
+      "patient_match": {
+        "type": "BOOLEAN",
+        "description": "Whether OCR Patient matches Employee Name"
+      },
+      "hospital_stamp_detected": {
+        "type": "BOOLEAN",
+        "description": "Whether Doctor / Hospital Seal was detected"
+      },
+      "doctor_recommended_days": {
+        "type": "FLOAT",
+        "description": "Days of rest advised by physician"
+      },
+      "quota_remaining": {
+        "type": "FLOAT",
+        "description": "Remaining Annual Leave Quota for Employee"
+      },
+      "status": {
+        "type": "VARCHAR(32)",
+        "description": "Workflow State: Unprocessed, Approved, On Hold"
+      },
+      "audit_comment": {
+        "type": "TEXT",
+        "description": "Automated Decision Audit Trail"
+      }
+    }
+  }
+}

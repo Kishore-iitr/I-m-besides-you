@@ -1,8 +1,0 @@
-{
-  "INV": {
-    "process_prefix": "INV",
-    "canonical_task_name": "invoice_processing",
-    "department": "Finance",
-    "core_objective": "Review, validate, and approve supplier invoices and supporting documentation"
-  }
-}

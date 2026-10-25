@@ -1,0 +1,353 @@
+{
+  "dataset_summary": {
+    "total_segments_analyzed": 158,
+    "total_labor_minutes": 150.65,
+    "total_labor_hours": 2.51,
+    "unique_families_discovered": 8,
+    "generated_at": "2026-10-25T11:02:41.213149+00:00"
+  },
+  "ranked_candidates": [
+    {
+      "family_code": "invoice_payable",
+      "family_name_en": "Invoice & Accounts Payable Processing",
+      "family_name_jp": "財務会計・請求書処理",
+      "description": "Cross-system accounts payable processing involving PDF/Word invoice review, 3-way PO matching, 10% Japanese consumption tax verification, vendor validation, and ERP ledger commit.",
+      "execution_count": 59,
+      "total_duration_minutes": 31.37,
+      "percentage_of_workload": 20.82,
+      "mean_cycle_seconds": 31.9,
+      "min_cycle_seconds": 12.0,
+      "max_cycle_seconds": 143.0,
+      "rule_determinism": 9.5,
+      "interface_stability": 9.2,
+      "feasibility_percentage": 93.7,
+      "roi_priority_score": 164.49,
+      "projected_annual_hours_saved": 104.6,
+      "avg_keystrokes_per_case": 15.6,
+      "avg_clicks_per_case": 11.8,
+      "avg_clipboard_ops_per_case": 2.1,
+      "sessions_count": 9,
+      "operators_involved": {
+        "CHAITANYA0BCF": 1,
+        "NEELA9BAF": 4,
+        "76QMG9DE": 2,
+        "SIDDHIGUPTAB00B": 2
+      },
+      "core_web_route": "http://127.0.0.1:5132/#/invoices",
+      "primary_applications": [
+        "Microsoft Edge",
+        "Microsoft Word",
+        "Notepad"
+      ],
+      "recommended_automation_tech": "Deterministic RPA / Python API Automation + Optical Document Grounding",
+      "human_touchpoints": "Zero human intervention required under ¥10,000,000 with matching PO and valid Corporate Tax ID.",
+      "sample_screenshots": [
+        "invoice_payable_INV-2026-7506_scr_smart_1782930724049_monitor_1_post.jpg",
+        "invoice_payable_INV-2026-7506_scr_smart_1782930791299_monitor_1_post.jpg",
+        "invoice_payable_INV-2026-7506_scr_smart_1782930864357_monitor_1_post.jpg",
+        "invoice_payable_INV-2026-8009_scr_smart_1782932811328_monitor_1_post.jpg",
+        "invoice_payable_INV-2026-8009_scr_smart_1782932874668_monitor_1_post.jpg",
+        "invoice_payable_INV-2026-8009_scr_smart_1782932903778_monitor_1_post.jpg"
+      ],
+      "priority_rank": 1
+    },
+    {
+      "family_code": "batch_order",
+      "family_name_en": "Batch Order Fulfillment & Stock Allocation",
+      "family_name_jp": "出荷・在庫引当・受注管理",
+      "description": "Processing of batch customer orders, warehouse stock allocation, pick-pack-ship manifest updates, and dispatch notice generation.",
+      "execution_count": 20,
+      "total_duration_minutes": 26.88,
+      "percentage_of_workload": 17.84,
+      "mean_cycle_seconds": 80.7,
+      "min_cycle_seconds": 34.0,
+      "max_cycle_seconds": 203.0,
+      "rule_determinism": 8.9,
+      "interface_stability": 8.6,
+      "feasibility_percentage": 87.7,
+      "roi_priority_score": 123.46,
+      "projected_annual_hours_saved": 89.6,
+      "avg_keystrokes_per_case": 37.0,
+      "avg_clicks_per_case": 36.5,
+      "avg_clipboard_ops_per_case": 8.5,
+      "sessions_count": 9,
+      "operators_involved": {
+        "CHAITANYA0BCF": 1,
+        "NEELA9BAF": 3,
+        "SIDDHIGUPTAB00B": 2,
+        "76QMG9DE": 3
+      },
+      "core_web_route": "http://127.0.0.1:5132/#/inventory",
+      "primary_applications": [
+        "Microsoft Edge",
+        "Microsoft Excel",
+        "Notepad"
+      ],
+      "recommended_automation_tech": "WMS / ERP Batch Dispatch API",
+      "human_touchpoints": "Backorder exception handling and damaged stock write-offs.",
+      "sample_screenshots": [],
+      "priority_rank": 2
+    },
+    {
+      "family_code": "leave_mgmt",
+      "family_name_en": "Leave Application Review & Approval",
+      "family_name_jp": "有給・休暇申請管理",
+      "description": "Verification of employee annual paid leave, medical absence certificates, supervisor approval routing, and calendar synchronization.",
+      "execution_count": 22,
+      "total_duration_minutes": 31.23,
+      "percentage_of_workload": 20.73,
+      "mean_cycle_seconds": 85.2,
+      "min_cycle_seconds": 35.0,
+      "max_cycle_seconds": 303.0,
+      "rule_determinism": 8.2,
+      "interface_stability": 8.0,
+      "feasibility_percentage": 81.1,
+      "roi_priority_score": 122.93,
+      "projected_annual_hours_saved": 104.1,
+      "avg_keystrokes_per_case": 35.9,
+      "avg_clicks_per_case": 31.2,
+      "avg_clipboard_ops_per_case": 6.9,
+      "sessions_count": 12,
+      "operators_involved": {
+        "CHAITANYA0BCF": 1,
+        "SIDDHIGUPTAB00B": 2,
+        "NEELA9BAF": 4,
+        "76QMG9DE": 5
+      },
+      "core_web_route": "http://127.0.0.1:5132/#/leave-applications",
+      "primary_applications": [
+        "Microsoft Edge",
+        "Microsoft Excel",
+        "Microsoft Word"
+      ],
+      "recommended_automation_tech": "Workflow Orchestration API + Slack/Teams Bot",
+      "human_touchpoints": "Discretionary review required for special bereavement leaves exceeding standard entitlements.",
+      "sample_screenshots": [
+        "leave_mgmt_LEAVE-APPLICATIONS-2026-004_scr_smart_1782929842781_monitor_1_post.jpg",
+        "leave_mgmt_LEAVE-APPLICATIONS-2026-004_scr_smart_1782929922775_monitor_1_post.jpg",
+        "leave_mgmt_LEAVE-APPLICATIONS-2026-004_scr_smart_1782929991354_monitor_1_post.jpg",
+        "leave_mgmt_LEAVE-APPLICATIONS-2026-005_scr_smart_1782930112943_monitor_1_post.jpg",
+        "leave_mgmt_LEAVE-APPLICATIONS-2026-005_scr_smart_1782930265849_monitor_1_post.jpg",
+        "leave_mgmt_LEAVE-APPLICATIONS-2026-005_scr_smart_1782930413836_monitor_1_post.jpg"
+      ],
+      "priority_rank": 3
+    },
+    {
+      "family_code": "onboarding_life",
+      "family_name_en": "Employee Onboarding & Lifecycle Administration",
+      "family_name_jp": "社員入社・人事異動台帳",
+      "description": "Registration of new hires, contract employee renewals, departmental transfers, employee ID provisioning, and master ledger updates.",
+      "execution_count": 12,
+      "total_duration_minutes": 16.33,
+      "percentage_of_workload": 10.84,
+      "mean_cycle_seconds": 81.7,
+      "min_cycle_seconds": 42.0,
+      "max_cycle_seconds": 257.0,
+      "rule_determinism": 7.5,
+      "interface_stability": 7.8,
+      "feasibility_percentage": 76.3,
+      "roi_priority_score": 57.33,
+      "projected_annual_hours_saved": 54.4,
+      "avg_keystrokes_per_case": 42.5,
+      "avg_clicks_per_case": 25.8,
+      "avg_clipboard_ops_per_case": 6.9,
+      "sessions_count": 9,
+      "operators_involved": {
+        "CHAITANYA0BCF": 1,
+        "SIDDHIGUPTAB00B": 2,
+        "76QMG9DE": 4,
+        "NEELA9BAF": 2
+      },
+      "core_web_route": "http://127.0.0.1:5132/#/onboarding",
+      "primary_applications": [
+        "Microsoft Edge",
+        "Microsoft Word"
+      ],
+      "recommended_automation_tech": "Document AI + Identity Master API Orchestrator",
+      "human_touchpoints": "Physical signature verification and right-to-work compliance review.",
+      "sample_screenshots": [
+        "onboarding_life_ONBOARDING-2026-001_scr_smart_1782931336750_monitor_1_post.jpg",
+        "onboarding_life_ONBOARDING-2026-001_scr_smart_1782931467195_monitor_1_post.jpg",
+        "onboarding_life_ONBOARDING-2026-001_scr_smart_1782931590068_monitor_1_post.jpg",
+        "onboarding_life_PO-2026-5932_scr_smart_1782927396512_monitor_1_post.jpg",
+        "onboarding_life_PO-2026-5932_scr_smart_1782927489637_monitor_1_post.jpg",
+        "onboarding_life_PO-2026-5932_scr_smart_1782927571171_monitor_1_post.jpg"
+      ],
+      "priority_rank": 4
+    },
+    {
+      "family_code": "social_ins",
+      "family_name_en": "Social Insurance & Pension Administration",
+      "family_name_jp": "社会保険・年金届出",
+      "description": "Standard monthly remuneration reporting, health insurance card applications, welfare pension enrollment, and dependent qualification filings.",
+      "execution_count": 14,
+      "total_duration_minutes": 15.83,
+      "percentage_of_workload": 10.51,
+      "mean_cycle_seconds": 67.9,
+      "min_cycle_seconds": 34.0,
+      "max_cycle_seconds": 150.0,
+      "rule_determinism": 8.0,
+      "interface_stability": 7.5,
+      "feasibility_percentage": 77.8,
+      "roi_priority_score": 57.0,
+      "projected_annual_hours_saved": 52.8,
+      "avg_keystrokes_per_case": 46.1,
+      "avg_clicks_per_case": 30.0,
+      "avg_clipboard_ops_per_case": 5.6,
+      "sessions_count": 8,
+      "operators_involved": {
+        "CHAITANYA0BCF": 2,
+        "SIDDHIGUPTAB00B": 2,
+        "NEELA9BAF": 2,
+        "76QMG9DE": 2
+      },
+      "core_web_route": "http://127.0.0.1:5132/#/social-insurance",
+      "primary_applications": [
+        "Microsoft Edge",
+        "Microsoft Excel",
+        "Notepad"
+      ],
+      "recommended_automation_tech": "e-Gov / MHLW XML Direct Integration API",
+      "human_touchpoints": "Verification of foreign resident visa status or disability pension evidence.",
+      "sample_screenshots": [
+        "social_ins_SOCIAL-INSURANCE-2026-005_scr_smart_1782926437539_monitor_1_post.jpg",
+        "social_ins_SOCIAL-INSURANCE-2026-005_scr_smart_1782926505433_monitor_1_post.jpg",
+        "social_ins_SOCIAL-INSURANCE-2026-005_scr_smart_1782926585218_monitor_1_post.jpg",
+        "social_ins_SOCIAL-INSURANCE-2026-008_scr_smart_1782929025284_monitor_1_post.jpg",
+        "social_ins_SOCIAL-INSURANCE-2026-008_scr_smart_1782929082840_monitor_1_post.jpg",
+        "social_ins_SOCIAL-INSURANCE-2026-008_scr_smart_1782929152946_monitor_1_post.jpg"
+      ],
+      "priority_rank": 5
+    },
+    {
+      "family_code": "payroll_items",
+      "family_name_en": "Payroll Item & Compensation Processing",
+      "family_name_jp": "給与・控除・経費整備",
+      "description": "Monthly employee payroll adjustments, commuter pass reimbursements, overtime calculation, standard deduction updates, and batch allowance confirmations.",
+      "execution_count": 13,
+      "total_duration_minutes": 11.2,
+      "percentage_of_workload": 7.43,
+      "mean_cycle_seconds": 51.7,
+      "min_cycle_seconds": 18.0,
+      "max_cycle_seconds": 142.0,
+      "rule_determinism": 8.8,
+      "interface_stability": 8.5,
+      "feasibility_percentage": 86.7,
+      "roi_priority_score": 50.27,
+      "projected_annual_hours_saved": 37.3,
+      "avg_keystrokes_per_case": 14.6,
+      "avg_clicks_per_case": 25.5,
+      "avg_clipboard_ops_per_case": 4.8,
+      "sessions_count": 10,
+      "operators_involved": {
+        "CHAITANYA0BCF": 1,
+        "SIDDHIGUPTAB00B": 2,
+        "NEELA9BAF": 4,
+        "76QMG9DE": 3
+      },
+      "core_web_route": "http://127.0.0.1:5132/#/payroll-items",
+      "primary_applications": [
+        "Microsoft Edge",
+        "Notepad",
+        "OpenWith"
+      ],
+      "recommended_automation_tech": "Headless Browser RPA / SQL Batch Processor",
+      "human_touchpoints": "Manual exception review only for non-standard severance allowances or retro adjustments.",
+      "sample_screenshots": [
+        "payroll_items_BATCH-W3_scr_smart_1782933594973_monitor_1_post.jpg",
+        "payroll_items_BATCH-W3_scr_smart_1782933696409_monitor_1_post.jpg",
+        "payroll_items_BATCH-W3_scr_smart_1782933790217_monitor_1_post.jpg",
+        "payroll_items_BATCH-W4_scr_smart_1782930791364_monitor_1_post.jpg",
+        "payroll_items_BATCH-W4_scr_smart_1782930888853_monitor_1_post.jpg",
+        "payroll_items_BATCH-W4_scr_smart_1782930959581_monitor_1_post.jpg"
+      ],
+      "priority_rank": 6
+    },
+    {
+      "family_code": "procure_po",
+      "family_name_en": "Procurement, Purchase Orders & Approval Workflows",
+      "family_name_jp": "購買発注・稟議承認",
+      "description": "Material requisitions, supplier quotes validation, budgetary line-item checks, and corporate purchase order generation.",
+      "execution_count": 11,
+      "total_duration_minutes": 13.05,
+      "percentage_of_workload": 8.66,
+      "mean_cycle_seconds": 71.2,
+      "min_cycle_seconds": 34.0,
+      "max_cycle_seconds": 177.0,
+      "rule_determinism": 7.8,
+      "interface_stability": 7.0,
+      "feasibility_percentage": 74.4,
+      "roi_priority_score": 42.75,
+      "projected_annual_hours_saved": 43.5,
+      "avg_keystrokes_per_case": 21.5,
+      "avg_clicks_per_case": 31.8,
+      "avg_clipboard_ops_per_case": 6.4,
+      "sessions_count": 5,
+      "operators_involved": {
+        "CHAITANYA0BCF": 2,
+        "SIDDHIGUPTAB00B": 1,
+        "NEELA9BAF": 1,
+        "76QMG9DE": 1
+      },
+      "core_web_route": "http://127.0.0.1:5132/#/procurement",
+      "primary_applications": [
+        "Microsoft Edge",
+        "Microsoft Word",
+        "Notepad"
+      ],
+      "recommended_automation_tech": "ERP Requisition Rule Engine + Procurement Gateway",
+      "human_touchpoints": "Sole-source supplier justifications and capex authorizations >¥5,000,000.",
+      "sample_screenshots": [
+        "procure_po_LEAVE-APPLICATIONS-2026-008_scr_smart_1782927619008_monitor_1_post.jpg",
+        "procure_po_LEAVE-APPLICATIONS-2026-008_scr_smart_1782927668258_monitor_1_post.jpg",
+        "procure_po_LEAVE-APPLICATIONS-2026-008_scr_smart_1782927739864_monitor_1_post.jpg",
+        "procure_po_PO-2026-5760_scr_smart_1782929600725_monitor_1_post.jpg",
+        "procure_po_PO-2026-5760_scr_smart_1782929678294_monitor_1_post.jpg",
+        "procure_po_PO-2026-5760_scr_smart_1782929751476_monitor_1_post.jpg"
+      ],
+      "priority_rank": 7
+    },
+    {
+      "family_code": "resident_tax",
+      "family_name_en": "Resident Tax Administration & Reconciliation",
+      "family_name_jp": "住民税特別徴収・改定",
+      "description": "Annual municipal tax notification parsing, special collection tax rate updates per employee, and municipal remittance reconciliation.",
+      "execution_count": 7,
+      "total_duration_minutes": 4.75,
+      "percentage_of_workload": 3.15,
+      "mean_cycle_seconds": 40.7,
+      "min_cycle_seconds": 33.0,
+      "max_cycle_seconds": 49.0,
+      "rule_determinism": 8.5,
+      "interface_stability": 7.5,
+      "feasibility_percentage": 80.5,
+      "roi_priority_score": 18.17,
+      "projected_annual_hours_saved": 15.8,
+      "avg_keystrokes_per_case": 8.3,
+      "avg_clicks_per_case": 22.3,
+      "avg_clipboard_ops_per_case": 4.0,
+      "sessions_count": 4,
+      "operators_involved": {
+        "CHAITANYA0BCF": 2,
+        "SIDDHIGUPTAB00B": 1,
+        "76QMG9DE": 1
+      },
+      "core_web_route": "http://127.0.0.1:5132/#/resident-tax",
+      "primary_applications": [
+        "Microsoft Edge",
+        "Microsoft Word"
+      ],
+      "recommended_automation_tech": "Municipal OCR Table Parser + Automated Ledger Updater",
+      "human_touchpoints": "Mid-year employee relocations across tax jurisdictions.",
+      "sample_screenshots": [
+        "resident_tax_RESIDENT-TAX-2026-007_scr_smart_1782931918795_monitor_1_post.jpg",
+        "resident_tax_RESIDENT-TAX-2026-007_scr_smart_1782931941872_monitor_1_post.jpg",
+        "resident_tax_RESIDENT-TAX-2026-007_scr_smart_1782931962104_monitor_1_post.jpg",
+        "resident_tax_RESIDENT-TAX-2026-011_scr_smart_1782932175857_monitor_1_post.jpg",
+        "resident_tax_RESIDENT-TAX-2026-011_scr_smart_1782932195071_monitor_1_post.jpg",
+        "resident_tax_RESIDENT-TAX-2026-011_scr_smart_1782932216634_monitor_1_post.jpg"
+      ],
+      "priority_rank": 8
+    }
+  ]
+}

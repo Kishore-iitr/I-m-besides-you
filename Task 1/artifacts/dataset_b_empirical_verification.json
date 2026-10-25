@@ -1,0 +1,148 @@
+{
+  "total_evaluated_segments": 158,
+  "total_sessions": 15,
+  "metrics": {
+    "visual_ui_grounding_match_pct": 100.0,
+    "case_entity_consistency_pct": 96.2,
+    "zero_overlap_compliance_pct": 100.0,
+    "monotonic_duration_validity_pct": 100.0,
+    "overall_dataset_b_confidence_score_pct": 98.86
+  },
+  "duration_stats": {
+    "min_duration_sec": 12.0,
+    "max_duration_sec": 303.0,
+    "mean_duration_sec": 57.21
+  },
+  "sample_audited_segments": [
+    {
+      "idx": 1,
+      "session_id": "ses_20260701-164424-CHAITANYA0BCF",
+      "start": "2026-07-01T16:44:38Z",
+      "end": "2026-07-01T16:44:54Z",
+      "duration": 16.0,
+      "label": "invoice_processing",
+      "enclosed_events": 30,
+      "enclosed_screenshots": 0,
+      "top_case_id": "INV-2026-7344",
+      "visual_match": true,
+      "cid_match": true
+    },
+    {
+      "idx": 2,
+      "session_id": "ses_20260701-164424-CHAITANYA0BCF",
+      "start": "2026-07-01T16:44:54Z",
+      "end": "2026-07-01T16:45:14Z",
+      "duration": 20.0,
+      "label": "invoice_processing",
+      "enclosed_events": 30,
+      "enclosed_screenshots": 0,
+      "top_case_id": "INV-2026-7345",
+      "visual_match": true,
+      "cid_match": true
+    },
+    {
+      "idx": 3,
+      "session_id": "ses_20260701-164424-CHAITANYA0BCF",
+      "start": "2026-07-01T16:45:14Z",
+      "end": "2026-07-01T16:45:35Z",
+      "duration": 21.0,
+      "label": "invoice_processing",
+      "enclosed_events": 300,
+      "enclosed_screenshots": 0,
+      "top_case_id": "INV-2026-7346",
+      "visual_match": true,
+      "cid_match": true
+    },
+    {
+      "idx": 4,
+      "session_id": "ses_20260701-164424-CHAITANYA0BCF",
+      "start": "2026-07-01T16:45:35Z",
+      "end": "2026-07-01T16:46:38Z",
+      "duration": 63.0,
+      "label": "invoice_processing",
+      "enclosed_events": 121,
+      "enclosed_screenshots": 0,
+      "top_case_id": "INV-2026-7347",
+      "visual_match": true,
+      "cid_match": true
+    },
+    {
+      "idx": 5,
+      "session_id": "ses_20260701-164424-CHAITANYA0BCF",
+      "start": "2026-07-01T16:46:38Z",
+      "end": "2026-07-01T16:47:07Z",
+      "duration": 29.0,
+      "label": "invoice_processing",
+      "enclosed_events": 85,
+      "enclosed_screenshots": 0,
+      "top_case_id": "INV-2026-7348",
+      "visual_match": true,
+      "cid_match": true
+    },
+    {
+      "idx": 6,
+      "session_id": "ses_20260701-164424-CHAITANYA0BCF",
+      "start": "2026-07-01T16:47:07Z",
+      "end": "2026-07-01T16:47:27Z",
+      "duration": 20.0,
+      "label": "invoice_processing",
+      "enclosed_events": 67,
+      "enclosed_screenshots": 0,
+      "top_case_id": "INV-2026-7350",
+      "visual_match": true,
+      "cid_match": true
+    },
+    {
+      "idx": 7,
+      "session_id": "ses_20260701-164424-CHAITANYA0BCF",
+      "start": "2026-07-01T16:47:27Z",
+      "end": "2026-07-01T16:47:54Z",
+      "duration": 27.0,
+      "label": "invoice_processing",
+      "enclosed_events": 32,
+      "enclosed_screenshots": 0,
+      "top_case_id": "INV-2026-7351",
+      "visual_match": true,
+      "cid_match": true
+    },
+    {
+      "idx": 8,
+      "session_id": "ses_20260701-164424-CHAITANYA0BCF",
+      "start": "2026-07-01T16:47:54Z",
+      "end": "2026-07-01T16:48:28Z",
+      "duration": 34.0,
+      "label": "resident_tax_notification",
+      "enclosed_events": 77,
+      "enclosed_screenshots": 0,
+      "top_case_id": null,
+      "visual_match": true,
+      "cid_match": true
+    },
+    {
+      "idx": 9,
+      "session_id": "ses_20260701-164424-CHAITANYA0BCF",
+      "start": "2026-07-01T16:48:28Z",
+      "end": "2026-07-01T16:49:34Z",
+      "duration": 66.0,
+      "label": "purchase_order_processing",
+      "enclosed_events": 122,
+      "enclosed_screenshots": 0,
+      "top_case_id": "PO-2026-5234",
+      "visual_match": true,
+      "cid_match": true
+    },
+    {
+      "idx": 10,
+      "session_id": "ses_20260701-164424-CHAITANYA0BCF",
+      "start": "2026-07-01T16:49:34Z",
+      "end": "2026-07-01T16:50:38Z",
+      "duration": 64.0,
+      "label": "social_insurance_maintenance",
+      "enclosed_events": 95,
+      "enclosed_screenshots": 0,
+      "top_case_id": null,
+      "visual_match": true,
+      "cid_match": true
+    }
+  ]
+}

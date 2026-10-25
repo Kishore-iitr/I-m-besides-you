@@ -1,0 +1,102 @@
+{
+  "total_segments_evaluated": 158,
+  "total_sessions": 15,
+  "dual_horizon_precision_metrics": {
+    "internal_visual_alignment_pct": 89.87,
+    "terminal_pre_boundary_match_pct": 91.77,
+    "exterior_post_boundary_transition_pct": 93.04,
+    "dual_horizon_boundary_precision_score_pct": 85.44
+  },
+  "sessions_breakdown": {
+    "ses_20260701-164424-CHAITANYA0BCF": {
+      "segments_count": 14,
+      "precision_score_pct": 92.86,
+      "before_matches": 14,
+      "after_transitions": 13
+    },
+    "ses_20260701-171614-CHAITANYA0BCF": {
+      "segments_count": 12,
+      "precision_score_pct": 83.33,
+      "before_matches": 11,
+      "after_transitions": 11
+    },
+    "ses_20260701-173246-SIDDHIGUPTAB00B": {
+      "segments_count": 11,
+      "precision_score_pct": 90.91,
+      "before_matches": 10,
+      "after_transitions": 11
+    },
+    "ses_20260701-173642-NEELA9BAF": {
+      "segments_count": 13,
+      "precision_score_pct": 61.54,
+      "before_matches": 11,
+      "after_transitions": 10
+    },
+    "ses_20260701-175258-LAPTOP-76QMG9DE": {
+      "segments_count": 13,
+      "precision_score_pct": 100.0,
+      "before_matches": 13,
+      "after_transitions": 13
+    },
+    "ses_20260701-175747-SIDDHIGUPTAB00B": {
+      "segments_count": 11,
+      "precision_score_pct": 81.82,
+      "before_matches": 10,
+      "after_transitions": 10
+    },
+    "ses_20260701-180923-NEELA9BAF": {
+      "segments_count": 8,
+      "precision_score_pct": 87.5,
+      "before_matches": 7,
+      "after_transitions": 8
+    },
+    "ses_20260701-181413-LAPTOP-76QMG9DE": {
+      "segments_count": 16,
+      "precision_score_pct": 87.5,
+      "before_matches": 14,
+      "after_transitions": 16
+    },
+    "ses_20260701-181913-SIDDHIGUPTAB00B": {
+      "segments_count": 9,
+      "precision_score_pct": 88.89,
+      "before_matches": 9,
+      "after_transitions": 8
+    },
+    "ses_20260701-182634-NEELA9BAF": {
+      "segments_count": 10,
+      "precision_score_pct": 80.0,
+      "before_matches": 8,
+      "after_transitions": 10
+    },
+    "ses_20260701-183232-LAPTOP-76QMG9DE": {
+      "segments_count": 5,
+      "precision_score_pct": 60.0,
+      "before_matches": 5,
+      "after_transitions": 3
+    },
+    "ses_20260701-184201-LAPTOP-76QMG9DE": {
+      "segments_count": 12,
+      "precision_score_pct": 83.33,
+      "before_matches": 10,
+      "after_transitions": 12
+    },
+    "ses_20260701-190250-NEELA9BAF": {
+      "segments_count": 14,
+      "precision_score_pct": 92.86,
+      "before_matches": 14,
+      "after_transitions": 13
+    },
+    "ses_20260701-191537-LAPTOP-76QMG9DE": {
+      "segments_count": 7,
+      "precision_score_pct": 85.71,
+      "before_matches": 6,
+      "after_transitions": 6
+    },
+    "ses_20260701-192455-NEELA9BAF": {
+      "segments_count": 3,
+      "precision_score_pct": 100.0,
+      "before_matches": 3,
+      "after_transitions": 3
+    }
+  }
+}

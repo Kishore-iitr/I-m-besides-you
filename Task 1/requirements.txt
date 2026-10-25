@@ -1,0 +1,21 @@
+# Task 1: Desktop Process Segmentation & Benchmark Environment Requirements
+# Compatible with Python 3.10+ (Tested on Windows 11 with Anaconda Python 3.12 / 3.11)
+
+# Core Data Processing
+pandas>=2.0.0
+numpy>=1.24.0
+tqdm>=4.65.0
+python-dateutil>=2.8.2
+
+# Visual Keyframe OCR Grounding (Stage 0)
+Pillow>=9.5.0
+pytesseract>=0.3.10
+
+# API / LLM Connectivity (Puter AI & OpenRouter Free Models)
+requests>=2.31.0
+python-dotenv>=1.0.0
+
+# Office Document Connectors (Auxiliary / Trial 3 Integration)
+openpyxl>=3.1.2
+python-docx>=1.1.0
+psycopg2-binary>=2.9.9

@@ -1,7 +1,0 @@
-{
-  "INV": "invoice_processing",
-  "RESIDENT": "resident_tax_processing",
-  "PO": "purchase_order_processing",
-  "SOCIAL": "social_insurance_processing",
-  "LEAVE": "leave_application_processing"
-}

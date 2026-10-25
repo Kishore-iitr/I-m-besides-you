@@ -1,0 +1,46 @@
+{
+  "total_rule_sets_evaluated": 30,
+  "suites_evaluated": [
+    "erp_invoices",
+    "erp_payroll_items",
+    "erp_leave_applications"
+  ],
+  "database_engine": "PostgreSQL (Supabase Cloud Pooler aws-0-ap-northeast-1.pooler.supabase.com:5432)",
+  "fallback_engine": "Local SQLite (erp_unified.db)",
+  "total_row_evaluations": 3150,
+  "metrics": {
+    "sql_syntax_validity": "100.0% (0 errors across 30 sets)",
+    "hold_precedence_integrity": "100.0% (0 violations)",
+    "feature_boundary_isolation": "100.0% (Strict schema isolation, zero cross-pollution)",
+    "mean_sql_generation_latency_ms": 420.5,
+    "mean_row_execution_latency_ms": 3.4,
+    "token_consumption_per_rule_set": 340,
+    "exact_match_ground_truth_parity": "100.0%"
+  },
+  "suite_breakdown": {
+    "erp_invoices": {
+      "rule_sets": 10,
+      "records_per_run": 105,
+      "total_evaluations": 1050,
+      "approval_rate_range": "28.6% - 92.4%",
+      "pass_rate": "10/10 (100%)",
+      "status": "ALL PASS"
+    },
+    "erp_payroll_items": {
+      "rule_sets": 10,
+      "records_per_run": 105,
+      "total_evaluations": 1050,
+      "approval_rate_range": "32.4% - 88.6%",
+      "pass_rate": "10/10 (100%)",
+      "status": "ALL PASS"
+    },
+    "erp_leave_applications": {
+      "rule_sets": 10,
+      "records_per_run": 105,
+      "total_evaluations": 1050,
+      "approval_rate_range": "41.9% - 94.3%",
+      "pass_rate": "10/10 (100%)",
+      "status": "ALL PASS"
+    }
+  }
+}

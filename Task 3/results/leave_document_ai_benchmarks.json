@@ -1,0 +1,62 @@
+[
+  {
+    "case_id": "LEAVE-APPLICATIONS-2026-001",
+    "employee_id": "EMP-1001",
+    "employee_name": "佐々木 健太",
+    "leave_type": "Sick Leave (病気休暇)",
+    "days_requested": 3,
+    "attachment_name": "医師診断書_佐々木健太.pdf",
+    "ocr_extracted_patient": "佐々木 健太",
+    "patient_match": true,
+    "hospital_stamp_detected": true,
+    "doctor_recommended_days": 4,
+    "quota_remaining": 12,
+    "system_decision": "Approved",
+    "audit_comment": "診断書原本受領済・本人一致・療養指示期間内確認"
+  },
+  {
+    "case_id": "LEAVE-APPLICATIONS-2026-005",
+    "employee_id": "EMP-1005",
+    "employee_name": "田中 亮平",
+    "leave_type": "Childcare Leave (育児休暇)",
+    "days_requested": 14,
+    "attachment_name": "出生届受理証明書_田中.pdf",
+    "ocr_extracted_patient": "田中 亮平",
+    "patient_match": true,
+    "hospital_stamp_detected": true,
+    "doctor_recommended_days": 14,
+    "quota_remaining": 20,
+    "system_decision": "Approved",
+    "audit_comment": "出生届受理確認済・父親育児休業枠適用"
+  },
+  {
+    "case_id": "LEAVE-APPLICATIONS-2026-008",
+    "employee_id": "EMP-1008",
+    "employee_name": "中村 陽一",
+    "leave_type": "Bereavement (慶弔休暇)",
+    "days_requested": 5,
+    "attachment_name": "会葬礼状_中村.pdf",
+    "ocr_extracted_patient": "中村 陽一",
+    "patient_match": true,
+    "hospital_stamp_detected": false,
+    "doctor_recommended_days": 5,
+    "quota_remaining": 5,
+    "system_decision": "Approved",
+    "audit_comment": "喪主記載確認済・1親等慶弔規程合致"
+  },
+  {
+    "case_id": "LEAVE-APPLICATIONS-2026-012",
+    "employee_id": "EMP-1012",
+    "employee_name": "小林 誠",
+    "leave_type": "Sick Leave (病気休暇)",
+    "days_requested": 7,
+    "attachment_name": "診断書_未提出.pdf",
+    "ocr_extracted_patient": null,
+    "patient_match": false,
+    "hospital_stamp_detected": false,
+    "doctor_recommended_days": 0,
+    "quota_remaining": 2,
+    "system_decision": "Hold",
+    "audit_comment": "診断書未添付または本人氏名不一致・要人事課確認"
+  }
+]

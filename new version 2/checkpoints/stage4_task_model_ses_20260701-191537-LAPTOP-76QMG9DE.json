@@ -1,6 +1,0 @@
-{
-  "PAYROLL": "payroll_item_reconciliation",
-  "BATCH": "payroll_item_processing",
-  "ONBOARDING": "employee_onboarding",
-  "LEAVE": "leave_application_review"
-}

@@ -1,8 +1,0 @@
-{"session_id": "ses_20260701-180923-NEELA9BAF", "start": "2026-07-01T18:09:34Z", "end": "2026-07-01T18:10:40Z", "label": "social_insurance_reconciliation"}
-{"session_id": "ses_20260701-180923-NEELA9BAF", "start": "2026-07-01T18:10:40Z", "end": "2026-07-01T18:11:47Z", "label": "employee_onboarding"}
-{"session_id": "ses_20260701-180923-NEELA9BAF", "start": "2026-07-01T18:11:47Z", "end": "2026-07-01T18:13:20Z", "label": "leave_application_approval"}
-{"session_id": "ses_20260701-180923-NEELA9BAF", "start": "2026-07-01T18:13:20Z", "end": "2026-07-01T18:15:59Z", "label": "purchase_order_processing"}
-{"session_id": "ses_20260701-180923-NEELA9BAF", "start": "2026-07-01T18:15:59Z", "end": "2026-07-01T18:17:02Z", "label": "leave_application_approval"}
-{"session_id": "ses_20260701-180923-NEELA9BAF", "start": "2026-07-01T18:17:02Z", "end": "2026-07-01T18:19:41Z", "label": "expense_reimbursement_validation"}
-{"session_id": "ses_20260701-180923-NEELA9BAF", "start": "2026-07-01T18:19:41Z", "end": "2026-07-01T18:20:52Z", "label": "leave_application_approval"}
-{"session_id": "ses_20260701-180923-NEELA9BAF", "start": "2026-07-01T18:20:52Z", "end": "2026-07-01T18:21:30Z", "label": "payroll_item_confirmation"}

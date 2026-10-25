@@ -1,6 +1,0 @@
-{
-  "SOCIAL": "social_insurance_processing",
-  "LEAVE": "leave_application_processing",
-  "PAYROLL": "payroll_agreement_processing",
-  "INV": "invoice_processing"
-}

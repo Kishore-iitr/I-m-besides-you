@@ -1,0 +1,77 @@
+{
+  "segment_index": 84,
+  "session_id": "ses_20260701-181913-SIDDHIGUPTAB00B",
+  "operator": "SIDDHIGUPTAB00B",
+  "case_id": "ONBOARDING-2026-001",
+  "label": "employee_onboarding_reconciliation",
+  "start": "2026-07-01T18:19:32Z",
+  "end": "2026-07-01T18:20:22Z",
+  "duration_seconds": 50.0,
+  "objective": "Complete employee onboarding reconciliation and record any special notes",
+  "metrics": {
+    "total_events": 106,
+    "keystrokes_count": 40,
+    "clicks_count": 8,
+    "clipboard_operations": 2,
+    "scrolls_count": 0,
+    "app_switches_count": 13,
+    "active_applications": [
+      "Microsoft Edge",
+      "Microsoft Excel",
+      "Microsoft Word"
+    ],
+    "web_routes": [
+      "onboarding"
+    ],
+    "window_titles": [
+      "HR人事給与システム - Profile 1 - Microsoft​ Edge",
+      "Opening - Excel",
+      "Resume Reading",
+      "Turn off extensions in developer mode",
+      "expense_calc - Excel"
+    ],
+    "automation_suitability_score": 100.0
+  },
+  "workflow_steps": [
+    {
+      "step_number": 1,
+      "phase": "Portal Route & Target Identification",
+      "action": "Navigate to ERP route 'onboarding' and locate case 'ONBOARDING-2026-001'.",
+      "system": "Microsoft Edge",
+      "telemetry_signal": "DOM URL navigation to ['onboarding']"
+    },
+    {
+      "step_number": 2,
+      "phase": "Reference Artifact Consultation",
+      "action": "Open reference document or desktop window: Opening - Excel.",
+      "system": "Microsoft Excel",
+      "telemetry_signal": "Application switch to Microsoft Excel"
+    },
+    {
+      "step_number": 3,
+      "phase": "Data Extraction & Clipboard Bridging",
+      "action": "Highlight and copy required parameters (2 clipboard operations detected).",
+      "system": "OS Clipboard Bridge",
+      "telemetry_signal": "2 copy/paste clipboard events recorded"
+    },
+    {
+      "step_number": 4,
+      "phase": "ERP Field Entry & Arithmetic Verification",
+      "action": "Input case attributes into web form (40 keystrokes, 8 clicks).",
+      "system": "Microsoft Edge Web Portal",
+      "telemetry_signal": "Typing bursts into target form inputs"
+    },
+    {
+      "step_number": 5,
+      "phase": "Confirmation & Ledger Commit",
+      "action": "Trigger submission button, verify modal prompt, and commit transaction to database.",
+      "system": "ERP Web Portal",
+      "telemetry_signal": "Form submission / save button click event"
+    }
+  ],
+  "matched_screenshots": [
+    "onboarding_life_ONBOARDING-2026-001_scr_smart_1782931336750_monitor_1_post.jpg",
+    "onboarding_life_ONBOARDING-2026-001_scr_smart_1782931467195_monitor_1_post.jpg",
+    "onboarding_life_ONBOARDING-2026-001_scr_smart_1782931590068_monitor_1_post.jpg"
+  ]
+}
