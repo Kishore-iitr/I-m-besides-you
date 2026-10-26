@@ -30,8 +30,15 @@ INITIAL_LEAVE_APPLICATIONS = build_105_leave_applications()
 class DatabaseManager:
     def __init__(self):
         self.engine_type = "sqlite"
-        self.db_url = os.environ.get("SUPABASE_DB_URL", "").strip()
-        self.sqlite_path = Path(__file__).parent / "erp_unified.db"
+        self.db_url = (
+            os.environ.get("SUPABASE_DB_URL", "").strip()
+            or os.environ.get("DATABASE_URL", "").strip()
+            or os.environ.get("POSTGRES_URL", "").strip()
+        )
+        if os.environ.get("VERCEL") or os.environ.get("AWS_LAMBDA_FUNCTION_NAME"):
+            self.sqlite_path = Path("/tmp") / "erp_unified.db"
+        else:
+            self.sqlite_path = Path(__file__).parent / "erp_unified.db"
         self.error_msg = None
         self._reload_env()
         self._init_connection()
@@ -43,8 +50,13 @@ class DatabaseManager:
                     line = line.strip()
                     if line and not line.startswith("#") and "=" in line:
                         key, val = line.split("=", 1)
-                        os.environ[key.strip()] = val.strip()
-        self.db_url = os.environ.get("SUPABASE_DB_URL", "").strip()
+                        if key.strip() not in os.environ:
+                            os.environ[key.strip()] = val.strip()
+        self.db_url = (
+            os.environ.get("SUPABASE_DB_URL", "").strip()
+            or os.environ.get("DATABASE_URL", "").strip()
+            or os.environ.get("POSTGRES_URL", "").strip()
+        )
 
     def _get_pg_kwargs(self):
         self._reload_env()
@@ -56,13 +68,18 @@ class DatabaseManager:
         db = os.environ.get("DB_POSTGRESDB_DATABASE", "postgres").strip()
         port = os.environ.get("DB_POSTGRESDB_PORT", "5432").strip()
         if host and user and pwd:
-            return {
+            d = {
                 "host": host,
                 "port": int(port) if port.isdigit() else 5432,
                 "dbname": db,
                 "user": user,
                 "password": pwd
             }
+            if "supabase" in host or "pooler" in host or "aws" in host or "neon" in host:
+                d["sslmode"] = "require"
+            elif "DB_POSTGRESDB_SSLMODE" in os.environ:
+                d["sslmode"] = os.environ["DB_POSTGRESDB_SSLMODE"]
+            return d
         return None
 
     def _init_connection(self):
@@ -1149,7 +1166,18 @@ class DatabaseManager:
 
 db_manager = DatabaseManager()
 
-MASTER_REGULATIONS_FILE = Path(__file__).parent / "master_regulations.json"
+if os.environ.get("VERCEL") or os.environ.get("AWS_LAMBDA_FUNCTION_NAME"):
+    MASTER_REGULATIONS_FILE = Path("/tmp") / "master_regulations.json"
+    if not MASTER_REGULATIONS_FILE.exists():
+        _orig = Path(__file__).parent / "master_regulations.json"
+        if _orig.exists():
+            import shutil
+            try:
+                shutil.copyfile(_orig, MASTER_REGULATIONS_FILE)
+            except Exception:
+                pass
+else:
+    MASTER_REGULATIONS_FILE = Path(__file__).parent / "master_regulations.json"
 
 DEFAULT_MASTER_REGULATIONS = [
     {"code": "規程第1条", "name": "交通費精算", "limit": "実費 (近郊電車・バス)", "req": "領収書・運賃照合済", "class": "Addition"},

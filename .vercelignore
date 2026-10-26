@@ -1,0 +1,21 @@
+.git
+__pycache__
+*.pyc
+*.pyo
+.env.local
+initial trials and code files (ignore)/
+Task 1/
+Task 2/
+*.docx
+*.pdf
+*.mp4
+*.zip
+*.tar.gz
+*.db
+scratch/
+attachments/
+checkpoints/
+dataset_b_family_screenshots/
+payroll_item_screenshots/
+logs/
+tessdata/

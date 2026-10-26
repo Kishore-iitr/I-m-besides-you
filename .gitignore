@@ -22,6 +22,9 @@ node_modules/
 # Environment & local secrets
 .env
 .env.local
+*.db
+*.sqlite
+*.sqlite3
 
 # Build outputs & scratch
 dist/

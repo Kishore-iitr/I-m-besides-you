@@ -58,8 +58,96 @@ if sys.platform == "win32":
     except Exception:
         pass
 
-from langgraph.graph import StateGraph, END
-from tmi_pipeline import PuterLlmClient
+try:
+    from langgraph.graph import StateGraph, END
+except ImportError:
+    END = "__END__"
+    class StateGraph:
+        def __init__(self, state_schema):
+            self.state_schema = state_schema
+            self.nodes = {}
+            self.edges = {}
+            self.entry_point = None
+        def add_node(self, name, func):
+            self.nodes[name] = func
+        def set_entry_point(self, name):
+            self.entry_point = name
+        def add_edge(self, start, end):
+            self.edges[start] = end
+        def compile(self):
+            class CompiledGraph:
+                def __init__(cg, entry, nodes, edges):
+                    cg.entry = entry
+                    cg.nodes = nodes
+                    cg.edges = edges
+                def invoke(cg, state):
+                    curr = cg.entry
+                    curr_state = dict(state)
+                    while curr and curr != END and curr in cg.nodes:
+                        res = cg.nodes[curr](curr_state)
+                        if isinstance(res, dict):
+                            curr_state.update(res)
+                        curr = cg.edges.get(curr, END)
+                    return curr_state
+            return CompiledGraph(self.entry_point, self.nodes, self.edges)
+
+try:
+    from tmi_pipeline import PuterLlmClient
+except ImportError:
+    class PuterLlmClient:
+        """Client for Puter.js / OpenRouter free models using Puter's driver API."""
+        def __init__(self, token: Optional[str] = None, model: Optional[str] = None):
+            self.token = token or os.environ.get("PUTER_AUTH_TOKEN", "")
+            self.model = model or os.environ.get("PUTER_MODEL", "openrouter:openrouter/free")
+            self.url = "https://api.puter.com/drivers/call"
+
+        def complete(self, prompt: str, system_prompt: Optional[str] = None, timeout: int = 60) -> str:
+            messages = []
+            if system_prompt:
+                messages.append({"role": "system", "content": system_prompt})
+            messages.append({"role": "user", "content": prompt})
+
+            payload = {
+                "interface": "puter-chat-completion",
+                "driver": "ai-chat",
+                "test_mode": False,
+                "method": "complete",
+                "args": {
+                    "messages": messages,
+                    "model": self.model,
+                    "stream": False
+                }
+            }
+            headers = {
+                "Content-Type": "application/json",
+                "Authorization": f"Bearer {self.token}" if self.token else ""
+            }
+            req = urllib.request.Request(
+                self.url,
+                data=json.dumps(payload).encode("utf-8"),
+                headers=headers,
+                method="POST"
+            )
+            for attempt in range(2):
+                try:
+                    with urllib.request.urlopen(req, timeout=timeout) as res:
+                        data = json.loads(res.read().decode("utf-8"))
+                        if isinstance(data, dict):
+                            result = data.get("result", {})
+                            if isinstance(result, dict):
+                                msg = result.get("message", {})
+                                if isinstance(msg, dict):
+                                    return msg.get("content", "")
+                                return result.get("text", "") or str(result)
+                            elif isinstance(result, str):
+                                return result
+                        return str(data)
+                except Exception as e:
+                    if attempt == 0:
+                        time.sleep(1.5)
+                        continue
+                    raise RuntimeError(f"Puter API Error: {e}")
+            return ""
 
 # State definition for the LangGraph
 class CoPilotAgentState(TypedDict):
@@ -209,7 +297,8 @@ class LlmService:
                     line = line.strip()
                     if line and not line.startswith("#") and "=" in line:
                         k, v = line.split("=", 1)
-                        os.environ[k.strip()] = v.strip()
+                        if k.strip() not in os.environ:
+                            os.environ[k.strip()] = v.strip()
         self.provider = os.environ.get("LLM_PROVIDER", "puter").lower()
         self.puter_token = os.environ.get("PUTER_AUTH_TOKEN", "")
         self.openrouter_key = os.environ.get("OPENROUTER_API_KEY", "")
