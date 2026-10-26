@@ -1,19 +1,22 @@
 # Intern Selection Task: From Operation Logs to an Automation Proposal
 ## Comprehensive Final Report & Technical Architecture Guide
 
-**Candidate**: Kishore S (Roll Number: 24123017, IIT Roorkee)
-**Mail**: kishore_s@ph.iitr.ac.in   
+**Candidate**: Kishore S (Roll Number: 24123017, IIT Roorkee)  
+**Role**: Forward Deployed Engineer (FDE) Candidate  
+**Client Mandate**: *"Use these logs to tell us where automation would have the greatest impact on our operations. And show us something that actually runs."*  
+**Scope**: Full 7-Day Engineering Engagement (Dataset A: 63 Sessions / 2,009 Ground-Truth Executions; Dataset B: 15 Blind Production Sessions / 158 Recovered Executions; Live Cloud PostgreSQL Supabase Database; 3 Operational Enterprise ERP Suites).
 
 ---
 
-## Academic & Theoretical Foundation: Primary Research Paper
+## 📚 Academic & Theoretical Foundation: Primary Research Paper
 
 This entire engineering solution adapts, extends, and operationalizes the academic foundation introduced in:
 
 > **"Inducing Task Models from Computer-Use Traces"**  
 > **Authors**: Yucheng Jiang (Stanford University), Zora Zhiruo Wang (Carnegie Mellon University), Ruishi Chen (Stanford University), Diyi Yang (Stanford University)  
 > **Publication**: *arXiv preprint arXiv:2608.20319 (2026)*  
-> **Paper URL**: [https://arxiv.org/abs/2608.20319](https://arxiv.org/abs/2608.20319)   
+> **Paper URL**: [https://arxiv.org/abs/2608.20319](https://arxiv.org/abs/2608.20319)  
+> **Official Code Repository**: [https://github.com/Yucheng-Jiang/task-model-induction](https://github.com/Yucheng-Jiang/task-model-induction)  
 > **BibTeX Citation**: Available in [`./CITATION.cff`](./CITATION.cff)
 
 ### How Our Production System Extends This Research:
@@ -185,9 +188,9 @@ Where:
 #### 3. Why We Chose a Shared Enterprise Platform Scope (Rather than a Single Script):
 - Building an isolated single-process script delivers low ROI because client staff perform multiple overlapping tasks throughout the day.
 - We chose to build an **extensible, multi-suite Enterprise Web ERP Platform with per-process definitions**:
-  - **財務会計システム (Financial Accounting)**: Evaluates `erp_invoices` (Rank #1).
-  - **HR人事給与システム (HR Payroll Deductions)**: Evaluates `erp_payroll_items` (Rank #6).
-  - **有給・休暇申請管理 (Leave Application Review)**: Evaluates `erp_leave_applications` (Rank #3).
+  - 🏛️ **財務会計システム (Financial Accounting)**: Evaluates `erp_invoices` (Rank #1).
+  - 👥 **HR人事給与システム (HR Payroll Deductions)**: Evaluates `erp_payroll_items` (Rank #6).
+  - 📋 **有給・休暇申請管理 (Leave Application Review)**: Evaluates `erp_leave_applications` (Rank #3).
 - **Deferred to Phase 2**: Employee Onboarding (Rank #4) and Social Insurance (Rank #5) were deferred because their document formats vary widely across municipal jurisdictions, yielding lower initial ROI.
 
 ---

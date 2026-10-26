@@ -3282,6 +3282,31 @@ HTML_TEMPLATE = r'''<!DOCTYPE html>
       renderExtractedRulesTable();
     }
 
+        async function stageUnprocessedAsHold() {
+      const suiteName = (currentSuite === 'invoice' ? '請求書' : (currentSuite === 'payroll' ? '給与・経費項目' : '休暇申請'));
+      const isConfirmed = confirm('未処理の全' + suiteName + '伝票を「保留 (HOLD)」として評価ステージングしますか？\n（確認モーダルが表示され、コミットするまでデータベースは変更されません）');
+      if (!isConfirmed) return;
+
+      try {
+        const res = await fetch('/api/agent/stage-unprocessed-hold', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ process_type: currentSuite })
+        });
+        const result = await res.json();
+        if (result.success) {
+          stagedDecisionsData = result.staged_decisions || [];
+          if (typeof openStagedModal === 'function') {
+            openStagedModal(result);
+          }
+        } else {
+          alert('Error: ' + result.error);
+        }
+      } catch (e) {
+        alert('Communication error: ' + e);
+      }
+    }
+
     async function runPolicyAnalysis() {
       const isConnected = await ensurePuterConnectedIfRequired();
       if (!isConnected) return;
@@ -3482,12 +3507,21 @@ HTML_TEMPLATE = r'''<!DOCTYPE html>
       document.getElementById('doc-text').value = sample;
       const fn = document.getElementById('notepad-filename');
       if (fn) fn.innerText = '📜 English Vendor Billing Policy (4 Rules)';
-      analyzePolicyWithCopilot();
+      runPolicyAnalysis();
     }
 
     function loadPresetDocument() {
-      document.getElementById('doc-text').value = (currentSuite === 'invoice') ? INVOICE_PRESET : PAYROLL_PRESET;
-      analyzePolicyWithCopilot();
+      let preset = INVOICE_PRESET;
+      if (currentSuite === 'payroll') preset = PAYROLL_PRESET;
+      else if (currentSuite === 'leave') preset = (typeof LEAVE_PRESET !== 'undefined' ? LEAVE_PRESET : '');
+      document.getElementById('doc-text').value = preset;
+      const fn = document.getElementById('notepad-filename');
+      if (fn) {
+        if (currentSuite === 'invoice') fn.innerText = '月次定額保守取引先一覧.txt (参照規程)';
+        else if (currentSuite === 'payroll') fn.innerText = '就業規則・経費精算規程.txt (参照規程)';
+        else fn.innerText = '休暇管理規程・取得基準.txt (参照規程)';
+      }
+      runPolicyAnalysis();
     }
 
     /* --- Policy & Memo File Upload Handler (.docx / .txt) --- */
@@ -3508,7 +3542,7 @@ HTML_TEMPLATE = r'''<!DOCTYPE html>
           document.getElementById('doc-text').value = data.text;
           const fn = document.getElementById('notepad-filename');
           if (fn) fn.innerText = '📄 ' + data.filename + ' (' + data.text.length + '文字 読込済)';
-          analyzePolicyWithCopilot();
+          runPolicyAnalysis();
         } else {
           alert('解析エラー: ' + (data.error || '不明なエラー'));
         }
@@ -5338,6 +5372,83 @@ def commit_copilot():
                 decisions=decisions
             )
             return jsonify(result)
+    except Exception as e:
+        import traceback
+        traceback.print_exc()
+        return jsonify({"success": False, "error": str(e)}), 500
+
+@app.route("/api/agent/stage-unprocessed-hold", methods=["POST"])
+def api_agent_stage_unprocessed_hold():
+    try:
+        data = request.json or {}
+        process_type = data.get("process_type") or data.get("suite", "invoice")
+        comment = data.get("comment", "[HOLD] 未処理伝票一括保留・担当者精査要")
+
+        if process_type in ("leave", "leave_mgmt", "leave_applications"):
+            table_name = "erp_leave_applications"
+        elif process_type == "payroll":
+            table_name = "erp_payroll_items"
+        else:
+            table_name = "erp_invoices"
+
+        rows = erp_policy_engine.fetch_all_rows(table_name) if erp_policy_engine else []
+        if not rows:
+            if process_type == "invoice":
+                rows = db_manager.get_invoices()
+            elif process_type == "payroll":
+                rows = db_manager.get_payroll_items()
+            else:
+                rows = db_manager.get_leave_applications()
+
+        staged = []
+        for r in rows:
+            curr_status = str(r.get("status", "")).strip()
+            if curr_status.lower() in ("unprocessed", "未処理", ""):
+                r_id = str(r.get("id"))
+                entity_name = str(r.get("vendor_name") or r.get("employee_name") or r.get("name") or "Unknown")
+                raw_amt = r.get("raw_amount") or 0
+                staged.append({
+                    "id": r_id,
+                    "voucher_id": r_id,
+                    "invoice_no": str(r.get("invoice_no") or r_id),
+                    "entity_name": entity_name,
+                    "vendor_name": entity_name,
+                    "employee_name": entity_name,
+                    "raw_amount": raw_amt,
+                    "amount": r.get("amount") or f"¥{raw_amt:,}",
+                    "type": str(r.get("type") or r.get("item_category") or r.get("leave_type") or "Routine"),
+                    "current_status": curr_status or "unprocessed",
+                    "new_status": "Hold",
+                    "matched_rule_id": "HOLD_ALL",
+                    "matched_rule_summary": "Direct Shift: All Unprocessed to HOLD",
+                    "reasons": ["Unprocessed batch freeze for manual managerial review"],
+                    "ref": str(r.get("ref") or ""),
+                    "comment": comment
+                })
+
+        rule_detail = {
+            "rule_id": "HOLD_ALL",
+            "rule_name": "Direct Shift All Unprocessed to HOLD",
+            "target_action": "hold",
+            "select_sql_query": f"SELECT id FROM {table_name} WHERE status = 'unprocessed'",
+            "rationale": "Direct freeze on all unprocessed records for manual managerial review.",
+            "target_ids": [d["id"] for d in staged],
+            "target_count": len(staged),
+            "match_count": len(staged)
+        }
+
+        return jsonify({
+            "success": True,
+            "status": "STAGED",
+            "process_type": process_type,
+            "approved_count": 0,
+            "hold_count": len(staged),
+            "evaluated_count": len(staged),
+            "rules": [rule_detail],
+            "staged_decisions": staged,
+            "discrepancies": staged,
+            "summary": f"{len(staged)} unprocessed records staged as HOLD."
+        })
     except Exception as e:
         import traceback
         traceback.print_exc()

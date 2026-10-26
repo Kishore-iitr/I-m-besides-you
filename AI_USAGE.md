@@ -2,7 +2,9 @@
 ## Engineering Candidate Transparency Disclosure for Evaluators
 
 **Author**: Kishore S (Roll Number: 24123017, IIT Roorkee)  
-**Project**: Enterprise Desktop UI Process Segmentation, Task Model Induction & Automation Portfolio Analysis    
+**Role**: Forward Deployed Engineer (FDE) Candidate  
+**Project**: Enterprise Desktop UI Process Segmentation, Task Model Induction & Automation Portfolio Analysis  
+**Repository**: `pulled_tmi/main`  
 **Date**: October 24, 2026  
 
 ---
@@ -71,7 +73,7 @@ flowchart TD
 #### 2. Discovery of the 2.84-Second Human Eye-Hand Reaction Delay
 - **The Challenge**: Initial evaluation against ground truth on Dataset A showed that while Macro $F_1@30\text{s}$ reached an outstanding **94.51%**, strict sub-second $F_1@1\text{s}$ dropped to ~41%.
 - **How AI Was Used**:
-  - We paired with the AI agent to write [`analyze_boundary_diffs.py`](file:///C:/Users/KISHORE%20S/Desktop/pulled_tmi/task%20one/code/analyze_boundary_diffs.py) to measure exact millisecond deltas between predicted boundaries and ground truth.
+  - We paired with the AI agent to write [`analyze_boundary_diffs.py`](./task%20one/code/analyze_boundary_diffs.py) to measure exact millisecond deltas between predicted boundaries and ground truth.
   - The analysis proved that in 88.4% of cases, human operators exhibited an average **2.84-second physiological reaction latency** between the visual loading of an ERP page and the physical initiation of mouse movement.
   - This empirical finding informed our backward boundary snapping algorithm, which snaps start boundaries back by up to 6.0 seconds to capture the true onset of visual task attention.
 
@@ -101,7 +103,7 @@ flowchart TD
 
 #### 3. Universal Single-Segment Deep-Dive Engine
 - **How AI Was Used**:
-  - Scaffolded the [`deep_dive_segment.py`](file:///C:/Users/KISHORE%20S/Desktop/pulled_tmi/Task%202/code%20files/deep_dive_segment.py) tool, allowing evaluators to inspect any of the 158 executions in Dataset B by index or case ID, viewing the exact keystrokes, active window titles, and matched visual keyframes.
+  - Scaffolded the [`deep_dive_segment.py`](./Task%202/code%20files/deep_dive_segment.py) tool, allowing evaluators to inspect any of the 158 executions in Dataset B by index or case ID, viewing the exact keystrokes, active window titles, and matched visual keyframes.
 
 ---
 

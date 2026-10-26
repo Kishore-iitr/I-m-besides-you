@@ -109,8 +109,8 @@ During initial pipeline runs, session `ses_20260701-120612-Marcos` on the Google
 
 All code scripts used to produce these empirical forensic findings are preserved in `task one/`:
 
-1. [`run_full_dataset_a_evaluation.py`](file:///C:/Users/KISHORE%20S/Desktop/pulled_tmi/task%20one/run_full_dataset_a_evaluation.py): Universal batch evaluation script for all 63 sessions with local fallback and forensic diagnostic logging.
-2. [`analyze_boundary_diffs.py`](file:///C:/Users/KISHORE%20S/Desktop/pulled_tmi/task%20one/analyze_boundary_diffs.py): Calculates start/end boundary deltas and proves the 2.84s physiological human reaction delay.
-3. [`audit_boundary_precision.py`](file:///C:/Users/KISHORE%20S/Desktop/pulled_tmi/task%20one/audit_boundary_precision.py): Tests the Dual-Horizon Boundary Precision Architecture (pre-boundary match vs post-boundary transition).
-4. [`audit_dataset_b_multimodal.py`](file:///C:/Users/KISHORE%20S/Desktop/pulled_tmi/task%20one/audit_dataset_b_multimodal.py): Multi-modal trace and screenshot auditor across all 158 segments of Dataset B.
-5. [`check_gt_structure.py`](file:///C:/Users/KISHORE%20S/Desktop/pulled_tmi/task%20one/check_gt_structure.py): Invariant inspector verifying ground-truth JSON schemas.
+1. [`run_full_dataset_a_evaluation.py`](../../task%20one/run_full_dataset_a_evaluation.py): Universal batch evaluation script for all 63 sessions with local fallback and forensic diagnostic logging.
+2. [`analyze_boundary_diffs.py`](../../task%20one/analyze_boundary_diffs.py): Calculates start/end boundary deltas and proves the 2.84s physiological human reaction delay.
+3. [`audit_boundary_precision.py`](../../task%20one/audit_boundary_precision.py): Tests the Dual-Horizon Boundary Precision Architecture (pre-boundary match vs post-boundary transition).
+4. [`audit_dataset_b_multimodal.py`](../../task%20one/audit_dataset_b_multimodal.py): Multi-modal trace and screenshot auditor across all 158 segments of Dataset B.
+5. [`check_gt_structure.py`](../../task%20one/check_gt_structure.py): Invariant inspector verifying ground-truth JSON schemas.

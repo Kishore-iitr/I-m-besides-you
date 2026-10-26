@@ -301,7 +301,7 @@ The comparator applies an exact mathematical reconciliation:
 
 ### Master Evaluation Summary (30 Enterprise Rule Sets on 3,150 Live Records)
 
-Documented in full in [`results/benchmark_metrics_report.md`](file:///c:/Users/KISHORE%20S/Desktop/pulled_tmi/Task%203/results/benchmark_metrics_report.md):
+Documented in full in [`results/benchmark_metrics_report.md`](./results/benchmark_metrics_report.md):
 
 | Suite | Table | Rule Sets | Records / Run | Total Evaluations | SQL Syntax Validity | Hold Integrity | Status |
 | :--- | :--- | :---: | :---: | :---: | :---: | :---: | :---: |

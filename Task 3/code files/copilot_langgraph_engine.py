@@ -733,11 +733,12 @@ class CoPilotLangGraph:
             if any(kw in b_clean.lower() for kw in ["not on this list", "not in", "unregistered", "not registered", "未登録", "リストに含まれない"]):
                 target_codes = block_v_codes if len(block_v_codes) >= 3 else all_vendor_codes
                 codes_fmt = ", ".join([f"'{c}'" for c in target_codes])
-                sql_cond = f"employee_id NOT IN ({codes_fmt})"
+                code_col = "vendor_code" if process_type == "invoice" else "employee_id"
+                sql_cond = f"{code_col} NOT IN ({codes_fmt})"
                 rules.append({
                     "rule_id": f"RULE-{process_type[:3].upper()}-{rule_idx:02d}",
                     "name": rule_name,
-                    "match_field": "employee_id",
+                    "match_field": "vendor_code" if process_type == "invoice" else "employee_id",
                     "match_value": "Unregistered Vendors",
                     "sql_condition": sql_cond,
                     "condition": sql_cond,
@@ -808,7 +809,8 @@ class CoPilotLangGraph:
                 if any(kw in b_clean.lower() for kw in ["vendor code is registered", "registered vendor", "登録取引先", "登録ベンダー", "登録済み", "is registered"]):
                     if all_vendor_codes:
                         codes_fmt = ', '.join([f"'{c}'" for c in all_vendor_codes])
-                        cond_parts.append(f"employee_id IN ({codes_fmt})")
+                        code_col = "vendor_code" if process_type == "invoice" else "employee_id"
+                        cond_parts.append(f"{code_col} IN ({codes_fmt})")
 
                 sql_cond = " AND ".join(cond_parts) if cond_parts else "type = 'Routine'"
                 rules.append({
@@ -831,7 +833,8 @@ class CoPilotLangGraph:
                 v_name = v_match.group(1).strip() if v_match else ""
                 v_code = v_match.group(2).strip() if v_match else v_code_only.group(1).strip()
                 v_name = re.sub(r'^(?:No\.?\s*[0-9]+|[0-9]+[\.\:]|\-\s*)', '', v_name).strip()
-                id_clause = f"(employee_id = '{v_code}' OR name = '{v_name}')" if (v_code and v_name) else (f"employee_id = '{v_code}'" if v_code else f"name = '{v_name}'")
+                code_col = "vendor_code" if process_type == "invoice" else "employee_id"
+                id_clause = f"({code_col} = '{v_code}' OR name = '{v_name}')" if (v_code and v_name) else (f"{code_col} = '{v_code}'" if v_code else f"name = '{v_name}'")
 
                 cat_v = re.search(r"""(?:category|区分(?:\:|が|は)?|種別)\s*[:：]?\s*['"]?([A-Za-z0-9぀-ゟ゠-ヿ一-鿿_-]+)['"]?""", b_clean, re.IGNORECASE)
                 spec_cat = cat_v.group(1).strip() if cat_v else ("Adjustment" if ("Adjustment" in b_clean or "調整" in b_clean) else "")
@@ -1137,13 +1140,14 @@ class CoPilotLangGraph:
                 target_codes = [c for c in target_codes if re.match(r'^[A-Z][0-9]{3,5}$', c)]
                 if target_codes:
                     codes_sql = ', '.join([f"'{c}'" for c in target_codes])
-                    sql_cond = f"employee_id NOT IN ({codes_sql})"
+                    code_col = "vendor_code" if process_type == "invoice" else "employee_id"
+                    sql_cond = f"{code_col} NOT IN ({codes_sql})"
                 else:
                     sql_cond = "employee_id NOT IN (SELECT employee_id FROM erp_vendor_master)"
                 rules.append({
                     "rule_id": f"RULE-{process_type[:3].upper()}-{rule_idx:02d}",
                     "name": "Unregistered Vendor Integrity Check",
-                    "match_field": "employee_id",
+                    "match_field": "vendor_code" if process_type == "invoice" else "employee_id",
                     "match_value": "UNREGISTERED",
                     "sql_condition": sql_cond,
                     "condition": sql_cond,
@@ -1165,9 +1169,11 @@ class CoPilotLangGraph:
                 if v_name:
                     registered_vendors.add(v_name)
 
-                id_clause = f"employee_id = '{v_code}'" if v_code else f"name = '{v_name}'"
+                code_col = "vendor_code" if process_type == "invoice" else "employee_id"
+                id_clause = f"{code_col} = '{v_code}'" if v_code else f"name = '{v_name}'"
                 if v_code and v_name:
-                    id_clause = f"(employee_id = '{v_code}' OR name = '{v_name}')"
+                    code_col = "vendor_code" if process_type == "invoice" else "employee_id"
+                    id_clause = f"({code_col} = '{v_code}' OR name = '{v_name}')"
 
                 cat_v = re.search(r"""(?:category|区分(?:\:|が|は)?|種別)\s*[:：]?\s*['"]?([A-Za-z0-9\u3040-\u309F\u30A0-\u30FF\u4E00-\u9FFF_-]+)['"]?""", line, re.IGNORECASE)
                 spec_cat = cat_v.group(1).strip() if cat_v else ("Adjustment" if ("Adjustment" in line or "調整" in line or "空輸" in line) else "")

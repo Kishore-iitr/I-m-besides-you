@@ -299,7 +299,7 @@ To rigorously test **boundary precision**, we designed and executed the **Dual-H
 
 ## 5. Artifact & Directory Map
 
-All deliverables and source code are located in [`task one/`](file:///C:/Users/KISHORE%20S/Desktop/pulled_tmi/task%20one/):
+All deliverables and source code are located in [`task one/`](../task%20one):
 
 ```
 task one/
