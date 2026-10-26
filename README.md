@@ -11,9 +11,9 @@
 # 🎥 Automated AI Agent Orchestrated System
 ### Live Video Demonstration & End-to-End Enterprise Architecture Walkthrough
 
-[![Automated AI Agent Orchestrated System](docs/assets/automated_ai_agent_orchestrated_system_thumbnail.png)](docs/assets/automated_ai_agent_orchestrated_system_demo.mp4)
+[![Automated AI Agent Orchestrated System](docs/assets/automated_ai_agent_orchestrated_system_thumbnail.png)](https://iitracin-my.sharepoint.com/:v:/g/personal/kishore_s_ph_iitr_ac_in/IQCgKH9dpin8SoUqn6RdMn6aAW6IxdOR3LQ6bqsnjQoHoD4?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=fL0BXO)
 
-**[▶️ Click to Watch Full HD Demonstration Video (06:41)](docs/assets/automated_ai_agent_orchestrated_system_demo.mp4)**
+**[☁️ Watch on Cloud (SharePoint / OneDrive HD Stream)](https://iitracin-my.sharepoint.com/:v:/g/personal/kishore_s_ph_iitr_ac_in/IQCgKH9dpin8SoUqn6RdMn6aAW6IxdOR3LQ6bqsnjQoHoD4?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=fL0BXO)** &nbsp;|&nbsp; **[▶️ Direct Repo Video (06:41)](docs/assets/automated_ai_agent_orchestrated_system_demo.mp4)**
 
 <p align="center">
   <em>Autonomous 5-Node LangGraph Agent Policy Compilation • Multi-Database Schema Synchronization • Parameterized SQL Generation (3.4 ms) • Human-in-the-Loop Audit & Triage across Invoices, Payroll, and Leave Management</em>
@@ -326,6 +326,10 @@ For complete day-by-day and hour-by-hour developer journals recording hypotheses
 ---
 
 ## 5. Live Demonstration & Quickstart CLI Guide
+
+### 🎥 End-to-End System Video Demonstration (06:41)
+- **☁️ Cloud Streaming Link (SharePoint / OneDrive)**: [Watch Full HD Video Walkthrough](https://iitracin-my.sharepoint.com/:v:/g/personal/kishore_s_ph_iitr_ac_in/IQCgKH9dpin8SoUqn6RdMn6aAW6IxdOR3LQ6bqsnjQoHoD4?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=fL0BXO)
+- **▶️ In-Repository Video File**: [`docs/assets/automated_ai_agent_orchestrated_system_demo.mp4`](docs/assets/automated_ai_agent_orchestrated_system_demo.mp4)
 
 All three tasks can be reproduced or executed directly from the root directory:
 
