@@ -2,6 +2,7 @@
 ## Comprehensive Final Report & Technical Architecture Guide
 
 **Candidate**: Kishore S (Roll Number: 24123017, IIT Roorkee)   
+**Email**: kishore_s@ph.iitr.ac.in
 **Scope**: Full 7-Day Engineering Engagement (Dataset A: 63 Sessions / 2,009 Ground-Truth Executions; Dataset B: 15 Blind Production Sessions / 158 Recovered Executions; Live Cloud PostgreSQL Supabase Database; 3 Operational Enterprise ERP Suites).
 
 ---
