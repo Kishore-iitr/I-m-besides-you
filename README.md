@@ -6,6 +6,23 @@
 
 ---
 
+<div align="center">
+
+# 🎥 Automated AI Agent Orchestrated System
+### Live Video Demonstration & End-to-End Enterprise Architecture Walkthrough
+
+[![Automated AI Agent Orchestrated System](docs/assets/automated_ai_agent_orchestrated_system_thumbnail.png)](docs/assets/automated_ai_agent_orchestrated_system_demo.mp4)
+
+**[▶️ Click to Watch Full HD Demonstration Video (06:41)](docs/assets/automated_ai_agent_orchestrated_system_demo.mp4)**
+
+<p align="center">
+  <em>Autonomous 5-Node LangGraph Agent Policy Compilation • Multi-Database Schema Synchronization • Parameterized SQL Generation (3.4 ms) • Human-in-the-Loop Audit & Triage across Invoices, Payroll, and Leave Management</em>
+</p>
+
+</div>
+
+---
+
 ## Academic & Theoretical Foundation: Primary Research Paper
 
 This entire engineering solution adapts, extends, and operationalizes the academic foundation introduced in:
