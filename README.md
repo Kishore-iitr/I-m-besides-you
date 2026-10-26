@@ -1,14 +1,12 @@
 # Intern Selection Task: From Operation Logs to an Automation Proposal
 ## Comprehensive Final Report & Technical Architecture Guide
 
-**Candidate**: Kishore S (Roll Number: 24123017, IIT Roorkee)  
-**Role**: Forward Deployed Engineer (FDE) Candidate  
-**Client Mandate**: *"Use these logs to tell us where automation would have the greatest impact on our operations. And show us something that actually runs."*  
+**Candidate**: Kishore S (Roll Number: 24123017, IIT Roorkee)   
 **Scope**: Full 7-Day Engineering Engagement (Dataset A: 63 Sessions / 2,009 Ground-Truth Executions; Dataset B: 15 Blind Production Sessions / 158 Recovered Executions; Live Cloud PostgreSQL Supabase Database; 3 Operational Enterprise ERP Suites).
 
 ---
 
-## 📚 Academic & Theoretical Foundation: Primary Research Paper
+## Academic & Theoretical Foundation: Primary Research Paper
 
 This entire engineering solution adapts, extends, and operationalizes the academic foundation introduced in:
 
@@ -16,8 +14,6 @@ This entire engineering solution adapts, extends, and operationalizes the academ
 > **Authors**: Yucheng Jiang (Stanford University), Zora Zhiruo Wang (Carnegie Mellon University), Ruishi Chen (Stanford University), Diyi Yang (Stanford University)  
 > **Publication**: *arXiv preprint arXiv:2608.20319 (2026)*  
 > **Paper URL**: [https://arxiv.org/abs/2608.20319](https://arxiv.org/abs/2608.20319)  
-> **Official Code Repository**: [https://github.com/Yucheng-Jiang/task-model-induction](https://github.com/Yucheng-Jiang/task-model-induction)  
-> **BibTeX Citation**: Available in [`./CITATION.cff`](./CITATION.cff)
 
 ### How Our Production System Extends This Research:
 1. **From Synthetic Traces to Enterprise Multi-Modal Telemetry (Task 1)**: While Jiang et al. established the formal Task Model Induction (TMI) hierarchy ($\text{Episodes} \to \text{Activities} \to \text{Subtasks} \to \text{Tasks}$) over standard desktop benchmarks, we extended this framework to real-world, unsegmented Japanese corporate back-office workflows by fusing **L1 Optical OCR visual keyframes (`jpn+eng`)**, **L2 OS hardware events (mouse/keystrokes)**, and **L3 browser DOM mutation events**.
@@ -108,16 +104,16 @@ The final deliverable is submitted at [`./segments.jsonl`](./segments.jsonl) (an
 ├── .env / .env.example                            # Cloud Database & LLM Provider API Configurations
 │
 ├── Task 1/                                        # [Step 1: Process Execution Segmentation]
-│   ├── README.md                                  # 📖 Task 1 Master Guide (Algorithmic formulation, Hungarian matching)
-│   ├── WORKLOG.md                                 # ⏱️ Task 1 Worklog (7-day chronological progression, trials 1-3)
+│   ├── README.md                                  # Task 1 Master Guide (Algorithmic formulation, Hungarian matching)
+│   ├── WORKLOG.md                                 # Task 1 Worklog (7-day chronological progression, trials 1-3)
 │   ├── run_task1.py                               # Task 1 Unified CLI Runner (Batch & Single-Session evaluation)
 │   ├── code/                                      # 13 Segmentation, Benchmark & Diagnostic Scripts
 │   ├── results/                                   # Deliverables (segments.jsonl, segments.json, benchmark metrics)
 │   └── artifacts/                                 # Failure Analysis & Discrepancy Forensic Reports
 │
 ├── Task 2/                                        # [Step 2: Candidate Profiling & Workflow Synthesis]
-│   ├── README.md                                  # 📖 Task 2 Master Guide (IASI formula, candidate selection rationale)
-│   ├── WORKLOG.md                                 # ⏱️ Task 2 Worklog (Telemetry analysis, failure post-mortems)
+│   ├── README.md                                  # Task 2 Master Guide (IASI formula, candidate selection rationale)
+│   ├── WORKLOG.md                                 # Task 2 Worklog (Telemetry analysis, failure post-mortems)
 │   ├── run_task2.py                               # Task 2 Unified CLI Runner (Batch, Single-Session & Deep Dive)
 │   ├── code files/                                # 8 Profiling & Deep-Dive Scripts
 │   ├── results/                                   # Deliverables (TOP_CANDIDATE_AUTOMATION_REPORT.md, Rankings, SOPs)
@@ -126,8 +122,8 @@ The final deliverable is submitted at [`./segments.jsonl`](./segments.jsonl) (an
 │   └── artifacts/                                 # 5 Telemetry & Evidence Databases
 │
 └── Task 3/                                        # [Step 3: Autonomous Web ERP & AI Co-Pilot]
-    ├── README.md                                  # 📖 Task 3 Master Guide (LangGraph architecture, Policy-to-SQL compiler)
-    ├── WORKLOG.md                                 # ⏱️ Task 3 Worklog (Antigravity Data Analysis Pipeline chat journal)
+    ├── README.md                                  # Task 3 Master Guide (LangGraph architecture, Policy-to-SQL compiler)
+    ├── WORKLOG.md                                 # Task 3 Worklog (Antigravity Data Analysis Pipeline chat journal)
     ├── run_task3.py                               # Task 3 CLI Launcher (--serve, --verify, --benchmark, --verify-ui)
     ├── code files/                                # 16 Production Python Source Scripts (ERP App, LangGraph, DB, AI)
     ├── results/                                   # Deliverables (benchmark_metrics_report.md, latency CSV, test cases)
@@ -345,4 +341,4 @@ Once launched, open your browser to: **[http://127.0.0.1:5135/](http://127.0.0.1
 
 ## Author & Contact
 - **Author**: Kishore S (Roll Number: 24123017, IIT Roorkee)  
-- **Role**: Forward Deployed Engineer (FDE) Candidate
+
