@@ -16,7 +16,7 @@
 **Final Production Verification Summary**:  
 - **Task 1**: 94.51% Macro $F_1@30\text{s}$ across all 63 Dataset A sessions; 158 verified executions on blind Dataset B (85.44% Dual-Horizon Precision, strict 0.00s overlap guarantee).  
 - **Task 2**: Complete mathematical profiling of all 8 business process families via the Industrial Automation Suitability Index (IASI); Rank #1 Invoice Processing (ROI: 164.49, ~520 hrs/yr savings), 113 labeled screenshots, and a Universal Segment Deep-Dive Engine (`deep_dive_segment.py`).  
-- **Task 3**: Dual live ERP platforms operational: Unified Multi-Suite ERP on Port 5135 (Invoices, Payroll, Leave) and Version 2 Enterprise Invoice Portal on Port 5136. Integrated 5-Node LangGraph State Machine, Natural Language Policy-to-SQL Compiler (3.4 ms latency), Dual-Engine Cloud PostgreSQL Supabase + SQLite Persistence, Two-Stage In-Memory Staging Modal, Direct Shift to Hold Action, Multi-Modal Document AI with Tesseract OCR, and native Windows Explorer file bridging.
+- **Task 3**: Production Unified Multi-Suite ERP Platform operational on Port 5135 (Invoices, Payroll, Leave) with unified schema and SQL alignment. Integrated 5-Node LangGraph State Machine, Natural Language Policy-to-SQL Compiler (3.4 ms latency), Dual-Engine Cloud PostgreSQL Supabase + SQLite Persistence, Two-Stage In-Memory Staging Modal, Direct Shift to Hold Action, Multi-Modal Document AI with Tesseract OCR, and native Windows Explorer file bridging.
 
 ---
 
@@ -41,7 +41,7 @@ flowchart TD
     end
 
     subgraph S3 ["Step 3: Autonomous Multi-Suite Web ERP & AI Co-Pilot (Task 3)"]
-        Ranking --> WebApp["Production Web ERP Platforms<br>• Port 5135: Unified Multi-Suite ERP (Invoices, Payroll, Leave)<br>• Port 5136: Version 2 Enterprise Invoice Portal"]
+        Ranking --> WebApp["Production Web ERP Platform on Port 5135<br>  Unified Multi-Suite ERP (Invoices, Payroll, Leave)"]
         WebApp --> LangGraph["5-Node LangGraph Autonomous Agent<br>• Node 1: parse_document_to_schema_json (Policy AST)<br>• Node 2: validate_and_refine_sql_rules (Self-Healing Loop)<br>• Node 3: compare_features_and_decide (3.4ms SQL Engine)<br>• Node 4: commit_database_updates (Atomic PostgreSQL Commit)<br>• Node 5: human_in_the_loop_audit (Staged Review Modal)"]
         LangGraph --> CloudDB[("Dual-Engine Cloud Persistence Layer<br>• Primary: PostgreSQL Supabase (AWS Tokyo Pooler)<br>• Fallback: Local SQLite Relational Mirror (erp_unified.db)")]
         WebApp --> V2Staging["Two-Stage In-Memory Staging Architecture<br>• Stage Unprocessed as HOLD (⚡ Action)<br>• Interactive Pre-Commit Review Modal<br>• Multi-Modal Document AI & Native Explorer Integration"]
@@ -152,9 +152,8 @@ flowchart TD
 ```
 
 #### Step 3 Technical Infrastructure:
-1. **Interactive Web ERP Frontend (Port 5135 & Port 5136)**:
+1. **Interactive Production Web ERP Frontend (Port 5135 - `unified_copilot_erp_app.py`)**:
    - **Port 5135 (`unified_copilot_erp_app.py`)**: Multi-process ERP portal supporting 🏛️ Financial Invoices (`erp_invoices`), 👥 HR Payroll Deductions (`erp_payroll_items`), and 📋 Leave Management (`erp_leave_applications`). Features sticky table headers (`top: 0`), dynamic scroll mechanics, two-stage staging modal, and an interactive sidecar Co-Pilot drawer.
-   - **Port 5136 (`version two of ERP portal/app.py`)**: Dedicated enterprise invoice portal executing standalone single-rule decompositions, confirmation modal triage, and direct shift actions.
 2. **Dual-Engine Persistence Layer (`erp_db.py`)**: Connects to an AWS Tokyo PostgreSQL Supabase Cloud Pooler (`aws-0-ap-northeast-1.pooler.supabase.com:5432`) as primary with encrypted SSL, with seamless automatic failover to a local SQLite relational mirror (`erp_unified.db`).
 3. **Two-Stage In-Memory Staging Architecture**: All AI and policy evaluations first generate in-memory proposals (`staged_decisions`). Nothing is written to PostgreSQL until a human operator inspects the proposed decisions and confirms execution via `/api/copilot/commit`.
 4. **Multi-Modal Document AI & Native OS Integration**: Utilizes local Tesseract OCR v5 for unstructured medical and bereavement certificates, paired with native Windows Explorer bridging (`/api/open-explorer` executing `explorer.exe /select, <path>`) so human reviewers can verify physical files on their desktop with one click.
@@ -309,7 +308,7 @@ This section provides the comprehensive, minute-by-minute engineering journal de
 #### October 23, 2026 (04:30 IST / 23:00 UTC) — Prototyping & Rejection of Alternative Automation Engines (Task 2 & 3)
 - **Evaluated Alternatives**:
   1. *Architecture 1: Client Node/React Automation Hub (Port 3000)*: Rejected because browser sandboxes cannot parse binary Word `.docx` or complex Excel `.xlsx` files natively, and lacks Python's OCR toolchains.
-  2. *Architecture 2: Pure LLM Direct SQL Compiler (Port 5136)*: Rejected due to SQL injection risks, tax arithmetic hallucinations ($\lfloor A_{\text{subtotal}} \times 0.10 \rfloor$), and 4,850 ms latency.
+  2. *Architecture 2: Pure LLM Direct SQL Compiler*: Rejected due to SQL injection risks, tax arithmetic hallucinations ($\lfloor A_{\text{subtotal}} \times 0.10 \rfloor$), and 4,850 ms latency.
   3. *Architecture 3: Monolithic Regex Baseline*: Rejected due to zero adaptability when vendor contracts change.
 - **Accepted Architecture**: **Unified Web ERP with 5-Node LangGraph StateMachine & Parameterized SQL Compiler**.
 
@@ -372,10 +371,10 @@ This section provides the comprehensive, minute-by-minute engineering journal de
 
 ---
 
-### Day 8 (October 26, 2026) — SQL Architecture Alignment & Port 5136 V2 Streamlit Adoption (Task 3)
+### Day 8 (October 26, 2026) - SQL Schema & Architecture Alignment Across Invoices, Payroll, and Leave (Port 5135)
 
 #### October 26, 2026 (09:30 IST / 04:00 UTC) — Forensic Investigation of Invoice Processing Discrepancy
-- **Problem Raised**: The user reported that Invoice Processing on Port 5135 was not working properly, placing 100% of records on Hold (0 approvals), and requested that its architecture be aligned with the robust SQL architecture of Payroll Item Processing and Leave Applications, and adopt the Version 2 Streamlit portal architecture running on Port 5136.
+- **Problem Raised**: The user reported that Invoice Processing on Port 5135 was not working properly, placing 100% of records on Hold (0 approvals), and requested that its architecture be aligned with the robust SQL architecture of Payroll Item Processing and Leave Applications, and absorb all multi-rule staging features into the unified production ERP portal running on Port 5135.
 - **Forensic Diagnosis**:
   1. *PostgreSQL Column Discrepancy*: In `erp_invoices`, `vendor_code` and `vendor_name` were stored as `NULL` because initial seeding populated `employee_id` and `name`. Queries checking `vendor_code IN (...)` evaluated to `NULL`/`False` for all rows.
   2. *False Ceiling Threshold*: In `_fallback_semantic_rules`, the ceiling threshold defaulted to the first contracted amount (¥716,232), holding routine invoices above that value.
@@ -391,7 +390,7 @@ This section provides the comprehensive, minute-by-minute engineering journal de
 - **Dedicated Contract Rules**: Extracted dedicated SQL approval rules for all contracted vendors (Global Tech LLC, Hokuriku Parts, Yamato Shoji, Fukuoka System Design, Yamada Manufacturing, Tokyo Cloud Solutions), mirroring the individual employee voucher logic in Payroll and leave quota logic in Leave processing.
 - **Fixed Routine Threshold**: High-value ceiling set to ¥2,000,000 for routine invoices unless an explicit ceiling keyword (`上限`, `超過`, `ceiling`, `limit`) is present in the policy text.
 
-#### October 26, 2026 (15:30 IST / 10:00 UTC) — Adoption of Version 2 (Port 5136) Architecture in Port 5135
+#### October 26, 2026 (15:30 IST / 10:00 UTC) - Unified Multi-Suite Staging and Execution on Port 5135
 - **Multi-Rule Decomposition**: User prompts and policy documents decompose into standalone ANSI SQL `SELECT` queries (`RuleExecutionDetail`).
 - **Two-Stage In-Memory Staging**: Audit results stage in memory (`staged_decisions`) with proposed statuses and audit comments without modifying the database.
 - **Direct Shift Action**: Implemented `⚡ 未処理を保留にする (Stage Unprocessed as HOLD)` on the toolbar with the backend route `/api/agent/stage-unprocessed-hold` in [`unified_copilot_erp_app.py`](file:///C:/Users/KISHORE%20S/Desktop/pulled_tmi/unified_copilot_erp_app.py).
@@ -403,8 +402,8 @@ This section provides the comprehensive, minute-by-minute engineering journal de
 
 #### October 26, 2026 (18:04 IST / 12:34 UTC) — Live Production Verification
 - **Verified on Port 5135**: Evaluated 105 invoices against `INVOICE_PRESET_POLICY`: exactly **81 Approved, 24 on Hold** (contracted vendors and routine operations approved within limits; Okinawa Logistics adjustments and unregistered vendors safely placed on Hold).
-- **Verified on Port 5136**: Ran `version two of ERP portal/test_pipeline.py`: **All 8 Test Suites Passed (100%)**.
-- **Both Applications Live**: Port 5135 and Port 5136 verified healthy, active, and accessible.
+- **Single Unified Portal Live**: Port 5135 verified healthy, active, and accessible across all three business suites (Invoices, Payroll, Leave).
+- **Unified ERP Platform on Port 5135**: All enterprise multi-rule staging and execution logic operates exclusively on Port 5135.
 
 ---
 

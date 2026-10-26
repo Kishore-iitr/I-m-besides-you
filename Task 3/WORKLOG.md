@@ -31,7 +31,7 @@ flowchart TD
 
     subgraph ArchitectureEvolution["Task 3 Architecture Progression"]
         T2 --> A1["Architecture 1: Client Node/React Hub (Port 3000)<br>• ❌ Lacked native Python NLP & DB pooling"]
-        A1 --> A2["Architecture 2: Pure LLM Policy-to-SQL (Port 5136)<br>• ❌ SQL injection risk & tax math hallucinations"]
+        A1 --> A2["Architecture 2: Pure LLM Policy-to-SQL (Experimental Architecture)<br>• ❌ SQL injection risk & tax math hallucinations"]
         A2 --> A3["Architecture 3: Monolithic Regex Baseline<br>• ❌ Violates Zero-Hardcoding mandate"]
         A3 --> A4["Architecture 4: LangGraph Co-Pilot + Deterministic SQL<br>• 5-Node StateGraph Workflow<br>• Parameterized AST SQL compilation<br>• Dual Supabase / SQLite Engine"]
     end

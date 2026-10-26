@@ -238,19 +238,38 @@ class PolicyEngine:
         self.llm = puter_client or PuterLlmClient()
 
     def get_connection(self):
-        """Creates a PostgreSQL connection using DB_CONFIG."""
-        return psycopg2.connect(**DB_CONFIG, cursor_factory=DictCursor)
+        """Creates a PostgreSQL connection using DB_CONFIG with fallback to db_manager."""
+        try:
+            from erp_db import db_manager
+            return db_manager.get_connection()
+        except Exception:
+            return psycopg2.connect(**DB_CONFIG, cursor_factory=DictCursor)
 
     def fetch_all_rows(self, table_name: str, conn: Optional[Any] = None) -> List[Dict[str, Any]]:
         """Fetches all rows from the target table."""
+        def _to_dicts(cursor):
+            col_names = [d[0] for d in cursor.description] if cursor.description else []
+            rows = cursor.fetchall()
+            result = []
+            for r in rows:
+                if isinstance(r, dict):
+                    result.append(dict(r))
+                elif hasattr(r, "_asdict"):
+                    result.append(r._asdict())
+                elif hasattr(r, "keys"):
+                    result.append(dict(r))
+                else:
+                    result.append(dict(zip(col_names, r)))
+            return result
+
         if conn is not None:
             with conn.cursor() as cur:
                 cur.execute(f"SELECT * FROM {table_name} ORDER BY id ASC;")
-                return [dict(row) for row in cur.fetchall()]
+                return _to_dicts(cur)
         with self.get_connection() as c:
             with c.cursor() as cur:
                 cur.execute(f"SELECT * FROM {table_name} ORDER BY id ASC;")
-                return [dict(row) for row in cur.fetchall()]
+                return _to_dicts(cur)
 
     def query_matching_ids(self, table_name: str, sql_cond: str, conn: Optional[Any] = None) -> Optional[Set[str]]:
         """Executes a SQL WHERE condition against the live PostgreSQL database."""
@@ -265,12 +284,18 @@ class PolicyEngine:
                     cur.execute(query)
                     rows = cur.fetchall()
                     return {str(r[0]) for r in rows if r and r[0] is not None}
-            with self.get_connection() as c:
-                with c.cursor() as cur:
-                    query = f"SELECT id FROM {table_name} WHERE ({normalized_cond});"
-                    cur.execute(query)
-                    rows = cur.fetchall()
-                    return {str(r[0]) for r in rows if r and r[0] is not None}
+            conn_obj = self.get_connection()
+            try:
+                cur = conn_obj.cursor()
+                query = f"SELECT id FROM {table_name} WHERE ({normalized_cond});"
+                cur.execute(query)
+                rows = cur.fetchall()
+                return {str(r[0]) for r in rows if r and r[0] is not None}
+            finally:
+                try:
+                    conn_obj.close()
+                except Exception:
+                    pass
         except Exception as e:
             logging.warning(f"[Live SQL Query Error] {e} on condition: {normalized_cond}")
             return None
@@ -412,7 +437,7 @@ Instructions:
 
         rules = []
         try:
-            raw_res = self.llm.complete(prompt, system_prompt=system_prompt, timeout=2)
+            raw_res = self.llm.complete(prompt, system_prompt=system_prompt, timeout=30)
             parsed = clean_and_parse_json_robust(raw_res)
             criteria = parsed.get("item_criteria") or parsed.get("rules") or []
             if isinstance(criteria, list) and criteria:
@@ -1041,18 +1066,19 @@ Instructions:
         if not decisions:
             return {"status": "SKIPPED", "updated_count": 0, "message": "No decisions to commit."}
 
-        update_query = f"""
-            UPDATE {table_name}
-            SET status = %s,
-                comment = %s
-            WHERE id = %s;
-        """
-
         params = [(d["new_status"], d["comment"], d["id"]) for d in decisions]
 
         with self.get_connection() as conn:
-            with conn.cursor() as cur:
-                cur.executemany(update_query, params)
+            is_pg = hasattr(conn, "cursor_factory") or "psycopg" in str(type(conn)).lower()
+            ph = "%s" if is_pg else "?"
+            update_query = f"""
+                UPDATE {table_name}
+                SET status = {ph},
+                    comment = {ph}
+                WHERE id = {ph};
+            """
+            cur = conn.cursor()
+            cur.executemany(update_query, params)
             conn.commit()
 
         lat = round(time.time() - t0, 3)

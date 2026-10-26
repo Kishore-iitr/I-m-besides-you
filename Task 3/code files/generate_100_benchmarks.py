@@ -56,11 +56,15 @@ def build_105_invoices():
     for vcode, vname, amt, vtype in core_12:
         invoices.append({
             "id": f"P6-07010448-{slip_idx:03d}",
+            "vendor_code": vcode,
+            "vendor_name": vname,
             "employee_id": vcode,
             "name": vname,
+            "customer_name": vname,
             "invoice_no": f"INV-2026-{inv_num_base}",
             "amount": f"¥{amt:,}",
             "raw_amount": amt,
+            "total_amount": amt,
             "type": vtype,
             "status": "Unprocessed",
             "ref": f"Order Ref : INV-2026-{inv_num_base}",
@@ -85,11 +89,15 @@ def build_105_invoices():
 
         invoices.append({
             "id": f"P6-07010448-{slip_idx:03d}",
+            "vendor_code": vcode,
+            "vendor_name": vname,
             "employee_id": vcode,
             "name": vname,
+            "customer_name": vname,
             "invoice_no": f"INV-2026-{inv_num_base}",
             "amount": f"¥{amt:,}",
             "raw_amount": amt,
+            "total_amount": amt,
             "type": vtype,
             "status": "Unprocessed",
             "ref": f"Order Ref : INV-2026-{inv_num_base}",

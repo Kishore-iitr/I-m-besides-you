@@ -611,8 +611,15 @@ class CoPilotLangGraph:
 
     def _make_sql_case_insensitive(self, cond: str, table_name: str = "erp_invoices") -> str:
         """Transforms SQL conditions on text columns to be case-insensitive in ANSI SQL (PostgreSQL & SQLite)."""
-        text_cols_upper = ['employee_id', 'id', 'invoice_no', 'voucher_ref']
-        text_cols_lower = ['type', 'item_category', 'item_type', 'name', 'employee_name', 'status']
+        if table_name == "erp_invoices":
+            text_cols_upper = ['vendor_code', 'employee_id', 'id', 'invoice_no']
+            text_cols_lower = ['type', 'vendor_name', 'name', 'customer_name', 'status']
+        elif table_name == "erp_leave_applications":
+            text_cols_upper = ['employee_id', 'id', 'voucher_ref']
+            text_cols_lower = ['department', 'leave_type', 'employee_name', 'status', 'attachment_name', 'reason']
+        else:
+            text_cols_upper = ['employee_id', 'id', 'voucher_ref']
+            text_cols_lower = ['item_category', 'item_type', 'employee_name', 'status']
 
         result = cond
 
@@ -719,8 +726,90 @@ class CoPilotLangGraph:
             has_hold = any(kw in b_clean.lower() for kw in ["hold", "保留", "review", "精査", "不整合", "除外", "mandatory"])
             has_appr = any(kw in b_clean.lower() for kw in ["approve", "approved", "承認", "confirmed", "確認済"])
 
+                        # --- LEAVE SPECIFIC POLICIES ---
+            if process_type in ("leave", "leave_mgmt", "leave_applications"):
+                # Quota deficit
+                if any(kw in b_clean for kw in ["残日数", "不足", "超過", "balance", "deficit", "exceeds balance", "requested_days > remaining_balance"]):
+                    sql_cond = "requested_days > remaining_balance"
+                    rules.append({
+                        "rule_id": f"RULE-LV-{rule_idx:02d}",
+                        "name": "Leave Quota Deficit Hold",
+                        "match_field": "requested_days",
+                        "match_value": "Quota Deficit",
+                        "sql_condition": sql_cond,
+                        "condition": sql_cond,
+                        "action_on_match": "Hold",
+                        "description": "Requested days exceed remaining leave balance quota. Managerial review required."
+                    })
+                    rule_idx += 1
+                    continue
+
+                # Medical leave without certificate
+                if any(kw in b_clean for kw in ["病気休暇", "医師診断書", "medical", "doctor"]):
+                    sql_cond = "leave_type = '病気休暇' AND (has_attachment = FALSE OR has_attachment = 0)"
+                    rules.append({
+                        "rule_id": f"RULE-LV-{rule_idx:02d}",
+                        "name": "Medical Certificate Missing",
+                        "match_field": "has_attachment",
+                        "match_value": "Missing Medical Cert",
+                        "sql_condition": sql_cond,
+                        "condition": sql_cond,
+                        "action_on_match": "Hold",
+                        "description": "Medical leave without required doctor diagnosis certificate held for verification."
+                    })
+                    rule_idx += 1
+                    continue
+
+                # Special bereavement without doc
+                if any(kw in b_clean for kw in ["慶弔特別休暇", "会葬礼状", "bereavement"]):
+                    sql_cond = "leave_type = '慶弔特別休暇' AND (has_attachment = FALSE OR has_attachment = 0)"
+                    rules.append({
+                        "rule_id": f"RULE-LV-{rule_idx:02d}",
+                        "name": "Bereavement Certificate Missing",
+                        "match_field": "has_attachment",
+                        "match_value": "Missing Bereavement Doc",
+                        "sql_condition": sql_cond,
+                        "condition": sql_cond,
+                        "action_on_match": "Hold",
+                        "description": "Special bereavement leave without documentation held for HR review."
+                    })
+                    rule_idx += 1
+                    continue
+
+                # Consecutive leave > 3 days
+                if any(kw in b_clean for kw in ["3日", "3 days", "連続", "consecutive", "long leave"]):
+                    sql_cond = "requested_days > 3.0"
+                    rules.append({
+                        "rule_id": f"RULE-LV-{rule_idx:02d}",
+                        "name": "Extended Leave Review (>3 Days)",
+                        "match_field": "requested_days",
+                        "match_value": "Extended Leave (>3 Days)",
+                        "sql_condition": sql_cond,
+                        "condition": sql_cond,
+                        "action_on_match": "Hold",
+                        "description": "Leave requests exceeding 3 consecutive business days require director approval."
+                    })
+                    rule_idx += 1
+                    continue
+
+                # Unregistered leave
+                if any(kw in b_clean for kw in ["未登録休暇", "未登録", "unregistered"]):
+                    sql_cond = "leave_type = '未登録休暇'"
+                    rules.append({
+                        "rule_id": f"RULE-LV-{rule_idx:02d}",
+                        "name": "Unregistered Leave Type",
+                        "match_field": "leave_type",
+                        "match_value": "未登録休暇",
+                        "sql_condition": sql_cond,
+                        "condition": sql_cond,
+                        "action_on_match": "Hold",
+                        "description": "Leave type not registered in company HR attendance code master."
+                    })
+                    rule_idx += 1
+                    continue
+
             # --- PAYROLL SPECIFIC DEDUCTION & ALLOWANCE CRITERIA ---
-            if process_type == "payroll":
+            elif process_type == "payroll":
                 if any(kw in b_clean for kw in ["控除項目", "扶養控除", "役職手当廃止"]) and any(kw in b_clean for kw in ["Addition", "支給", "不整合", "Hold"]):
                     sql_cond = "item_category IN ('扶養控除変更', '役職手当廃止') AND item_type = 'Addition'"
                     rules.append({
@@ -1405,7 +1494,51 @@ class CoPilotLangGraph:
         table_schema = state["table_schema"]
         filename = state["filename_or_title"]
 
-        if process_type == "payroll":
+        if process_type in ("leave", "leave_mgmt", "leave_applications"):
+            system_prompt = (
+                "You are an Elite Enterprise Database & Policy Rule Extraction Agent specializing in Employee Leave Applications & Attendance Management (erp_leave_applications).\n"
+                "CRITICAL SCHEMA & DATA TYPE SPECIFICATIONS FOR erp_leave_applications:\n"
+                "1. DATABASE COLUMNS IN erp_leave_applications:\n"
+                "   - `employee_id` (VARCHAR): Employee code (e.g. 'EMP-001', 'EMP-002').\n"
+                "   - `employee_name` (VARCHAR): Employee legal full name (e.g. '青木 拓也', '菊池 理恵').\n"
+                "   - `department` (VARCHAR): Department name (e.g. '開発部', '総務部', '営業部', '経理部').\n"
+                "   - `leave_type` (VARCHAR): Leave type ('有給休暇', '半日有給申請', '慶弔特別休暇', '病気休暇', '夏季特別休暇', '在宅研修休暇', '未登録休暇').\n"
+                "   - `requested_days` (NUMERIC): Number of days requested (e.g. 0.5, 1.0, 2.0, 3.0, 5.0). ALWAYS numeric comparison!\n"
+                "   - `remaining_balance` (NUMERIC): Remaining leave quota in days before this request (e.g. 0.0, 1.0, 12.0, 14.5).\n"
+                "   - `has_attachment` (BOOLEAN): Supporting certificate/proof attached (TRUE or FALSE).\n"
+                "   - `attachment_name` (VARCHAR): Attachment filename (e.g. '医師診断書_202607.pdf').\n"
+                "   - `voucher_ref` (VARCHAR): Linked voucher/reference ID (e.g. 'P2-07101496-012').\n"
+                "2. PRECISE SQL MAPPINGS FOR LEAVE POLICIES:\n"
+                "   - Quota deficit hold (requested > remaining): sql_condition: \"requested_days > remaining_balance\", action_on_match: \"Hold\"\n"
+                "   - Consecutive long leave threshold (>3 days requires approval): sql_condition: \"requested_days > 3.0\", action_on_match: \"Hold\"\n"
+                "   - Medical leave without doctor's certificate: sql_condition: \"leave_type = '病気休暇' AND has_attachment = FALSE\", action_on_match: \"Hold\"\n"
+                "   - Special bereavement leave missing documentation: sql_condition: \"leave_type = '慶弔特別休暇' AND has_attachment = FALSE\", action_on_match: \"Hold\"\n"
+                "   - Unregistered leave category: sql_condition: \"leave_type = '未登録休暇'\", action_on_match: \"Hold\"\n"
+                "   - Approved standard leave: sql_condition: \"leave_type IN ('有給休暇', '半日有給申請', '夏季特別休暇', '在宅研修休暇') AND requested_days <= remaining_balance AND requested_days <= 3.0\", action_on_match: \"Approved\"\n"
+                "3. REQUIRED JSON FIELDS FOR EVERY RULE:\n"
+                "   - \"rule_id\": e.g. \"RULE-LV-01\"\n"
+                "   - \"name\": Concise descriptive rule title\n"
+                "   - \"match_field\": Primary column checked (e.g. \"requested_days\", \"leave_type\", \"has_attachment\")\n"
+                "   - \"match_value\": Target or entity label\n"
+                "   - \"sql_condition\": Valid ANSI SQL predicate against erp_leave_applications\n"
+                "   - \"condition\": Same as sql_condition\n"
+                "   - \"action_on_match\": \"Hold\" or \"Approved\"\n"
+                "   - \"description\": Professional explanation\n"
+            )
+            prompt = f"""Target Process: LEAVE_APPLICATIONS
+Target Database Table: {table_name}
+Target Table Schema:
+{json.dumps(table_schema, indent=2, ensure_ascii=False)}
+
+Incoming Document / Policy Text:
+\"\"\"{doc_text}\"\"\"
+
+Instructions:
+1. Extract ALL rules: quota sufficiency, consecutive day limits, required medical/bereavement attachments, unregistered leave codes, and standard approved leave categories.
+2. For EVERY rule, generate a valid SQL WHERE condition (`sql_condition` and `condition`) against `{table_name}`.
+3. Every rule MUST include: `rule_id`, `name`, `match_field`, `match_value`, `sql_condition`, `condition`, `action_on_match` ("Hold" or "Approved"), and `description`.
+4. Return ONLY valid JSON with key "item_criteria" without markdown fences."""
+        elif process_type == "payroll":
             system_prompt = (
                 "You are an Elite Enterprise Database & Policy Rule Extraction Agent specializing in Employee Payroll Expense Settlements (erp_payroll_items).\n"
                 "CRITICAL SCHEMA & DATA TYPE SPECIFICATIONS FOR erp_payroll_items:\n"
@@ -1953,6 +2086,8 @@ Return ONLY the corrected JSON object with key "item_criteria" containing the re
 
         if process_type == "invoice":
             updates_count = db_manager.batch_update_invoices(updates_payload)
+        elif process_type in ("leave", "leave_mgmt", "leave_applications"):
+            updates_count = db_manager.batch_update_leave_applications(updates_payload)
         else:
             updates_count = db_manager.batch_update_payroll_items(updates_payload)
 
@@ -1996,7 +2131,30 @@ Return ONLY the corrected JSON object with key "item_criteria" containing the re
     def _prepare_initial_state(self, process_type: str, document_text: str, filename_or_title: str) -> CoPilotAgentState:
         from erp_db import db_manager
 
-        if process_type == "invoice":
+        if process_type in ("leave", "leave_mgmt", "leave_applications"):
+            table_name = "erp_leave_applications"
+            table_schema = {
+                "table_name": "erp_leave_applications",
+                "table_description": "Employee Leave Applications & Time-Off Management (105 total live records in PostgreSQL)",
+                "features_and_columns": {
+                    "id": {"sql_data_type": "VARCHAR(50) PRIMARY KEY", "description": "Unique leave request ID (e.g. 'LV-2026-001')"},
+                    "employee_id": {"sql_data_type": "VARCHAR(50)", "description": "Employee code (e.g. 'EMP-001', 'EMP-002')"},
+                    "employee_name": {"sql_data_type": "VARCHAR(255)", "description": "Employee legal full name (e.g. '青木 拓也')"},
+                    "department": {"sql_data_type": "VARCHAR(100)", "description": "Department name (e.g. '開発部', '総務部', '営業部')"},
+                    "leave_type": {"sql_data_type": "VARCHAR(100)", "description": "Leave classification ('有給休暇', '半日有給申請', '慶弔特別休暇', '病気休暇', '夏季特別休暇', '在宅研修休暇', '未登録休暇')"},
+                    "start_date": {"sql_data_type": "VARCHAR(20)", "description": "Leave start date string ('2026-07-10')"},
+                    "end_date": {"sql_data_type": "VARCHAR(20)", "description": "Leave end date string ('2026-07-10')"},
+                    "requested_days": {"sql_data_type": "NUMERIC", "description": "Days requested (0.5, 1.0, 2.0, 3.0, 5.0). Always numeric comparison!"},
+                    "remaining_balance": {"sql_data_type": "NUMERIC", "description": "Remaining leave quota in days before request (0.0, 14.5)"},
+                    "reason": {"sql_data_type": "TEXT", "description": "Reason for leave / 申請事由"},
+                    "has_attachment": {"sql_data_type": "BOOLEAN", "description": "Proof attached (TRUE / FALSE)"},
+                    "attachment_name": {"sql_data_type": "VARCHAR(255)", "description": "Supporting file attachment name"},
+                    "voucher_ref": {"sql_data_type": "VARCHAR(100)", "description": "Reference tracking code (e.g. 'P2-07101496-012')"},
+                    "status": {"sql_data_type": "VARCHAR(50)", "description": "Workflow status: 'Unprocessed', 'Approved', 'Hold'"}
+                }
+            }
+            current_rows = db_manager.get_all_leave_applications()
+        elif process_type == "invoice":
             table_name = "erp_invoices"
             table_schema = {
                 "table_name": "erp_invoices",

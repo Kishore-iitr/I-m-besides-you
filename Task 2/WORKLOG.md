@@ -75,7 +75,7 @@ flowchart TD
   - **Architecture 1: Client-Side React/Node Automation Hub (Port 3000)**:
     - *Concept*: Built a web portal running on Express/React that triggered automation actions via Puter.js in the browser.
     - *Disadvantage*: Node.js could not seamlessly interface with enterprise document formats (`python-docx`, `openpyxl`) or native desktop windows.
-  - **Architecture 2: Pure LLM Policy-to-SQL Compiler (Port 5136)**:
+  - **Architecture 2: Pure LLM Policy-to-SQL Compiler (Experimental Architecture)**:
     - *Concept*: Ingested policy text and instructed an LLM to directly compile natural language policies into executable SQL statements on the ERP database.
     - *Disadvantage*: Direct LLM SQL generation caused syntax errors on Japanese column names and hallucinated on Japanese 10% consumption tax rounding rules ($\lfloor A_{\text{subtotal}} \times 0.10 \rfloor$). Moreover, direct SQL execution posed severe SQL injection and security risks.
   - **Architecture 3: Production Hybrid Python Rule Engine + Optical OCR Grounding**:

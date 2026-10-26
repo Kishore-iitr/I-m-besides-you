@@ -187,17 +187,55 @@ class DatabaseManager:
                 cur.execute("""
                     CREATE TABLE IF NOT EXISTS erp_invoices (
                         id VARCHAR(50) PRIMARY KEY,
+                        vendor_code VARCHAR(50),
+                        vendor_name VARCHAR(255),
                         employee_id VARCHAR(50),
                         name VARCHAR(255),
+                        customer_name VARCHAR(255),
                         invoice_no VARCHAR(50),
                         amount VARCHAR(50),
                         raw_amount BIGINT,
+                        total_amount BIGINT,
                         type VARCHAR(50),
                         status VARCHAR(50),
                         ref VARCHAR(255),
                         comment TEXT,
                         updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
                     );
+                    ALTER TABLE erp_invoices ADD COLUMN IF NOT EXISTS vendor_code VARCHAR(50);
+                    ALTER TABLE erp_invoices ADD COLUMN IF NOT EXISTS vendor_name VARCHAR(255);
+                    ALTER TABLE erp_invoices ADD COLUMN IF NOT EXISTS customer_name VARCHAR(255);
+                    ALTER TABLE erp_invoices ADD COLUMN IF NOT EXISTS total_amount BIGINT;
+                    UPDATE erp_invoices SET vendor_code = employee_id WHERE vendor_code IS NULL OR vendor_code = '';
+                    UPDATE erp_invoices SET vendor_name = name WHERE vendor_name IS NULL OR vendor_name = '';
+                    UPDATE erp_invoices SET customer_name = name WHERE customer_name IS NULL OR customer_name = '';
+                    UPDATE erp_invoices SET total_amount = raw_amount WHERE total_amount IS NULL;
+                    UPDATE erp_invoices SET employee_id = vendor_code WHERE employee_id IS NULL OR employee_id = '';
+                    UPDATE erp_invoices SET name = vendor_name WHERE name IS NULL OR name = '';
+                    DROP VIEW IF EXISTS orders CASCADE;
+                    CREATE VIEW orders AS 
+                    SELECT 
+                        id, 
+                        vendor_code,
+                        vendor_name,
+                        employee_id,
+                        name,
+                        customer_name,
+                        total_amount,
+                        raw_amount,
+                        amount,
+                        invoice_no,
+                        type,
+                        status,
+                        ref,
+                        comment,
+                        updated_at
+                    FROM erp_invoices;
+                    DROP VIEW IF EXISTS approved_vendors CASCADE;
+                    CREATE VIEW approved_vendors AS
+                    SELECT DISTINCT vendor_code, vendor_name, employee_id, name
+                    FROM erp_invoices 
+                    WHERE vendor_code NOT IN ('V3099', 'UNREGISTERED') AND employee_id NOT IN ('V3099', 'UNREGISTERED');
                 """)
                 # 2. Payroll Items Table
                 cur.execute("""
@@ -225,32 +263,25 @@ class DatabaseManager:
                         comment TEXT,
                         created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
                     );
-                """)
-                # Ensure columns exist if previously created with older schema
-                cur.execute("""
                     ALTER TABLE erp_audit_logs ADD COLUMN IF NOT EXISTS table_name VARCHAR(50);
                     ALTER TABLE erp_audit_logs ADD COLUMN IF NOT EXISTS record_id VARCHAR(50);
                 """)
 
                 # Check Invoices Count
-                cur.execute("""
-                    CREATE OR REPLACE VIEW approved_vendors AS
-                    SELECT DISTINCT employee_id, name 
-                    FROM erp_invoices 
-                    WHERE employee_id NOT IN ('V3099', 'UNREGISTERED');
-                """)
                 cur.execute("SELECT COUNT(*) FROM erp_invoices;")
                 if cur.fetchone()[0] == 0:
                     from psycopg2.extras import execute_values
                     inv_rows = [
-                        (inv["id"], inv["employee_id"], inv["name"], inv["invoice_no"],
-                         inv["amount"], inv["raw_amount"], inv["type"], inv["status"],
-                         inv["ref"], inv["comment"])
+                        (inv["id"], inv.get("vendor_code") or inv.get("employee_id"), inv.get("vendor_name") or inv.get("name"),
+                         inv.get("employee_id") or inv.get("vendor_code"), inv.get("name") or inv.get("vendor_name"),
+                         inv.get("customer_name") or inv.get("name") or inv.get("vendor_name"), inv["invoice_no"],
+                         inv["amount"], inv["raw_amount"], inv.get("total_amount") or inv.get("raw_amount"),
+                         inv["type"], inv["status"], inv["ref"], inv["comment"])
                         for inv in INITIAL_INVOICES
                     ]
                     execute_values(cur, """
                         INSERT INTO erp_invoices 
-                        (id, employee_id, name, invoice_no, amount, raw_amount, type, status, ref, comment)
+                        (id, vendor_code, vendor_name, employee_id, name, customer_name, invoice_no, amount, raw_amount, total_amount, type, status, ref, comment)
                         VALUES %s
                     """, inv_rows)
 
@@ -270,7 +301,6 @@ class DatabaseManager:
                         VALUES %s
                     """, pay_rows)
 
-            
                 # 4. Leave Applications Table
                 cur.execute("""
                     CREATE TABLE IF NOT EXISTS erp_leave_applications (
@@ -318,11 +348,15 @@ class DatabaseManager:
             cur.execute("""
                 CREATE TABLE IF NOT EXISTS erp_invoices (
                     id TEXT PRIMARY KEY,
+                    vendor_code TEXT,
+                    vendor_name TEXT,
                     employee_id TEXT,
                     name TEXT,
+                    customer_name TEXT,
                     invoice_no TEXT,
                     amount TEXT,
                     raw_amount INTEGER,
+                    total_amount INTEGER,
                     type TEXT,
                     status TEXT,
                     ref TEXT,
@@ -330,6 +364,54 @@ class DatabaseManager:
                     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
                 );
             """)
+            try:
+                cur.execute("PRAGMA table_info(erp_invoices);")
+                existing_cols = {row[1] for row in cur.fetchall()}
+                for col_name, col_type in [
+                    ("vendor_code", "TEXT"),
+                    ("vendor_name", "TEXT"),
+                    ("customer_name", "TEXT"),
+                    ("total_amount", "INTEGER")
+                ]:
+                    if col_name not in existing_cols:
+                        cur.execute(f"ALTER TABLE erp_invoices ADD COLUMN {col_name} {col_type};")
+                cur.execute("UPDATE erp_invoices SET vendor_code = employee_id WHERE vendor_code IS NULL OR vendor_code = '';")
+                cur.execute("UPDATE erp_invoices SET vendor_name = name WHERE vendor_name IS NULL OR vendor_name = '';")
+                cur.execute("UPDATE erp_invoices SET customer_name = name WHERE customer_name IS NULL OR customer_name = '';")
+                cur.execute("UPDATE erp_invoices SET total_amount = raw_amount WHERE total_amount IS NULL;")
+                cur.execute("UPDATE erp_invoices SET employee_id = vendor_code WHERE employee_id IS NULL OR employee_id = '';")
+                cur.execute("UPDATE erp_invoices SET name = vendor_name WHERE name IS NULL OR name = '';")
+                cur.execute("DROP VIEW IF EXISTS orders;")
+                cur.execute("""
+                    CREATE VIEW orders AS 
+                    SELECT 
+                        id, 
+                        vendor_code,
+                        vendor_name,
+                        employee_id,
+                        name,
+                        customer_name,
+                        total_amount,
+                        raw_amount,
+                        amount,
+                        invoice_no,
+                        type,
+                        status,
+                        ref,
+                        comment,
+                        updated_at
+                    FROM erp_invoices;
+                """)
+                cur.execute("DROP VIEW IF EXISTS approved_vendors;")
+                cur.execute("""
+                    CREATE VIEW approved_vendors AS
+                    SELECT DISTINCT vendor_code, vendor_name, employee_id, name
+                    FROM erp_invoices 
+                    WHERE vendor_code NOT IN ('V3099', 'UNREGISTERED') AND employee_id NOT IN ('V3099', 'UNREGISTERED');
+                """)
+            except Exception:
+                pass
+
             cur.execute("""
                 CREATE TABLE IF NOT EXISTS erp_payroll_items (
                     id TEXT PRIMARY KEY,
@@ -358,16 +440,19 @@ class DatabaseManager:
 
             cur.execute("SELECT COUNT(*) FROM erp_invoices;")
             if cur.fetchone()[0] == 0:
-                for inv in INITIAL_INVOICES:
-                    cur.execute("""
-                        INSERT INTO erp_invoices 
-                        (id, employee_id, name, invoice_no, amount, raw_amount, type, status, ref, comment)
-                        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-                    """, (
-                        inv["id"], inv["employee_id"], inv["name"], inv["invoice_no"],
-                        inv["amount"], inv["raw_amount"], inv["type"], inv["status"],
-                        inv["ref"], inv["comment"]
-                    ))
+                inv_sqlite_rows = [
+                    (inv["id"], inv.get("vendor_code") or inv.get("employee_id"), inv.get("vendor_name") or inv.get("name"),
+                     inv.get("employee_id") or inv.get("vendor_code"), inv.get("name") or inv.get("vendor_name"),
+                     inv.get("customer_name") or inv.get("name") or inv.get("vendor_name"), inv["invoice_no"],
+                     inv["amount"], inv["raw_amount"], inv.get("total_amount") or inv.get("raw_amount"),
+                     inv["type"], inv["status"], inv["ref"], inv["comment"])
+                    for inv in INITIAL_INVOICES
+                ]
+                cur.executemany("""
+                    INSERT INTO erp_invoices 
+                    (id, vendor_code, vendor_name, employee_id, name, customer_name, invoice_no, amount, raw_amount, total_amount, type, status, ref, comment)
+                    VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                """, inv_sqlite_rows)
 
             cur.execute("SELECT COUNT(*) FROM erp_payroll_items;")
             if cur.fetchone()[0] == 0:
@@ -410,7 +495,7 @@ class DatabaseManager:
                     doc_ocr_raw TEXT,
                     doc_extracted_json TEXT
                 );
-            """ )
+            """)
 
             cur.execute("SELECT COUNT(*) FROM erp_leave_applications;")
             if cur.fetchone()[0] == 0:
@@ -422,12 +507,12 @@ class DatabaseManager:
                     """, (
                         l["id"], l["employee_id"], l["employee_name"], l["department"],
                         l["leave_type"], l["start_date"], l["end_date"], l["requested_days"],
-                        l["remaining_balance"], l["reason"], 1 if l["has_attachment"] else 0, l["attachment_name"],
-                        l["voucher_ref"], l["status"], l["comment"]
+                        l["remaining_balance"], l["reason"], 1 if l["has_attachment"] else 0,
+                        l["attachment_name"], l["voucher_ref"], l["status"], l["comment"]
                     ))
+
             conn.commit()
 
-    # --- Read Operations ---
     def get_all_invoices(self) -> List[Dict[str, Any]]:
         def _clean(r):
             d = dict(r)
@@ -1073,14 +1158,16 @@ class DatabaseManager:
                     cur.execute("DELETE FROM erp_audit_logs;")
 
                     inv_rows = [
-                        (inv["id"], inv["employee_id"], inv["name"], inv["invoice_no"],
-                         inv["amount"], inv["raw_amount"], inv["type"], inv["status"],
-                         inv["ref"], inv["comment"])
+                        (inv["id"], inv.get("vendor_code") or inv.get("employee_id"), inv.get("vendor_name") or inv.get("name"),
+                         inv.get("employee_id") or inv.get("vendor_code"), inv.get("name") or inv.get("vendor_name"),
+                         inv.get("customer_name") or inv.get("name") or inv.get("vendor_name"), inv["invoice_no"],
+                         inv["amount"], inv["raw_amount"], inv.get("total_amount") or inv.get("raw_amount"),
+                         inv["type"], inv["status"], inv["ref"], inv["comment"])
                         for inv in INITIAL_INVOICES
                     ]
                     execute_values(cur, """
                         INSERT INTO erp_invoices 
-                        (id, employee_id, name, invoice_no, amount, raw_amount, type, status, ref, comment)
+                        (id, vendor_code, vendor_name, employee_id, name, customer_name, invoice_no, amount, raw_amount, total_amount, type, status, ref, comment)
                         VALUES %s
                     """, inv_rows)
 
@@ -1118,15 +1205,17 @@ class DatabaseManager:
                 cur.execute("DELETE FROM erp_audit_logs;")
 
                 inv_rows = [
-                    (inv["id"], inv["employee_id"], inv["name"], inv["invoice_no"],
-                     inv["amount"], inv["raw_amount"], inv["type"], inv["status"],
-                     inv["ref"], inv["comment"])
+                    (inv["id"], inv.get("vendor_code") or inv.get("employee_id"), inv.get("vendor_name") or inv.get("name"),
+                     inv.get("employee_id") or inv.get("vendor_code"), inv.get("name") or inv.get("vendor_name"),
+                     inv.get("customer_name") or inv.get("name") or inv.get("vendor_name"), inv["invoice_no"],
+                     inv["amount"], inv["raw_amount"], inv.get("total_amount") or inv.get("raw_amount"),
+                     inv["type"], inv["status"], inv["ref"], inv["comment"])
                     for inv in INITIAL_INVOICES
                 ]
                 cur.executemany("""
                     INSERT INTO erp_invoices 
-                    (id, employee_id, name, invoice_no, amount, raw_amount, type, status, ref, comment)
-                    VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                    (id, vendor_code, vendor_name, employee_id, name, customer_name, invoice_no, amount, raw_amount, total_amount, type, status, ref, comment)
+                    VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
                 """, inv_rows)
 
                 pay_rows = [
